@@ -85,9 +85,23 @@ def load_matches(path="all_matches.csv") -> list:
     return df.to_dict(orient="records")
 
 
-def load_school_meta(path="school_meta.json") -> dict:
+def load_school_meta(path="school_meta.json", overrides_path="../data/division_overrides.json") -> dict:
     with open(path, "r", encoding="utf-8") as fh:
-        return json.load(fh)
+        meta = json.load(fh)
+
+    override_file = Path(overrides_path)
+    if override_file.exists():
+        with open(override_file, "r", encoding="utf-8") as fh:
+            overrides = json.load(fh)
+        for school_id, fields in overrides.items():
+            sid = str(school_id)
+            if sid not in meta:
+                meta[sid] = {"id": int(sid)}
+            for k, v in fields.items():
+                meta[sid][k] = v
+        logging.info("Applied %d division overrides", len(overrides))
+
+    return meta
 
 
 _DIVISION_MAPPING = {
