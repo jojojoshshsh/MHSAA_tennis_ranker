@@ -10,19 +10,34 @@ csv_dir = out_dir / "csv"
 csv_dir.mkdir(exist_ok=True)
 tables_html = ""
 
+ALLOWED_FLIGHTS = {"1", "2", "3"}
+
 sections = {}
 for csv_path in sorted(src_dir.glob("*.csv")):
     df = pd.read_csv(csv_path)
+
+    # Filter to only flights 1, 2, 3
+    if "flight" in df.columns:
+        df = df[df["flight"].astype(str).isin(ALLOWED_FLIGHTS)]
+
+    if df.empty:
+        continue
+
     dest = csv_dir / csv_path.name
     df.to_csv(dest, index=False)
     label = csv_path.stem.replace("_", " ").title()
     sections[label] = (csv_path.name, df)
 
 for label, (filename, df) in sections.items():
-    preview_cols = [c for c in ["rank", "name", "pair_name", "school",
-                                 "division", "flight", "wins", "losses",
-                                 "TGRS", "ts_mu", "last_match_date"]
-                    if c in df.columns]
+    preview_cols = [c for c in [
+        "rank", "name", "pair_name", "school",
+        "division", "flight", "wins", "losses",
+        "TGRS", "ts_rating", "ts_mu", "local_ts_mu", "ts_sigma",
+        "reachability", "local_reachability",
+        "sos", "local_sos", "quality_wins",
+        "last_match_date"
+    ] if c in df.columns]
+
     table = df[preview_cols].head(30).to_html(
         index=False, classes="rankings-table", border=0
     )
@@ -32,7 +47,9 @@ for label, (filename, df) in sections.items():
         <h2>{label}</h2>
         <a class="dl-btn" href="csv/{filename}">Download CSV</a>
       </div>
-      {table}
+      <div class="table-wrap">
+        {table}
+      </div>
     </section>
     """
 
@@ -54,14 +71,15 @@ html = f"""<!DOCTYPE html>
   nav {{ background: #132d47; padding: .6rem 1.5rem; display: flex; flex-wrap: wrap; gap: .5rem; }}
   nav a {{ color: #7fb8e8; text-decoration: none; font-size: .8rem; padding: .2rem .5rem; border-radius: 4px; }}
   nav a:hover {{ background: rgba(255,255,255,.1); }}
-  main {{ max-width: 1200px; margin: auto; padding: 1.5rem; }}
+  main {{ max-width: 1400px; margin: auto; padding: 1.5rem; }}
   section {{ background: white; border-radius: 10px; padding: 1.25rem; margin-bottom: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,.07); }}
   .section-header {{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }}
   h2 {{ font-size: 1.05rem; font-weight: 600; color: #1a3a5c; }}
   .dl-btn {{ font-size: .8rem; color: #1a3a5c; text-decoration: none; border: 1px solid #c0d4e8; border-radius: 6px; padding: .3rem .7rem; }}
   .dl-btn:hover {{ background: #e8f0f8; }}
-  .rankings-table {{ width: 100%; border-collapse: collapse; font-size: .82rem; }}
-  .rankings-table th {{ background: #1a3a5c; color: white; padding: 6px 10px; text-align: left; font-weight: 500; white-space: nowrap; }}
+  .table-wrap {{ overflow-x: auto; }}
+  .rankings-table {{ width: 100%; border-collapse: collapse; font-size: .78rem; white-space: nowrap; }}
+  .rankings-table th {{ background: #1a3a5c; color: white; padding: 6px 10px; text-align: left; font-weight: 500; }}
   .rankings-table td {{ padding: 5px 10px; border-bottom: 1px solid #eef0f3; }}
   .rankings-table tr:nth-child(even) td {{ background: #f8fafc; }}
   .rankings-table tr:hover td {{ background: #eef4fb; }}
