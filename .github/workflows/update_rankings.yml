@@ -1,0 +1,71 @@
+name: Update Tennis Rankings
+
+on:
+  schedule:
+    - cron: '0 10 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run crawler
+        working-directory: src
+        run: |
+          python - <<'EOF'
+          import asyncio, json, sys, os
+          sys.path.insert(0, '.')
+          from crawler import crawl_school_matches
+          from config import MAX_SCHOOLS
+          import pandas as pd
+
+          matches, school_meta = asyncio.run(
+              crawl_school_matches(3877, MAX_SCHOOLS)
+          )
+
+          df = pd.DataFrame(matches)
+          df.to_csv('all_matches.csv', index=False)
+
+          existing = {}
+          meta_path = '../data/school_meta.json'
+          if os.path.exists(meta_path):
+              with open(meta_path) as f:
+                  existing = json.load(f)
+          existing.update({str(k): v for k, v in school_meta.items()})
+          with open(meta_path, 'w') as f:
+              json.dump(existing, f, indent=2)
+
+          print(f'Done: {len(matches)} matches, {len(school_meta)} schools')
+          EOF
+
+      - name: Run rankings
+        working-directory: src
+        run: |
+          cp ../data/school_meta.json .
+          python main_rank.py
+
+      - name: Build HTML site
+        run: python scripts/build_site.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/ data/
+          git diff --staged --quiet || git commit -m "Rankings updated $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
