@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+src/all_matches.csv
+src/school_meta.json
+src/*.csv
