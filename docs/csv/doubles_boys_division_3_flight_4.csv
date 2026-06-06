@@ -1,0 +1,14 @@
+rank,gender,division,flight,pair_name,school,rating,TGRS,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
+1,Boys,3,4,Dylan Popat / Andy Yu,Bloomfield Hills Cranbrook Kingswood,1438.1199,287.624,1752,11,15.5691,10.0211,37.4958,30.9122,45.1975,44.9782,4.7618,9,9,0,2025-10-17
+2,Boys,3,4,Jonathan Haig / Carter Leep,Holland Christian,1369.8823,273.9765,1672,0,16.068,9.7835,33.6269,26.075,40.2398,37.3048,4.7216,7,6,1,2025-10-17
+3,Boys,3,4,Sebastian Shah / Nikhil Dhake,Detroit Country Day,1361.2207,272.2441,1661,6,17.1115,14.9475,29.574,20.6829,34.7666,37.7326,4.6946,6,4,2,2025-10-17
+4,Boys,3,4,Joseph Broduer / Sebastain Valdina,Chelsea,1351.5894,270.3179,1654,5,9.7509,12.3114,27.6002,19.6366,34.2776,35.7415,4.8803,6,5,1,2025-10-17
+5,Boys,3,4,Evan McCann / Lucas Nichols,Richland Gull Lake,1349.019,269.8038,1649,7,13.8989,12.8229,28.6065,17.74,31.4676,36.4071,4.5759,8,5,3,2025-10-17
+6,Boys,3,4,Drew Gillett / Aarav Agarwal,Parma Western,1348.1962,269.6392,1649,4,15.1448,13.1668,25.9727,16.5474,30.9063,33.2564,4.7863,7,4,3,2025-10-17
+7,Boys,3,4,Luke Walter / Owen Musser,Dewitt,1346.6932,269.3386,1649,2,14.7543,15.2801,25.1852,12.0263,26.2441,28.7221,4.7393,6,3,3,2025-10-17
+8,Boys,3,4,JJ Randle / Lukas Harnick,Mason,1345.576,269.1152,1649,4,10.3273,11.8654,25.3002,15.2309,29.4164,31.0307,4.7285,7,4,3,2025-10-08
+9,Boys,3,4,Luke Rhein / Bodie MacIntosh,St. Clair,1344.1778,268.8356,1649,0,11.5792,9.7948,24.1349,13.6104,27.7877,28.9033,4.7258,8,5,3,2025-10-17
+10,Boys,3,4,Alex Eggleston / Mark Cuison,Middleville Thornapple Kellogg,1342.4072,268.4814,1649,1,9.1439,7.7435,22.9732,10.7059,26.8377,26.8698,5.3773,5,3,2,2025-10-08
+11,Boys,3,4,Brayden Bibb / Kellen Meyer,Sturgis,1341.7511,268.3502,1649,1,8.7089,11.025,19.1104,11.0661,24.8734,29.6483,4.6024,9,4,5,2025-10-08
+12,Boys,3,4,Brady Hill / Samuel Scott,Marshall,1340.8572,268.1714,1649,0,7.7013,9.091,18.7996,9.8105,25.9256,26.6295,5.3717,5,3,2,2025-10-08
+13,Boys,3,4,Drake Reitenour / Spencer Sertic,Vicksburg,1339.0168,267.8034,1649,0,6.9683,7.8195,17.9787,8.2793,21.6549,25.6265,4.4585,8,3,5,2025-10-08

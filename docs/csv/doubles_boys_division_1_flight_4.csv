@@ -1,0 +1,11 @@
+rank,gender,division,flight,pair_name,school,rating,TGRS,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
+1,Boys,1,4,Raghav Karur / Zain Taqi,Troy,1441.0038,288.2008,1754,9,16.3585,16.6888,36.8859,30.7882,44.8042,45.4945,4.672,7,7,0,2025-10-17
+2,Boys,1,4,Travis Lagman / Rohan Chaudhuri,Rochester Adams,1433.8236,286.7647,1750,6,14.8193,14.65,32.8732,25.3421,39.404,40.0326,4.6873,7,6,1,2025-10-17
+3,Boys,1,4,Braeden Spencer / Jack Fisher,Bloomfield Hills Brother Rice,1426.0942,285.2188,1744,5,14.5202,11.9286,29.803,20.2551,34.6801,36.5228,4.8083,7,5,2,2025-10-17
+4,Boys,1,4,Vincent Maisano / Ronak Sharma,Novi,1424.5399,284.908,1740,4,14.5412,15.341,31.0791,23.8596,37.3613,37.9927,4.5006,8,6,2,2025-10-17
+5,Boys,1,4,Patrick Wisniewski / Max Metropulos,Detroit Catholic Central,1422.7166,284.5433,1737,3,16.4587,11.8242,34.5027,24.4361,37.4808,38.8736,4.3482,9,7,2,2025-10-17
+6,Boys,1,4,Luca Deangelis / Clay Youmans,Bloomfield Hills,1398.7173,279.7435,1710,0,16.9966,15.913,26.4597,19.3066,33.8924,33.5047,4.8619,5,3,2,2025-10-17
+7,Boys,1,4,Aarin Agarwal / Ian Wu,Rochester Hills Stoney Creek,1349.7682,269.9536,1652,0,13.9006,11.9718,26.1674,18.049,32.7101,32.849,4.887,6,4,2,2025-10-17
+8,Boys,1,4,Hillen Rothschild / Kiya Rostamian,Ann Arbor Huron,1348.4795,269.6959,1649,0,16.026,12.164,27.1426,18.7211,32.6422,35.45,4.6404,8,5,3,2025-10-17
+9,Boys,1,4,Eshaan Shenoy / Akshay Krishnan,Okemos,31.9217,6.3843,13,0,10.7565,11.3854,25.5348,15.9056,31.2295,32.4353,5.108,6,4,2,2025-10-17
+10,Boys,1,4,Carter Drolema / Tray Storms,Rockford,28.3675,5.6735,7,0,13.8862,13.1986,24.3773,15.7358,31.5577,30.9932,5.274,5,3,2,2025-10-17
