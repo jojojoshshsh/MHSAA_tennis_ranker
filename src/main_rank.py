@@ -3,6 +3,7 @@ import ast
 import json
 import logging
 import re
+import math
 from pathlib import Path
 
 import pandas as pd
@@ -225,6 +226,7 @@ def build_lookups(matches, school_meta):
 def export_split_csvs(rows, columns, prefix):
     """
     Write one CSV per gender + division + flight bucket.
+    Adds TGRS_scaled column: lowest floored to 0, highest scaled to 100.
     """
     out_dir = Path("rankings_by_division_flight")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -234,15 +236,39 @@ def export_split_csvs(rows, columns, prefix):
         logging.info("No rows to export for %s", prefix)
         return
 
+    # Add TGRS_scaled per bucket
+    scaled_col = []
     for (gender, division, flight), group in df.groupby(
-        ["gender", "division", "flight"],
-        dropna=False
+        ["gender", "division", "flight"], dropna=False
+    ):
+        tgrs = group["TGRS"]
+        sorted_tgrs = tgrs.sort_values(ascending=False).reset_index(drop=True)
+        floor_val = math.floor(sorted_tgrs.iloc[29] if len(sorted_tgrs) >= 30 else sorted_tgrs.iloc[-1])
+        shifted = (tgrs - floor_val).clip(lower=0)
+        max_shifted = shifted.max()
+        if max_shifted > 0:
+            scaled = (shifted / max_shifted * 100).round(2)
+        else:
+            scaled = shifted * 0 + 100.0
+        scaled_col.append(scaled)
+
+    df["TGRS_scaled"] = pd.concat(scaled_col)
+
+    # Insert TGRS_scaled right after TGRS in columns
+    cols_with_scaled = []
+    for c in columns:
+        cols_with_scaled.append(c)
+        if c == "TGRS":
+            cols_with_scaled.append("TGRS_scaled")
+
+    for (gender, division, flight), group in df.groupby(
+        ["gender", "division", "flight"], dropna=False
     ):
         out_path = out_dir / (
             f"{prefix}_{_safe_slug(gender)}_division_{_safe_slug(division)}"
             f"_flight_{_safe_slug(flight)}.csv"
         )
-        group.to_csv(out_path, index=False, columns=columns)
+        group.to_csv(out_path, index=False, columns=cols_with_scaled)
         logging.info("Wrote %s (%d rows)", out_path, len(group))
 
 
@@ -290,3 +316,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
