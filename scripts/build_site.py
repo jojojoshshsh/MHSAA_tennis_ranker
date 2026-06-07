@@ -11,20 +11,61 @@ csv_dir.mkdir(exist_ok=True)
 
 ALLOWED_FLIGHTS = {"1", "2", "3"}
 
-sections = {}
+# Load all CSVs and filter
+all_data = []
 for csv_path in sorted(src_dir.glob("*.csv")):
     df = pd.read_csv(csv_path)
     if "flight" in df.columns:
         df = df[df["flight"].astype(str).isin(ALLOWED_FLIGHTS)]
     if df.empty:
         continue
+
     dest = csv_dir / csv_path.name
     df.to_csv(dest, index=False)
-    label = csv_path.stem.replace("_", " ").title()
-    sections[label] = (csv_path.name, df)
+
+    # Parse division, flight, category (singles/doubles), gender from filename
+    # filename pattern: singles_boys_division_1_flight_1.csv
+    stem = csv_path.stem
+    category = "singles" if stem.startswith("singles") else "doubles"
+    gender   = "boys"    if "_boys_"    in stem else "girls"
+
+    # Extract division and flight from the dataframe itself (more reliable)
+    if "division" in df.columns and "flight" in df.columns:
+        for (division, flight), group in df.groupby(["division", "flight"]):
+            all_data.append({
+                "division": str(division),
+                "flight":   str(flight),
+                "category": category,
+                "gender":   gender,
+                "filename": csv_path.name,
+                "df":       group.copy(),
+            })
+
+# Sort: division -> flight -> gender -> category
+DIVISION_ORDER = {"1": 0, "2": 1, "3": 2, "4": 3, "4_other": 4}
+GENDER_ORDER   = {"boys": 0, "girls": 1}
+CAT_ORDER      = {"singles": 0, "doubles": 1}
+
+all_data.sort(key=lambda x: (
+    DIVISION_ORDER.get(x["division"], 9),
+    x["flight"],
+    GENDER_ORDER.get(x["gender"], 9),
+    CAT_ORDER.get(x["category"], 9),
+))
+
+# Build nav groups: division -> list of (label, anchor)
+from collections import defaultdict
+nav_groups = defaultdict(list)
 
 tables_html = ""
-for label, (filename, df) in sections.items():
+for entry in all_data:
+    division = entry["division"]
+    flight   = entry["flight"]
+    category = entry["category"].title()
+    gender   = entry["gender"].title()
+    filename = entry["filename"]
+    df       = entry["df"]
+
     preview_cols = [c for c in [
         "rank", "name", "pair_name", "school",
         "division", "flight", "wins", "losses",
@@ -34,28 +75,27 @@ for label, (filename, df) in sections.items():
         "last_match_date"
     ] if c in df.columns]
 
-    # Build table header manually so we can add sort onclick
+    anchor = f"div{division}_flight{flight}_{gender.lower()}_{category.lower()}"
+    label  = f"Div {division} · Flight {flight} · {gender} {category}"
+
     thead = "<thead><tr>" + "".join(
         f'<th onclick="sortTable(this)">{col}</th>'
         for col in preview_cols
     ) + "</tr></thead>"
 
-    # Build table body
     tbody = "<tbody>" + "".join(
         "<tr>" + "".join(f"<td>{row[col]}</td>" for col in preview_cols) + "</tr>"
         for _, row in df.head(30).iterrows()
     ) + "</tbody>"
 
-    table_id = filename.replace(".csv", "").replace(".", "_")
-
     tables_html += f"""
-    <section id="{filename.replace('.csv','')}">
+    <section id="{anchor}">
       <div class="section-header">
         <h2>{label}</h2>
         <a class="dl-btn" href="csv/{filename}">Download CSV</a>
       </div>
       <div class="table-wrap">
-        <table class="rankings-table" id="tbl_{table_id}">
+        <table class="rankings-table">
           {thead}
           {tbody}
         </table>
@@ -63,10 +103,17 @@ for label, (filename, df) in sections.items():
     </section>
     """
 
-# EDT = UTC-4
+    nav_groups[f"Division {division}"].append((label, anchor))
+
+# Build nav HTML grouped by division
+nav_html = ""
+for div_label, links in nav_groups.items():
+    nav_html += f'<span class="nav-group-label">{div_label}</span>'
+    nav_html += "".join(f'<a href="#{anchor}">{lbl}</a>' for lbl, anchor in links)
+
 edt = timezone(timedelta(hours=-4))
 updated = datetime.now(edt).strftime("%B %d, %Y at %I:%M %p EDT")
-csv_count = len(sections)
+section_count = len(all_data)
 
 html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -80,21 +127,44 @@ html = f"""<!DOCTYPE html>
   header {{ background: #1a3a5c; color: white; padding: 2rem 1.5rem 1.5rem; }}
   header h1 {{ font-size: 1.6rem; font-weight: 600; margin-bottom: .4rem; }}
   header p {{ opacity: .8; font-size: .9rem; }}
-  nav {{ background: #132d47; padding: .6rem 1.5rem; display: flex; flex-wrap: wrap; gap: .5rem; }}
-  nav a {{ color: #7fb8e8; text-decoration: none; font-size: .8rem; padding: .2rem .5rem; border-radius: 4px; }}
-  nav a:hover {{ background: rgba(255,255,255,.1); }}
+  nav {{
+    background: #132d47; padding: .75rem 1.5rem;
+    display: flex; flex-wrap: wrap; gap: .4rem; align-items: center;
+  }}
+  .nav-group-label {{
+    color: #4a90c4; font-size: .7rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .05em;
+    padding: .2rem .5rem .2rem 0;
+    margin-left: .5rem;
+  }}
+  .nav-group-label:first-child {{ margin-left: 0; }}
+  nav a {{
+    color: #b8d8f0; text-decoration: none; font-size: .78rem;
+    padding: .2rem .5rem; border-radius: 4px;
+    border: 1px solid rgba(255,255,255,.1);
+  }}
+  nav a:hover {{ background: rgba(255,255,255,.12); }}
   main {{ max-width: 1400px; margin: auto; padding: 1.5rem; }}
-  section {{ background: white; border-radius: 10px; padding: 1.25rem; margin-bottom: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,.07); }}
-  .section-header {{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }}
+  section {{
+    background: white; border-radius: 10px; padding: 1.25rem;
+    margin-bottom: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  }}
+  .section-header {{
+    display: flex; align-items: center;
+    justify-content: space-between; margin-bottom: 1rem;
+  }}
   h2 {{ font-size: 1.05rem; font-weight: 600; color: #1a3a5c; }}
-  .dl-btn {{ font-size: .8rem; color: #1a3a5c; text-decoration: none; border: 1px solid #c0d4e8; border-radius: 6px; padding: .3rem .7rem; }}
+  .dl-btn {{
+    font-size: .8rem; color: #1a3a5c; text-decoration: none;
+    border: 1px solid #c0d4e8; border-radius: 6px; padding: .3rem .7rem;
+  }}
   .dl-btn:hover {{ background: #e8f0f8; }}
   .table-wrap {{ overflow-x: auto; }}
   .rankings-table {{ width: 100%; border-collapse: collapse; font-size: .78rem; white-space: nowrap; }}
   .rankings-table th {{
     background: #1a3a5c; color: white; padding: 6px 10px;
     text-align: left; font-weight: 500;
-    cursor: pointer; user-select: none; position: relative;
+    cursor: pointer; user-select: none;
   }}
   .rankings-table th:hover {{ background: #245180; }}
   .rankings-table th.asc::after  {{ content: " ▲"; font-size: .65rem; }}
@@ -109,11 +179,9 @@ html = f"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Michigan High School Tennis Rankings</h1>
-  <p>Updated automatically every Monday at 6am EDT. Last update: {updated}. {csv_count} divisions.</p>
+  <p>Updated automatically every Monday at 6am EDT. Last update: {updated}.</p>
 </header>
-<nav>
-  {"".join(f'<a href="#{fn.replace(".csv","")}">{lbl}</a>' for lbl, (fn, _) in sections.items())}
-</nav>
+<nav>{nav_html}</nav>
 <main>
 {tables_html}
 </main>
@@ -121,30 +189,23 @@ html = f"""<!DOCTYPE html>
 </body>
 <script>
 function sortTable(th) {{
-  const table = th.closest('table');
-  const tbody = table.querySelector('tbody');
+  const tbody = th.closest('table').querySelector('tbody');
   const rows  = Array.from(tbody.querySelectorAll('tr'));
-  const col   = Array.from(th.parentRow || th.parentElement.children).indexOf(th);
+  const col   = Array.from(th.parentElement.children).indexOf(th);
   const asc   = !th.classList.contains('asc');
-
-  // Clear all headers in this table
   th.closest('thead').querySelectorAll('th').forEach(h => h.classList.remove('asc','desc'));
   th.classList.add(asc ? 'asc' : 'desc');
-
   rows.sort((a, b) => {{
     const av = a.cells[col].textContent.trim();
     const bv = b.cells[col].textContent.trim();
-    const an = parseFloat(av);
-    const bn = parseFloat(bv);
-    const numericSort = !isNaN(an) && !isNaN(bn);
-    if (numericSort) return asc ? an - bn : bn - an;
+    const an = parseFloat(av), bn = parseFloat(bv);
+    if (!isNaN(an) && !isNaN(bn)) return asc ? an - bn : bn - an;
     return asc ? av.localeCompare(bv) : bv.localeCompare(av);
   }});
-
   rows.forEach(r => tbody.appendChild(r));
 }}
 </script>
 </html>"""
 
 (out_dir / "index.html").write_text(html, encoding="utf-8")
-print(f"Built docs/index.html with {csv_count} tables")
+print(f"Built docs/index.html with {section_count} sections")
