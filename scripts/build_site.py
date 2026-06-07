@@ -69,7 +69,7 @@ for entry in all_data:
     preview_cols = [c for c in [
         "rank", "name", "pair_name", "school",
         "division", "flight", "wins", "losses",
-        "TGRS", "ts_rating", "ts_mu", "local_ts_mu", "ts_sigma",
+        "TGRS", "TGRS_scaled", "ts_rating", "ts_mu", "local_ts_mu", "ts_sigma",
         "reachability", "local_reachability",
         "sos", "local_sos", "quality_wins",
         "last_match_date"
