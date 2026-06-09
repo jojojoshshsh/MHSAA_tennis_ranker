@@ -1,7 +1,6 @@
 import pandas as pd
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
-from collections import defaultdict
 
 src_dir = Path("src/rankings_by_division_flight")
 out_dir = Path("docs")
@@ -12,7 +11,7 @@ csv_dir.mkdir(exist_ok=True)
 
 ALLOWED_FLIGHTS = {"1", "2", "3"}
 
-# ── Load all CSVs ─────────────────────────────────────────────────────────────
+# Load all CSVs and filter
 all_data = []
 for csv_path in sorted(src_dir.glob("*.csv")):
     df = pd.read_csv(csv_path)
@@ -24,10 +23,13 @@ for csv_path in sorted(src_dir.glob("*.csv")):
     dest = csv_dir / csv_path.name
     df.to_csv(dest, index=False)
 
-    stem     = csv_path.stem
+    # Parse division, flight, category (singles/doubles), gender from filename
+    # filename pattern: singles_boys_division_1_flight_1.csv
+    stem = csv_path.stem
     category = "singles" if stem.startswith("singles") else "doubles"
-    gender   = "boys"    if "_boys_" in stem else "girls"
+    gender   = "boys"    if "_boys_"    in stem else "girls"
 
+    # Extract division and flight from the dataframe itself (more reliable)
     if "division" in df.columns and "flight" in df.columns:
         for (division, flight), group in df.groupby(["division", "flight"]):
             all_data.append({
@@ -39,91 +41,7 @@ for csv_path in sorted(src_dir.glob("*.csv")):
                 "df":       group.copy(),
             })
 
-# ── Build team rankings ───────────────────────────────────────────────────────
-# For each gender+division, sum the best TGRS_scaled per school per flight+category slot
-# Slots: S1, S2, S3, D1, D2, D3 (singles/doubles flights 1-3)
-
-def build_team_rankings(all_data, gender):
-    # school -> slot -> best TGRS_scaled
-    school_slots = defaultdict(dict)  # {school: {slot_label: tgrs_scaled}}
-
-    for entry in all_data:
-        if entry["gender"] != gender:
-            continue
-        df       = entry["df"]
-        flight   = entry["flight"]
-        category = entry["category"]
-        division = entry["division"]
-
-        if "school" not in df.columns or "TGRS_scaled" not in df.columns:
-            continue
-
-        slot = f"{'S' if category == 'singles' else 'D'}{flight}"
-
-        # Best TGRS_scaled per school in this slot
-        best = (
-            df.groupby("school")["TGRS_scaled"]
-            .max()
-            .reset_index()
-        )
-        best["division"] = division
-
-        for _, row in best.iterrows():
-            school = row["school"]
-            val    = row["TGRS_scaled"]
-            div    = row["division"]
-            key    = (school, div)
-            if slot not in school_slots[key] or val > school_slots[key][slot]:
-                school_slots[key][slot] = val
-
-    if not school_slots:
-        return {}
-
-    # Build a DataFrame from the slot dict
-    records = []
-    for (school, division), slots in school_slots.items():
-        row = {"school": school, "division": division}
-        row.update(slots)
-        row["team_score"] = round(sum(slots.values()), 2)
-        records.append(row)
-
-    df_teams = pd.DataFrame(records)
-
-    # Ensure all slot columns exist
-    all_slots = ["S1", "S2", "S3", "D1", "D2", "D3"]
-    for s in all_slots:
-        if s not in df_teams.columns:
-            df_teams[s] = 0.0
-    df_teams[all_slots] = df_teams[all_slots].fillna(0.0).round(2)
-
-    # Group by division, sort by team_score desc
-    result = {}
-    for division, group in df_teams.groupby("division"):
-        result[division] = group.sort_values("team_score", ascending=False).reset_index(drop=True)
-        result[division].index += 1  # rank starts at 1
-
-    return result
-
-
-def render_team_table(df):
-    cols = ["school", "S1", "S2", "S3", "D1", "D2", "D3", "team_score"]
-    cols = [c for c in cols if c in df.columns]
-
-    thead = "<thead><tr><th>Rank</th>" + "".join(
-        f'<th onclick="sortTable(this)">{c}</th>' for c in cols
-    ) + "</tr></thead>"
-
-    tbody = "<tbody>"
-    for rank, (_, row) in enumerate(df.iterrows(), 1):
-        tbody += "<tr><td>{}</td>".format(rank)
-        tbody += "".join(f"<td>{row[c]}</td>" for c in cols)
-        tbody += "</tr>"
-    tbody += "</tbody>"
-
-    return f"<table class='rankings-table'>{thead}{tbody}</table>"
-
-
-# ── Sort individual player sections ──────────────────────────────────────────
+# Sort: division -> flight -> gender -> category
 DIVISION_ORDER = {"1": 0, "2": 1, "3": 2, "4": 3, "4_other": 4}
 GENDER_ORDER   = {"boys": 0, "girls": 1}
 CAT_ORDER      = {"singles": 0, "doubles": 1}
@@ -135,38 +53,11 @@ all_data.sort(key=lambda x: (
     CAT_ORDER.get(x["category"], 9),
 ))
 
-# ── Build HTML sections ───────────────────────────────────────────────────────
-from collections import defaultdict as ddict
+# Build nav groups: division -> list of (label, anchor)
+from collections import defaultdict
+nav_groups = defaultdict(list)
 
-nav_groups  = ddict(list)
 tables_html = ""
-
-# Team ranking sections first
-for gender_label in ("Boys", "Girls"):
-    gender_key = gender_label.lower()
-    team_data  = build_team_rankings(all_data, gender_key)
-
-    if not team_data:
-        continue
-
-    for division in sorted(team_data.keys(), key=lambda d: DIVISION_ORDER.get(d, 9)):
-        df_team = team_data[division]
-        anchor  = f"team_{gender_key}_div{division}"
-        label   = f"Team Rankings · {gender_label} · Division {division}"
-
-        tables_html += f"""
-        <section id="{anchor}">
-          <div class="section-header">
-            <h2>{label}</h2>
-          </div>
-          <div class="table-wrap">
-            {render_team_table(df_team)}
-          </div>
-        </section>
-        """
-        nav_groups[f"Team {gender_label}"].append((label, anchor))
-
-# Individual player sections
 for entry in all_data:
     division = entry["division"]
     flight   = entry["flight"]
@@ -188,7 +79,8 @@ for entry in all_data:
     label  = f"Div {division} · Flight {flight} · {gender} {category}"
 
     thead = "<thead><tr>" + "".join(
-        f'<th onclick="sortTable(this)">{col}</th>' for col in preview_cols
+        f'<th onclick="sortTable(this)">{col}</th>'
+        for col in preview_cols
     ) + "</tr></thead>"
 
     tbody = "<tbody>" + "".join(
@@ -210,17 +102,18 @@ for entry in all_data:
       </div>
     </section>
     """
+
     nav_groups[f"Division {division}"].append((label, anchor))
 
-# ── Nav HTML ──────────────────────────────────────────────────────────────────
+# Build nav HTML grouped by division
 nav_html = ""
-for group_label, links in nav_groups.items():
-    nav_html += f'<span class="nav-group-label">{group_label}</span>'
+for div_label, links in nav_groups.items():
+    nav_html += f'<span class="nav-group-label">{div_label}</span>'
     nav_html += "".join(f'<a href="#{anchor}">{lbl}</a>' for lbl, anchor in links)
 
-# ── Page ──────────────────────────────────────────────────────────────────────
-edt     = timezone(timedelta(hours=-4))
+edt = timezone(timedelta(hours=-4))
 updated = datetime.now(edt).strftime("%B %d, %Y at %I:%M %p EDT")
+section_count = len(all_data)
 
 html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -234,20 +127,45 @@ html = f"""<!DOCTYPE html>
   header {{ background: #1a3a5c; color: white; padding: 2rem 1.5rem 1.5rem; }}
   header h1 {{ font-size: 1.6rem; font-weight: 600; margin-bottom: .4rem; }}
   header p {{ opacity: .8; font-size: .9rem; }}
-  nav {{ background: #132d47; padding: .75rem 1.5rem; display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }}
-  .nav-group-label {{ color: #4a90c4; font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; padding: .2rem .5rem .2rem 0; margin-left: .5rem; }}
+  nav {{
+    background: #132d47; padding: .75rem 1.5rem;
+    display: flex; flex-wrap: wrap; gap: .4rem; align-items: center;
+  }}
+  .nav-group-label {{
+    color: #4a90c4; font-size: .7rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .05em;
+    padding: .2rem .5rem .2rem 0;
+    margin-left: .5rem;
+  }}
   .nav-group-label:first-child {{ margin-left: 0; }}
-  nav a {{ color: #b8d8f0; text-decoration: none; font-size: .78rem; padding: .2rem .5rem; border-radius: 4px; border: 1px solid rgba(255,255,255,.1); }}
+  nav a {{
+    color: #b8d8f0; text-decoration: none; font-size: .78rem;
+    padding: .2rem .5rem; border-radius: 4px;
+    border: 1px solid rgba(255,255,255,.1);
+  }}
   nav a:hover {{ background: rgba(255,255,255,.12); }}
   main {{ max-width: 1400px; margin: auto; padding: 1.5rem; }}
-  section {{ background: white; border-radius: 10px; padding: 1.25rem; margin-bottom: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,.07); }}
-  .section-header {{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }}
+  section {{
+    background: white; border-radius: 10px; padding: 1.25rem;
+    margin-bottom: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,.07);
+  }}
+  .section-header {{
+    display: flex; align-items: center;
+    justify-content: space-between; margin-bottom: 1rem;
+  }}
   h2 {{ font-size: 1.05rem; font-weight: 600; color: #1a3a5c; }}
-  .dl-btn {{ font-size: .8rem; color: #1a3a5c; text-decoration: none; border: 1px solid #c0d4e8; border-radius: 6px; padding: .3rem .7rem; }}
+  .dl-btn {{
+    font-size: .8rem; color: #1a3a5c; text-decoration: none;
+    border: 1px solid #c0d4e8; border-radius: 6px; padding: .3rem .7rem;
+  }}
   .dl-btn:hover {{ background: #e8f0f8; }}
   .table-wrap {{ overflow-x: auto; }}
   .rankings-table {{ width: 100%; border-collapse: collapse; font-size: .78rem; white-space: nowrap; }}
-  .rankings-table th {{ background: #1a3a5c; color: white; padding: 6px 10px; text-align: left; font-weight: 500; cursor: pointer; user-select: none; }}
+  .rankings-table th {{
+    background: #1a3a5c; color: white; padding: 6px 10px;
+    text-align: left; font-weight: 500;
+    cursor: pointer; user-select: none;
+  }}
   .rankings-table th:hover {{ background: #245180; }}
   .rankings-table th.asc::after  {{ content: " ▲"; font-size: .65rem; }}
   .rankings-table th.desc::after {{ content: " ▼"; font-size: .65rem; }}
@@ -261,7 +179,7 @@ html = f"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Michigan High School Tennis Rankings</h1>
-  <p>Updated daily at 4am EDT. Last update: {updated}.</p>
+  <p>Updated automatically every Monday at 6am EDT. Last update: {updated}.</p>
 </header>
 <nav>{nav_html}</nav>
 <main>
@@ -290,4 +208,4 @@ function sortTable(th) {{
 </html>"""
 
 (out_dir / "index.html").write_text(html, encoding="utf-8")
-print(f"Built docs/index.html")
+print(f"Built docs/index.html with {section_count} sections")
