@@ -271,7 +271,57 @@ def export_split_csvs(rows, columns, prefix):
         group.to_csv(out_path, index=False, columns=cols_with_scaled)
         logging.info("Wrote %s (%d rows)", out_path, len(group))
 
+def build_team_rankings(singles_rows, doubles_rows):
+    """
+    For each gender+division, sum the top TGRS from flights 1,2,3
+    for singles and doubles per school, then rank schools by total.
+    """
+    ALLOWED_FLIGHTS = {"1", "2", "3"}
+    out_dir = Path("rankings_by_division_flight")
+    out_dir.mkdir(parents=True, exist_ok=True)
 
+    all_rows = (
+        [dict(r, category="singles") for r in singles_rows] +
+        [dict(r, category="doubles") for r in doubles_rows]
+    )
+
+    df = pd.DataFrame(all_rows)
+    if df.empty:
+        return
+
+    df = df[df["flight"].astype(str).isin(ALLOWED_FLIGHTS)]
+    df["TGRS"] = pd.to_numeric(df["TGRS"], errors="coerce").fillna(0)
+
+    # For each school+gender+division+flight+category, take the best TGRS
+    best = (
+        df.groupby(["gender", "division", "school", "flight", "category"])["TGRS"]
+        .max()
+        .reset_index()
+    )
+
+    # Sum across all flights and categories per school
+    team_scores = (
+        best.groupby(["gender", "division", "school"])["TGRS"]
+        .sum()
+        .reset_index()
+        .rename(columns={"TGRS": "team_score"})
+    )
+    team_scores["team_score"] = team_scores["team_score"].round(4)
+    team_scores = team_scores.sort_values(
+        ["gender", "division", "team_score"], ascending=[True, True, False]
+    )
+    team_scores["rank"] = (
+        team_scores.groupby(["gender", "division"])["team_score"]
+        .rank(method="min", ascending=False)
+        .astype(int)
+    )
+
+    for (gender, division), group in team_scores.groupby(["gender", "division"]):
+        out_path = out_dir / (
+            f"team_{_safe_slug(gender)}_division_{_safe_slug(str(division))}.csv"
+        )
+        group[["rank", "school", "team_score"]].to_csv(out_path, index=False)
+        logging.info("Wrote %s (%d schools)", out_path, len(group))
 def main():
     logging.info("Loading match data...")
     matches = load_matches("all_matches.csv")
@@ -310,6 +360,8 @@ def main():
         pair_lookup=pair_lookup,
     )
     export_split_csvs(doubles_rows, _DOUBLES_COLS, "doubles")
+    logging.info("Generating team rankings...")
+    build_team_rankings(singles_rows, doubles_rows)
 
     logging.info("Done.")
 
