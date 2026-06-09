@@ -10,6 +10,53 @@ csv_dir = out_dir / "csv"
 csv_dir.mkdir(exist_ok=True)
 
 ALLOWED_FLIGHTS = {"1", "2", "3"}
+# ── Team rankings ────────────────────────────────────────────
+team_data = []
+for csv_path in sorted(src_dir.glob("team_*.csv")):
+    df = pd.read_csv(csv_path)
+    if df.empty:
+        continue
+    stem = csv_path.stem  # e.g. team_boys_division_1
+    gender   = "Boys"  if "_boys_"  in stem else "Girls"
+    division = stem.split("_division_")[-1].replace("_", " ")
+    team_data.append({
+        "gender":   gender,
+        "division": division,
+        "df":       df.head(10),
+    })
+
+DIVISION_ORDER_T = {"1": 0, "2": 1, "3": 2, "4": 3, "4 other": 4}
+team_data.sort(key=lambda x: (
+    DIVISION_ORDER_T.get(x["division"], 9),
+    0 if x["gender"] == "Boys" else 1,
+))
+
+# Build team rankings HTML
+team_html = ""
+for entry in team_data:
+    label  = f"Top 10 Teams · {entry['gender']} Division {entry['division']}"
+    anchor = f"team_{entry['gender'].lower()}_div{entry['division'].replace(' ','')}"
+    df     = entry["df"]
+
+    thead = "<thead><tr>" + "".join(
+        f'<th onclick="sortTable(this)">{col}</th>'
+        for col in df.columns
+    ) + "</tr></thead>"
+    tbody = "<tbody>" + "".join(
+        "<tr>" + "".join(f"<td>{row[col]}</td>" for col in df.columns) + "</tr>"
+        for _, row in df.iterrows()
+    ) + "</tbody>"
+
+    team_html += f"""
+    <section id="{anchor}">
+      <div class="section-header">
+        <h2>{label}</h2>
+      </div>
+      <div class="table-wrap">
+        <table class="rankings-table">{thead}{tbody}</table>
+      </div>
+    </section>
+    """
 
 # Load all CSVs and filter
 all_data = []
@@ -106,6 +153,10 @@ for entry in all_data:
     nav_groups[f"Division {division}"].append((label, anchor))
 
 # Build nav HTML grouped by division
+team_nav = "".join(
+    f'<a href="#team_{e["gender"].lower()}_div{e["division"].replace(" ","")}">Teams · {e["gender"]} D{e["division"]}</a>'
+    for e in team_data
+)
 nav_html = ""
 for div_label, links in nav_groups.items():
     nav_html += f'<span class="nav-group-label">{div_label}</span>'
@@ -183,8 +234,9 @@ html = f"""<!DOCTYPE html>
   <h1>Michigan High School Tennis Rankings</h1>
   <p>Updated automatically everyday at 4am EDT. Last update: {updated}.</p>
 </header>
-<nav><a class="nav-about" href="about.html">About &amp; Methodology</a>{nav_html}</nav>
+<nav><a class="nav-about" href="about.html">About &amp; Methodology</a>{team_nav}<span class="nav-group-label">Individual</span>{nav_html}</nav>
 <main>
+{team_html}
 {tables_html}
 </main>
 <footer>Rankings computed using TrueSkill + Graph Reachability (TGRS). Data from TennisReporting.com.</footer>
