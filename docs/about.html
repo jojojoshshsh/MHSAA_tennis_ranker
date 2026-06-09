@@ -53,8 +53,10 @@
     <p>
       These rankings are computed using a system called <strong>TGRS</strong> (Tennis Graph Ranking Score).
       It combines several independent signals — skill rating, strength of schedule, win graph reachability,
-      and quality of wins — into a single number that attempts to reflect how strong a player or doubles
-      pair truly is, even when they haven't played each other directly.
+and quality of wins — into a single number that attempts to reflect how strong a player or doubles
+pair truly is, even when they haven't played each other directly. The practical goal of TGRS is to
+estimate the seed a player is likely to receive at the MHSAA state tournament — it rewards not just
+skill but the breadth of competition and chain of wins that selectors consider when seeding.
     </p>
     <p>
       Rankings are computed separately for Boys and Girls, for Singles and Doubles, and within each
@@ -91,7 +93,11 @@
     <p>
       The conservative rating used for ranking is <strong>μ − 3σ</strong>, which represents a lower-bound
       confidence estimate. Players with few matches will have high σ and therefore a lower conservative rating,
-      which reflects genuine uncertainty rather than poor performance.
+which reflects genuine uncertainty rather than poor performance. If you want a pure
+estimate of a player's skill independent of scheduling and graph structure, sorting
+by <strong>ts_rating</strong> (the conservative TrueSkill rating, μ − 3σ) is the
+most direct signal — it ignores who you've beaten and how connected you are, and
+simply asks: how good does this player appear to be based on match outcomes alone?
     </p>
   </section>
 
