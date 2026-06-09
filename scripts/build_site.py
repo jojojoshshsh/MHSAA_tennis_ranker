@@ -181,7 +181,7 @@ html = f"""<!DOCTYPE html>
 <body>
 <header>
   <h1>Michigan High School Tennis Rankings</h1>
-  <p>Updated automatically everyday at 5am EDT. Last update: {updated}.</p>
+  <p>Updated automatically everyday at 4am EDT. Last update: {updated}.</p>
 </header>
 <nav><a class="nav-about" href="about.html">About &amp; Methodology</a>{nav_html}</nav>
 <main>
