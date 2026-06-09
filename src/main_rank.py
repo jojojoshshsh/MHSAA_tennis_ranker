@@ -290,7 +290,7 @@ def build_team_rankings(singles_rows, doubles_rows):
         return
 
     df = df[df["flight"].astype(str).isin(ALLOWED_FLIGHTS)]
-    df["TGRS"] = pd.to_numeric(df["TGRS"], errors="coerce").fillna(0)
+    df["TGRS"] = pd.to_numeric(df["TGRS_scaled"], errors="coerce").fillna(0)
 
     # For each school+gender+division+flight+category, take the best TGRS
     best = (
