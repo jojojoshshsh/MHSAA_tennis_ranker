@@ -1,92 +1,92 @@
 rank,school,team_score
-1,Bloomfield Hills Cranbrook Kingswood,8295.0454
-2,Detroit Country Day,8289.6527
-3,Holland Christian,8277.7349
-4,Ann Arbor Greenhills,8238.9147
-5,Haslett,8220.9825
-6,Hudsonville Unity Christian,8210.983
-7,Chelsea,8205.0277
-8,Grand Rapids South Christian,8200.4396
-9,East Grand Rapids,8187.774
-10,Petoskey,8185.4876
-11,St. Joseph,8178.8662
-12,Ludington,8177.0948
-13,Dewitt,8170.3952
-14,Zeeland West,8164.907
-15,Big Rapids,8148.3542
-16,Ada Forest Hills Eastern,8146.4888
-17,Middleville Thornapple Kellogg,8143.8854
-18,Richland Gull Lake,8139.6753
-19,Zeeland East,8139.1729
-20,Mason,8135.9778
-21,Sturgis,8131.3428
-22,Hamilton,8115.0781
-23,Parma Western,8112.1939
-24,Cadillac,8107.7563
-25,Coldwater,8044.3986
-26,St. Clair,8041.9198
-27,St. Johns,8040.8316
-28,Fowlerville,8037.6419
-29,Jackson Northwests,7994.5919
-30,Milan,7987.1732
-31,Grand Rapids Christian,6953.821
-32,Stevensville Lakeshore,6910.0567
-33,Trenton,6869.63
-34,Auburn Hills Avondale,6811.4105
-35,Riverview,6778.5861
-36,Vicksburg,6665.2614
-37,Spring Lake,6657.0063
-38,Bay City John Glenn,6554.6131
-39,Marshall,6548.1265
-40,Owosso,6546.1288
-41,Coopersville,6542.2738
-42,Adrian,6535.1872
-43,Battle Creek Harper Creek,6529.3397
-44,Madison Heights Lamphere,6507.485
-45,Eaton Rapids,6500.1383
-46,Ionia,5062.8577
-47,Greenville,4992.8134
-48,Edwardsburg,4458.9736
-49,Niles,4208.5095
-50,Sparta,4146.1647
-51,Clio,3910.3414
-52,Walled Lake Western,3895.2914
-53,Marysville,3873.2162
-54,Wyoming Kelloggsville,3866.2253
-55,Traverse City Central,3849.9683
-56,Grand Rapids NorthPointe Christian,3833.0305
-57,Traverse City West,3537.8531
-58,Holland,2781.3246
-59,Comstock Park,2724.0714
-60,Grand Rapids West Catholic,2677.0297
-61,Mattawan,2666.217
-62,Battle Creek Lakeview,2658.767
-63,Flint Kearsley,2382.4717
-64,Tecumseh,2380.1691
-65,Paw Paw,2342.2317
-66,Jackson,2332.6943
-67,Portland,2331.7939
-68,Otsego,2328.8499
-69,Cedar Springs,1590.6824
-70,Holt,1495.813
-71,Plainwell,1494.8643
-72,Grand Rapids Northview,1494.0989
-73,Muskegon Mona Shores,1488.8969
-74,Wayland,1487.234
-75,Battle Creek Pennfield,1202.8601
-76,Charlotte,1202.4664
-77,Hemlock,1185.2462
-78,Detroit U-D Jesuit,1180.1239
-79,Garden City,1158.5043
-80,Fruitport,144.0276
-81,Alma,116.9759
-82,Lansing Eastern,105.133
-83,Grandville Calvin Christian,47.1983
-84,Grant,45.3164
-85,Lowell,42.3482
-86,Carleton Airport,37.0423
-87,Fenton,27.6217
-88,Frankenmuth,22.7815
-89,Kalamazoo Central,22.7231
-90,Lake Odessa Lakewood,18.0417
-91,Wyoming,10.5205
+1,Detroit Country Day,80.02
+2,Bloomfield Hills Cranbrook Kingswood,76.66
+3,Holland Christian,63.33
+4,Ann Arbor Greenhills,54.33
+5,Hudsonville Unity Christian,36.68
+6,Haslett,34.33
+7,Grand Rapids South Christian,27.67
+8,East Grand Rapids,24.33
+9,Chelsea,23.32
+10,Big Rapids,22.0
+11,Petoskey,20.99
+12,Ludington,20.67
+13,St. Joseph,18.66
+14,Dewitt,15.32
+15,Parma Western,14.0
+16,Zeeland West,12.99
+17,Ada Forest Hills Eastern,11.99
+17,Richland Gull Lake,11.99
+19,Mason,10.66
+20,Hamilton,8.33
+21,Stevensville Lakeshore,7.66
+22,Cadillac,7.33
+22,Grand Rapids Christian,7.33
+22,Sturgis,7.33
+25,Spring Lake,6.33
+25,Vicksburg,6.33
+27,Middleville Thornapple Kellogg,6.0
+27,Zeeland East,6.0
+29,Coldwater,5.33
+30,Fowlerville,5.0
+31,Holland,4.33
+32,Adrian,3.0
+33,Bay City John Glenn,2.0
+33,Eaton Rapids,2.0
+33,Grand Rapids West Catholic,2.0
+33,Jackson Northwests,2.0
+33,Milan,2.0
+33,St. Clair,2.0
+33,St. Johns,2.0
+40,Detroit U-D Jesuit,1.0
+40,Ionia,1.0
+40,Madison Heights Lamphere,1.0
+40,Traverse City Central,1.0
+44,Alma,0.0
+44,Auburn Hills Avondale,0.0
+44,Battle Creek Harper Creek,0.0
+44,Battle Creek Lakeview,0.0
+44,Battle Creek Pennfield,0.0
+44,Carleton Airport,0.0
+44,Cedar Springs,0.0
+44,Charlotte,0.0
+44,Clio,0.0
+44,Comstock Park,0.0
+44,Coopersville,0.0
+44,Edwardsburg,0.0
+44,Fenton,0.0
+44,Flint Kearsley,0.0
+44,Frankenmuth,0.0
+44,Fruitport,0.0
+44,Garden City,0.0
+44,Grand Rapids NorthPointe Christian,0.0
+44,Grand Rapids Northview,0.0
+44,Grandville Calvin Christian,0.0
+44,Grant,0.0
+44,Greenville,0.0
+44,Hemlock,0.0
+44,Holt,0.0
+44,Jackson,0.0
+44,Kalamazoo Central,0.0
+44,Lake Odessa Lakewood,0.0
+44,Lansing Eastern,0.0
+44,Lowell,0.0
+44,Marshall,0.0
+44,Marysville,0.0
+44,Mattawan,0.0
+44,Muskegon Mona Shores,0.0
+44,Niles,0.0
+44,Otsego,0.0
+44,Owosso,0.0
+44,Paw Paw,0.0
+44,Plainwell,0.0
+44,Portland,0.0
+44,Riverview,0.0
+44,Sparta,0.0
+44,Tecumseh,0.0
+44,Traverse City West,0.0
+44,Trenton,0.0
+44,Walled Lake Western,0.0
+44,Wayland,0.0
+44,Wyoming,0.0
+44,Wyoming Kelloggsville,0.0

@@ -1,77 +1,77 @@
 rank,school,team_score
-1,Troy,8313.6059
-2,Bloomfield Hills,8299.8642
-3,Detroit Catholic Central,8268.4536
-4,Ann Arbor Skyline,8260.996
-5,Northville,8254.1797
-6,Rockford,8241.7075
-7,Novi,8236.8361
-8,Holland West Ottawa,8216.8822
-9,Okemos,8215.4468
-10,Troy Athens,8209.5816
-11,Clarkston,8208.52
-12,Ann Arbor Pioneer,8206.0798
-13,Rochester Hills Stoney Creek,8204.2283
-14,Rochester Adams,8202.1981
-15,Rochester,8196.2001
-16,Bloomfield Hills Brother Rice,8184.9848
-17,Ann Arbor Huron,8168.211
-18,Brighton,8152.1452
-19,Hudsonville,8109.0501
-20,Utica Ford,8075.5408
-21,East Kentwood,8059.7335
-22,Romeo,8049.0185
-23,Salem,8045.2352
-24,Grand Haven,8039.3519
-25,Jenison,8037.4062
-26,Grandville,8032.4311
-27,Utica Eisenhower,8016.5121
-28,Saline,8011.0258
-29,Grand Ledge,8006.8176
-30,Macomb L'Anse Creuse North,8002.4165
-31,New Baltimore Anchor Bay,8002.3102
-32,Grand Blanc,7998.8111
-33,Warren De La Salle Collegiate,7986.9416
-34,Holt,7975.4916
-35,Walled Lake Northern,7973.1177
-36,Utica,6874.2978
-37,Port Huron Northern,6861.2719
-38,Kalamazoo Loy Norrix,6859.2525
-39,Monroe,6809.5616
-40,West Bloomfield,6547.3767
-41,Hartland,6529.5082
-42,Caledonia,6528.7778
-43,Traverse City West,6527.0812
-44,Plymouth,6520.8535
-45,Saginaw Heritage,6520.5405
-46,Macomb Dakota,6520.2326
-47,Lake Orion,6501.4908
-48,Clinton Township Chippewa Valley,5748.8937
-49,Kalamazoo Central,5285.3696
-50,Oxford,5051.2149
-51,Sterling Heights Stevenson,4294.0337
-52,Livonia Stevenson,4266.3462
-53,Grosse Pointe Woods University Liggett,4213.2117
-54,Temperance Bedford,3819.1527
-55,Dearborn Edsel Ford,3805.7671
-56,Ann Arbor Greenhills,3553.3095
-57,Dearborn,3134.4625
-58,Fraser,3131.8508
-59,Warren Mott,3087.9239
-60,Livonia Churchill,2820.6079
-61,Belleville,2778.2739
-62,Davison,2709.5942
-63,Livonia Franklin,2663.502
-64,Brownstown Woodhaven,2406.0957
-65,Harrison Township L'ANSE CREUSE,1556.0718
-66,St Clair Shores Lakeview,1539.9551
-67,Portage Central,1502.9982
-68,Traverse City Central,1497.3157
-69,Howell,1246.9031
-70,Birmingham Seaholm,1188.431
-71,Birmingham Groves,1177.5077
-72,Berkley,1172.8276
-73,Dexter,1169.2821
-74,Wyandotte Roosevelt,1165.3971
-75,Grand Rapids Union,1160.7509
-76,Dearborn Fordson,55.9294
+1,Bloomfield Hills,76.68
+2,Troy,76.67
+3,Detroit Catholic Central,53.34
+4,Ann Arbor Skyline,43.33
+5,Northville,40.01
+6,Troy Athens,34.33
+7,Rockford,30.0
+8,Rochester,28.66
+9,Rochester Adams,27.67
+10,Bloomfield Hills Brother Rice,27.66
+10,Novi,27.66
+10,Okemos,27.66
+13,Ann Arbor Pioneer,27.65
+14,Rochester Hills Stoney Creek,21.99
+15,Holland West Ottawa,19.98
+16,Ann Arbor Huron,17.66
+17,Clarkston,17.65
+18,Brighton,11.99
+19,Hudsonville,11.67
+20,Utica Ford,8.33
+21,Sterling Heights Stevenson,6.67
+22,Salem,6.33
+23,Grand Haven,6.0
+24,East Kentwood,5.33
+25,Romeo,5.0
+26,Grand Ledge,4.0
+26,Jenison,4.0
+26,Saline,4.0
+26,West Bloomfield,4.0
+30,Ann Arbor Greenhills,3.0
+30,Grandville,3.0
+30,Grosse Pointe Woods University Liggett,3.0
+30,Macomb L'Anse Creuse North,3.0
+30,New Baltimore Anchor Bay,3.0
+30,Utica Eisenhower,3.0
+36,Port Huron Northern,2.0
+36,Traverse City West,2.0
+36,Warren De La Salle Collegiate,2.0
+39,Berkley,1.0
+39,Birmingham Seaholm,1.0
+39,Clinton Township Chippewa Valley,1.0
+39,Fraser,1.0
+39,Grand Blanc,1.0
+39,Holt,1.0
+39,Kalamazoo Loy Norrix,1.0
+39,Lake Orion,1.0
+39,Livonia Stevenson,1.0
+39,Plymouth,1.0
+39,Portage Central,1.0
+39,Saginaw Heritage,1.0
+39,Traverse City Central,1.0
+39,Utica,1.0
+39,Walled Lake Northern,1.0
+54,Belleville,0.0
+54,Birmingham Groves,0.0
+54,Brownstown Woodhaven,0.0
+54,Caledonia,0.0
+54,Davison,0.0
+54,Dearborn,0.0
+54,Dearborn Edsel Ford,0.0
+54,Dearborn Fordson,0.0
+54,Dexter,0.0
+54,Grand Rapids Union,0.0
+54,Harrison Township L'ANSE CREUSE,0.0
+54,Hartland,0.0
+54,Howell,0.0
+54,Kalamazoo Central,0.0
+54,Livonia Churchill,0.0
+54,Livonia Franklin,0.0
+54,Macomb Dakota,0.0
+54,Monroe,0.0
+54,Oxford,0.0
+54,St Clair Shores Lakeview,0.0
+54,Temperance Bedford,0.0
+54,Warren Mott,0.0
+54,Wyandotte Roosevelt,0.0

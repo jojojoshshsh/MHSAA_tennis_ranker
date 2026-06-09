@@ -1,78 +1,78 @@
 rank,school,team_score
-1,Grosse Pointe Woods University Liggett,8249.6454
-2,Berrien Springs,8229.6092
-3,Jackson Lumen Christi,8227.4468
-4,Maple City Glen Lake,8211.5386
-5,Pontiac Notre Dame Prep,8191.2048
-6,Paw Paw,8184.1365
-7,Allegan,8181.7889
-8,Grand Rapids West Catholic,8180.4936
-9,Lansing Christian School,8163.9336
-10,Traverse City St Francis,8162.334
-11,Grand Rapids NorthPointe Christian,8157.5464
-12,Whitehall,8154.069
-13,Williamston,8153.1496
-14,Grosse Ile,8148.0321
-15,Kalamazoo Christian,8133.397
-16,Lansing Catholic,8120.6679
-17,Flint Powers Catholic,8117.4105
-18,Portland,8049.9997
-19,Croswell-Lexington,8041.0236
-20,Essexville Garber,8016.9092
-21,Otsego,8012.4218
-22,Imlay City,7994.9913
-23,Hillsdale,7940.6346
-24,Niles Brandywine,6989.4292
-25,Grandville Calvin Christian,6969.4955
-26,Sandusky,6896.2544
-27,Saginaw Nouvel Catholic Central,6888.1977
-28,Kalamazoo Hackett Catholic Prep,6669.8624
-29,Ann Arbor Father Gabriel Richard,6650.4688
-30,Ortonville Brandon,6590.6718
-31,Wayland,6579.3657
-32,Three Rivers,6566.6514
-33,Bay City Western,6549.0202
-34,Lake Orion,6500.825
-35,Buchanan,5443.6321
-36,Muskegon Western Michigan Christian,5413.8111
-37,Yale,5405.7798
-38,Hemlock,5311.794
-39,Brooklyn Columbia Central,5302.2189
-40,Plainwell,5298.0597
-41,West Bloomfield FJA,5206.1713
-42,Goodrich,5202.2626
-43,North Muskegon,5174.1625
-44,Grand Rapids Catholic Central,5133.536
-45,Battle Creek Pennfield,5114.8164
-46,Harbor Springs,4237.9083
-47,Midland Bullock Creek,3881.8591
-48,Almont,3880.6204
-49,Ovid-Elsie,3875.9659
-50,South Haven,3663.3284
-51,Plymouth Christian Academy,3571.4092
-52,Comstock Park,2812.4378
-53,Clio,2742.4298
-54,Elk Rapids,2430.7378
-55,Armada,2420.8103
-56,Frankenmuth,2378.8726
-57,Big Rapids,2339.2642
-58,Caro,2326.1257
-59,Coopersville,1495.909
-60,Sturgis,1494.8738
-61,Edwardsburg,1483.5869
-62,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),1271.4008
-63,Bronson,1252.1457
-64,Niles,1215.257
-65,Chesaning,1170.5441
-66,Dearborn Divine Child,1167.3843
-67,Grand Rapids Northview,1165.3596
-68,Flint Kearsley,1157.7535
-69,Lake Odessa Lakewood,86.9363
-70,Wyoming Kelloggsville,67.9371
-71,Grant,58.3775
-72,Alma,32.4858
-73,Fruitport,30.2326
-74,Richmond,28.8665
-75,Charlotte,25.2288
-76,Marysville,18.9138
-77,Fremont,14.7898
+1,Grosse Pointe Woods University Liggett,73.34
+2,Jackson Lumen Christi,63.32
+3,Berrien Springs,60.01
+4,Maple City Glen Lake,43.34
+5,Williamston,33.33
+6,Grand Rapids West Catholic,31.99
+7,Traverse City St Francis,28.66
+8,Lansing Christian School,27.34
+9,Pontiac Notre Dame Prep,26.66
+10,Lansing Catholic,25.33
+11,Allegan,24.33
+12,Paw Paw,22.0
+13,Grosse Ile,19.67
+14,Grand Rapids NorthPointe Christian,19.66
+15,West Bloomfield FJA,17.67
+16,Kalamazoo Christian,16.33
+17,Ann Arbor Father Gabriel Richard,15.33
+17,Flint Powers Catholic,15.33
+19,Whitehall,15.32
+20,Kalamazoo Hackett Catholic Prep,13.0
+21,Goodrich,12.0
+22,Niles Brandywine,11.99
+23,Plymouth Christian Academy,10.0
+24,North Muskegon,7.66
+25,Grandville Calvin Christian,7.33
+26,Grand Rapids Catholic Central,6.33
+27,Ortonville Brandon,4.33
+27,Sandusky,4.33
+29,Croswell-Lexington,4.0
+29,Essexville Garber,4.0
+29,Otsego,4.0
+29,Portland,4.0
+29,Saginaw Nouvel Catholic Central,4.0
+29,Three Rivers,4.0
+35,Elk Rapids,3.33
+36,Buchanan,3.0
+36,Imlay City,3.0
+38,Battle Creek Pennfield,2.0
+38,Bay City Western,2.0
+38,Muskegon Western Michigan Christian,2.0
+38,South Haven,2.0
+38,Wayland,2.0
+38,Yale,2.0
+44,Armada,1.0
+44,Big Rapids,1.0
+44,Bronson,1.0
+44,Comstock Park,1.0
+44,Lake Orion,1.0
+44,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),1.0
+50,Alma,0.0
+50,Almont,0.0
+50,Brooklyn Columbia Central,0.0
+50,Caro,0.0
+50,Charlotte,0.0
+50,Chesaning,0.0
+50,Clio,0.0
+50,Coopersville,0.0
+50,Dearborn Divine Child,0.0
+50,Edwardsburg,0.0
+50,Flint Kearsley,0.0
+50,Frankenmuth,0.0
+50,Fremont,0.0
+50,Fruitport,0.0
+50,Grand Rapids Northview,0.0
+50,Grant,0.0
+50,Harbor Springs,0.0
+50,Hemlock,0.0
+50,Hillsdale,0.0
+50,Lake Odessa Lakewood,0.0
+50,Marysville,0.0
+50,Midland Bullock Creek,0.0
+50,Niles,0.0
+50,Ovid-Elsie,0.0
+50,Plainwell,0.0
+50,Richmond,0.0
+50,Sturgis,0.0
+50,Wyoming Kelloggsville,0.0
