@@ -174,14 +174,16 @@ html = f"""<!DOCTYPE html>
   .rankings-table tr:hover td {{ background: #eef4fb; }}
   .rankings-table td:first-child {{ font-weight: 600; color: #1a3a5c; width: 36px; }}
   footer {{ text-align: center; color: #888; font-size: .78rem; padding: 2rem; }}
+  .nav-about {{ color: #ffd580; font-size: .8rem; padding: .2rem .6rem; border-radius: 4px; border: 1px solid rgba(255,213,128,.3); text-decoration: none; margin-right: .75rem; }}
+  .nav-about:hover {{ background: rgba(255,213,128,.1); }}
 </style>
 </head>
 <body>
 <header>
   <h1>Michigan High School Tennis Rankings</h1>
-  <p>Updated automatically every Monday at 6am EDT. Last update: {updated}.</p>
+  <p>Updated automatically everyday at 5am EDT. Last update: {updated}.</p>
 </header>
-<nav>{nav_html}</nav>
+<nav><a class="nav-about" href="about.html">About &amp; Methodology</a>{nav_html}</nav>
 <main>
 {tables_html}
 </main>
