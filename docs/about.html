@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About the Rankings — Michigan High School Tennis</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  header { background: #1a3a5c; color: white; padding: 2rem 1.5rem 1.5rem; }
+  header h1 { font-size: 1.6rem; font-weight: 600; margin-bottom: .4rem; }
+  header p { opacity: .8; font-size: .9rem; }
+  nav { background: #132d47; padding: .75rem 1.5rem; display: flex; gap: 1rem; }
+  nav a { color: #7fb8e8; text-decoration: none; font-size: .9rem; }
+  nav a:hover { text-decoration: underline; }
+  main { max-width: 860px; margin: auto; padding: 2rem 1.5rem; }
+  section { background: white; border-radius: 10px; padding: 2rem; margin-bottom: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,.07); }
+  h2 { font-size: 1.2rem; font-weight: 600; color: #1a3a5c; margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e8f0f8; }
+  h3 { font-size: 1rem; font-weight: 600; color: #2c5f8a; margin: 1.25rem 0 .5rem; }
+  p { margin-bottom: .85rem; font-size: .95rem; }
+  ul, ol { margin: .5rem 0 .85rem 1.5rem; font-size: .95rem; }
+  li { margin-bottom: .4rem; }
+  .formula-box {
+    background: #f0f5fb; border-left: 4px solid #1a3a5c;
+    border-radius: 0 8px 8px 0; padding: 1rem 1.25rem;
+    font-family: "Courier New", monospace; font-size: .85rem;
+    margin: 1rem 0; line-height: 1.8; overflow-x: auto;
+  }
+  .component-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin: 1rem 0; }
+  .component-table th { background: #1a3a5c; color: white; padding: 8px 12px; text-align: left; font-weight: 500; }
+  .component-table td { padding: 7px 12px; border-bottom: 1px solid #eef0f3; vertical-align: top; }
+  .component-table tr:nth-child(even) td { background: #f8fafc; }
+  .component-table td:first-child { font-family: monospace; font-size: .82rem; white-space: nowrap; color: #1a3a5c; font-weight: 600; }
+  .component-table td:nth-child(2) { width: 60px; text-align: right; font-weight: 600; color: #2c5f8a; }
+  .caveat { background: #fff8e6; border-left: 4px solid #e6a817; border-radius: 0 8px 8px 0; padding: .9rem 1.1rem; margin: 1rem 0; font-size: .9rem; }
+  .caveat strong { color: #b07d0a; }
+  footer { text-align: center; color: #888; font-size: .78rem; padding: 2rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Michigan High School Tennis Rankings</h1>
+  <p>How the rankings work</p>
+</header>
+<nav>
+  <a href="index.html">← Back to Rankings</a>
+  <a href="about.html">About</a>
+</nav>
+<main>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      These rankings are computed using a system called <strong>TGRS</strong> (Tennis Graph Ranking Score).
+      It combines several independent signals — skill rating, strength of schedule, win graph reachability,
+      and quality of wins — into a single number that attempts to reflect how strong a player or doubles
+      pair truly is, even when they haven't played each other directly.
+    </p>
+    <p>
+      Rankings are computed separately for Boys and Girls, for Singles and Doubles, and within each
+      MHSAA division (1–4). Only flights 1, 2, and 3 are included — flight 4 and above are excluded
+      because they typically reflect JV or lower-level competition and would distort comparisons.
+    </p>
+    <div class="caveat">
+      <strong>Important limitation:</strong> because rankings are based only on flights 1–3, players
+      who competed exclusively in flight 4 or higher will not appear, and some cross-division comparisons
+      may be imperfect. The system is designed to rank within buckets, not to produce a single statewide list.
+    </div>
+  </section>
+
+  <section>
+    <h2>Step 1 — TrueSkill Rating</h2>
+    <p>
+      Every player starts with a default skill estimate (μ = 25, σ = 8.33). After each match,
+      both the winner's and loser's ratings are updated using the
+      <strong>TrueSkill algorithm</strong> (Herbrich et al., 2007), a Bayesian skill rating system
+      originally developed at Microsoft Research for Xbox Live matchmaking.
+    </p>
+    <p>
+      TrueSkill models each player's skill as a Gaussian distribution: μ (mu) is the estimated skill mean,
+      and σ (sigma) is the uncertainty. A win against a strong opponent moves your μ up more than a win
+      against a weak opponent. Over time, σ shrinks as more matches are played and the system becomes
+      more confident in your rating.
+    </p>
+    <p>
+      Two TrueSkill models are computed for every player:
+    </p>
+    <ul>
+      <li><strong>Global TrueSkill</strong> — trained on all matches in the same gender+category pool, ignoring division and flight. This gives a broad skill estimate that can compare players across divisions.</li>
+      <li><strong>Local TrueSkill</strong> — trained only on matches within the same gender+category+division+flight bucket. This captures performance within the specific competitive context.</li>
+    </ul>
+    <p>
+      The conservative rating used for ranking is <strong>μ − 3σ</strong>, which represents a lower-bound
+      confidence estimate. Players with few matches will have high σ and therefore a lower conservative rating,
+      which reflects genuine uncertainty rather than poor performance.
+    </p>
+  </section>
+
+  <section>
+    <h2>Step 2 — Win Graph &amp; Reachability</h2>
+    <p>
+      Every match result is stored as a directed edge in a win graph: an arrow from the winner to the loser.
+      When two players have played multiple times, only the most recent result is kept (so a rematch win
+      updates the direction of the edge).
+    </p>
+    <p>
+      <strong>Reachability</strong> measures how many other players you can reach by following win-edges
+      through the graph. If you beat player A, and player A beat player B, you can "reach" both A and B.
+      A high reachability score means you are connected to a large portion of the competitive field through
+      a chain of wins — even if you haven't played all of them directly.
+    </p>
+    <ul>
+      <li><strong>Global reachability</strong> — counted across the entire gender+category pool, so cross-division wins count.</li>
+      <li><strong>Local reachability</strong> — counted only within the same division+flight bucket.</li>
+    </ul>
+    <p>
+      Reachability is the single largest component of TGRS because it directly rewards beating players
+      who themselves have strong records, and it is robust to scheduling differences between schools.
+    </p>
+  </section>
+
+  <section>
+    <h2>Step 3 — Strength of Schedule (SOS)</h2>
+    <p>
+      SOS is the average conservative TrueSkill rating of all opponents a player has faced.
+      A player who consistently faces strong competition will have a higher SOS even if their win-loss
+      record is modest.
+    </p>
+    <p>Two versions are computed:</p>
+    <ul>
+      <li><strong>Global SOS</strong> — opponent ratings drawn from the global TrueSkill pool. Rewards playing outside your division.</li>
+      <li><strong>Local SOS</strong> — opponent ratings drawn from the local bucket model. Reflects the quality of competition within your specific flight.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Step 4 — Quality Wins</h2>
+    <p>
+      Quality wins looks at the top 3 opponents you have beaten (by global TrueSkill μ) and takes
+      their average. This rewards players who have at least a few wins against genuinely strong competition,
+      rather than just accumulating wins against weak opponents.
+    </p>
+    <p>
+      Only direct wins count here — the global win graph is used so cross-division and cross-flight wins
+      are included.
+    </p>
+  </section>
+
+  <section>
+    <h2>The TGRS Formula</h2>
+    <p>All components are combined into a single weighted sum:</p>
+    <div class="formula-box">
+TGRS =  w_global_mu      × global_ts_mu
+      + w_global_sos      × global_sos
+      + w_global_reach    × global_reachability
+      + w_quality_wins    × quality_wins
+      + w_local_sos       × local_sos
+      + w_local_mu        × local_ts_mu
+      + w_local_reach     × local_reachability
+    </div>
+
+    <p>The approximate weights for each component are:</p>
+    <table class="component-table">
+      <thead>
+        <tr><th>Component</th><th>Weight</th><th>What it measures</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>global_ts_mu</td>
+          <td>~0.40</td>
+          <td>Your skill mean from the full gender+category TrueSkill model — the broadest skill signal</td>
+        </tr>
+        <tr>
+          <td>global_sos</td>
+          <td>~0.36</td>
+          <td>Average strength of all opponents you've faced, rated by the global model</td>
+        </tr>
+        <tr>
+          <td>global_reachability</td>
+          <td>~0.88</td>
+          <td>How many players you can reach through chains of wins across the whole pool — the largest single component</td>
+        </tr>
+        <tr>
+          <td>quality_wins</td>
+          <td>~0.41</td>
+          <td>Average global μ of your top 3 beaten opponents</td>
+        </tr>
+        <tr>
+          <td>local_sos</td>
+          <td>~0.40</td>
+          <td>Average strength of opponents within your specific division+flight bucket</td>
+        </tr>
+        <tr>
+          <td>local_ts_mu</td>
+          <td>~0.06</td>
+          <td>Your skill mean from the local bucket TrueSkill model</td>
+        </tr>
+        <tr>
+          <td>local_reachability</td>
+          <td>~0.50</td>
+          <td>How many players you can reach through wins within your own division+flight</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="caveat">
+      <strong>Note:</strong> weights are tuned and may be adjusted over time as the system is refined.
+      The values shown are approximate — the exact numbers are stored in <code>graph_engine.py</code>.
+    </div>
+  </section>
+
+  <section>
+    <h2>TGRS Scaled</h2>
+    <p>
+      The raw TGRS score is not easy to interpret on its own. To make it more readable, a
+      <strong>TGRS Scaled</strong> score is also computed within each division+flight bucket:
+    </p>
+    <ol>
+      <li>Find the 30th-ranked player's TGRS in the bucket and floor it to the nearest whole number.</li>
+      <li>Subtract that value from every player's TGRS. Anyone ranked below 30th is clipped to 0.</li>
+      <li>Scale the results so the top player in the bucket scores exactly 100.</li>
+    </ol>
+    <p>
+      This means a TGRS Scaled of 100 is the best player in the bucket, a score around 50 is roughly
+      mid-tier among the top 30, and a score of 0 means the player ranked outside the top 30 by TGRS.
+    </p>
+  </section>
+
+  <section>
+    <h2>Team Rankings</h2>
+    <p>
+      Team scores are computed by summing the best TGRS Scaled score per school across all six lineup slots:
+      Singles flights 1, 2, 3 and Doubles flights 1, 2, 3. The best-ranked player (or pair) from each school
+      in each slot contributes their TGRS Scaled score to the team total.
+    </p>
+    <p>
+      If a school has no ranked player in a slot, that slot contributes 0. The maximum possible team score
+      is 600 (100 in all six slots), which would require having the top-ranked player/pair in the entire
+      division for every flight.
+    </p>
+    <div class="caveat">
+      <strong>Note:</strong> team rankings are experimental. Because individual rankings only include
+      flights 1–3 and require a minimum number of matches, some schools may be missing players in certain
+      slots even if they competed in that flight.
+    </div>
+  </section>
+
+  <section>
+    <h2>Data &amp; Limitations</h2>
+    <p>Match data is crawled automatically from TennisReporting.com, which is the platform used by most
+    Michigan high school tennis programs to report results. Rankings are updated daily at 4am EDT.</p>
+    <p>Known limitations:</p>
+    <ul>
+      <li>Only flights 1, 2, and 3 are ranked. Flight 4+ players do not appear.</li>
+      <li>A minimum number of matches is required to appear in rankings, so players early in the season or with few recorded matches may be absent.</li>
+      <li>Division assignments come from school metadata on TennisReporting. Some schools have unusual or missing division labels that get normalized to Division 4/Other. You can report corrections by opening an issue on the GitHub repository.</li>
+      <li>Doubles pairs are treated as a single entity. If the same two players appear in different pair combinations, each combination is ranked separately.</li>
+      <li>Tournament bracket matches and regular season matches are both included. Some matches may be double-counted if reported in both contexts — deduplication is applied where possible.</li>
+      <li>Rankings reflect results within a single season only. Each season starts from scratch with no carry-over.</li>
+    </ul>
+  </section>
+
+</main>
+<footer>Michigan High School Tennis Rankings · Rankings computed using TGRS · Data from TennisReporting.com</footer>
+</body>
+</html>
