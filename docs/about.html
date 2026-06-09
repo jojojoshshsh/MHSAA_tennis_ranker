@@ -233,22 +233,38 @@ TGRS =  w_global_mu      × global_ts_mu
   <section>
     <h2>Team Rankings</h2>
     <p>
-      Team scores are computed by summing the best TGRS Scaled score per school across all six lineup slots:
-      Singles flights 1, 2, 3 and Doubles flights 1, 2, 3. The best-ranked player (or pair) from each school
-      in each slot contributes their TGRS Scaled score to the team total.
+      Team scores are computed by awarding points to each school based on where their best-ranked
+      player (or pair) finishes in each of the six lineup slots: Singles flights 1, 2, 3 and Doubles
+      flights 1, 2, 3. Only one entry per school per slot is counted — the highest-ranked player or
+      pair from that school.
     </p>
+    <p>The point values by finishing position are:</p>
+    <table class="component-table">
+      <thead>
+        <tr><th>Finish</th><th>Points</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1st</td><td>16.67</td></tr>
+        <tr><td>2nd</td><td>13.33</td></tr>
+        <tr><td>3rd – 4th</td><td>10.00</td></tr>
+        <tr><td>5th – 8th</td><td>6.67</td></tr>
+        <tr><td>9th – 16th</td><td>3.33</td></tr>
+        <tr><td>17th – 32nd</td><td>1.00</td></tr>
+        <tr><td>33rd+</td><td>0</td></tr>
+      </tbody>
+    </table>
     <p>
-      If a school has no ranked player in a slot, that slot contributes 0. The maximum possible team score
-      is 600 (100 in all six slots), which would require having the top-ranked player/pair in the entire
-      division for every flight.
+      Points are summed across all six slots for a maximum possible score of 100 (16.67 × 6).
+      A school with no ranked player in a slot scores 0 for that slot. The structure mirrors a
+      bracket seeding system — finishing first is worth significantly more than finishing second,
+      and the gaps widen toward the top to reflect the difficulty of holding a top seed.
     </p>
     <div class="caveat">
       <strong>Note:</strong> team rankings are experimental. Because individual rankings only include
-      flights 1–3 and require a minimum number of matches, some schools may be missing players in certain
-      slots even if they competed in that flight.
+      flights 1–3 and require a minimum number of matches, some schools may be missing players in
+      certain slots even if they competed in that flight.
     </div>
   </section>
-
   <section>
     <h2>Data &amp; Limitations</h2>
     <p>Match data is crawled automatically from TennisReporting.com, which is the platform used by most
