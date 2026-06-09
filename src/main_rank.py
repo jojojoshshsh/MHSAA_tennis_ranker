@@ -273,12 +273,29 @@ def export_split_csvs(rows, columns, prefix):
 
 def build_team_rankings(singles_rows, doubles_rows):
     """
-    For each gender+division, sum the top TGRS from flights 1,2,3
-    for singles and doubles per school, then rank schools by total.
+    Team score per slot:
+      rank 1        → 16.67 pts
+      rank 2        → 13.33 pts
+      rank 3-4      → 10.00 pts
+      rank 5-8      →  6.67 pts
+      rank 9-16     →  3.33 pts
+      rank 17-32    →  1.00 pts
+      rank 33+      →  0.00 pts
+    One entry per school per flight/category (best-ranked player only).
+    Sum across all 6 slots (S1,S2,S3,D1,D2,D3) for team total.
     """
     ALLOWED_FLIGHTS = {"1", "2", "3"}
     out_dir = Path("rankings_by_division_flight")
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    def rank_to_points(r):
+        if r == 1:   return 16.67
+        if r == 2:   return 13.33
+        if r <= 4:   return 10.00
+        if r <= 8:   return  6.67
+        if r <= 16:  return  3.33
+        if r <= 32:  return  1.00
+        return 0.0
 
     all_rows = (
         [dict(r, category="singles") for r in singles_rows] +
@@ -290,23 +307,26 @@ def build_team_rankings(singles_rows, doubles_rows):
         return
 
     df = df[df["flight"].astype(str).isin(ALLOWED_FLIGHTS)]
-    df["TGRS"] = pd.to_numeric(df["TGRS_scaled"], errors="coerce").fillna(0)
+    df["rank"] = pd.to_numeric(df["rank"], errors="coerce").fillna(999).astype(int)
 
-    # For each school+gender+division+flight+category, take the best TGRS
+    # One entry per school per gender+division+flight+category — best rank only
     best = (
-        df.groupby(["gender", "division", "school", "flight", "category"])["TGRS"]
-        .max()
-        .reset_index()
+        df.sort_values("rank")
+        .groupby(["gender", "division", "flight", "category", "school"])
+        .first()
+        .reset_index()[["gender", "division", "flight", "category", "school", "rank"]]
     )
 
-    # Sum across all flights and categories per school
+    best["points"] = best["rank"].apply(rank_to_points)
+
+    # Sum points across all slots per school
     team_scores = (
-        best.groupby(["gender", "division", "school"])["TGRS"]
+        best.groupby(["gender", "division", "school"])["points"]
         .sum()
         .reset_index()
-        .rename(columns={"TGRS": "team_score"})
+        .rename(columns={"points": "team_score"})
     )
-    team_scores["team_score"] = team_scores["team_score"].round(4)
+    team_scores["team_score"] = team_scores["team_score"].round(2)
     team_scores = team_scores.sort_values(
         ["gender", "division", "team_score"], ascending=[True, True, False]
     )
