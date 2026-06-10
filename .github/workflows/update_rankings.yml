@@ -24,10 +24,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Fetch fresh token
+        run: |
+          TOKEN=$(curl -s -X POST https://api.tennisreporting.com/auth/login \
+            -H "Content-Type: application/json" \
+            -d '{"email":"${{ secrets.TENNIS_EMAIL }}","password":"${{ secrets.TENNIS_PASSWORD }}"}' \
+            | python3 -c "import sys,json; print(json.load(sys.stdin)['token'])")
+          echo "TENNIS_TOKEN=$TOKEN" >> $GITHUB_ENV
+
       - name: Run crawler
         working-directory: src
-        env:
-          TENNIS_TOKEN: ${{ secrets.TENNIS_TOKEN }}
         run: |
           python - <<'EOF'
           import asyncio, json, sys, os
@@ -53,8 +59,6 @@ jobs:
 
       - name: Run rankings
         working-directory: src
-        env:
-          TENNIS_TOKEN: ${{ secrets.TENNIS_TOKEN }}
         run: |
           cp ../data/school_meta.json .
           python main_rank.py
