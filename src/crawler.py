@@ -149,7 +149,7 @@ async def crawl_school_matches(
                 break
 
             processed.add(school_id)
-            data = await fetch_school_report(session, school_id)
+            data = await fetch_school_report(session, school_id, gender_id=1)
             if data is None:
                 continue
 
