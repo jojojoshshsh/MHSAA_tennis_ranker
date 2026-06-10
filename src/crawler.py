@@ -1,13 +1,3 @@
-# crawler.py
-# BFS school crawler + event bracket fetcher.
-#
-# Event flow (updated):
-#   1. Detect eventId in school meets
-#   2. GET /event/{id}           — metadata (gender, flights, divisions/hosts)
-#   3. GET /event/{id}/seed_list_by_params  ← NEW: player id → name/school map
-#   4. POST bracket for each division/host/matchType/flight
-#   5. parse_bracket_matches() uses the seed-list lookup to resolve player info
-
 import asyncio
 import logging
 from collections import deque
@@ -40,10 +30,6 @@ def _gender_name(gender_id) -> str | None:
 def _gender_ok(target: str | None, gender: str | None) -> bool:
     return target is None or gender == target
 
-
-# ── event bracket fetcher ─────────────────────────────────────────────────────
-
-# crawler.py
 
 async def _fetch_event_matches(session: aiohttp.ClientSession,
                                event_id, seen_keys: set) -> list[dict]:
@@ -119,16 +105,10 @@ async def _fetch_event_matches(session: aiohttp.ClientSession,
     return all_matches
 
 
-# ── main BFS crawl ────────────────────────────────────────────────────────────
-
 async def crawl_school_matches(
     seed_id: int,
     max_schools: int | None = MAX_SCHOOLS,
 ) -> tuple[list[dict], dict]:
-    """
-    BFS from seed_id.  Returns (matches, school_meta).
-    school_meta: {school_id -> {name, division_boys, division_girls}}
-    """
     processed:      set   = set()
     queue:          deque = deque([seed_id])
     all_matches:    list  = []
@@ -165,11 +145,36 @@ async def crawl_school_matches(
             if meta["id"]:
                 school_meta[meta["id"]] = meta
 
+            # ── DEBUG: inspect raw meet/match structure ───────────────────
+            meets = data.get("meets", [])
+            logging.info("School %s: %d meets in response", school_id, len(meets))
+            for i, meet in enumerate(meets[:3]):  # log first 3 meets only
+                matches_map = meet.get("matches") or {}
+                logging.info(
+                    "  meet[%d] keys=%s Singles=%d Doubles=%d flights_s=%s flights_d=%s",
+                    i,
+                    list(meet.keys()),
+                    len(matches_map.get("Singles") or []),
+                    len(matches_map.get("Doubles") or []),
+                    list({str(m.get("flight","?")) for m in (matches_map.get("Singles") or [])}),
+                    list({str(m.get("flight","?")) for m in (matches_map.get("Doubles") or [])}),
+                )
+
             logging.info("Processing school %s  [done=%d  queued=%d  matches=%d]",
                          school_id, len(processed), len(queue), len(all_matches))
 
             # ── regular-season matches ────────────────────────────────────
-            for m in parse_school_matches(data, source_school_id=school_id):
+            season_matches = parse_school_matches(data, source_school_id=school_id)
+            logging.info("School %s: parse_school_matches returned %d matches",
+                         school_id, len(season_matches))
+
+            # log flight breakdown for first school only
+            if len(processed) <= 2:
+                from collections import Counter
+                flight_counts = Counter(str(m.get("flight","?")) for m in season_matches)
+                logging.info("School %s: flight breakdown=%s", school_id, dict(flight_counts))
+
+            for m in season_matches:
                 key = match_key(m)
                 if key in seen_keys:
                     continue
