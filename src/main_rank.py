@@ -284,7 +284,7 @@ def build_team_rankings(singles_rows, doubles_rows):
     One entry per school per flight/category (best-ranked player only).
     Sum across all 6 slots (S1,S2,S3,D1,D2,D3) for team total.
     """
-    ALLOWED_FLIGHTS = {"1", "2", "3"}
+    ALLOWED_FLIGHTS = {"1", "2", "3", "4"}
     out_dir = Path("rankings_by_division_flight")
     out_dir.mkdir(parents=True, exist_ok=True)
 
