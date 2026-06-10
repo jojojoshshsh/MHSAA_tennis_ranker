@@ -47,7 +47,7 @@ def _gender_ok(target: str | None, gender: str | None) -> bool:
 
 async def _fetch_event_matches(session: aiohttp.ClientSession,
                                event_id, seen_keys: set) -> list[dict]:
-    event_data = await fetch_event(session, event_id)
+    event_data = await fetch_event(session, event_id, gender_id=1)
     if not event_data:
         return []
 
