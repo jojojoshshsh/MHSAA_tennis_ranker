@@ -289,14 +289,13 @@ def build_team_rankings(singles_rows, doubles_rows):
     out_dir.mkdir(parents=True, exist_ok=True)
 
     def rank_to_points(r):
-        if r == 1:   return 16.67
-        if r == 2:   return 13.33
-        if r <= 4:   return 10.00
-        if r <= 8:   return  6.67
-        if r <= 16:  return  3.33
-        if r <= 32:  return  1.00
+        if r == 1:   return 12.5
+        if r == 2:   return 10.0
+        if r <= 4:   return  7.5
+        if r <= 8:   return  5.0
+        if r <= 16:  return  2.5
+        if r <= 32:  return  1.0
         return 0.0
-
     all_rows = (
         [dict(r, category="singles") for r in singles_rows] +
         [dict(r, category="doubles") for r in doubles_rows]
