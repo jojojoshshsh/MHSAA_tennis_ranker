@@ -59,14 +59,9 @@ estimate the seed a player is likely to receive at the MHSAA state tournament �
 skill but the breadth of competition and chain of wins that selectors consider when seeding.
     </p>
     <p>
-      Rankings are computed separately for Boys and Girls, for Singles and Doubles, and within each
-      MHSAA division (1–4). Only flights 1, 2, and 3 are included — flight 4 could not be extracted from the API data from tennisreporting.
+      Rankings are computed separately for Singles and Doubles, and within each
+      MHSAA division (1–4). Flights 1 through 4 are all included.
     </p>
-    <div class="caveat">
-      <strong>Important limitation:</strong> because rankings are based only on flights 1–3, players
-      who competed exclusively in flight 4 or higher will not appear, and some cross-division comparisons
-      may be imperfect. The system is designed to rank within buckets, not to produce a single statewide list.
-    </div>
   </section>
 
   <section>
@@ -234,8 +229,8 @@ TGRS =  w_global_mu      × global_ts_mu
     <h2>Team Rankings</h2>
     <p>
       Team scores are computed by awarding points to each school based on where their best-ranked
-      player (or pair) finishes in each of the six lineup slots: Singles flights 1, 2, 3 and Doubles
-      flights 1, 2, 3. Only one entry per school per slot is counted — the highest-ranked player or
+      player (or pair) finishes in each of the eight lineup slots: Singles flights 1, 2, 3, 4 and Doubles
+      flights 1, 2, 3, 4. Only one entry per school per slot is counted — the highest-ranked player or
       pair from that school.
     </p>
     <p>The point values by finishing position are:</p>
@@ -254,14 +249,13 @@ TGRS =  w_global_mu      × global_ts_mu
       </tbody>
     </table>
     <p>
-      Points are summed across all six slots for a maximum possible score of 100 (16.67 × 6).
+      Points are summed across all eight slots (Singles flights 1–4 and Doubles flights 1–4) for a maximum possible score of 100 (12.5 × 8).
       A school with no ranked player in a slot scores 0 for that slot. The structure mirrors a
       bracket seeding system — finishing first is worth significantly more than finishing second,
       and the gaps widen toward the top to reflect the difficulty of holding a top seed.
     </p>
     <div class="caveat">
-      <strong>Note:</strong> team rankings are experimental. Because individual rankings only include
-      flights 1–3 and require a minimum number of matches, some schools may be missing players in
+      <strong>Note:</strong> team rankings are experimental. Because individual rankings require a minimum number of matches, some schools may be missing players in
       certain slots even if they competed in that flight.
     </div>
   </section>
@@ -271,7 +265,6 @@ TGRS =  w_global_mu      × global_ts_mu
     Michigan high school tennis programs to report results. Rankings are updated daily at 4am EDT.</p>
     <p>Known limitations:</p>
     <ul>
-      <li>Only flights 1, 2, and 3 are ranked. Flight 4+ players do not appear.</li>
       <li>A minimum number of matches is required to appear in rankings, so players early in the season or with few recorded matches may be absent.</li>
       <li>Division assignments come from school metadata on TennisReporting. Some schools have unusual or missing division labels that get normalized to Division 4/Other. You can report corrections by opening an issue on the GitHub repository.</li>
       <li>Doubles pairs are treated as a single entity. If the same two players appear in different pair combinations, each combination is ranked separately.</li>
