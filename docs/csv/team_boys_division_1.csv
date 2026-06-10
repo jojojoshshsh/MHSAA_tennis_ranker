@@ -1,77 +1,87 @@
 rank,school,team_score
 1,Troy,110.01
-2,Bloomfield Hills,83.35
-3,Detroit Catholic Central,73.34
-4,Novi,47.66
-5,Rochester Adams,46.67
-6,Ann Arbor Skyline,43.33
-7,Rochester Hills Stoney Creek,42.0
+2,Bloomfield Hills,100.01
+3,Detroit Catholic Central,63.33
+4,Novi,56.67
+5,Rochester Adams,47.67
+6,Northville,46.68
+7,Ann Arbor Skyline,46.66
 8,Bloomfield Hills Brother Rice,40.99
-9,Northville,40.01
-10,Okemos,37.66
-11,Troy Athens,34.33
-12,Ann Arbor Pioneer,34.32
-13,Rockford,33.33
-14,Rochester,28.66
-15,Holland West Ottawa,26.65
-16,Ann Arbor Huron,24.33
-17,Clarkston,17.65
-18,Brighton,11.99
-19,Hudsonville,8.33
-19,Utica Ford,8.33
-21,Sterling Heights Stevenson,6.67
-22,Salem,6.33
-23,Grand Haven,6.0
-24,East Kentwood,5.33
-25,Romeo,5.0
-26,Grand Ledge,4.0
-26,Jenison,4.0
-26,Saline,4.0
-26,West Bloomfield,4.0
-30,Ann Arbor Greenhills,3.0
-30,Grandville,3.0
-30,Grosse Pointe Woods University Liggett,3.0
-30,Macomb L'Anse Creuse North,3.0
-30,New Baltimore Anchor Bay,3.0
-30,Utica Eisenhower,3.0
-36,Port Huron Northern,2.0
-36,Traverse City West,2.0
-36,Warren De La Salle Collegiate,2.0
-39,Berkley,1.0
-39,Birmingham Groves,1.0
-39,Birmingham Seaholm,1.0
-39,Clinton Township Chippewa Valley,1.0
-39,Fraser,1.0
-39,Grand Blanc,1.0
-39,Holt,1.0
-39,Kalamazoo Loy Norrix,1.0
-39,Lake Orion,1.0
-39,Livonia Stevenson,1.0
-39,Plymouth,1.0
-39,Portage Central,1.0
-39,Saginaw Heritage,1.0
-39,Traverse City Central,1.0
-39,Utica,1.0
-39,Walled Lake Northern,1.0
+9,Troy Athens,38.66
+10,Ann Arbor Pioneer,38.65
+11,Okemos,34.32
+11,Rochester Hills Stoney Creek,34.32
+13,Rockford,31.0
+14,Holland West Ottawa,30.99
+15,Rochester,30.66
+16,Ann Arbor Huron,28.66
+17,Clarkston,26.64
+18,Brighton,13.99
+19,Hudsonville,9.33
+20,West Bloomfield,8.0
+21,East Kentwood,7.33
+21,Salem,7.33
+23,Romeo,7.0
+24,Sterling Heights Stevenson,6.67
+25,Grand Haven,6.0
+26,Grand Blanc,5.0
+26,Grandville,5.0
+26,Jenison,5.0
+26,Utica Eisenhower,5.0
+26,Utica Ford,5.0
+31,Ann Arbor Greenhills,4.0
+31,Birmingham Groves,4.0
+31,New Baltimore Anchor Bay,4.0
+31,Saline,4.0
+35,Grosse Pointe Woods University Liggett,3.0
+35,Macomb L'Anse Creuse North,3.0
+35,Plymouth,3.0
+38,Holt,2.0
+38,Saginaw Heritage,2.0
+38,Traverse City West,2.0
+38,Walled Lake Northern,2.0
+42,Berkley,1.0
+42,Birmingham Seaholm,1.0
+42,Caledonia,1.0
+42,Canton,1.0
+42,Clinton Township Chippewa Valley,1.0
+42,Grand Ledge,1.0
+42,Grosse Pointe South,1.0
+42,Kalamazoo Loy Norrix,1.0
+42,Livonia Stevenson,1.0
+42,Monroe,1.0
+42,Port Huron Northern,1.0
+42,Portage Central,1.0
+42,Utica,1.0
+55,Battle Creek Lakeview,0.0
 55,Belleville,0.0
 55,Brownstown Woodhaven,0.0
-55,Caledonia,0.0
 55,Davison,0.0
 55,Dearborn,0.0
 55,Dearborn Edsel Ford,0.0
 55,Dearborn Fordson,0.0
 55,Dexter,0.0
+55,Fraser,0.0
+55,Grand Rapids Forest Hills Central,0.0
 55,Grand Rapids Union,0.0
+55,Grosse Ile,0.0
 55,Harrison Township L'ANSE CREUSE,0.0
 55,Hartland,0.0
 55,Howell,0.0
 55,Kalamazoo Central,0.0
+55,Lake Fenton/Linden,0.0
+55,Lake Orion,0.0
 55,Livonia Churchill,0.0
 55,Livonia Franklin,0.0
 55,Macomb Dakota,0.0
-55,Monroe,0.0
+55,Mason,0.0
+55,Muskegon Mona Shores,0.0
+55,North Farmington,0.0
 55,Oxford,0.0
+55,South Lyon East,0.0
 55,St Clair Shores Lakeview,0.0
 55,Temperance Bedford,0.0
+55,Traverse City Central,0.0
+55,Warren De La Salle Collegiate,0.0
 55,Warren Mott,0.0
 55,Wyandotte Roosevelt,0.0

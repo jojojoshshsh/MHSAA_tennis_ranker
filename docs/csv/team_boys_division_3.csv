@@ -1,92 +1,106 @@
 rank,school,team_score
-1,Bloomfield Hills Cranbrook Kingswood,110.0
-2,Detroit Country Day,103.35
-3,Holland Christian,83.33
-4,Ann Arbor Greenhills,74.33
-5,Hudsonville Unity Christian,50.02
-6,Chelsea,39.99
-7,Haslett,34.33
-8,Grand Rapids South Christian,27.67
-9,East Grand Rapids,27.66
-10,Ludington,27.33
-11,Parma Western,24.0
-12,Big Rapids,22.0
-13,Richland Gull Lake,21.99
-14,Dewitt,21.98
-15,Petoskey,20.99
-16,St. Joseph,18.66
-17,Vicksburg,16.33
-18,Mason,14.99
-19,Sturgis,13.99
-20,Zeeland West,12.99
-21,Middleville Thornapple Kellogg,12.66
-22,St. Clair,12.0
-23,Ada Forest Hills Eastern,11.99
-24,Coldwater,8.66
-25,Hamilton,8.33
+1,Bloomfield Hills Cranbrook Kingswood,113.33
+2,Detroit Country Day,106.68
+3,Holland Christian,86.66
+4,Ann Arbor Greenhills,76.67
+5,Chelsea,43.34
+6,East Grand Rapids,42.01
+7,Grand Rapids South Christian,36.66
+7,Hudsonville Unity Christian,36.66
+9,Haslett,36.33
+10,Petoskey,28.66
+11,Ludington,24.0
+12,Big Rapids,23.0
+13,St. Joseph,21.99
+14,Zeeland East,21.67
+15,Ada Forest Hills Eastern,19.66
+16,Dewitt,17.32
+17,Zeeland West,14.99
+18,Mason,13.99
+18,Richland Gull Lake,13.99
+20,Cadillac,12.99
+21,Parma Western,11.66
+22,Spring Lake,10.66
+23,Sturgis,10.33
+24,Vicksburg,9.66
+25,Grand Rapids Christian,8.33
 26,Stevensville Lakeshore,7.66
-27,Cadillac,7.33
-27,Grand Rapids Christian,7.33
-29,Spring Lake,6.33
-30,Zeeland East,6.0
-31,Fowlerville,5.0
-32,Holland,4.33
-33,Marshall,3.33
-34,Adrian,3.0
-35,Bay City John Glenn,2.0
-35,Eaton Rapids,2.0
+27,Hamilton,7.33
+28,Middleville Thornapple Kellogg,7.0
+29,Holland,5.33
+30,St. Johns,4.0
+31,Bay City John Glenn,3.0
+31,Coopersville,3.0
+31,Fowlerville,3.0
+31,St. Clair,3.0
+35,Adrian,2.0
+35,Coldwater,2.0
 35,Grand Rapids West Catholic,2.0
-35,Jackson Northwests,2.0
 35,Milan,2.0
-35,St. Johns,2.0
+35,Traverse City Central,2.0
+35,Traverse City West,2.0
+41,Battle Creek Harper Creek,1.0
+41,Battle Creek Lakeview,1.0
 41,Detroit U-D Jesuit,1.0
-41,Ionia,1.0
+41,Eaton Rapids,1.0
+41,Hudsonville,1.0
 41,Madison Heights Lamphere,1.0
-41,Traverse City Central,1.0
-45,Alma,0.0
-45,Auburn Hills Avondale,0.0
-45,Battle Creek Harper Creek,0.0
-45,Battle Creek Lakeview,0.0
-45,Battle Creek Pennfield,0.0
-45,Carleton Airport,0.0
-45,Cedar Springs,0.0
-45,Charlotte,0.0
-45,Clio,0.0
-45,Comstock Park,0.0
-45,Coopersville,0.0
-45,Edwardsburg,0.0
-45,Fenton,0.0
-45,Flint Kearsley,0.0
-45,Frankenmuth,0.0
-45,Fruitport,0.0
-45,Garden City,0.0
-45,Grand Rapids NorthPointe Christian,0.0
-45,Grand Rapids Northview,0.0
-45,Grandville Calvin Christian,0.0
-45,Grant,0.0
-45,Greenville,0.0
-45,Hemlock,0.0
-45,Holt,0.0
-45,Jackson,0.0
-45,Kalamazoo Central,0.0
-45,Lake Odessa Lakewood,0.0
-45,Lansing Eastern,0.0
-45,Lowell,0.0
-45,Marysville,0.0
-45,Mattawan,0.0
-45,Muskegon Mona Shores,0.0
-45,Niles,0.0
-45,Otsego,0.0
-45,Owosso,0.0
-45,Paw Paw,0.0
-45,Plainwell,0.0
-45,Portland,0.0
-45,Riverview,0.0
-45,Sparta,0.0
-45,Tecumseh,0.0
-45,Traverse City West,0.0
-45,Trenton,0.0
-45,Walled Lake Western,0.0
-45,Wayland,0.0
-45,Wyoming,0.0
-45,Wyoming Kelloggsville,0.0
+41,Marshall,1.0
+41,Mattawan,1.0
+41,Whitehall,1.0
+50,Allegan,0.0
+50,Alma,0.0
+50,Alpena,0.0
+50,Auburn Hills Avondale,0.0
+50,Battle Creek Pennfield,0.0
+50,Carleton Airport,0.0
+50,Cedar Springs,0.0
+50,Charlotte,0.0
+50,Clio,0.0
+50,Comstock Park,0.0
+50,Edwardsburg,0.0
+50,Fenton,0.0
+50,Flint Kearsley,0.0
+50,Frankenmuth,0.0
+50,Fruitport,0.0
+50,Garden City,0.0
+50,Grand Rapids NorthPointe Christian,0.0
+50,Grand Rapids Northview,0.0
+50,Grandville Calvin Christian,0.0
+50,Grant,0.0
+50,Greenville,0.0
+50,Hemlock,0.0
+50,Holt,0.0
+50,Ionia,0.0
+50,Jackson,0.0
+50,Jackson Northwests,0.0
+50,Kalamazoo Central,0.0
+50,Kalamazoo Christian,0.0
+50,Lake Odessa Lakewood,0.0
+50,Lansing Catholic,0.0
+50,Lansing Eastern,0.0
+50,Lowell,0.0
+50,Maple City Glen Lake,0.0
+50,Marysville,0.0
+50,Monroe St Mary Catholic Central,0.0
+50,Muskegon Mona Shores,0.0
+50,Muskegon Reeths-Puffer,0.0
+50,Muskegon Western Michigan Christian,0.0
+50,Niles,0.0
+50,Otsego,0.0
+50,Owosso,0.0
+50,Paw Paw,0.0
+50,Pinckney,0.0
+50,Plainwell,0.0
+50,Portage Northern,0.0
+50,Portland,0.0
+50,Riverview,0.0
+50,Romeo,0.0
+50,Sparta,0.0
+50,Tecumseh,0.0
+50,Trenton,0.0
+50,Walled Lake Western,0.0
+50,Wayland,0.0
+50,Williamston,0.0
+50,Wyoming,0.0
+50,Wyoming Kelloggsville,0.0
