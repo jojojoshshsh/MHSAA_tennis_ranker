@@ -1,34 +1,34 @@
 rank,school,team_score
-1,Troy,110.01
-2,Bloomfield Hills,100.01
-3,Detroit Catholic Central,63.33
-4,Novi,56.67
-5,Rochester Adams,47.67
-6,Northville,46.68
-7,Ann Arbor Skyline,46.66
-8,Bloomfield Hills Brother Rice,40.99
-9,Troy Athens,38.66
-10,Ann Arbor Pioneer,38.65
-11,Okemos,34.32
-11,Rochester Hills Stoney Creek,34.32
-13,Rockford,31.0
-14,Holland West Ottawa,30.99
-15,Rochester,30.66
-16,Ann Arbor Huron,28.66
-17,Clarkston,26.64
-18,Brighton,13.99
-19,Hudsonville,9.33
+1,Troy,82.5
+2,Bloomfield Hills,75.0
+3,Detroit Catholic Central,47.5
+4,Novi,42.5
+5,Rochester Adams,36.0
+6,Ann Arbor Skyline,35.0
+6,Northville,35.0
+8,Bloomfield Hills Brother Rice,31.0
+9,Ann Arbor Pioneer,29.5
+9,Troy Athens,29.5
+11,Okemos,26.0
+11,Rochester Hills Stoney Creek,26.0
+13,Rochester,24.0
+14,Holland West Ottawa,23.5
+14,Rockford,23.5
+16,Ann Arbor Huron,22.0
+17,Clarkston,20.0
+18,Brighton,11.5
+19,Hudsonville,8.5
 20,West Bloomfield,8.0
-21,East Kentwood,7.33
-21,Salem,7.33
-23,Romeo,7.0
-24,Sterling Heights Stevenson,6.67
-25,Grand Haven,6.0
-26,Grand Blanc,5.0
-26,Grandville,5.0
-26,Jenison,5.0
-26,Utica Eisenhower,5.0
-26,Utica Ford,5.0
+21,Romeo,7.0
+22,East Kentwood,6.5
+22,Salem,6.5
+24,Grand Haven,6.0
+25,Grand Blanc,5.0
+25,Grandville,5.0
+25,Jenison,5.0
+25,Sterling Heights Stevenson,5.0
+25,Utica Eisenhower,5.0
+25,Utica Ford,5.0
 31,Ann Arbor Greenhills,4.0
 31,Birmingham Groves,4.0
 31,New Baltimore Anchor Bay,4.0
