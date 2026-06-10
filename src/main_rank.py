@@ -75,7 +75,15 @@ _LIST_COLS = [
 
 def load_matches(path="all_matches.csv") -> list:
     """Load match CSV and restore list columns."""
-    df = pd.read_csv(path, dtype=str).fillna("")
+    import os
+    if not os.path.exists(path) or os.path.getsize(path) == 0:
+        logging.warning("all_matches.csv is missing or empty — skipping.")
+        return []
+    try:
+        df = pd.read_csv(path, dtype=str).fillna("")
+    except pd.errors.EmptyDataError:
+        logging.warning("all_matches.csv has no columns — skipping.")
+        return []
     for col in _LIST_COLS:
         if col in df.columns:
             df[col] = df[col].apply(
@@ -344,6 +352,9 @@ def build_team_rankings(singles_rows, doubles_rows):
 def main():
     logging.info("Loading match data...")
     matches = load_matches("all_matches.csv")
+    if not matches:
+        logging.warning("No matches loaded — aborting rankings run.")
+        return
     logging.info("Loaded %d matches", len(matches))
 
     school_meta = load_school_meta("school_meta.json")
