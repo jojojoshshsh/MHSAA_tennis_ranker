@@ -20,12 +20,16 @@ def _get_headers():
         "Referer":         "https://tennisreporting.com/",
         "User-Agent":      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
         "token":           token,
+        "Cache-Control":   "no-cache",
+        "Pragma":          "no-cache",
     }
 
 
 async def fetch_school_report(session, school_id, gender_id=1, retries=3, backoff=2.0):
+    import random
+    bust = random.randint(100000, 999999)
     url = (f"https://api.tennisreporting.com/report/school/{school_id}"
-           f"?year={YEAR}&genderId={gender_id}&isNotVarsity={IS_NOT_VARSITY}")
+           f"?year={YEAR}&genderId={gender_id}&isNotVarsity={IS_NOT_VARSITY}&_={bust}")
     logging.info("fetch_school_report url=%s", url)
     return await _get(session, url, f"school {school_id}", retries, backoff)
 
