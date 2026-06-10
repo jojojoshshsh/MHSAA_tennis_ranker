@@ -9,7 +9,7 @@ out_dir.mkdir(exist_ok=True)
 csv_dir = out_dir / "csv"
 csv_dir.mkdir(exist_ok=True)
 
-ALLOWED_FLIGHTS = {"1", "2", "3"}
+ALLOWED_FLIGHTS = {"1", "2", "3", "4"}
 # ── Team rankings ────────────────────────────────────────────
 team_data = []
 for csv_path in sorted(src_dir.glob("team_*.csv")):
