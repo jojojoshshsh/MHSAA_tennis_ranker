@@ -1,39 +1,38 @@
 rank,school,team_score
-1,Birmingham Seaholm,66.67
-2,Byron Center,60.01
-3,Midland Dow,60.0
-4,Grand Rapids Forest Hills Northern,56.68
-5,Detroit U-D Jesuit,46.68
-6,Grand Rapids Forest Hills Central,44.33
-7,Grosse Pointe South,43.34
-7,Portage Central,43.34
-9,Birmingham Groves,33.33
-10,South Lyon East,25.32
-11,Berkley,23.32
-12,Traverse City Central,15.32
-13,Midland,12.99
-14,Muskegon Mona Shores,12.0
-15,Dexter,11.99
-15,Mattawan,11.99
-17,North Farmington,10.99
-18,Grosse Pointe North,8.66
-19,Farmington,8.33
-19,Gibraltar Carlson,8.33
-21,Lapeer,7.66
-22,South Lyon,7.33
-23,Muskegon Reeths-Puffer,6.66
-24,Flushing,6.33
-24,Royal Oak,6.33
-24,Walled Lake Central,6.33
-27,Southgate Anderson,6.0
-28,Wyandotte Roosevelt,5.33
-29,Battle Creek Lakeview,4.0
-29,Riverview Gabriel Richard,4.0
-31,Dearborn Divine Child,3.0
-31,Lake Fenton/Linden,3.0
-31,Milford,3.0
+1,Birmingham Seaholm,93.34
+2,Byron Center,86.67
+3,Midland Dow,83.34
+4,Grand Rapids Forest Hills Northern,66.68
+5,Detroit U-D Jesuit,60.02
+6,Grosse Pointe South,60.01
+7,Portage Central,53.34
+8,Grand Rapids Forest Hills Central,51.0
+9,Birmingham Groves,39.99
+10,Berkley,26.65
+11,South Lyon East,25.32
+11,Traverse City Central,25.32
+13,Midland,19.65
+14,Mattawan,15.32
+15,Muskegon Mona Shores,14.33
+16,South Lyon,14.0
+17,Dexter,11.99
+18,North Farmington,10.99
+19,Dearborn Divine Child,9.67
+20,Grosse Pointe North,8.66
+21,Farmington,8.33
+21,Gibraltar Carlson,8.33
+23,Lapeer,7.66
+24,Muskegon Reeths-Puffer,6.66
+25,Flushing,6.33
+25,Milford,6.33
+25,Walled Lake Central,6.33
+28,Southgate Anderson,6.0
+29,Wyandotte Roosevelt,5.33
+30,Battle Creek Lakeview,4.0
+30,Riverview Gabriel Richard,4.0
+30,Royal Oak,4.0
+33,Lake Fenton/Linden,3.0
 34,East Lansing,2.0
-34,Grand Rapids Northview,2.0
 34,Greenville,2.0
 34,Jackson,2.0
 34,Mount Pleasant,2.0
@@ -41,47 +40,48 @@ rank,school,team_score
 34,Sparta,2.0
 34,Temperance Bedford,2.0
 34,Ypsilanti Lincoln,2.0
-43,Fenton,1.0
-43,Grosse Pointe Woods University Liggett,1.0
-43,Holly,1.0
-43,Petoskey,1.0
-43,Plainwell,1.0
-43,St Clair Shores Lakeview,1.0
-43,Sterling Heights,1.0
-43,White Lake Lakeland,1.0
-43,Ypsilanti,1.0
-43,Zeeland West,1.0
-53,Allen Park,0.0
-53,Battle Creek Central,0.0
-53,Bay City Central,0.0
-53,Bay City Western,0.0
-53,Brownstown Woodhaven,0.0
-53,Caledonia,0.0
-53,Carleton Airport,0.0
-53,Cedar Springs,0.0
-53,Clio,0.0
-53,Davison,0.0
-53,Dearborn Heights Crestwood,0.0
-53,Edwardsburg,0.0
-53,Ferndale,0.0
-53,Flint Kearsley,0.0
-53,Garden City,0.0
-53,Grand Rapids Kenowa Hills,0.0
-53,Grand Rapids Ottawa Hills,0.0
-53,Hamtramck,0.0
-53,Kalamazoo Loy Norrix,0.0
-53,Livonia Franklin,0.0
-53,Lowell,0.0
-53,Milan,0.0
-53,Muskegon Western Michigan Christian,0.0
-53,Niles,0.0
-53,Oxford,0.0
-53,Pinckney,0.0
-53,Redford Thurston,0.0
-53,Riverview,0.0
-53,Saginaw Heritage,0.0
-53,Southfield Arts & Technology,0.0
-53,Stevensville Lakeshore,0.0
-53,Traverse City West,0.0
-53,Walled Lake Western,0.0
-53,Warren Woods Tower,0.0
+42,Fenton,1.0
+42,Grand Rapids Northview,1.0
+42,Grosse Pointe Woods University Liggett,1.0
+42,Holly,1.0
+42,Lowell,1.0
+42,Petoskey,1.0
+42,Plainwell,1.0
+42,St Clair Shores Lakeview,1.0
+42,Sterling Heights,1.0
+42,White Lake Lakeland,1.0
+42,Ypsilanti,1.0
+42,Zeeland West,1.0
+54,Allen Park,0.0
+54,Battle Creek Central,0.0
+54,Bay City Central,0.0
+54,Bay City Western,0.0
+54,Brownstown Woodhaven,0.0
+54,Caledonia,0.0
+54,Carleton Airport,0.0
+54,Cedar Springs,0.0
+54,Clio,0.0
+54,Davison,0.0
+54,Dearborn Heights Crestwood,0.0
+54,Edwardsburg,0.0
+54,Ferndale,0.0
+54,Flint Kearsley,0.0
+54,Garden City,0.0
+54,Grand Rapids Kenowa Hills,0.0
+54,Grand Rapids Ottawa Hills,0.0
+54,Hamtramck,0.0
+54,Kalamazoo Loy Norrix,0.0
+54,Livonia Franklin,0.0
+54,Milan,0.0
+54,Muskegon Western Michigan Christian,0.0
+54,Niles,0.0
+54,Oxford,0.0
+54,Pinckney,0.0
+54,Redford Thurston,0.0
+54,Riverview,0.0
+54,Saginaw Heritage,0.0
+54,Southfield Arts & Technology,0.0
+54,Stevensville Lakeshore,0.0
+54,Traverse City West,0.0
+54,Walled Lake Western,0.0
+54,Warren Woods Tower,0.0

@@ -1,12 +1,13 @@
-rank,gender,division,flight,pair_name,school,rating,TGRS,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,4,Vettel Xu / Ethan Clark,Midland Dow,1396.0951,279.219,1699,10,14.7431,12.479,37.5447,32.7168,46.6238,46.0941,4.6356,10,10,0,2025-10-17
-2,Boys,2,4,Zeke Sandholm / Brody Slot,Byron Center,1389.8895,277.9779,1693,8,14.8568,14.3725,36.9162,28.8027,41.8823,40.9186,4.3599,13,11,2,2025-10-17
-3,Boys,2,4,Ryan McArdle / Gabe Christman,Birmingham Seaholm,1374.2061,274.8412,1675,5,16.755,15.5292,32.6586,25.131,39.3083,38.8712,4.7258,6,5,1,2025-10-17
-4,Boys,2,4,Mikey Hernly / brooks kraal,Grand Rapids Forest Hills Northern,1363.2236,272.6447,1665,3,15.8356,13.4895,29.6847,20.5907,35.1782,35.4378,4.8625,7,5,2,2025-10-17
-5,Boys,2,4,Davis Gryzenia / Weston Jerabek,Grosse Pointe South,1351.1894,270.2379,1653,0,13.6524,10.7514,26.9259,19.7921,35.5737,34.9935,5.2605,5,4,1,2025-10-17
-6,Boys,2,4,Nathan Vansteenkiste / Chris Bong,South Lyon,1351.0237,270.2047,1655,1,9.7167,9.0651,26.114,20.2542,35.4698,36.3242,5.0719,6,5,1,2025-10-17
-7,Boys,2,4,Ryan Kujansuu / Greyson Goodwin,Dearborn Divine Child,1348.4558,269.6912,1652,0,15.2084,12.5385,23.3677,13.2492,28.1632,29.995,4.9713,6,3,3,2025-10-17
-8,Boys,2,4,Shane Goldman / Sanay Shah,Birmingham Groves,33.4308,6.6862,13,1,13.9299,14.1962,25.1817,14.8263,30.2563,30.7989,5.1433,5,3,2,2025-10-17
-9,Boys,2,4,Hayden Rithauddean / Wesley Koelper,Portage Central,32.6076,6.5215,13,0,10.6488,9.6909,26.1428,18.8758,34.8251,34.1253,5.3165,5,4,1,2025-10-17
-10,Boys,2,4,Andrew Witt / Tucker Spaulding,Midland,30.4234,6.0847,10,0,13.5698,11.2849,24.4391,17.1878,32.2497,31.1506,5.0206,8,5,3,2025-10-17
-11,Boys,2,4,Vinnie Holder / Noah Golembiewski,Berkley,24.7594,4.9519,6,0,11.4769,10.21,21.6653,12.582,29.2158,29.4082,5.5446,5,3,2,2025-10-17
+rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
+1,Boys,2,4,Vettel Xu / Ethan Clark,Midland Dow,1556.4345,1556.4345,100.0,1699,11,14.7599,12.7162,37.5397,32.7275,46.6485,46.3161,4.6403,10,10,0,2025-10-17
+2,Boys,2,4,Zeke Sandholm / Brody Slot,Byron Center,1549.2021,1549.2021,99.52,1693,9,14.8461,16.5858,36.8985,28.7575,41.8695,41.4261,4.3707,13,11,2,2025-10-17
+3,Boys,2,4,Ryan McArdle / Gabe Christman,Birmingham Seaholm,1528.6449,1528.6449,98.17,1675,5,16.7508,15.6064,32.6657,25.1307,39.3079,38.9611,4.7257,6,5,1,2025-10-17
+4,Boys,2,4,Mikey Hernly / brooks kraal,Grand Rapids Forest Hills Northern,1514.5799,1514.5799,97.25,1665,3,15.8318,13.6491,29.6862,20.5806,35.1695,35.4668,4.863,7,5,2,2025-10-17
+5,Boys,2,4,Davis Gryzenia / Weston Jerabek,Grosse Pointe South,1501.319,1501.319,96.38,1653,1,13.6493,13.8015,26.9179,19.7934,35.5802,36.0197,5.2623,5,4,1,2025-10-17
+6,Boys,2,4,Nathan Vansteenkiste / Chris Bong,South Lyon,1499.3104,1499.3104,96.25,1655,1,9.7146,8.7722,26.1128,20.2542,35.4697,36.1018,5.0718,6,5,1,2025-10-17
+7,Boys,2,4,Jackson Beach / Evan Gappy,Detroit U-D Jesuit,1495.9536,1495.9536,96.02,1649,0,17.2916,12.2734,26.9398,17.5615,31.3915,30.8614,4.61,9,5,4,2025-10-17
+8,Boys,2,4,Ryan Kujansuu / Greyson Goodwin,Dearborn Divine Child,1495.1392,1495.1392,95.97,1652,0,15.2102,12.475,23.3749,13.2518,28.1623,29.995,4.9702,6,3,3,2025-10-17
+9,Boys,2,4,Shane Goldman / Sanay Shah,Birmingham Groves,47.0682,47.0682,0.79,13,1,13.9286,14.2135,25.1857,14.8253,30.253,30.7989,5.1425,5,3,2,2025-10-17
+10,Boys,2,4,Hayden Rithauddean / Wesley Koelper,Portage Central,46.1191,46.1191,0.73,13,0,10.6476,9.8514,26.1517,18.8721,34.8191,34.3626,5.3157,5,4,1,2025-10-17
+11,Boys,2,4,Andrew Witt / Tucker Spaulding,Midland,43.197,43.197,0.54,10,0,13.594,11.3721,24.4528,17.2127,32.2744,31.142,5.0206,8,5,3,2025-10-17
+12,Boys,2,4,Vinnie Holder / Noah Golembiewski,Berkley,35.9879,35.9879,0.06,6,0,11.4789,10.2728,21.6653,12.5829,29.2217,29.4082,5.5462,5,3,2,2025-10-17

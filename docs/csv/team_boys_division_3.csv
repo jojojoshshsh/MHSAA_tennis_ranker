@@ -1,92 +1,92 @@
 rank,school,team_score
-1,Detroit Country Day,80.02
-2,Bloomfield Hills Cranbrook Kingswood,76.66
-3,Holland Christian,63.33
-4,Ann Arbor Greenhills,54.33
-5,Hudsonville Unity Christian,36.68
-6,Haslett,34.33
-7,Grand Rapids South Christian,27.67
-8,East Grand Rapids,24.33
-9,Chelsea,23.32
-10,Big Rapids,22.0
-11,Petoskey,20.99
-12,Ludington,20.67
-13,St. Joseph,18.66
-14,Dewitt,15.32
-15,Parma Western,14.0
-16,Zeeland West,12.99
-17,Ada Forest Hills Eastern,11.99
-17,Richland Gull Lake,11.99
-19,Mason,10.66
-20,Hamilton,8.33
-21,Stevensville Lakeshore,7.66
-22,Cadillac,7.33
-22,Grand Rapids Christian,7.33
-22,Sturgis,7.33
-25,Spring Lake,6.33
-25,Vicksburg,6.33
-27,Middleville Thornapple Kellogg,6.0
-27,Zeeland East,6.0
-29,Coldwater,5.33
-30,Fowlerville,5.0
-31,Holland,4.33
-32,Adrian,3.0
-33,Bay City John Glenn,2.0
-33,Eaton Rapids,2.0
-33,Grand Rapids West Catholic,2.0
-33,Jackson Northwests,2.0
-33,Milan,2.0
-33,St. Clair,2.0
-33,St. Johns,2.0
-40,Detroit U-D Jesuit,1.0
-40,Ionia,1.0
-40,Madison Heights Lamphere,1.0
-40,Traverse City Central,1.0
-44,Alma,0.0
-44,Auburn Hills Avondale,0.0
-44,Battle Creek Harper Creek,0.0
-44,Battle Creek Lakeview,0.0
-44,Battle Creek Pennfield,0.0
-44,Carleton Airport,0.0
-44,Cedar Springs,0.0
-44,Charlotte,0.0
-44,Clio,0.0
-44,Comstock Park,0.0
-44,Coopersville,0.0
-44,Edwardsburg,0.0
-44,Fenton,0.0
-44,Flint Kearsley,0.0
-44,Frankenmuth,0.0
-44,Fruitport,0.0
-44,Garden City,0.0
-44,Grand Rapids NorthPointe Christian,0.0
-44,Grand Rapids Northview,0.0
-44,Grandville Calvin Christian,0.0
-44,Grant,0.0
-44,Greenville,0.0
-44,Hemlock,0.0
-44,Holt,0.0
-44,Jackson,0.0
-44,Kalamazoo Central,0.0
-44,Lake Odessa Lakewood,0.0
-44,Lansing Eastern,0.0
-44,Lowell,0.0
-44,Marshall,0.0
-44,Marysville,0.0
-44,Mattawan,0.0
-44,Muskegon Mona Shores,0.0
-44,Niles,0.0
-44,Otsego,0.0
-44,Owosso,0.0
-44,Paw Paw,0.0
-44,Plainwell,0.0
-44,Portland,0.0
-44,Riverview,0.0
-44,Sparta,0.0
-44,Tecumseh,0.0
-44,Traverse City West,0.0
-44,Trenton,0.0
-44,Walled Lake Western,0.0
-44,Wayland,0.0
-44,Wyoming,0.0
-44,Wyoming Kelloggsville,0.0
+1,Bloomfield Hills Cranbrook Kingswood,110.0
+2,Detroit Country Day,103.35
+3,Holland Christian,83.33
+4,Ann Arbor Greenhills,74.33
+5,Hudsonville Unity Christian,50.02
+6,Chelsea,39.99
+7,Haslett,34.33
+8,Grand Rapids South Christian,27.67
+9,East Grand Rapids,27.66
+10,Ludington,27.33
+11,Parma Western,24.0
+12,Big Rapids,22.0
+13,Richland Gull Lake,21.99
+14,Dewitt,21.98
+15,Petoskey,20.99
+16,St. Joseph,18.66
+17,Vicksburg,16.33
+18,Mason,14.99
+19,Sturgis,13.99
+20,Zeeland West,12.99
+21,Middleville Thornapple Kellogg,12.66
+22,St. Clair,12.0
+23,Ada Forest Hills Eastern,11.99
+24,Coldwater,8.66
+25,Hamilton,8.33
+26,Stevensville Lakeshore,7.66
+27,Cadillac,7.33
+27,Grand Rapids Christian,7.33
+29,Spring Lake,6.33
+30,Zeeland East,6.0
+31,Fowlerville,5.0
+32,Holland,4.33
+33,Marshall,3.33
+34,Adrian,3.0
+35,Bay City John Glenn,2.0
+35,Eaton Rapids,2.0
+35,Grand Rapids West Catholic,2.0
+35,Jackson Northwests,2.0
+35,Milan,2.0
+35,St. Johns,2.0
+41,Detroit U-D Jesuit,1.0
+41,Ionia,1.0
+41,Madison Heights Lamphere,1.0
+41,Traverse City Central,1.0
+45,Alma,0.0
+45,Auburn Hills Avondale,0.0
+45,Battle Creek Harper Creek,0.0
+45,Battle Creek Lakeview,0.0
+45,Battle Creek Pennfield,0.0
+45,Carleton Airport,0.0
+45,Cedar Springs,0.0
+45,Charlotte,0.0
+45,Clio,0.0
+45,Comstock Park,0.0
+45,Coopersville,0.0
+45,Edwardsburg,0.0
+45,Fenton,0.0
+45,Flint Kearsley,0.0
+45,Frankenmuth,0.0
+45,Fruitport,0.0
+45,Garden City,0.0
+45,Grand Rapids NorthPointe Christian,0.0
+45,Grand Rapids Northview,0.0
+45,Grandville Calvin Christian,0.0
+45,Grant,0.0
+45,Greenville,0.0
+45,Hemlock,0.0
+45,Holt,0.0
+45,Jackson,0.0
+45,Kalamazoo Central,0.0
+45,Lake Odessa Lakewood,0.0
+45,Lansing Eastern,0.0
+45,Lowell,0.0
+45,Marysville,0.0
+45,Mattawan,0.0
+45,Muskegon Mona Shores,0.0
+45,Niles,0.0
+45,Otsego,0.0
+45,Owosso,0.0
+45,Paw Paw,0.0
+45,Plainwell,0.0
+45,Portland,0.0
+45,Riverview,0.0
+45,Sparta,0.0
+45,Tecumseh,0.0
+45,Traverse City West,0.0
+45,Trenton,0.0
+45,Walled Lake Western,0.0
+45,Wayland,0.0
+45,Wyoming,0.0
+45,Wyoming Kelloggsville,0.0

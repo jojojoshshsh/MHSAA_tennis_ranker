@@ -1,24 +1,24 @@
 rank,school,team_score
-1,Bloomfield Hills,76.68
-2,Troy,76.67
-3,Detroit Catholic Central,53.34
-4,Ann Arbor Skyline,43.33
-5,Northville,40.01
-6,Troy Athens,34.33
-7,Rockford,30.0
-8,Rochester,28.66
-9,Rochester Adams,27.67
-10,Bloomfield Hills Brother Rice,27.66
-10,Novi,27.66
-10,Okemos,27.66
-13,Ann Arbor Pioneer,27.65
-14,Rochester Hills Stoney Creek,21.99
-15,Holland West Ottawa,19.98
-16,Ann Arbor Huron,17.66
+1,Troy,110.01
+2,Bloomfield Hills,83.35
+3,Detroit Catholic Central,73.34
+4,Novi,47.66
+5,Rochester Adams,46.67
+6,Ann Arbor Skyline,43.33
+7,Rochester Hills Stoney Creek,42.0
+8,Bloomfield Hills Brother Rice,40.99
+9,Northville,40.01
+10,Okemos,37.66
+11,Troy Athens,34.33
+12,Ann Arbor Pioneer,34.32
+13,Rockford,33.33
+14,Rochester,28.66
+15,Holland West Ottawa,26.65
+16,Ann Arbor Huron,24.33
 17,Clarkston,17.65
 18,Brighton,11.99
-19,Hudsonville,11.67
-20,Utica Ford,8.33
+19,Hudsonville,8.33
+19,Utica Ford,8.33
 21,Sterling Heights Stevenson,6.67
 22,Salem,6.33
 23,Grand Haven,6.0
@@ -38,6 +38,7 @@ rank,school,team_score
 36,Traverse City West,2.0
 36,Warren De La Salle Collegiate,2.0
 39,Berkley,1.0
+39,Birmingham Groves,1.0
 39,Birmingham Seaholm,1.0
 39,Clinton Township Chippewa Valley,1.0
 39,Fraser,1.0
@@ -52,26 +53,25 @@ rank,school,team_score
 39,Traverse City Central,1.0
 39,Utica,1.0
 39,Walled Lake Northern,1.0
-54,Belleville,0.0
-54,Birmingham Groves,0.0
-54,Brownstown Woodhaven,0.0
-54,Caledonia,0.0
-54,Davison,0.0
-54,Dearborn,0.0
-54,Dearborn Edsel Ford,0.0
-54,Dearborn Fordson,0.0
-54,Dexter,0.0
-54,Grand Rapids Union,0.0
-54,Harrison Township L'ANSE CREUSE,0.0
-54,Hartland,0.0
-54,Howell,0.0
-54,Kalamazoo Central,0.0
-54,Livonia Churchill,0.0
-54,Livonia Franklin,0.0
-54,Macomb Dakota,0.0
-54,Monroe,0.0
-54,Oxford,0.0
-54,St Clair Shores Lakeview,0.0
-54,Temperance Bedford,0.0
-54,Warren Mott,0.0
-54,Wyandotte Roosevelt,0.0
+55,Belleville,0.0
+55,Brownstown Woodhaven,0.0
+55,Caledonia,0.0
+55,Davison,0.0
+55,Dearborn,0.0
+55,Dearborn Edsel Ford,0.0
+55,Dearborn Fordson,0.0
+55,Dexter,0.0
+55,Grand Rapids Union,0.0
+55,Harrison Township L'ANSE CREUSE,0.0
+55,Hartland,0.0
+55,Howell,0.0
+55,Kalamazoo Central,0.0
+55,Livonia Churchill,0.0
+55,Livonia Franklin,0.0
+55,Macomb Dakota,0.0
+55,Monroe,0.0
+55,Oxford,0.0
+55,St Clair Shores Lakeview,0.0
+55,Temperance Bedford,0.0
+55,Warren Mott,0.0
+55,Wyandotte Roosevelt,0.0
