@@ -1,7 +1,7 @@
 # config.py — parameter settings for the tennis ranking system.
 
 # Year (for record-keeping) and filters
-YEAR           = 2026
+YEAR           = 2025
 IS_NOT_VARSITY = 0           # 0 = varsity only
 
 TARGET_STATE  = "MI"         # or None for no filter
