@@ -132,7 +132,7 @@ for entry in all_data:
     thead = "<thead><tr>" + "".join(f'<th onclick="sortTable(this)">{col}</th>' for col in preview_cols) + "</tr></thead>"
     tbody = "<tbody>" + "".join(
         "<tr>" + "".join(f"<td>{row[col]}</td>" for col in preview_cols) + "</tr>"
-        for _, row in df.head(30).iterrows()
+        for _, row in df.head(32).iterrows()
     ) + "</tbody>"
 
     tables_html += f"""
@@ -426,25 +426,43 @@ function cmpKeydown(e, side) {{
 
 function getBestPerFlight(school) {{
   school = school.trim().toLowerCase();
+
+  // First pass: find what divisions this school actually appears in
+  const schoolDivisions = new Set();
+  for (const [stem, data] of Object.entries(CSV_DATA)) {{
+    if (stem.startsWith('team_')) continue;
+    const cols      = data.cols;
+    const schoolIdx = cols.indexOf('school');
+    const divIdx    = cols.indexOf('division');
+    if (schoolIdx === -1 || divIdx === -1) continue;
+    for (const row of data.rows) {{
+      if (String(row[schoolIdx]).toLowerCase().includes(school)) {{
+        schoolDivisions.add(String(row[divIdx]));
+      }}
+    }}
+  }}
+
+  // Second pass: only keep rows where division matches
   const result = {{}};
   for (const [stem, data] of Object.entries(CSV_DATA)) {{
     if (stem.startsWith('team_')) continue;
     const cols      = data.cols;
     const schoolIdx = cols.indexOf('school');
     const rankIdx   = cols.indexOf('rank');
+    const divIdx    = cols.indexOf('division');
     if (schoolIdx === -1) continue;
 
     const category = stem.startsWith('singles') ? 'Singles' : 'Doubles';
     const gender   = stem.includes('_boys_') ? 'Boys' : 'Girls';
-    const divIdx    = cols.indexOf('division');
     const flightIdx = cols.indexOf('flight');
 
     for (const row of data.rows) {{
       if (!String(row[schoolIdx]).toLowerCase().includes(school)) continue;
-      const div    = divIdx    >= 0 ? row[divIdx]    : '?';
-      const flight = flightIdx >= 0 ? row[flightIdx] : '?';
-      const rank   = rankIdx   >= 0 ? Number(row[rankIdx]) : 9999;
-      const key = `${{gender}} ${{category}} · Div ${{div}} · Flight ${{flight}}`;
+      const div    = divIdx    >= 0 ? String(row[divIdx])    : '?';
+      const flight = flightIdx >= 0 ? String(row[flightIdx]) : '?';
+      if (!schoolDivisions.has(div)) continue;
+      const rank = rankIdx >= 0 ? Number(row[rankIdx]) : 9999;
+      const key  = `${{gender}} ${{category}} · Div ${{div}} · Flight ${{flight}}`;
       if (!result[key] || rank < result[key].rank) {{
         result[key] = {{ rank, cols, row }};
       }}
@@ -467,7 +485,7 @@ function runCompare() {{
   const dataB = getBestPerFlight(b);
   const allKeys = [...new Set([...Object.keys(dataA), ...Object.keys(dataB)])].sort();
 
-  const SHOW_COLS = ['rank','TGRS','TGRS_scaled','ts_rating','ts_mu','reachability','sos','quality_wins','wins','losses'];
+  const SHOW_COLS = ['rank','name','pair_name','TGRS','TGRS_scaled','ts_rating','ts_mu','reachability','sos','quality_wins','wins','losses'];
 
   const container = document.getElementById('compare-results');
   if (allKeys.length === 0) {{ container.innerHTML = '<p style="color:#888">No data found for either school.</p>'; return; }}
