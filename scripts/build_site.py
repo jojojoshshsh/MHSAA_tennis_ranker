@@ -167,7 +167,8 @@ for entry in all_data:
     """
     nav_groups[f"Division {division}"].append((label, anchor))
 
-# Build full CSV data as JSON for JS search
+# ── Build full CSV data as JSON for JS search ────────────────
+# NOTE: rows here are NOT capped at 32 — school search needs all rows
 csv_full_data = {}
 for csv_path in sorted(src_dir.glob("*.csv")):
     if csv_path.stem.startswith("team_"):
@@ -291,7 +292,7 @@ html = f"""<!DOCTYPE html>
 <section class="tool-panel" id="panel-search">
   <div class="section-header"><h2>School Search</h2></div>
   <div class="search-box">
-    <input type="text" id="school-search-input" placeholder="Type a school name..." autocomplete="off" oninput="schoolSearchInput(this.value)" onkeydown="searchKeydown(event)">
+    <input type="text" id="school-search-input" placeholder="Type a school name..." autocomplete="off">
     <div class="autocomplete-list" id="school-autocomplete"></div>
   </div>
   <div id="school-search-results"></div>
@@ -301,11 +302,11 @@ html = f"""<!DOCTYPE html>
   <div class="section-header"><h2>Team Compare</h2></div>
   <div class="compare-inputs">
     <div class="search-box">
-      <input type="text" id="cmp-input-a" placeholder="Team A..." autocomplete="off" oninput="cmpInput('a', this.value)" onkeydown="cmpKeydown(event,'a')">
+      <input type="text" id="cmp-input-a" placeholder="Team A..." autocomplete="off">
       <div class="autocomplete-list" id="cmp-auto-a"></div>
     </div>
     <div class="search-box">
-      <input type="text" id="cmp-input-b" placeholder="Team B..." autocomplete="off" oninput="cmpInput('b', this.value)" onkeydown="cmpKeydown(event,'b')">
+      <input type="text" id="cmp-input-b" placeholder="Team B..." autocomplete="off">
       <div class="autocomplete-list" id="cmp-auto-b"></div>
     </div>
     <button onclick="runCompare()" style="padding:.6rem 1.2rem;background:#1a3a5c;color:white;border:none;border-radius:8px;cursor:pointer;font-size:.9rem;">Compare</button>
@@ -331,68 +332,85 @@ function escapeHtml(value) {{
     .replace(/'/g, '&#39;');
 }}
 
-function jsSingleQuote(value) {{
-  return String(value)
-    .replace(/\\/g, '\\\\')
-    .replace(/'/g, "\\'");
-}}
-
+// ── Show/hide tool panels ────────────────────────────────────
 function showTool(name) {{
   document.querySelectorAll('.tool-panel').forEach(p => p.classList.remove('active'));
   const panel = document.getElementById('panel-' + name);
   if (panel) {{
     panel.classList.add('active');
-    panel.scrollIntoView({{behavior:'smooth', block:'start'}});
+    panel.scrollIntoView({{behavior: 'smooth', block: 'start'}});
   }}
 }}
 
+// ── Autocomplete helper ──────────────────────────────────────
+// Wires up an input+dropdown pair. Calls onSelect(school) when a value is chosen.
 function makeAutocomplete(inputId, listId, onSelect) {{
   const input = document.getElementById(inputId);
   const list  = document.getElementById(listId);
 
-  input.addEventListener('focus', () => {{ if (input.value) updateList(input.value); }});
-  document.addEventListener('click', e => {{ if (!list.contains(e.target) && e.target !== input) list.innerHTML = ''; }});
+  // Close dropdown when clicking outside
+  document.addEventListener('click', e => {{
+    if (!list.contains(e.target) && e.target !== input) {{
+      list.innerHTML = '';
+    }}
+  }});
 
-  function updateList(val) {{
+  function renderList(val) {{
+    if (!val) {{ list.innerHTML = ''; return; }}
     const q = val.toLowerCase();
     const matches = SCHOOLS.filter(s => s.toLowerCase().includes(q)).slice(0, 12);
-    list.innerHTML = matches.map(s => {{
-      const safeS = jsSingleQuote(s);
-      return '<div onclick="selectSchool(\\'' + inputId + '\\',\\'' + listId + '\\',\\'' + safeS + '\\', onSelect_' + inputId + ')">' + escapeHtml(s) + '</div>';
-    }}).join('');
+    list.innerHTML = '';
+    matches.forEach(s => {{
+      const div = document.createElement('div');
+      div.textContent = s;
+      // mousedown fires before blur so the list isn't gone before click registers
+      div.addEventListener('mousedown', e => {{
+        e.preventDefault();
+        input.value = s;
+        list.innerHTML = '';
+        onSelect(s);
+      }});
+      list.appendChild(div);
+    }});
   }}
 
-  return updateList;
+  input.addEventListener('input',  () => renderList(input.value));
+  input.addEventListener('focus',  () => {{ if (input.value) renderList(input.value); }});
+
+  // Enter key: accept first match or current value
+  input.addEventListener('keydown', e => {{
+    if (e.key === 'Enter') {{
+      const first = list.querySelector('div');
+      if (first) {{
+        input.value = first.textContent;
+        list.innerHTML = '';
+        onSelect(input.value);
+      }} else {{
+        list.innerHTML = '';
+        onSelect(input.value);
+      }}
+    }}
+    if (e.key === 'Escape') list.innerHTML = '';
+  }});
 }}
 
-let onSelect_school_search_input = null;
-let onSelect_cmp_input_a = null;
-let onSelect_cmp_input_b = null;
+// ── School Search ────────────────────────────────────────────
+makeAutocomplete('school-search-input', 'school-autocomplete', school => {{
+  doSchoolSearch(school);
+}});
 
-function selectSchool(inputId, listId, school, cb) {{
-  document.getElementById(inputId).value = school;
-  document.getElementById(listId).innerHTML = '';
-  if (cb) cb(school);
-}}
-
-const schoolUpdateList = makeAutocomplete('school-search-input', 'school-autocomplete', doSchoolSearch);
-onSelect_school_search_input = doSchoolSearch;
-
-function schoolSearchInput(val) {{
-  schoolUpdateList(val);
-  if (val.length > 1) doSchoolSearch(val);
-}}
-
-function searchKeydown(e) {{
-  if (e.key === 'Enter') doSchoolSearch(document.getElementById('school-search-input').value);
-}}
+// Also run search on every keystroke (after 2+ chars)
+document.getElementById('school-search-input').addEventListener('input', function() {{
+  if (this.value.trim().length > 1) doSchoolSearch(this.value.trim());
+}});
 
 function doSchoolSearch(school) {{
   if (!school) return;
-  school = school.trim().toLowerCase();
+  const q = school.trim().toLowerCase();
   const results = document.getElementById('school-search-results');
   results.innerHTML = '';
 
+  // Group ALL matching rows by flight label — no top-32 cap here
   const byFlight = {{}};
   for (const [stem, data] of Object.entries(CSV_DATA)) {{
     if (stem.startsWith('team_')) continue;
@@ -402,17 +420,16 @@ function doSchoolSearch(school) {{
 
     const category = stem.startsWith('singles') ? 'Singles' : 'Doubles';
     const gender   = stem.includes('_boys_') ? 'Boys' : 'Girls';
+    const divIdx    = cols.indexOf('division');
+    const flightIdx = cols.indexOf('flight');
 
     for (const row of data.rows) {{
-      if (String(row[schoolIdx]).toLowerCase().includes(school)) {{
-        const divIdx = cols.indexOf('division');
-        const flightIdx = cols.indexOf('flight');
-        const div = divIdx >= 0 ? row[divIdx] : '?';
-        const flight = flightIdx >= 0 ? row[flightIdx] : '?';
-        const key = gender + ' ' + category + ' · Div ' + div + ' · Flight ' + flight;
-        if (!byFlight[key]) byFlight[key] = {{ cols, rows: [] }};
-        byFlight[key].rows.push(row);
-      }}
+      if (!String(row[schoolIdx]).toLowerCase().includes(q)) continue;
+      const div    = divIdx    >= 0 ? row[divIdx]    : '?';
+      const flight = flightIdx >= 0 ? row[flightIdx] : '?';
+      const key = `${{gender}} ${{category}} · Div ${{div}} · Flight ${{flight}}`;
+      if (!byFlight[key]) byFlight[key] = {{ cols, rows: [] }};
+      byFlight[key].rows.push(row);
     }}
   }}
 
@@ -422,73 +439,64 @@ function doSchoolSearch(school) {{
   }}
 
   for (const [label, data] of Object.entries(byFlight).sort()) {{
-    const thead = '<thead><tr>' + data.cols.map(c => '<th onclick="sortTable(this)">' + escapeHtml(c) + '</th>').join('') + '</tr></thead>';
-    const tbody = '<tbody>' + data.rows.map(r =>
-      '<tr class="highlight-row">' + r.map(v => '<td>' + escapeHtml(v) + '</td>').join('') + '</tr>'
-    ).join('') + '</tbody>';
+    // Sort by rank ascending
+    const rankIdx = data.cols.indexOf('rank');
+    if (rankIdx >= 0) {{
+      data.rows.sort((a, b) => Number(a[rankIdx]) - Number(b[rankIdx]));
+    }}
+
+    const thead = '<thead><tr>' +
+      data.cols.map(c => `<th onclick="sortTable(this)">${{escapeHtml(c)}}</th>`).join('') +
+      '</tr></thead>';
+    const tbody = '<tbody>' +
+      data.rows.map(r =>
+        '<tr class="highlight-row">' +
+          r.map(v => `<td>${{escapeHtml(v)}}</td>`).join('') +
+        '</tr>'
+      ).join('') +
+    '</tbody>';
+
     results.innerHTML +=
       '<div style="margin-bottom:1.5rem;">' +
-        '<h3 style="font-size:.95rem;color:#1a3a5c;margin-bottom:.5rem;">' + escapeHtml(label) + '</h3>' +
+        `<h3 style="font-size:.95rem;color:#1a3a5c;margin-bottom:.5rem;">${{escapeHtml(label)}}</h3>` +
         '<div class="table-wrap"><table class="rankings-table">' + thead + tbody + '</table></div>' +
       '</div>';
   }}
 }}
 
-const cmpUpdateA = makeAutocomplete('cmp-input-a', 'cmp-auto-a', s => {{ selectedA = s; }});
-const cmpUpdateB = makeAutocomplete('cmp-input-b', 'cmp-auto-b', s => {{ selectedB = s; }});
-onSelect_cmp_input_a = s => {{ selectedA = s; }};
-onSelect_cmp_input_b = s => {{ selectedB = s; }};
+// ── Team Compare ─────────────────────────────────────────────
+let selectedA = '';
+let selectedB = '';
 
-let selectedA = '', selectedB = '';
+makeAutocomplete('cmp-input-a', 'cmp-auto-a', s => {{ selectedA = s; }});
+makeAutocomplete('cmp-input-b', 'cmp-auto-b', s => {{ selectedB = s; }});
 
-function cmpInput(side, val) {{
-  if (side === 'a') {{ cmpUpdateA(val); selectedA = val; }}
-  else {{ cmpUpdateB(val); selectedB = val; }}
-}}
-
-function cmpKeydown(e, side) {{
-  if (e.key === 'Enter') runCompare();
-}}
+// Also capture direct typing so Compare works without picking from dropdown
+document.getElementById('cmp-input-a').addEventListener('input', function() {{ selectedA = this.value; }});
+document.getElementById('cmp-input-b').addEventListener('input', function() {{ selectedB = this.value; }});
 
 function getBestPerFlight(school) {{
-  school = school.trim().toLowerCase();
-
-  const schoolDivisions = new Set();
-  for (const [stem, data] of Object.entries(CSV_DATA)) {{
-    if (stem.startsWith('team_')) continue;
-    const cols = data.cols;
-    const schoolIdx = cols.indexOf('school');
-    const divIdx = cols.indexOf('division');
-    if (schoolIdx === -1 || divIdx === -1) continue;
-
-    for (const row of data.rows) {{
-      if (String(row[schoolIdx]).toLowerCase().includes(school)) {{
-        schoolDivisions.add(String(row[divIdx]));
-      }}
-    }}
-  }}
-
+  const q = school.trim().toLowerCase();
   const result = {{}};
+
   for (const [stem, data] of Object.entries(CSV_DATA)) {{
     if (stem.startsWith('team_')) continue;
     const cols = data.cols;
     const schoolIdx = cols.indexOf('school');
-    const rankIdx = cols.indexOf('rank');
-    const divIdx = cols.indexOf('division');
+    const rankIdx   = cols.indexOf('rank');
+    const divIdx    = cols.indexOf('division');
+    const flightIdx = cols.indexOf('flight');
     if (schoolIdx === -1) continue;
 
     const category = stem.startsWith('singles') ? 'Singles' : 'Doubles';
-    const gender = stem.includes('_boys_') ? 'Boys' : 'Girls';
-    const flightIdx = cols.indexOf('flight');
+    const gender   = stem.includes('_boys_') ? 'Boys' : 'Girls';
 
     for (const row of data.rows) {{
-      if (!String(row[schoolIdx]).toLowerCase().includes(school)) continue;
-      const div = divIdx >= 0 ? String(row[divIdx]) : '?';
+      if (!String(row[schoolIdx]).toLowerCase().includes(q)) continue;
+      const div    = divIdx    >= 0 ? String(row[divIdx])    : '?';
       const flight = flightIdx >= 0 ? String(row[flightIdx]) : '?';
-      if (!schoolDivisions.has(div)) continue;
-
-      const rank = rankIdx >= 0 ? Number(row[rankIdx]) : 9999;
-      const key = gender + ' ' + category + ' · Div ' + div + ' · Flight ' + flight;
+      const rank   = rankIdx   >= 0 ? Number(row[rankIdx])   : 9999;
+      const key    = `${{gender}} ${{category}} · Div ${{div}} · Flight ${{flight}}`;
       if (!result[key] || rank < result[key].rank) {{
         result[key] = {{ rank, cols, row }};
       }}
@@ -507,11 +515,21 @@ function runCompare() {{
   const b = (selectedB || document.getElementById('cmp-input-b').value).trim();
   if (!a || !b) {{ alert('Enter two school names to compare.'); return; }}
 
-  const dataA = getBestPerFlight(a);
-  const dataB = getBestPerFlight(b);
+  const dataA   = getBestPerFlight(a);
+  const dataB   = getBestPerFlight(b);
   const allKeys = [...new Set([...Object.keys(dataA), ...Object.keys(dataB)])].sort();
 
-  const SHOW_COLS = ['rank','name','pair_name','TGRS','TGRS_scaled','ts_rating','ts_mu','reachability','sos','quality_wins','wins','losses'];
+  const SHOW_COLS = [
+    'rank', 'name', 'pair_name',
+    'wins', 'losses',
+    'TGRS', 'TGRS_scaled', 'ts_rating', 'ts_mu', 'local_ts_mu',
+    'reachability', 'local_reachability',
+    'sos', 'local_sos', 'quality_wins',
+    'last_match_date'
+  ];
+
+  // Cols where a lower number is better
+  const LOWER_IS_BETTER = new Set(['rank', 'ts_sigma']);
 
   const container = document.getElementById('compare-results');
   if (allKeys.length === 0) {{
@@ -523,32 +541,30 @@ function runCompare() {{
   for (const key of allKeys) {{
     const ea = dataA[key];
     const eb = dataB[key];
-    html += '<div class="compare-flight"><h3>' + escapeHtml(key) + '</h3><div class="compare-cols">';
+    html += `<div class="compare-flight"><h3>${{escapeHtml(key)}}</h3><div class="compare-cols">`;
 
-    for (const pair of [[a, ea, eb], [b, eb, ea]]) {{
-      const label = pair[0];
-      const entry = pair[1];
-      const other = pair[2];
-      html += '<div class="compare-col"><h4>' + escapeHtml(label) + '</h4>';
+    for (const [label, entry, other] of [[a, ea, eb], [b, eb, ea]]) {{
+      html += `<div class="compare-col"><h4>${{escapeHtml(label)}}</h4>`;
 
       if (!entry) {{
         html += '<div class="no-entry">Not ranked in this slot</div>';
       }} else {{
         for (const col of SHOW_COLS) {{
-          const v = statVal(entry.cols, entry.row, col);
+          const v  = statVal(entry.cols, entry.row, col);
           const vo = other ? statVal(other.cols, other.row, col) : null;
-          if (v === null) continue;
+          if (v === null || v === '') continue;
 
-          const vn = parseFloat(v);
+          const vn  = parseFloat(v);
           const von = parseFloat(vo);
           const better = !isNaN(vn) && !isNaN(von) && (
-            col === 'rank' ? vn < von : vn > von
+            LOWER_IS_BETTER.has(col) ? vn < von : vn > von
           );
 
-          html += '<div class="compare-stat">' +
-            '<span>' + escapeHtml(col) + '</span>' +
-            '<span class="' + (better ? 'compare-winner' : '') + '">' + escapeHtml(v) + '</span>' +
-          '</div>';
+          html +=
+            '<div class="compare-stat">' +
+              `<span>${{escapeHtml(col)}}</span>` +
+              `<span class="${{better ? 'compare-winner' : ''}}">${{escapeHtml(v)}}</span>` +
+            '</div>';
         }}
       }}
       html += '</div>';
@@ -559,12 +575,13 @@ function runCompare() {{
   container.innerHTML = html;
 }}
 
+// ── Table sort ───────────────────────────────────────────────
 function sortTable(th) {{
   const tbody = th.closest('table').querySelector('tbody');
-  const rows = Array.from(tbody.querySelectorAll('tr'));
-  const col = Array.from(th.parentElement.children).indexOf(th);
-  const asc = !th.classList.contains('asc');
-  th.closest('thead').querySelectorAll('th').forEach(h => h.classList.remove('asc','desc'));
+  const rows  = Array.from(tbody.querySelectorAll('tr'));
+  const col   = Array.from(th.parentElement.children).indexOf(th);
+  const asc   = !th.classList.contains('asc');
+  th.closest('thead').querySelectorAll('th').forEach(h => h.classList.remove('asc', 'desc'));
   th.classList.add(asc ? 'asc' : 'desc');
 
   rows.sort((a, b) => {{
@@ -574,7 +591,6 @@ function sortTable(th) {{
     if (!isNaN(an) && !isNaN(bn)) return asc ? an - bn : bn - an;
     return asc ? av.localeCompare(bv) : bv.localeCompare(av);
   }});
-
   rows.forEach(r => tbody.appendChild(r));
 }}
 </script>
