@@ -22,13 +22,13 @@ from trueskill_engine import compute_trueskill
 # global_* = full gender+category pool, ignores division/flight boundaries
 # local_*  = restricted to same gender+category+division+flight bucket
 # quality_wins = avg global ts_mu of top-3 beaten opponents (global graph only)
-TGRS_LOCAL_REACH_WEIGHT   = 0.50   # local bucket reachability
-TGRS_TS_MU_WEIGHT         = (3.00+1+3+2+1+0.4+1)/28.25 
+TGRS_LOCAL_REACH_WEIGHT   = 1.00   # local bucket reachability
+TGRS_TS_MU_WEIGHT         = (3.00+1+3+2+1+0.4+1+1)/28.25 
 TGRS_SOS_WEIGHT           = (3.20+2.25+0.10+4.5)/28.25   # global SOS +1.32
 TGRS_REACH_WEIGHT         = (10.00+15)/28.25#+1+5 
 TGRS_QUALITY_WINS_WEIGHT  = (3.00+3.5+5)/28.25
 TGRS_LOCAL_SOS_WEIGHT     = 0.2+0.1+0.1# NEW – local bucket SOS
-TGRS_LOCAL_TS_MU_WEIGHT   = (0.30+1+0.5)/28.25   # NEW – local bucket ts_mu
+TGRS_LOCAL_TS_MU_WEIGHT   = (0.30+1+0.5+1)/28.25   # NEW – local bucket ts_mu
 # ============================================================
 # UTILITIES
 # ============================================================
