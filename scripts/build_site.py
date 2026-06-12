@@ -1,4 +1,5 @@
 import pandas as pd
+import json
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 
@@ -70,13 +71,10 @@ for csv_path in sorted(src_dir.glob("*.csv")):
     dest = csv_dir / csv_path.name
     df.to_csv(dest, index=False)
 
-    # Parse division, flight, category (singles/doubles), gender from filename
-    # filename pattern: singles_boys_division_1_flight_1.csv
     stem = csv_path.stem
     category = "singles" if stem.startswith("singles") else "doubles"
     gender   = "boys"    if "_boys_"    in stem else "girls"
 
-    # Extract division and flight from the dataframe itself (more reliable)
     if "division" in df.columns and "flight" in df.columns:
         for (division, flight), group in df.groupby(["division", "flight"]):
             all_data.append({
@@ -99,6 +97,34 @@ all_data.sort(key=lambda x: (
     GENDER_ORDER.get(x["gender"], 9),
     CAT_ORDER.get(x["category"], 9),
 ))
+
+def _safe(v, typ=str):
+    try:
+        if pd.isna(v): return "" if typ == str else 0
+    except Exception: pass
+    try: return typ(v)
+    except Exception: return "" if typ == str else 0
+
+all_records = []
+for entry in all_data:
+    nc = "pair_name" if entry["category"] == "doubles" else "name"
+    for _, row in entry["df"].iterrows():
+        all_records.append({
+            "n":  _safe(row.get(nc)),
+            "s":  _safe(row.get("school")),
+            "d":  entry["division"],
+            "f":  entry["flight"],
+            "g":  entry["gender"],
+            "c":  entry["category"],
+            "r":  _safe(row.get("rank"), int),
+            "w":  _safe(row.get("wins"), int),
+            "lo": _safe(row.get("losses"), int),
+            "ts": round(_safe(row.get("TGRS_scaled"), float), 2),
+            "mu": round(_safe(row.get("ts_mu"), float), 4),
+            "qw": round(_safe(row.get("quality_wins"), float), 2),
+            "dt": _safe(row.get("last_match_date")),
+        })
+records_json = json.dumps(all_records)
 
 # Build nav groups: division -> list of (label, anchor)
 from collections import defaultdict
@@ -227,6 +253,17 @@ html = f"""<!DOCTYPE html>
   footer {{ text-align: center; color: #888; font-size: .78rem; padding: 2rem; }}
   .nav-about {{ color: #ffd580; font-size: .8rem; padding: .2rem .6rem; border-radius: 4px; border: 1px solid rgba(255,213,128,.3); text-decoration: none; margin-right: .75rem; }}
   .nav-about:hover {{ background: rgba(255,213,128,.1); }}
+  .tool-tabs {{ display:flex; gap:.5rem; margin-bottom:1rem; }}
+  .tab-btn {{ background:#e8f0f8; border:1px solid #c0d4e8; border-radius:6px;
+    padding:.4rem .9rem; cursor:pointer; font-size:.85rem; color:#1a3a5c; }}
+  .tab-btn.active {{ background:#1a3a5c; color:white; border-color:#1a3a5c; }}
+  .search-row {{ display:flex; gap:.75rem; margin-bottom:1rem; flex-wrap:wrap; }}
+  .search-row input {{ flex:1; min-width:200px; padding:.45rem .7rem;
+    border:1px solid #c0d4e8; border-radius:6px; font-size:.9rem; outline:none; }}
+  .search-row input:focus {{ border-color:#1a3a5c; }}
+  .tool-section h3 {{ color:#1a3a5c; margin:1rem 0 .5rem; font-size:.95rem; }}
+  .better {{ font-weight:700; color:#1a7a3c; }}
+  .match-list {{ font-size:.8rem; color:#555; margin-bottom:.75rem; }}
 </style>
 </head>
 <body>
@@ -236,12 +273,132 @@ html = f"""<!DOCTYPE html>
 </header>
 <nav><a class="nav-about" href="about.html">About &amp; Methodology</a>{team_nav}<span class="nav-group-label">Individual</span>{nav_html}</nav>
 <main>
+  <section id="team-tools" class="tool-section">
+    <div class="tool-tabs">
+      <button class="tab-btn active" onclick="showTab('lookup',this)">Team Lookup</button>
+      <button class="tab-btn" onclick="showTab('compare',this)">Compare Teams</button>
+    </div>
+    <div id="tab-lookup">
+      <div class="search-row">
+        <input id="lookup-q" placeholder="Type school name…" oninput="runLookup()" autocomplete="off">
+      </div>
+      <div id="lookup-results"></div>
+    </div>
+    <div id="tab-compare" style="display:none">
+      <div class="search-row">
+        <input id="cmp-a" placeholder="Team A…" oninput="runCompare()" autocomplete="off">
+        <input id="cmp-b" placeholder="Team B…" oninput="runCompare()" autocomplete="off">
+      </div>
+      <div id="compare-results"></div>
+    </div>
+  </section>
 {team_html}
 {tables_html}
 </main>
 <footer>Rankings computed using TrueSkill + Graph Reachability (TGRS). Data from TennisReporting.com.</footer>
 </body>
 <script>
+const REC = {records_json};
+
+function showTab(name, btn) {{
+  ['lookup','compare'].forEach(t => document.getElementById('tab-'+t).style.display='none');
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-'+name).style.display='';
+  btn.classList.add('active');
+}}
+
+function fkey(r) {{ return r.d+'|'+r.f+'|'+r.g+'|'+r.c; }}
+
+function bestPerFlight(records) {{
+  const m = {{}};
+  for (const r of records) {{
+    const k = fkey(r);
+    if (!m[k] || r.r < m[k].r) m[k] = r;
+  }}
+  return Object.values(m).sort((a,b) =>
+    a.d !== b.d ? a.d.localeCompare(b.d) :
+    a.f !== b.f ? +a.f - +b.f :
+    a.c.localeCompare(b.c));
+}}
+
+function findSchools(q) {{
+  if (!q || q.length < 2) return [];
+  const ql = q.toLowerCase();
+  return [...new Set(REC.map(r => r.s))].filter(s => s.toLowerCase().includes(ql)).sort();
+}}
+
+function flightLabel(r) {{
+  return `D${{r.d}} F${{r.f}} ${{r.g[0].toUpperCase()+r.g.slice(1)}} ${{r.c}}`;
+}}
+
+function runLookup() {{
+  const q = document.getElementById('lookup-q').value.trim();
+  const out = document.getElementById('lookup-results');
+  const schools = findSchools(q);
+  if (!schools.length) {{ out.innerHTML = q.length>1 ? '<p>No schools found.</p>' : ''; return; }}
+
+  let html = `<p class="match-list">Showing: ${{schools.slice(0,5).join(', ')}}${{schools.length>5?' + more':''}}</p>`;
+  for (const school of schools.slice(0, 5)) {{
+    const best = bestPerFlight(REC.filter(r => r.s === school));
+    html += `<h3>${{school}}</h3>
+      <div class="table-wrap"><table class="rankings-table">
+        <thead><tr><th>Flight</th><th>Rank</th><th>Name</th><th>W-L</th><th>Score</th><th>Rating (μ)</th><th>Qual. Wins</th><th>Last Match</th></tr></thead>
+        <tbody>`;
+    for (const r of best) {{
+      html += `<tr>
+        <td>${{flightLabel(r)}}</td><td>${{r.r}}</td><td>${{r.n}}</td>
+        <td>${{r.w}}-${{r.lo}}</td><td>${{r.ts}}</td><td>${{r.mu}}</td>
+        <td>${{r.qw}}</td><td>${{r.dt}}</td>
+      </tr>`;
+    }}
+    html += '</tbody></table></div>';
+  }}
+  out.innerHTML = html;
+}}
+
+function runCompare() {{
+  const qa = document.getElementById('cmp-a').value.trim();
+  const qb = document.getElementById('cmp-b').value.trim();
+  const out = document.getElementById('compare-results');
+  if (qa.length < 2 || qb.length < 2) {{ out.innerHTML = ''; return; }}
+
+  const sa = findSchools(qa)[0], sb = findSchools(qb)[0];
+  if (!sa || !sb) {{
+    out.innerHTML = '<p style="color:#c00">Could not find one or both schools.</p>'; return;
+  }}
+
+  const recA = bestPerFlight(REC.filter(r => r.s === sa));
+  const recB = bestPerFlight(REC.filter(r => r.s === sb));
+  const keys = [...new Set([...recA,...recB].map(fkey))].sort();
+
+  let html = `<p style="margin-bottom:.75rem"><strong>${{sa}}</strong> vs <strong>${{sb}}</strong></p>
+    <div class="table-wrap"><table class="rankings-table">
+      <thead>
+        <tr><th>Flight</th><th colspan="4" style="text-align:center">${{sa}}</th><th colspan="4" style="text-align:center">${{sb}}</th></tr>
+        <tr><th></th><th>Rank</th><th>Name</th><th>W-L</th><th>Score</th><th>Rank</th><th>Name</th><th>W-L</th><th>Score</th></tr>
+      </thead><tbody>`;
+
+  for (const k of keys) {{
+    const a = recA.find(r => fkey(r)===k);
+    const b = recB.find(r => fkey(r)===k);
+    const ref = a||b;
+    const aW = a && b && a.r < b.r, bW = a && b && b.r < a.r;
+    html += `<tr>
+      <td>${{flightLabel(ref)}}</td>
+      <td class="${{aW?'better':''}}">${{a?a.r:'—'}}</td>
+      <td>${{a?a.n:'—'}}</td>
+      <td>${{a?a.w+'-'+a.lo:'—'}}</td>
+      <td class="${{aW?'better':''}}">${{a?a.ts:'—'}}</td>
+      <td class="${{bW?'better':''}}">${{b?b.r:'—'}}</td>
+      <td>${{b?b.n:'—'}}</td>
+      <td>${{b?b.w+'-'+b.lo:'—'}}</td>
+      <td class="${{bW?'better':''}}">${{b?b.ts:'—'}}</td>
+    </tr>`;
+  }}
+  html += '</tbody></table></div>';
+  out.innerHTML = html;
+}}
+
 function sortTable(th) {{
   const tbody = th.closest('table').querySelector('tbody');
   const rows  = Array.from(tbody.querySelectorAll('tr'));
