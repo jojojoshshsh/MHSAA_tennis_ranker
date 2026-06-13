@@ -10,7 +10,7 @@ from trueskill_engine import compute_trueskill
 # TUNABLE WEIGHTS
 # ============================================================
 
-TGRS_LOCAL_REACH_WEIGHT   = 1.25
+TGRS_LOCAL_REACH_WEIGHT   = 1.75
 TGRS_TS_MU_WEIGHT         = (3.00+1+3+2+1+0.4+1+1)/28.25
 TGRS_SOS_WEIGHT           = (3.20+2.25+0.10+4.5)/28.25
 TGRS_REACH_WEIGHT         = (10.00+15)/28.25
