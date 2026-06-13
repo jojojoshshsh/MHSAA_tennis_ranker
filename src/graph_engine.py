@@ -17,6 +17,7 @@ TGRS_REACH_WEIGHT         = (10.00+15)/28.25
 TGRS_QUALITY_WINS_WEIGHT  = (3.00+3.5+5)/28.25
 TGRS_LOCAL_SOS_WEIGHT     = 0.2+0.1+0.1
 TGRS_LOCAL_TS_MU_WEIGHT   = (0.30+1+0.5+1+4.25)/28.25
+TGRS_H2H_WEIGHT = 0.01  # small — only matters in near-ties
 
 # ============================================================
 # UTILITIES
@@ -519,6 +520,21 @@ def create_rankings(
                         + TGRS_LOCAL_TS_MU_WEIGHT  * ts_mu_val(entity)
                         + TGRS_LOCAL_REACH_WEIGHT  * local_reach.get(entity, 0)
                     )
+                # ── Head-to-head bonus ───────────────────────────────────────
+                # For each direct win over an eligible opponent in this bucket,
+                # add H2H_WEIGHT * that opponent's TGRS. This ensures that if
+                # you beat someone directly you rank above them regardless of
+                # schedule differences — but only when scores are close.
+                h2h_bonus = {entity: 0.0 for entity in eligible}
+                for entity in eligible:
+                    for beaten in graph.get(entity, set()):
+                        if beaten in eligible:
+                            h2h_bonus[entity] += TGRS_H2H_WEIGHT * tgrs_score[beaten]
+                
+                # Apply bonus
+                for entity in eligible:
+                    tgrs_score[entity] += h2h_bonus[entity]
+                    
 
                 ordered = sorted(
                     eligible,
