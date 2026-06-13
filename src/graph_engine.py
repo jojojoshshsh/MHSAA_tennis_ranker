@@ -10,25 +10,14 @@ from trueskill_engine import compute_trueskill
 # TUNABLE WEIGHTS
 # ============================================================
 
-# Formula:
-# TGRS = TGRS_TS_MU_WEIGHT        * global_ts_mu
-#       + TGRS_SOS_WEIGHT          * global_sos
-#       + TGRS_REACH_WEIGHT        * global_reachability
-#       + TGRS_QUALITY_WINS_WEIGHT * quality_wins        (global graph, global ts_mu)
-#       + TGRS_LOCAL_SOS_WEIGHT    * local_sos
-#       + TGRS_LOCAL_TS_MU_WEIGHT  * local_ts_mu
-#       + TGRS_LOCAL_REACH_WEIGHT  * local_reachability
-#
-# global_* = full gender+category pool, ignores division/flight boundaries
-# local_*  = restricted to same gender+category+division+flight bucket
-# quality_wins = avg global ts_mu of top-3 beaten opponents (global graph only)
-TGRS_LOCAL_REACH_WEIGHT   = 1.25   # local bucket reachability
-TGRS_TS_MU_WEIGHT         = (3.00+1+3+2+1+0.4+1+1)/28.25 
-TGRS_SOS_WEIGHT           = (3.20+2.25+0.10+4.5)/28.25   # global SOS +1.32
-TGRS_REACH_WEIGHT         = (10.00+15)/28.25#+1+5 
+TGRS_LOCAL_REACH_WEIGHT   = 1.25
+TGRS_TS_MU_WEIGHT         = (3.00+1+3+2+1+0.4+1+1)/28.25
+TGRS_SOS_WEIGHT           = (3.20+2.25+0.10+4.5)/28.25
+TGRS_REACH_WEIGHT         = (10.00+15)/28.25
 TGRS_QUALITY_WINS_WEIGHT  = (3.00+3.5+5)/28.25
-TGRS_LOCAL_SOS_WEIGHT     = 0.2+0.1+0.1# NEW – local bucket SOS
-TGRS_LOCAL_TS_MU_WEIGHT   = (0.30+1+0.5+1+4.25)/28.25   # NEW – local bucket ts_mu
+TGRS_LOCAL_SOS_WEIGHT     = 0.2+0.1+0.1
+TGRS_LOCAL_TS_MU_WEIGHT   = (0.30+1+0.5+1+4.25)/28.25
+
 # ============================================================
 # UTILITIES
 # ============================================================
@@ -44,15 +33,27 @@ def _parse_dt(raw):
         return datetime.min
 
 
-def _entity_from_match(match, category, side):
+def _entity_from_match(match, category, side, flight=None):
+    """
+    Return a flight-scoped entity key so that the same player appearing
+    in multiple flights is treated as a separate entity per flight.
+
+    Singles  → (player_id_str, flight_str)
+    Doubles  → ((id_a, id_b, flight_str),)   stored as a tuple for hashability
+    """
     ids = match.get(f"{side}_player_ids") or []
+    flight_str = str(flight) if flight is not None else str(match.get("flight") or "?")
+
     if category == "singles":
         if len(ids) != 1:
             return None
-        return str(ids[0])
+        return (str(ids[0]), flight_str)
+
     if len(ids) != 2:
         return None
-    return tuple(sorted(str(x) for x in ids))
+    sorted_ids = tuple(sorted(str(x) for x in ids))
+    # Encode flight into the pair so doubles are also flight-scoped
+    return sorted_ids + (flight_str,)
 
 
 def _pair_key(a, b):
@@ -76,9 +77,23 @@ def _parse_score(score):
 
 
 def _entity_label(entity):
+    """Human-readable label; strip the trailing flight tag for display."""
     if isinstance(entity, tuple):
-        return " / ".join(entity)
+        # Singles: ("pid", "3")  → just the pid portion
+        # Doubles: ("id_a", "id_b", "3") → "id_a / id_b"
+        if len(entity) == 2:
+            return str(entity[0])
+        return " / ".join(entity[:-1])
     return str(entity)
+
+
+def _bare_player_id(entity):
+    """Return the raw player/pair ID without the flight suffix, for lookups."""
+    if isinstance(entity, tuple):
+        if len(entity) == 2:          # singles (pid, flight)
+            return entity[0]
+        return entity[:-1]            # doubles (id_a, id_b, flight) → (id_a, id_b)
+    return entity
 
 
 def _reachability_score(start, graph):
@@ -97,10 +112,6 @@ def _reachability_score(start, graph):
 
 
 def _normalize_division(raw):
-    """
-    Normalize any division label to one of:
-      "1", "2", "3", "4_other"
-    """
     s = str(raw or "").strip().lower()
     if s in {"1", "div 1", "div1", "division 1", "division1"}:
         return "1"
@@ -114,9 +125,6 @@ def _normalize_division(raw):
 
 
 def _match_division(match, category, player_lookup=None, pair_lookup=None):
-    """
-    Determine the division bucket for a match.
-    """
     player_lookup = player_lookup or {}
     pair_lookup = pair_lookup or {}
 
@@ -158,14 +166,15 @@ def _top_n_average(values, n=5, default=0.0):
 # BUILD POOLS
 # ============================================================
 
-def _build_pool(matches, category):
+def _build_pool(matches, category, flight):
     """
     Returns
     -------
-    graph       : {entity: set of entities beaten (latest result only)}
-    stats       : raw per-entity statistics for this bucket
-    ts_pairs    : list of (winner, loser) in chronological order
-                  used by compute_trueskill(); includes ALL matches in bucket.
+    graph    : {entity: set of entities beaten (latest result only)}
+    stats    : raw per-entity statistics for this bucket
+    ts_pairs : list of (winner, loser) in chronological order
+
+    Entity keys are flight-scoped via _entity_from_match.
     """
     matches = sorted(
         matches,
@@ -189,8 +198,8 @@ def _build_pool(matches, category):
     })
 
     for m in matches:
-        winner = _entity_from_match(m, category, "winner")
-        loser = _entity_from_match(m, category, "loser")
+        winner = _entity_from_match(m, category, "winner", flight)
+        loser  = _entity_from_match(m, category, "loser",  flight)
         if winner is None or loser is None:
             continue
 
@@ -234,8 +243,9 @@ def _build_pool(matches, category):
 
 def build_overall_stats(matches, category):
     """
-    Build a season-wide stats table for the given category.
-    Used only for the displayed record columns.
+    Build season-wide stats for the displayed W/L columns.
+    Keyed by bare player ID (not flight-scoped) so that a player's
+    overall record across all flights is shown correctly.
     """
     matches = sorted(
         matches,
@@ -250,8 +260,9 @@ def build_overall_stats(matches, category):
     })
 
     for m in matches:
-        winner = _entity_from_match(m, category, "winner")
-        loser = _entity_from_match(m, category, "loser")
+        flight = str(m.get("flight") or "?")
+        winner = _entity_from_match(m, category, "winner", flight)
+        loser  = _entity_from_match(m, category, "loser",  flight)
         if winner is None or loser is None:
             continue
 
@@ -273,29 +284,34 @@ def build_overall_stats(matches, category):
 
 def build_graph_pools(matches, player_lookup=None, pair_lookup=None):
     """
-    Build pools split by:
-      gender -> category -> division -> flight
+    Build pools split by: gender -> category -> division -> flight.
 
-    Also builds a global TrueSkill pool per gender/category so SOS can use
-    all matches in that gender/category while rankings stay bucketed.
+    Entity keys are flight-scoped ((pid, flight) for singles,
+    (id_a, id_b, flight) for doubles) so the same player in
+    different flights is treated as a separate entity throughout.
+
+    The global TrueSkill pool and win-graph also use flight-scoped
+    keys so that cross-flight appearances don't pollute each other's
+    ratings; SOS/quality-wins remain meaningful because opponents
+    within the same flight share the same scope.
     """
     player_lookup = player_lookup or {}
     pair_lookup = pair_lookup or {}
 
     grouped = defaultdict(list)
-    global_ts_rows = defaultdict(list)
+    global_ts_rows = defaultdict(list)   # (gender, category) → [(dt, winner, loser)]
 
     for match in matches:
-        gender = match.get("gender")
+        gender   = match.get("gender")
         category = match.get("match_type", "").lower().strip()
-        flight = str(match.get("flight") or "?")
+        flight   = str(match.get("flight") or "?")
 
         if gender in ("Boys", "Girls") and category in ("singles", "doubles"):
             division = _match_division(match, category, player_lookup, pair_lookup)
             grouped[(gender, category, division, flight)].append(match)
 
-            winner = _entity_from_match(match, category, "winner")
-            loser = _entity_from_match(match, category, "loser")
+            winner = _entity_from_match(match, category, "winner", flight)
+            loser  = _entity_from_match(match, category, "loser",  flight)
             if winner is not None and loser is not None:
                 dt = _parse_dt(match.get("match_updated_at"))
                 global_ts_rows[(gender, category)].append((dt, winner, loser))
@@ -309,17 +325,17 @@ def build_graph_pools(matches, player_lookup=None, pair_lookup=None):
     }
 
     for (gender, category, division, flight), group in grouped.items():
-        graph, stats, ts_pairs = _build_pool(group, category)
+        graph, stats, ts_pairs = _build_pool(group, category, flight)
         pools[gender][category][division][flight] = {
-            "graph": graph,
-            "stats": stats,
+            "graph":    graph,
+            "stats":    stats,
             "ts_pairs": ts_pairs,
         }
 
-    # Build global match list per gender+category for graph construction
+    # Global match list per gender+category for the cross-bucket graph
     global_matches_by_key = defaultdict(list)
     for match in matches:
-        gender = match.get("gender")
+        gender   = match.get("gender")
         category = match.get("match_type", "").lower().strip()
         if gender in ("Boys", "Girls") and category in ("singles", "doubles"):
             global_matches_by_key[(gender, category)].append(match)
@@ -327,18 +343,20 @@ def build_graph_pools(matches, player_lookup=None, pair_lookup=None):
     for (gender, category), rows in global_ts_rows.items():
         rows.sort(key=lambda x: x[0])
         global_ts_pairs = [(w, l) for _, w, l in rows]
-        pools[gender][category]["_global_ts_pairs"] = global_ts_pairs
+        pools[gender][category]["_global_ts_pairs"]   = global_ts_pairs
         pools[gender][category]["_global_ts_ratings"] = compute_trueskill(global_ts_pairs)
 
-        # Build a global win-graph (latest result per pair, across ALL buckets)
+        # Global win-graph (latest result per pair, across ALL buckets)
+        # Uses flight-scoped entities so a player in F3 and F4 is two nodes.
         all_global_matches = sorted(
             global_matches_by_key[(gender, category)],
             key=lambda m: _parse_dt(m.get("match_updated_at"))
         )
         global_latest_by_pair = {}
         for m in all_global_matches:
-            winner = _entity_from_match(m, category, "winner")
-            loser  = _entity_from_match(m, category, "loser")
+            flight  = str(m.get("flight") or "?")
+            winner  = _entity_from_match(m, category, "winner", flight)
+            loser   = _entity_from_match(m, category, "loser",  flight)
             if winner is None or loser is None:
                 continue
             pk = _pair_key(winner, loser)
@@ -361,26 +379,14 @@ def create_rankings(
     pair_lookup=None,
 ):
     """
-    Rank by TGRS:
+    Rank by TGRS inside each gender/division/flight bucket.
 
-        TGRS_TS_MU_WEIGHT        * ts_mu          (local bucket)
-      + TGRS_SOS_WEIGHT          * global_sos
-      + TGRS_REACH_WEIGHT        * reachability
-      + TGRS_QUALITY_WINS_WEIGHT * quality_wins
-      + TGRS_LOCAL_SOS_WEIGHT    * local_sos       (NEW)
-      + TGRS_LOCAL_TS_MU_WEIGHT  * local_ts_mu     (NEW)
-
-    local_sos     = mean conservative rating of opponents seen inside this
-                    gender+category+division+flight bucket only.
-    local_ts_mu   = ts_mu from the local-bucket TrueSkill model (already
-                    computed as local_ts_ratings; was previously only used
-                    for quality_wins – now also a direct TGRS component).
-
-    Rankings are computed inside each gender/division/flight bucket.
-    Global SOS uses the full gender/category TrueSkill pool.
+    player_lookup  keyed by bare player ID string
+    pair_lookup    keyed by (id_a, id_b) tuple (no flight)
+    overall_stats  keyed by flight-scoped entity key
     """
     player_lookup = player_lookup or {}
-    pair_lookup = pair_lookup or {}
+    pair_lookup   = pair_lookup   or {}
     overall_stats = overall_stats or {}
 
     rows = []
@@ -431,20 +437,17 @@ def create_rankings(
                 if not graph:
                     continue
 
-                # Global reachability: traverses the full gender+category win-graph
-                # so cross-bucket wins count and eligibility pruning doesn't zero it out
                 global_reach = {
                     entity: _reachability_score(entity, global_graph)
                     for entity in eligible
                 }
 
-                # Local reachability: bucket-graph only (same division+flight)
                 local_reach = {
                     entity: _reachability_score(entity, graph)
                     for entity in graph
                 }
 
-                # ── Local TrueSkill (bucket-scoped) ──────────────────────
+                # Local TrueSkill (bucket-scoped, flight-scoped entities)
                 local_ts_ratings = compute_trueskill(ts_pairs)
 
                 def ts_mu_val(entity):
@@ -462,21 +465,18 @@ def create_rankings(
                 eligible_ts_cons = [ts_cons(e) for e in eligible]
                 field_avg_ts = _safe_mean(eligible_ts_cons, default=0.0)
 
-                # ── Build local opponent map for local SOS ────────────────
-                # ts_pairs contains ALL (winner, loser) pairs in this bucket
+                # Local opponent map for local SOS
                 local_opponents_by_entity = defaultdict(list)
                 for w, l in ts_pairs:
                     local_opponents_by_entity[w].append(l)
                     local_opponents_by_entity[l].append(w)
 
-                # ── Per-entity scores ────────────────────────────────────
                 sos          = {}
                 local_sos    = {}
                 quality_wins = {}
                 tgrs_score   = {}
 
                 for entity in eligible:
-                    # --- Global SOS (unchanged) ---
                     global_opp_strengths = [
                         global_ts_ratings[opp].conservative
                         for opp in global_opponents_by_entity.get(entity, [])
@@ -485,9 +485,6 @@ def create_rankings(
                     entity_global_sos = _safe_mean(global_opp_strengths, default=field_avg_ts)
                     sos[entity] = entity_global_sos
 
-                    # --- Local SOS (NEW) ---
-                    # Use local_ts_ratings conservative score for opponents in
-                    # this bucket only.
                     local_opp_strengths = [
                         local_ts_ratings[opp].conservative
                         for opp in local_opponents_by_entity.get(entity, [])
@@ -496,35 +493,25 @@ def create_rankings(
                     entity_local_sos = _safe_mean(local_opp_strengths, default=field_avg_ts)
                     local_sos[entity] = entity_local_sos
 
-                    # --- Quality wins (top-3 beaten opponents) ---
-                    # Use global graph so cross-bucket wins are included,
-                    # and global ts_mu for opponent strength ratings.
                     beaten_ratings = [
                         global_ts_ratings[opp].mu
                         for opp in global_graph.get(entity, set())
                         if opp in global_ts_ratings
                     ]
-                    entity_quality_wins = _top_n_average(
-                        beaten_ratings,
-                        n=3,
-                        default=0.0
-                    )
+                    entity_quality_wins = _top_n_average(beaten_ratings, n=3, default=0.0)
                     quality_wins[entity] = entity_quality_wins
 
-                    # --- TGRS ---
-                    # Use global mu for the main ts_mu term (full gender+category pool)
-                    # Use local mu (ts_mu_val) as a separate local component
                     g_ts_r = global_ts_ratings.get(entity)
                     global_ts_mu_val = g_ts_r.mu if g_ts_r is not None else 0.0
 
                     tgrs_score[entity] = (
-                        TGRS_TS_MU_WEIGHT         * global_ts_mu_val                  # global mu
-                        + TGRS_SOS_WEIGHT          * entity_global_sos                 # global SOS
-                        + TGRS_REACH_WEIGHT        * global_reach.get(entity, 0)       # global reach
-                        + TGRS_QUALITY_WINS_WEIGHT * entity_quality_wins               # global quality wins
-                        + TGRS_LOCAL_SOS_WEIGHT    * entity_local_sos                  # local SOS
-                        + TGRS_LOCAL_TS_MU_WEIGHT  * ts_mu_val(entity)                 # local mu
-                        + TGRS_LOCAL_REACH_WEIGHT  * local_reach.get(entity, 0)        # local reach
+                        TGRS_TS_MU_WEIGHT         * global_ts_mu_val
+                        + TGRS_SOS_WEIGHT          * entity_global_sos
+                        + TGRS_REACH_WEIGHT        * global_reach.get(entity, 0)
+                        + TGRS_QUALITY_WINS_WEIGHT * entity_quality_wins
+                        + TGRS_LOCAL_SOS_WEIGHT    * entity_local_sos
+                        + TGRS_LOCAL_TS_MU_WEIGHT  * ts_mu_val(entity)
+                        + TGRS_LOCAL_REACH_WEIGHT  * local_reach.get(entity, 0)
                     )
 
                 ordered = sorted(
@@ -555,38 +542,35 @@ def create_rankings(
 
                     for entity in tie_group:
                         bucket_info = stats[entity]
+                        # overall_stats is keyed by flight-scoped entity
                         global_info = overall_stats.get(entity, bucket_info)
-                        # Global TrueSkill rating (full gender+category pool)
-                        global_ts_r = global_ts_ratings.get(entity)
-                        # Local TrueSkill rating (this bucket only)
-                        local_ts_r  = local_ts_ratings.get(entity)
 
-                        score = tgrs_score.get(entity, 0.0)
+                        global_ts_r = global_ts_ratings.get(entity)
+                        local_ts_r  = local_ts_ratings.get(entity)
+                        score       = tgrs_score.get(entity, 0.0)
+
+                        # Resolve name/school from bare-ID lookups
+                        bare = _bare_player_id(entity)
 
                         row = {
-                            "rank":           rank,
-                            "gender":         gender,
-                            "division":       division,
-                            "flight":         flight,
-                            "rating":         round(score, 4),
-                            "TGRS":           round(score, 4),
-                            "reachability":        global_reach.get(entity, 0),
-                            "local_reachability":  local_reach.get(entity, 0),
-                            # Global SOS (opponents rated via global pool)
-                            "sos":            round(sos.get(entity, field_avg_ts), 4),
-                            # Local SOS (opponents rated via local bucket pool)
-                            "local_sos":      round(local_sos.get(entity, field_avg_ts), 4),
-                            # quality_wins
-                            "quality_wins":   round(quality_wins.get(entity, 0.0), 4),
-                            # Global TrueSkill columns (full gender+category pool)
-                            "ts_mu":          round(global_ts_r.mu, 4) if global_ts_r else None,
-                            "ts_sigma":       round(global_ts_r.sigma, 4) if global_ts_r else None,
-                            "ts_rating":      round(global_ts_r.conservative, 4) if global_ts_r else None,
-                            # Local TrueSkill mu (this bucket only) — distinct from global ts_mu
-                            "local_ts_mu":    round(local_ts_r.mu, 4) if local_ts_r else None,
-                            "matches_played": global_info["raw_matches"],
-                            "wins":           global_info["raw_wins"],
-                            "losses":         global_info["raw_losses"],
+                            "rank":               rank,
+                            "gender":             gender,
+                            "division":           division,
+                            "flight":             flight,
+                            "rating":             round(score, 4),
+                            "TGRS":               round(score, 4),
+                            "reachability":       global_reach.get(entity, 0),
+                            "local_reachability": local_reach.get(entity, 0),
+                            "sos":                round(sos.get(entity, field_avg_ts), 4),
+                            "local_sos":          round(local_sos.get(entity, field_avg_ts), 4),
+                            "quality_wins":       round(quality_wins.get(entity, 0.0), 4),
+                            "ts_mu":              round(global_ts_r.mu, 4) if global_ts_r else None,
+                            "ts_sigma":           round(global_ts_r.sigma, 4) if global_ts_r else None,
+                            "ts_rating":          round(global_ts_r.conservative, 4) if global_ts_r else None,
+                            "local_ts_mu":        round(local_ts_r.mu, 4) if local_ts_r else None,
+                            "matches_played":     global_info["raw_matches"],
+                            "wins":               global_info["raw_wins"],
+                            "losses":             global_info["raw_losses"],
                             "last_match_date": (
                                 global_info["raw_last_date"].strftime("%Y-%m-%d")
                                 if global_info["raw_last_date"] != datetime.min
@@ -595,16 +579,18 @@ def create_rankings(
                         }
 
                         if category == "singles":
-                            meta = player_lookup.get(entity, {})
+                            # bare = player ID string
+                            meta = player_lookup.get(bare, {})
                             row.update({
-                                "name":     meta.get("name", entity),
+                                "name":     meta.get("name", bare),
                                 "school":   meta.get("school", ""),
                                 "division": division,
                             })
                         else:
-                            meta = pair_lookup.get(entity, {})
+                            # bare = (id_a, id_b) tuple
+                            meta = pair_lookup.get(bare, {})
                             row.update({
-                                "pair_name": meta.get("pair_name", " / ".join(entity)),
+                                "pair_name": meta.get("pair_name", " / ".join(bare)),
                                 "school":    meta.get("school", ""),
                                 "division":  division,
                             })
