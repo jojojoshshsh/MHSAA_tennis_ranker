@@ -1,49 +1,49 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Landen Maltby / Charlie Laethem,Grosse Pointe Woods University Liggett,426.0899,426.0899,100.0,249,68,19.8812,19.8812,46.1854,49.9259,55.8929,55.8929,1.989,26,26,0,2025-10-17
-2,Boys,4_other,2,Jaben Bell / Hudson Tolsma,Grand Rapids NorthPointe Christian,407.9199,407.9199,94.93,241,67,19.2953,19.2953,41.8036,44.2328,49.5371,49.5371,1.7681,30,28,2,2025-10-17
-3,Boys,4_other,2,Luke DuMont / Maden Brady,Jackson Lumen Christi,396.2443,396.2443,91.67,231,64,22.2061,22.2061,43.0428,39.8094,44.2487,44.2487,1.4798,35,29,6,2025-10-17
-4,Boys,4_other,2,Oliver Burnett / Wesley Goodspeed,Allegan,391.9823,391.9823,90.48,231,64,21.1797,21.1797,40.9656,38.1098,42.4792,42.4792,1.4565,32,29,3,2025-10-08
-5,Boys,4_other,2,Simon Geffre / Ethan Groner,Paw Paw,390.9824,390.9824,90.2,231,64,20.0209,20.0209,39.0397,40.0292,44.7703,44.7703,1.5804,31,28,3,2025-10-17
-6,Boys,4_other,2,Remington Whelpley / Adam Sikkenga,Whitehall,388.6212,388.6212,89.54,236,66,20.1904,20.1904,37.9784,36.7734,41.2793,41.2793,1.502,22,18,4,2025-10-17
-7,Boys,4_other,2,Bryce Cundiff / Elliot MacTavish,Maple City Glen Lake,386.4048,386.4048,88.92,231,64,31.6259,31.6259,38.1328,35.7989,39.8829,39.8829,1.3614,9,5,4,2025-10-17
-8,Boys,4_other,2,Gavin McClellan / Tyler Ribel,Traverse City St Francis,383.067,383.067,87.99,231,64,25.207,25.207,38.6791,35.4985,39.6845,39.6845,1.3953,17,12,5,2025-10-17
-9,Boys,4_other,2,Shivam Srivastava / Andrew Tiong,Flint Powers Catholic,378.7394,378.7394,86.78,231,64,15.6081,15.6081,39.0142,38.1392,42.827,42.827,1.5626,25,23,2,2025-10-08
-10,Boys,4_other,2,Finley Wise / Adiv Patel,Pontiac Notre Dame Prep,378.6566,378.6566,86.75,231,64,22.1187,22.1187,34.6909,35.3192,39.874,39.874,1.5183,18,14,4,2025-10-17
-11,Boys,4_other,2,Bryce Hood / Hudson Aalfs,Niles Brandywine,377.8011,377.8011,86.51,231,64,23.6248,23.6248,32.8304,31.4366,35.4947,35.4947,1.3527,20,14,6,2025-10-08
-12,Boys,4_other,2,Ryan Eicholtz / Levi Vander Moren,Kalamazoo Christian,372.505,372.505,85.04,231,64,22.9829,22.9829,29.0855,29.0056,33.4452,33.4452,1.4799,25,15,10,2025-10-17
-13,Boys,4_other,2,Sage Sanchez / Elijah Chung,Berrien Springs,370.3583,370.3583,84.44,231,64,21.3121,21.3121,29.3734,29.7891,33.7549,33.7549,1.3219,13,8,5,2025-10-17
-14,Boys,4_other,2,Alex Devries / Maksym Zimmerman,Grand Rapids West Catholic,370.0317,370.0317,84.35,231,64,17.7177,17.7177,31.6239,30.9271,35.6763,35.6763,1.5831,19,14,5,2025-10-17
-15,Boys,4_other,2,Bryce Cundiff / Garrett Bridges,Maple City Glen Lake,366.591,366.591,83.38,232,64,16.9705,16.9705,24.1764,30.9839,35.9063,35.9063,1.6408,7,5,2,2025-10-01
-16,Boys,4_other,2,Evan Byelich / Blake Bellingar,Williamston,179.2753,179.2753,31.07,84,27,20.0533,20.0533,32.7977,34.5892,38.9635,38.9635,1.4581,22,17,5,2025-10-17
-17,Boys,4_other,2,Keaton Bayless / Sam Nobis,Portland,163.564,163.564,26.69,76,25,14.7992,14.7992,33.2042,33.4904,38.2049,38.2049,1.5715,22,19,3,2025-10-08
-18,Boys,4_other,2,Michael Olenchak / Tye Chlebek,Grosse Ile,149.4209,149.4209,22.74,72,19,13.2238,13.2238,31.9775,36.5648,41.5313,41.5313,1.6555,30,27,3,2025-10-17
-19,Boys,4_other,2,Howard “Howie” Schorer / Jimmy Heegan,Ann Arbor Father Gabriel Richard,118.82,118.82,14.19,37,17,30.4602,30.4602,24.9678,27.6706,32.4561,32.4561,1.5952,7,3,4,2025-09-25
-20,Boys,4_other,2,Levi Leffring / David Ritzema,Muskegon Western Michigan Christian,117.773,117.773,13.9,47,15,16.9764,16.9764,28.462,31.2269,35.5497,35.5497,1.4409,18,14,4,2025-10-08
-21,Boys,4_other,2,Nate Bolkema / Nolan Walcott,Grandville Calvin Christian,109.4188,109.4188,11.57,42,13,18.3196,18.3196,28.3036,28.8586,33.4984,33.4984,1.5466,22,15,7,2025-10-17
-22,Boys,4_other,2,Ian McKay / Xander Marshall,Croswell-Lexington,105.0496,105.0496,10.35,38,12,14.2308,14.2308,30.5569,33.0201,37.8618,37.8618,1.6139,18,16,2,2025-10-17
-23,Boys,4_other,2,Owen Tunney / Charlie Thiel,Saginaw Nouvel Catholic Central,104.3471,104.3471,10.15,40,10,17.1975,17.1975,29.3763,32.6371,37.1908,37.1908,1.5179,14,12,2,2025-10-08
-24,Boys,4_other,2,Caleb Klan / Colin Hartzler,Lansing Christian School,101.7979,101.7979,9.44,31,14,25.8795,25.8795,24.1949,24.0314,28.4599,28.4599,1.4762,21,8,13,2025-10-17
-25,Boys,4_other,2,Collin McIntyre / Frederico De Godoy Barreto,Three Rivers,99.1349,99.1349,8.69,28,16,17.2297,17.2297,25.9465,27.0356,31.291,31.291,1.4185,14,10,4,2025-10-08
-26,Boys,4_other,2,Carter Radtke / Owen Lewis,Essexville Garber,93.622,93.622,7.16,35,9,17.4885,17.4885,27.323,27.4696,31.7282,31.7282,1.4195,18,12,6,2025-10-17
-27,Boys,4_other,2,Chase Mitchell / Holden Carrington,Buchanan,78.9176,78.9176,3.05,18,11,23.4816,23.4816,19.8285,20.2591,24.5998,24.5998,1.4469,11,4,7,2025-10-08
-28,Boys,4_other,2,Caleb McLain / Vinnie Guerin,Imlay City,76.5252,76.5252,2.38,21,7,16.6966,16.6966,26.1223,27.5749,31.8432,31.8432,1.4228,14,10,4,2025-10-17
-29,Boys,4_other,2,Jacob Kaczmarek / Isaac Filbrandt,South Haven,69.8988,69.8988,0.53,16,9,25.949,25.949,13.7227,15.8135,21.0413,21.0413,1.7426,8,2,6,2025-09-26
-30,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,68.4751,68.4751,0.13,15,7,11.9988,11.9988,21.302,29.7961,36.1936,36.1936,2.1325,6,5,1,2025-09-20
-31,Boys,4_other,2,Wyatt Dotson / Owen Burleson,South Haven,66.3312,66.3312,0.0,15,9,20.2301,20.2301,16.901,16.7221,21.5433,21.5433,1.607,5,2,3,2025-10-08
-32,Boys,4_other,2,Jude Boggs / Colin Classic,Monroe St Mary Catholic Central,66.0551,66.0551,0.0,8,4,28.1224,28.1224,26.0702,24.2092,28.9141,28.9141,1.5683,5,2,3,2025-10-08
-33,Boys,4_other,2,Carmine Saracina / Colin Gallagher,Kalamazoo Hackett Catholic Prep,61.3655,61.3655,0.0,14,8,22.6484,22.6484,14.6109,12.4251,16.901,16.901,1.492,12,2,10,2025-10-08
-34,Boys,4_other,2,Alfred Schweihofer / Cole Hackett,Yale,61.3547,61.3547,0.0,12,5,18.446,18.446,18.8851,24.9185,29.3032,29.3032,1.4616,16,9,7,2025-10-08
-35,Boys,4_other,2,Alex Frank / Ben Entler,Lansing Catholic,58.6968,58.6968,0.0,10,6,18.5214,18.5214,16.5929,21.6022,26.5315,26.5315,1.6431,18,9,9,2025-10-17
-36,Boys,4_other,2,Chase Yeager / Noah Rosema,North Muskegon,58.4201,58.4201,0.0,10,3,23.4728,23.4728,16.2951,24.3282,28.6964,28.6964,1.4561,18,7,11,2025-10-08
-37,Boys,4_other,2,Sam Brunner / Brendan Izworski,Grand Rapids Catholic Central,57.209,57.209,0.0,8,3,27.7527,27.7527,15.9033,19.3992,25.0416,25.0416,1.8808,7,2,5,2025-10-17
-38,Boys,4_other,2,Rockey Myers / Collin Stacy,Battle Creek Pennfield,55.4108,55.4108,0.0,12,6,16.6266,16.6266,16.3428,17.1574,21.4035,21.4035,1.4154,8,4,4,2025-10-08
-39,Boys,4_other,2,Travis Schroeder / Dylan Tarkowski,Midland Bullock Creek,47.2352,47.2352,0.0,8,1,16.1277,16.1277,18.7938,22.2841,26.9667,26.9667,1.5608,10,6,4,2025-10-08
-40,Boys,4_other,2,Jacob Austin / Wyatt Dennis,Otsego,46.7119,46.7119,0.0,5,3,11.5393,11.5393,15.9512,26.6671,31.6964,31.6964,1.6765,10,8,2,2025-10-06
-41,Boys,4_other,2,Michael Pieniazek / Declan Mahaffy,Goodrich,41.795,41.795,0.0,5,2,15.4955,15.4955,13.2162,19.4642,24.3711,24.3711,1.6357,11,6,5,2025-10-08
-42,Boys,4_other,2,Emery Price / Chase Yeager,North Muskegon,41.0289,41.0289,0.0,2,1,23.3789,23.3789,9.5146,16.0083,23.1913,23.1913,2.3943,6,2,4,2025-08-22
-43,Boys,4_other,2,Tydan Bible / Kelton Phillipp,Hillsdale,40.4073,40.4073,0.0,5,2,12.939,12.939,14.2877,19.3395,24.5283,24.5283,1.7296,7,4,3,2025-10-08
-44,Boys,4_other,2,Carson Luppo / Hunter Herzberg,Brooklyn Columbia Central,39.1897,39.1897,0.0,6,2,7.2835,7.2835,15.763,21.4047,26.8101,26.8101,1.8018,6,5,1,2025-09-17
-45,Boys,4_other,2,Dallas Klein / Dominic Bravata,Comstock Park,38.0409,38.0409,0.0,6,2,14.9658,14.9658,10.4896,15.2785,19.8267,19.8267,1.5161,15,7,8,2025-10-08
-46,Boys,4_other,2,Isaiah Steinert / Maxwell Martinez,Hemlock,37.3838,37.3838,0.0,4,1,11.5022,11.5022,12.9942,20.4776,26.3058,26.3058,1.9427,6,4,2,2025-10-08
-47,Boys,4_other,2,Joel Redburn / Anthony Bonucci,Ortonville Brandon,36.3524,36.3524,0.0,2,2,21.437,21.437,7.0694,11.5816,17.4345,17.4345,1.951,9,2,7,2025-10-08
-48,Boys,4_other,2,Mitchel Fortier / Valentina Cano,Lake Odessa Lakewood,29.306,29.306,0.0,2,1,12.7787,12.7787,9.3053,12.7421,17.9239,17.9239,1.7273,5,2,3,2025-10-08
+1,Boys,4_other,2,Oliver Burnett / Wesley Goodspeed,Allegan,2407.7205,2407.7205,100.0,2368,64,20.9577,21.1797,35.3663,31.8719,36.043,42.4792,1.3904,32,29,3,2025-10-08
+2,Boys,4_other,2,Luke DuMont / Maden Brady,Jackson Lumen Christi,2401.2985,2401.2985,97.46,2368,64,23.6476,22.2061,37.8338,34.2394,38.2369,44.2487,1.3325,35,29,6,2025-10-17
+3,Boys,4_other,2,Simon Geffre / Ethan Groner,Paw Paw,2395.5427,2395.5427,95.18,2368,64,19.1227,20.0209,31.9121,33.9321,38.5756,44.7703,1.5478,31,28,3,2025-10-17
+4,Boys,4_other,2,Jaben Bell / Hudson Tolsma,Grand Rapids NorthPointe Christian,2392.6241,2392.6241,94.03,2368,67,21.0322,19.2953,34.9413,34.4513,38.9215,49.5371,1.4901,30,28,2,2025-10-17
+5,Boys,4_other,2,Landen Maltby / Charlie Laethem,Grosse Pointe Woods University Liggett,2381.3427,2381.3427,89.56,2368,68,27.4028,19.8812,38.8445,37.7899,41.9789,55.8929,1.3963,26,26,0,2025-10-17
+6,Boys,4_other,2,Bryce Hood / Hudson Aalfs,Niles Brandywine,2332.4297,2332.4297,70.21,2368,64,17.6169,23.6248,27.2293,25.3194,29.3575,35.4947,1.346,20,14,6,2025-10-08
+7,Boys,4_other,2,Ryan Eicholtz / Levi Vander Moren,Kalamazoo Christian,2329.0523,2329.0523,68.87,2368,64,20.6115,22.9829,22.5105,22.8211,27.1687,33.4452,1.4492,25,15,10,2025-10-17
+8,Boys,4_other,2,Shivam Srivastava / Andrew Tiong,Flint Powers Catholic,2326.34,2326.34,67.8,2368,64,18.9377,15.6081,33.0301,31.7345,35.8894,42.827,1.385,25,23,2,2025-10-08
+9,Boys,4_other,2,Gavin McClellan / Tyler Ribel,Traverse City St Francis,2319.285,2319.285,65.01,2368,64,26.5103,25.207,32.7112,28.2615,32.1386,39.6845,1.2924,17,12,5,2025-10-17
+10,Boys,4_other,2,Remington Whelpley / Adam Sikkenga,Whitehall,2317.1627,2317.1627,64.17,2368,66,19.4874,20.1904,31.2787,25.8815,29.838,41.2793,1.3188,22,18,4,2025-10-17
+11,Boys,4_other,2,Finley Wise / Adiv Patel,Pontiac Notre Dame Prep,2312.6672,2312.6672,62.39,2368,64,18.715,22.1187,26.2484,27.8922,32.3471,39.874,1.4849,18,14,4,2025-10-17
+12,Boys,4_other,2,Bryce Cundiff / Elliot MacTavish,Maple City Glen Lake,2300.3232,2300.3232,57.5,2368,64,27.0805,31.6259,31.9667,29.201,33.0848,39.8829,1.2946,9,5,4,2025-10-17
+13,Boys,4_other,2,Alex Devries / Maksym Zimmerman,Grand Rapids West Catholic,2287.0015,2287.0015,52.23,2368,64,22.6928,17.7177,26.4448,22.5487,26.5876,35.6763,1.3463,19,14,5,2025-10-17
+14,Boys,4_other,2,Sage Sanchez / Elijah Chung,Berrien Springs,2285.0007,2285.0007,51.44,2368,64,16.488,21.3121,23.3268,24.1382,28.0676,33.7549,1.3098,13,8,5,2025-10-17
+15,Boys,4_other,2,Bryce Cundiff / Garrett Bridges,Maple City Glen Lake,2269.4456,2269.4456,45.29,2368,64,26.3948,16.9705,29.7798,26.5894,30.2701,35.9063,1.2269,7,5,2,2025-10-01
+16,Boys,4_other,2,Evan Byelich / Blake Bellingar,Williamston,2247.6998,2247.6998,36.68,2368,27,22.0069,20.0533,29.6396,26.5655,30.3359,38.9635,1.2568,22,17,5,2025-10-17
+17,Boys,4_other,2,Keaton Bayless / Sam Nobis,Portland,2231.9357,2231.9357,30.44,2368,25,18.7716,14.7992,30.8204,29.9908,34.0672,38.2049,1.3588,22,19,3,2025-10-08
+18,Boys,4_other,2,Collin McIntyre / Frederico De Godoy Barreto,Three Rivers,2206.2765,2206.2765,20.29,2368,16,17.8114,17.2297,19.8508,20.7056,24.5556,31.291,1.2833,14,10,4,2025-10-08
+19,Boys,4_other,2,Michael Olenchak / Tye Chlebek,Grosse Ile,2204.434,2204.434,19.56,2368,19,19.7371,13.2238,35.1652,34.69,39.0363,41.5313,1.4488,30,27,3,2025-10-17
+20,Boys,4_other,2,Nate Bolkema / Nolan Walcott,Grandville Calvin Christian,2196.3958,2196.3958,16.38,2368,13,17.7983,18.3196,28.4745,23.4519,27.5228,33.4984,1.3569,22,15,7,2025-10-17
+21,Boys,4_other,2,Howard “Howie” Schorer / Jimmy Heegan,Ann Arbor Father Gabriel Richard,2194.2354,2194.2354,15.53,2368,17,23.9173,30.4602,21.9311,18.0754,21.9991,32.4561,1.3079,7,3,4,2025-09-25
+22,Boys,4_other,2,Ian McKay / Xander Marshall,Croswell-Lexington,2191.8506,2191.8506,14.58,2368,12,13.8072,14.2308,25.3263,24.0457,28.3255,37.8618,1.4266,18,16,2,2025-10-17
+23,Boys,4_other,2,Levi Leffring / David Ritzema,Muskegon Western Michigan Christian,2186.7799,2186.7799,12.58,2368,15,17.0638,16.9764,23.5595,23.2245,27.1524,35.5497,1.3093,18,14,4,2025-10-08
+24,Boys,4_other,2,Caleb Klan / Colin Hartzler,Lansing Christian School,2183.6073,2183.6073,11.32,2368,14,21.6508,25.8795,17.9976,16.4808,20.8209,28.4599,1.4467,21,8,13,2025-10-17
+25,Boys,4_other,2,Chase Mitchell / Holden Carrington,Buchanan,2182.2166,2182.2166,10.77,2368,11,18.3301,23.4816,13.3033,13.5806,17.8292,24.5998,1.4162,11,4,7,2025-10-08
+26,Boys,4_other,2,Owen Tunney / Charlie Thiel,Saginaw Nouvel Catholic Central,2169.2356,2169.2356,5.63,2368,10,15.8552,17.1975,24.3255,26.1401,30.2761,37.1908,1.3786,14,12,2,2025-10-08
+27,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,2168.9766,2168.9766,5.53,2368,7,24.8569,11.9988,31.7316,29.7464,33.7948,36.1936,1.3495,6,5,1,2025-09-20
+28,Boys,4_other,2,Carter Radtke / Owen Lewis,Essexville Garber,2162.149,2162.149,2.83,2368,9,14.9683,17.4885,20.9624,20.9299,24.9462,31.7282,1.3388,18,12,6,2025-10-17
+29,Boys,4_other,2,Caleb McLain / Vinnie Guerin,Imlay City,2157.3907,2157.3907,0.95,2368,7,13.7513,16.6966,20.3864,20.4534,24.4098,31.8432,1.3188,14,10,4,2025-10-17
+30,Boys,4_other,2,Jacob Kaczmarek / Isaac Filbrandt,South Haven,2155.326,2155.326,0.13,2368,9,19.9072,25.949,8.6898,11.0563,16.1081,21.0413,1.6839,8,2,6,2025-09-26
+31,Boys,4_other,2,Wyatt Dotson / Owen Burleson,South Haven,2149.4309,2149.4309,0.0,2368,9,14.7636,20.2301,6.7522,9.2778,13.5696,21.5433,1.4306,5,2,3,2025-10-08
+32,Boys,4_other,2,Chase Yeager / Noah Rosema,North Muskegon,2148.5441,2148.5441,0.0,2368,3,18.8673,23.4728,11.6638,16.6082,20.6679,28.6964,1.3533,18,7,11,2025-10-08
+33,Boys,4_other,2,Jude Boggs / Colin Classic,Monroe St Mary Catholic Central,2147.9999,2147.9999,0.0,2368,4,17.5904,28.1224,12.3164,7.3113,11.5243,28.9141,1.4043,5,2,3,2025-10-08
+34,Boys,4_other,2,Sam Brunner / Brendan Izworski,Grand Rapids Catholic Central,2147.7267,2147.7267,0.0,2368,3,20.9374,27.7527,8.1021,13.584,18.6086,25.0416,1.6749,7,2,5,2025-10-17
+35,Boys,4_other,2,Carmine Saracina / Colin Gallagher,Kalamazoo Hackett Catholic Prep,2146.7174,2146.7174,0.0,2368,8,16.8719,22.6484,6.6497,5.6988,10.2324,16.901,1.5112,12,2,10,2025-10-08
+36,Boys,4_other,2,Alex Frank / Ben Entler,Lansing Catholic,2145.5241,2145.5241,0.0,2368,6,19.5045,18.5214,20.2741,18.0762,22.2864,26.5315,1.4034,18,9,9,2025-10-17
+37,Boys,4_other,2,Rockey Myers / Collin Stacy,Battle Creek Pennfield,2143.6713,2143.6713,0.0,2368,6,13.773,16.6266,10.7921,8.6078,12.6183,21.4035,1.3368,8,4,4,2025-10-08
+38,Boys,4_other,2,Alfred Schweihofer / Cole Hackett,Yale,2142.9784,2142.9784,0.0,2368,5,17.0236,18.446,19.1257,18.3213,22.3522,29.3032,1.3437,16,9,7,2025-10-08
+39,Boys,4_other,2,Jacob Austin / Wyatt Dennis,Otsego,2139.198,2139.198,0.0,2368,3,20.3449,11.5393,19.4274,20.548,24.3786,31.6964,1.2769,10,8,2,2025-10-06
+40,Boys,4_other,2,Dallas Klein / Dominic Bravata,Comstock Park,2127.2518,2127.2518,0.0,2368,2,16.4944,14.9658,11.623,10.9938,15.1343,19.8267,1.3802,15,7,8,2025-10-08
+41,Boys,4_other,2,Tydan Bible / Kelton Phillipp,Hillsdale,2125.9947,2125.9947,0.0,2368,2,12.2767,12.939,11.68,10.7565,14.8097,24.5283,1.3511,7,4,3,2025-10-08
+42,Boys,4_other,2,Carson Luppo / Hunter Herzberg,Brooklyn Columbia Central,2123.0397,2123.0397,0.0,2368,2,3.8174,7.2835,9.6625,15.1658,20.6613,26.8101,1.8318,6,5,1,2025-09-17
+43,Boys,4_other,2,Michael Pieniazek / Declan Mahaffy,Goodrich,64.2878,64.2878,0.0,35,2,16.3615,15.4955,10.7925,12.3649,16.6769,24.3711,1.4373,11,6,5,2025-10-08
+44,Boys,4_other,2,Joel Redburn / Anthony Bonucci,Ortonville Brandon,61.7744,61.7744,0.0,34,2,18.3074,21.437,8.6652,7.3308,11.8921,17.4345,1.5204,9,2,7,2025-10-08
+45,Boys,4_other,2,Travis Schroeder / Dylan Tarkowski,Midland Bullock Creek,41.9309,41.9309,0.0,10,1,13.4674,16.1277,11.2266,15.5188,20.0241,26.9667,1.5018,10,6,4,2025-10-08
+46,Boys,4_other,2,Emery Price / Chase Yeager,North Muskegon,40.6928,40.6928,0.0,3,1,20.6835,23.3789,11.6292,15.3407,20.6329,23.1913,1.7641,6,2,4,2025-08-22
+47,Boys,4_other,2,Isaiah Steinert / Maxwell Martinez,Hemlock,40.601,40.601,0.0,11,1,10.1356,11.5022,11.3065,17.0602,22.1952,26.3058,1.7117,6,4,2,2025-10-08
+48,Boys,4_other,2,Mitchel Fortier / Valentina Cano,Lake Odessa Lakewood,27.2064,27.2064,0.0,3,1,14.8081,12.7787,7.1541,7.1067,11.4747,17.9239,1.456,5,2,3,2025-10-08
