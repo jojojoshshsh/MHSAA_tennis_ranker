@@ -12,8 +12,6 @@ from graph_engine import (
     build_graph_pools,
     build_overall_stats,
     create_rankings,
-    _SlugRegistry,
-    _safe_slug,
 )
 
 logging.basicConfig(
@@ -33,11 +31,11 @@ _SINGLES_COLS = [
     "reachability",
     "local_reachability",
     "sos",
-    "local_sos",
+    "local_sos",       # NEW – SOS within same gender/category/division/flight bucket
     "quality_wins",
     "ts_rating",
     "ts_mu",
-    "local_ts_mu",
+    "local_ts_mu",     # NEW – TrueSkill mu from local bucket model
     "ts_sigma",
     "matches_played",
     "wins",
@@ -57,11 +55,11 @@ _DOUBLES_COLS = [
     "reachability",
     "local_reachability",
     "sos",
-    "local_sos",
+    "local_sos",       # NEW
     "quality_wins",
     "ts_rating",
     "ts_mu",
-    "local_ts_mu",
+    "local_ts_mu",     # NEW
     "ts_sigma",
     "matches_played",
     "wins",
@@ -163,6 +161,12 @@ def _normalize_division(raw):
     return "4_other"
 
 
+def _safe_slug(value):
+    text = str(value or "").strip().lower()
+    text = re.sub(r"[^a-z0-9]+", "_", text)
+    return text.strip("_") or "unknown"
+
+
 def build_lookups(matches, school_meta):
     player_lookup = {}
     pair_lookup = {}
@@ -231,9 +235,6 @@ def export_split_csvs(rows, columns, prefix):
     """
     Write one CSV per gender + division + flight bucket.
     Adds TGRS_scaled column: lowest floored to 0, highest scaled to 100.
-
-    Raises ValueError if any two distinct gender/division/flight values
-    produce the same filename slug (which would silently overwrite a file).
     """
     out_dir = Path("rankings_by_division_flight")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -261,43 +262,33 @@ def export_split_csvs(rows, columns, prefix):
 
     df["TGRS_scaled"] = pd.concat(scaled_col)
 
+    # Insert TGRS_scaled right after TGRS in columns
     cols_with_scaled = []
     for c in columns:
         cols_with_scaled.append(c)
         if c == "TGRS":
             cols_with_scaled.append("TGRS_scaled")
 
-    # Slug registries — one per component that forms part of the filename.
-    # Collisions raise ValueError before any file is written.
-    gender_slugs   = _SlugRegistry(f"{prefix}/gender")
-    division_slugs = _SlugRegistry(f"{prefix}/division")
-    flight_slugs   = _SlugRegistry(f"{prefix}/flight")
-
     for (gender, division, flight), group in df.groupby(
         ["gender", "division", "flight"], dropna=False
     ):
-        g_slug = gender_slugs.register(str(gender))
-        d_slug = division_slugs.register(str(division))
-        f_slug = flight_slugs.register(str(flight))
-
         out_path = out_dir / (
-            f"{prefix}_{g_slug}_division_{d_slug}_flight_{f_slug}.csv"
+            f"{prefix}_{_safe_slug(gender)}_division_{_safe_slug(division)}"
+            f"_flight_{_safe_slug(flight)}.csv"
         )
         group.to_csv(out_path, index=False, columns=cols_with_scaled)
         logging.info("Wrote %s (%d rows)", out_path, len(group))
 
-
 def build_team_rankings(singles_rows, doubles_rows):
     """
     Team score per slot:
-      rank 1        → 12.5 pts
-      rank 2        → 10.0 pts
-      rank 3-4      →  7.5 pts
-      rank 5-8      →  5.0 pts
-      rank 9-16     →  2.5 pts
-      rank 17-32    →  1.0 pts
-      rank 33+      →  0.0 pts
-
+      rank 1        → 16.67 pts
+      rank 2        → 13.33 pts
+      rank 3-4      → 10.00 pts
+      rank 5-8      →  6.67 pts
+      rank 9-16     →  3.33 pts
+      rank 17-32    →  1.00 pts
+      rank 33+      →  0.00 pts
     One entry per school per flight/category (best-ranked player only).
     Sum across all 6 slots (S1,S2,S3,D1,D2,D3) for team total.
     """
@@ -313,7 +304,6 @@ def build_team_rankings(singles_rows, doubles_rows):
         if r <= 16:  return  2.5
         if r <= 32:  return  1.0
         return 0.0
-
     all_rows = (
         [dict(r, category="singles") for r in singles_rows] +
         [dict(r, category="doubles") for r in doubles_rows]
@@ -326,6 +316,7 @@ def build_team_rankings(singles_rows, doubles_rows):
     df = df[df["flight"].astype(str).isin(ALLOWED_FLIGHTS)]
     df["rank"] = pd.to_numeric(df["rank"], errors="coerce").fillna(999).astype(int)
 
+    # One entry per school per gender+division+flight+category — best rank only
     best = (
         df.sort_values("rank")
         .groupby(["gender", "division", "flight", "category", "school"])
@@ -335,6 +326,7 @@ def build_team_rankings(singles_rows, doubles_rows):
 
     best["points"] = best["rank"].apply(rank_to_points)
 
+    # Sum points across all slots per school
     team_scores = (
         best.groupby(["gender", "division", "school"])["points"]
         .sum()
@@ -351,17 +343,12 @@ def build_team_rankings(singles_rows, doubles_rows):
         .astype(int)
     )
 
-    gender_slugs   = _SlugRegistry("team/gender")
-    division_slugs = _SlugRegistry("team/division")
-
     for (gender, division), group in team_scores.groupby(["gender", "division"]):
-        g_slug = gender_slugs.register(str(gender))
-        d_slug = division_slugs.register(str(division))
-        out_path = out_dir / f"team_{g_slug}_division_{d_slug}.csv"
+        out_path = out_dir / (
+            f"team_{_safe_slug(gender)}_division_{_safe_slug(str(division))}.csv"
+        )
         group[["rank", "school", "team_score"]].to_csv(out_path, index=False)
         logging.info("Wrote %s (%d schools)", out_path, len(group))
-
-
 def main():
     logging.info("Loading match data...")
     matches = load_matches("all_matches.csv")
@@ -403,7 +390,6 @@ def main():
         pair_lookup=pair_lookup,
     )
     export_split_csvs(doubles_rows, _DOUBLES_COLS, "doubles")
-
     logging.info("Generating team rankings...")
     build_team_rankings(singles_rows, doubles_rows)
 
