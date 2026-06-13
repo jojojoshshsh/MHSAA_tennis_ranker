@@ -1,5 +1,4 @@
-# main_rank.py
-
+#main_rank.py
 import ast
 import json
 import logging
@@ -32,17 +31,15 @@ _SINGLES_COLS = [
     "reachability",
     "local_reachability",
     "sos",
-    "local_sos",
+    "local_sos",       # NEW – SOS within same gender/category/division/flight bucket
     "quality_wins",
     "ts_rating",
     "ts_mu",
-    "local_ts_mu",
+    "local_ts_mu",     # NEW – TrueSkill mu from local bucket model
     "ts_sigma",
     "matches_played",
     "wins",
     "losses",
-    "raw_wins",
-    "raw_losses",
     "last_match_date",
 ]
 
@@ -58,17 +55,15 @@ _DOUBLES_COLS = [
     "reachability",
     "local_reachability",
     "sos",
-    "local_sos",
+    "local_sos",       # NEW
     "quality_wins",
     "ts_rating",
     "ts_mu",
-    "local_ts_mu",
+    "local_ts_mu",     # NEW
     "ts_sigma",
     "matches_played",
     "wins",
     "losses",
-    "raw_wins",
-    "raw_losses",
     "last_match_date",
 ]
 
@@ -76,6 +71,7 @@ _LIST_COLS = [
     "winner_player_ids",
     "loser_player_ids",
 ]
+
 
 def load_matches(path="all_matches.csv") -> list:
     """Load match CSV and restore list columns."""
@@ -97,12 +93,14 @@ def load_matches(path="all_matches.csv") -> list:
             )
     return df.to_dict(orient="records")
 
+
 def load_school_meta(path="school_meta.json", overrides_path="../data/division_overrides.json") -> dict:
     with open(path, "r", encoding="utf-8") as fh:
         meta = json.load(fh)
+
     override_file = Path(overrides_path)
     if override_file.exists():
-        with open(overrides_path, "r", encoding="utf-8") as fh:
+        with open(override_file, "r", encoding="utf-8") as fh:
             overrides = json.load(fh)
         for school_id, fields in overrides.items():
             sid = str(school_id)
@@ -111,24 +109,63 @@ def load_school_meta(path="school_meta.json", overrides_path="../data/division_o
             for k, v in fields.items():
                 meta[sid][k] = v
         logging.info("Applied %d division overrides", len(overrides))
+
     return meta
 
-# (Normalization functions unchanged)
+
 _DIVISION_MAPPING = {
-    # (mapping omitted for brevity)
+    "d1": "1",
+    "d2": "2",
+    "d3": "3",
+    "d4": "4",
+    "d-1": "1",
+    "aa": "1",
+    "a": "1",
+    "d": "4",
+    "one": "1",
+    "ii": "2",
+    "iv": "4",
+    "2a": "2",
+    "3a": "4",
+    "4a": "1",
+    "klaa": "1",
+    "ok red": "1",
+    "mac bl": "1",
+    "mac": "2",
+    "oaa": "2",
+    "lvc": "3",
+    "sec wh": "3",
+    "bwac": "3",
+    "silver": "3",
+    "gac": "4",
+    "tennis": "4",
 }
+
 def _normalize_division(raw):
-    # (same logic as before)
     s = str(raw or "").strip().lower()
+
     if s in _DIVISION_MAPPING:
         return _DIVISION_MAPPING[s]
-    # ... (rest of normalization)
+
+    if s in ("1", "div 1", "div1", "division 1", "division1"):
+        return "1"
+    if s in ("2", "div 2", "div2", "division 2", "division2"):
+        return "2"
+    if s in ("3", "div 3", "div3", "division 3", "division3"):
+        return "3"
+    if s in ("4/other", "4 other", "4other", "other", "division 4", "division4"):
+        return "4_other"
+    if s == "4":
+        return "4"
+
     return "4_other"
+
 
 def _safe_slug(value):
     text = str(value or "").strip().lower()
     text = re.sub(r"[^a-z0-9]+", "_", text)
     return text.strip("_") or "unknown"
+
 
 def build_lookups(matches, school_meta):
     player_lookup = {}
@@ -162,6 +199,7 @@ def build_lookups(matches, school_meta):
                     "school": m.get("winner_school", ""),
                     "division": division_for_school(m.get("winner_school_id"), gender),
                 }
+
             if loser_ids:
                 pid = str(loser_ids[0])
                 player_lookup[pid] = {
@@ -181,6 +219,7 @@ def build_lookups(matches, school_meta):
                     "school": m.get("winner_school", ""),
                     "division": division_for_school(m.get("winner_school_id"), gender),
                 }
+
             if len(loser_ids) == 2:
                 key = tuple(sorted(str(x) for x in loser_ids))
                 pair_lookup[key] = {
@@ -190,6 +229,7 @@ def build_lookups(matches, school_meta):
                 }
 
     return player_lookup, pair_lookup
+
 
 def export_split_csvs(rows, columns, prefix):
     """
@@ -204,7 +244,7 @@ def export_split_csvs(rows, columns, prefix):
         logging.info("No rows to export for %s", prefix)
         return
 
-    # Add TGRS_scaled per bucket (same as before)
+    # Add TGRS_scaled per bucket
     scaled_col = []
     for (gender, division, flight), group in df.groupby(
         ["gender", "division", "flight"], dropna=False
@@ -252,10 +292,63 @@ def build_team_rankings(singles_rows, doubles_rows):
     One entry per school per flight/category (best-ranked player only).
     Sum across all 6 slots (S1,S2,S3,D1,D2,D3) for team total.
     """
-    # (Unchanged)
-    # ...
-    pass  # (Omitted for brevity; same as before)
+    ALLOWED_FLIGHTS = {"1", "2", "3", "4"}
+    out_dir = Path("rankings_by_division_flight")
+    out_dir.mkdir(parents=True, exist_ok=True)
 
+    def rank_to_points(r):
+        if r == 1:   return 12.5
+        if r == 2:   return 10.0
+        if r <= 4:   return  7.5
+        if r <= 8:   return  5.0
+        if r <= 16:  return  2.5
+        if r <= 32:  return  1.0
+        return 0.0
+    all_rows = (
+        [dict(r, category="singles") for r in singles_rows] +
+        [dict(r, category="doubles") for r in doubles_rows]
+    )
+
+    df = pd.DataFrame(all_rows)
+    if df.empty:
+        return
+
+    df = df[df["flight"].astype(str).isin(ALLOWED_FLIGHTS)]
+    df["rank"] = pd.to_numeric(df["rank"], errors="coerce").fillna(999).astype(int)
+
+    # One entry per school per gender+division+flight+category — best rank only
+    best = (
+        df.sort_values("rank")
+        .groupby(["gender", "division", "flight", "category", "school"])
+        .first()
+        .reset_index()[["gender", "division", "flight", "category", "school", "rank"]]
+    )
+
+    best["points"] = best["rank"].apply(rank_to_points)
+
+    # Sum points across all slots per school
+    team_scores = (
+        best.groupby(["gender", "division", "school"])["points"]
+        .sum()
+        .reset_index()
+        .rename(columns={"points": "team_score"})
+    )
+    team_scores["team_score"] = team_scores["team_score"].round(2)
+    team_scores = team_scores.sort_values(
+        ["gender", "division", "team_score"], ascending=[True, True, False]
+    )
+    team_scores["rank"] = (
+        team_scores.groupby(["gender", "division"])["team_score"]
+        .rank(method="min", ascending=False)
+        .astype(int)
+    )
+
+    for (gender, division), group in team_scores.groupby(["gender", "division"]):
+        out_path = out_dir / (
+            f"team_{_safe_slug(gender)}_division_{_safe_slug(str(division))}.csv"
+        )
+        group[["rank", "school", "team_score"]].to_csv(out_path, index=False)
+        logging.info("Wrote %s (%d schools)", out_path, len(group))
 def main():
     logging.info("Loading match data...")
     matches = load_matches("all_matches.csv")
@@ -297,11 +390,11 @@ def main():
         pair_lookup=pair_lookup,
     )
     export_split_csvs(doubles_rows, _DOUBLES_COLS, "doubles")
-
     logging.info("Generating team rankings...")
     build_team_rankings(singles_rows, doubles_rows)
 
     logging.info("Done.")
+
 
 if __name__ == "__main__":
     main()
