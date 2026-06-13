@@ -32,11 +32,7 @@ TGRS_LOCAL_TS_MU_WEIGHT  = (0.30+1+0.5+1+4.25)       / 28.25   # local-bucket Tr
 TGRS_LOCAL_SOS_WEIGHT    = 0.2 + 0.1 + 0.1                     # local strength-of-schedule
 TGRS_LOCAL_REACH_WEIGHT  = 1.75                                 # local win-graph reachability
 
-# H2H bonus: for each direct win over an eligible opponent, add this
-# fraction of that opponent's *pre-bonus* TGRS score.  Applied after
-# base scores are fully computed so the bonus values are stable and
-# there is no circular dependency between the bonus assignments.
-TGRS_H2H_WEIGHT          = 0.005
+
 
 # ============================================================
 # UTILITIES
@@ -572,7 +568,7 @@ def create_rankings(
                 sos          = {}
                 local_sos    = {}
                 quality_wins = {}
-                base_tgrs    = {}
+                tgrs_score   = {}
 
                 for entity in eligible:
                     bare = _bare_from_local(entity)
@@ -608,7 +604,7 @@ def create_rankings(
                     g_ts_r = global_ts_ratings.get(bare)
                     global_ts_mu_val = g_ts_r.mu if g_ts_r is not None else 0.0
 
-                    base_tgrs[entity] = (
+                    tgrs_score[entity] = (
                         TGRS_TS_MU_WEIGHT         * global_ts_mu_val
                         + TGRS_SOS_WEIGHT          * entity_global_sos
                         + TGRS_REACH_WEIGHT        * global_reach.get(entity, 0)
@@ -617,13 +613,6 @@ def create_rankings(
                         + TGRS_LOCAL_TS_MU_WEIGHT  * ts_mu_val(entity)
                         + TGRS_LOCAL_REACH_WEIGHT  * local_reach.get(entity, 0)
                     )
-
-                # H2H bonus uses pre-bonus base scores only — no circular dependency.
-                tgrs_score = dict(base_tgrs)
-                for entity in eligible:
-                    for beaten in graph.get(entity, set()):
-                        if beaten in eligible:
-                            tgrs_score[entity] += TGRS_H2H_WEIGHT * base_tgrs[beaten]
 
                 ordered = sorted(
                     eligible,
