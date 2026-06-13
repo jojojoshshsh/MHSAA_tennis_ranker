@@ -30,34 +30,17 @@ rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachabilit
 29,Boys,4_other,3,Cameron Cook / Elijah Roberge,Whitehall,632.9286,632.9286,2.58,650,12,8.6128,8.5458,27.645,14.1173,26.4325,29.5289,4.1051,22,15,7,2025-10-17
 30,Boys,4_other,3,Delan Hoyer-Corbett / Jimmy Hulswit,Grand Rapids Catholic Central,630.8684,630.8684,0.76,650,10,15.72,16.2081,21.469,8.7472,22.6492,29.6136,4.634,18,3,15,2025-10-17
 31,Boys,4_other,3,Grace Riehl / Tyler Cahoon,Sandusky,620.9218,620.9218,0.0,650,5,9.4896,12.8686,19.8455,13.4355,27.6535,32.8995,4.7393,9,5,4,2025-10-08
-32,Boys,4_other,3,Macks Peters / Neil Kumar,Lake Orion,617.1454,617.1454,0.0,650,0,17.6401,-0.773,30.5164,20.372,32.9636,36.3295,4.1972,11,6,5,2025-10-08
-33,Boys,4_other,3,Cody Strauss / Keegan McBeth,Buchanan,614.5798,614.5798,0.0,650,2,10.3014,9.5548,24.1938,11.5629,25.8015,28.8425,4.7462,14,8,6,2025-10-08
-34,Boys,4_other,3,Grady Rule / Gabe Young,Croswell-Lexington,613.599,613.599,0.0,650,4,7.7952,8.0094,21.9683,8.4411,21.3558,28.387,4.3049,20,11,9,2025-10-17
-35,Boys,4_other,3,Sean Ernstes / Simon Pobocik,Otsego,610.5012,610.5012,0.0,650,2,11.0805,6.6185,20.1547,8.9884,21.7663,29.7808,4.2593,14,5,9,2025-10-08
-36,Boys,4_other,3,Asher Hendricks / Easton VanHouten,Wayland,610.0895,610.0895,0.0,650,0,8.9189,5.3985,23.2033,13.3879,27.9341,31.3715,4.8487,9,5,4,2025-09-11
-37,Boys,4_other,3,Roman Smith / Jacob Casey,Hemlock,609.4011,609.4011,0.0,650,2,8.2868,3.9409,20.5637,9.9142,23.7303,29.5255,4.6054,11,6,5,2025-10-08
-38,Boys,4_other,3,Keegan Kisabeth / Emmett Burns,Harbor Springs,608.6864,608.6864,0.0,650,1,11.0351,10.5317,17.4618,8.3281,22.4199,26.5568,4.6973,13,4,9,2025-10-08
-39,Boys,4_other,3,Carter Odinga / Brenden Sheffield,Ortonville Brandon,605.9407,605.9407,0.0,650,1,10.7372,9.9676,18.4475,5.3719,18.6565,21.8948,4.4282,16,3,13,2025-10-08
-40,Boys,4_other,3,Aidan Macdougall / Gavin Larose,Clio,601.9894,601.9894,0.0,650,0,8.9266,14.6966,18.5185,2.62,15.3892,13.7062,4.2564,21,7,14,2025-10-08
-41,Boys,4_other,3,Jackson Hodge / Bea Ryan,South Haven,59.7093,59.7093,0.0,27,1,15.2232,16.9383,17.9695,5.2587,21.1799,21.0884,5.3071,5,1,4,2025-09-09
-42,Boys,4_other,3,Conner Holder / Keegan Hinskey,Battle Creek Pennfield,58.6868,58.6868,0.0,25,6,7.9851,6.9364,14.3697,3.4709,17.2965,28.0734,4.6085,15,5,10,2025-10-08
-43,Boys,4_other,3,Reef Cuthbert / Zach Layman,Edwardsburg,51.6827,51.6827,0.0,26,0,8.924,15.1989,18.2296,4.5923,17.9695,16.474,4.4591,19,5,14,2025-10-08
-44,Boys,4_other,3,Caden Sytek / Walter Christophersen,North Muskegon,51.6173,51.6173,0.0,17,4,8.0531,10.5201,18.2653,7.525,20.0858,25.0375,4.1869,18,8,10,2025-10-08
-45,Boys,4_other,3,Noah Rosema / Caden Sytek,North Muskegon,49.9392,49.9392,0.0,16,3,9.7399,12.0786,14.491,8.4384,22.4083,26.0406,4.6566,6,3,3,2025-08-22
-46,Boys,4_other,3,Diego Romero / Ashton Nostrant,Comstock Park,44.4549,44.4549,0.0,14,3,6.8856,9.7744,16.8872,3.5824,17.0941,24.357,4.5039,24,6,18,2025-10-08
-47,Boys,4_other,3,Tim Sandison / jacob kasak,Clawson,44.2938,44.2938,0.0,10,0,9.9946,7.0911,18.0799,14.0396,30.4974,33.282,5.4859,5,4,1,2025-10-08
-48,Boys,4_other,3,Ethan Sikes / Liam Bryant,Plainwell,43.8349,43.8349,0.0,21,0,8.5987,17.5317,12.8151,0.1509,13.7445,15.7452,4.5312,16,4,12,2025-10-08
-49,Boys,4_other,3,Wyatt Kavanagh / Brayden Rhoney,Yale,43.3741,43.3741,0.0,16,1,8.6341,12.23,14.9507,3.5223,17.6221,22.7605,4.6999,16,4,12,2025-10-08
-50,Boys,4_other,3,Cooper Ritenburg / John Kelly,Ovid-Elsie,41.9429,41.9429,0.0,11,0,1.8544,2.8203,21.0861,16.0993,31.6116,31.9019,5.1708,6,5,1,2025-09-02
-51,Boys,4_other,3,Parker Smelis / Muhammad Masood,Fenton,39.2871,39.2871,0.0,13,0,10.7309,16.5801,17.238,2.4364,16.3352,12.6049,4.6329,19,4,15,2025-10-08
-52,Boys,4_other,3,Jonathan Quigg / Julian Stowers,Fruitport,38.7439,38.7439,0.0,15,0,5.3746,14.3365,15.2385,6.4851,19.0346,13.0819,4.1831,20,9,11,2025-10-08
-53,Boys,4_other,3,Aaron Schuchman / Ethan Bocknek,West Bloomfield FJA,36.5658,36.5658,0.0,3,0,12.2431,13.6582,19.2457,6.5164,21.6427,27.079,5.0421,7,2,5,2025-10-17
-54,Boys,4_other,3,Wyatt Devries / Cash MacKellar,Muskegon Western Michigan Christian,31.4569,31.4569,0.0,5,2,7.4111,7.5024,13.5054,2.5694,15.4006,22.588,4.2771,23,7,16,2025-10-08
-55,Boys,4_other,3,Bryce Hutchinson / Chris Shearer,Alma,29.9045,29.9045,0.0,3,0,9.2346,17.7052,12.7386,3.0806,17.7639,15.6254,4.8944,14,3,11,2025-10-08
-56,Boys,4_other,3,Jack Cornett / James Ritter,Hillsdale,28.9025,28.9025,0.0,3,1,7.3323,6.928,13.0827,1.6593,16.1366,26.8848,4.8258,11,3,8,2025-10-08
-57,Boys,4_other,3,Ben Possehn / Jacqueline Possehn,Lake Odessa Lakewood,28.1568,28.1568,0.0,7,0,6.2677,8.751,15.3917,-2.6058,10.8221,20.9015,4.476,16,3,13,2025-10-08
-58,Boys,4_other,3,default default / default DEFAULT,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),19.3244,19.3244,0.0,0,0,13.5549,16.4679,0.0,-6.7546,10.4003,13.4237,5.7183,10,0,10,2025-10-08
-59,Boys,4_other,3,Gabe Feirick / Brennan Dietz,Muskegon Reeths-Puffer,15.9598,15.9598,0.0,0,0,13.2511,12.2134,0.0,-9.112,6.3542,14.3104,5.1554,14,0,14,2025-09-27
-60,Boys,4_other,3,Henry Bobell / Derek Patch,Three Rivers,15.9219,15.9219,0.0,0,0,8.1758,15.1851,0.0,-6.8758,7.3241,14.9244,4.7333,9,0,9,2025-10-08
-61,Boys,4_other,3,Default Default / Default Default,Bronson,14.3688,14.3688,0.0,0,0,6.7989,8.389,0.0,-5.0204,11.6939,13.8707,5.5714,6,0,6,2025-10-08
-62,Boys,4_other,3,Gwenn Winkel / Mara Rowland,Frankenmuth,13.864,13.864,0.0,0,0,7.9676,10.0997,0.0,-6.8808,8.221,13.5484,5.0339,8,0,8,2025-10-08
+32,Boys,4_other,3,Cody Strauss / Keegan McBeth,Buchanan,614.5798,614.5798,0.0,650,2,10.3014,9.5548,24.1938,11.5629,25.8015,28.8425,4.7462,14,8,6,2025-10-08
+33,Boys,4_other,3,Grady Rule / Gabe Young,Croswell-Lexington,613.599,613.599,0.0,650,4,7.7952,8.0094,21.9683,8.4411,21.3558,28.387,4.3049,20,11,9,2025-10-17
+34,Boys,4_other,3,Sean Ernstes / Simon Pobocik,Otsego,610.5012,610.5012,0.0,650,2,11.0805,6.6185,20.1547,8.9884,21.7663,29.7808,4.2593,14,5,9,2025-10-08
+35,Boys,4_other,3,Roman Smith / Jacob Casey,Hemlock,609.4011,609.4011,0.0,650,2,8.2868,3.9409,20.5637,9.9142,23.7303,29.5255,4.6054,11,6,5,2025-10-08
+36,Boys,4_other,3,Keegan Kisabeth / Emmett Burns,Harbor Springs,608.6864,608.6864,0.0,650,1,11.0351,10.5317,17.4618,8.3281,22.4199,26.5568,4.6973,13,4,9,2025-10-08
+37,Boys,4_other,3,Carter Odinga / Brenden Sheffield,Ortonville Brandon,605.9407,605.9407,0.0,650,1,10.7372,9.9676,18.4475,5.3719,18.6565,21.8948,4.4282,16,3,13,2025-10-08
+38,Boys,4_other,3,Jackson Hodge / Bea Ryan,South Haven,59.7093,59.7093,0.0,27,1,15.2232,16.9383,17.9695,5.2587,21.1799,21.0884,5.3071,5,1,4,2025-09-09
+39,Boys,4_other,3,Conner Holder / Keegan Hinskey,Battle Creek Pennfield,58.6868,58.6868,0.0,25,6,7.9851,6.9364,14.3697,3.4709,17.2965,28.0734,4.6085,15,5,10,2025-10-08
+40,Boys,4_other,3,Caden Sytek / Walter Christophersen,North Muskegon,51.6173,51.6173,0.0,17,4,8.0531,10.5201,18.2653,7.525,20.0858,25.0375,4.1869,18,8,10,2025-10-08
+41,Boys,4_other,3,Noah Rosema / Caden Sytek,North Muskegon,49.9392,49.9392,0.0,16,3,9.7399,12.0786,14.491,8.4384,22.4083,26.0406,4.6566,6,3,3,2025-08-22
+42,Boys,4_other,3,Diego Romero / Ashton Nostrant,Comstock Park,44.4549,44.4549,0.0,14,3,6.8856,9.7744,16.8872,3.5824,17.0941,24.357,4.5039,24,6,18,2025-10-08
+43,Boys,4_other,3,Wyatt Kavanagh / Brayden Rhoney,Yale,43.3741,43.3741,0.0,16,1,8.6341,12.23,14.9507,3.5223,17.6221,22.7605,4.6999,16,4,12,2025-10-08
+44,Boys,4_other,3,Wyatt Devries / Cash MacKellar,Muskegon Western Michigan Christian,31.4569,31.4569,0.0,5,2,7.4111,7.5024,13.5054,2.5694,15.4006,22.588,4.2771,23,7,16,2025-10-08
+45,Boys,4_other,3,Jack Cornett / James Ritter,Hillsdale,28.9025,28.9025,0.0,3,1,7.3323,6.928,13.0827,1.6593,16.1366,26.8848,4.8258,11,3,8,2025-10-08
