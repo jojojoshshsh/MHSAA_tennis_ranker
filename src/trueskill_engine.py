@@ -14,24 +14,27 @@
 #   case (no draws; tennis never draws).
 # * TAU (dynamics noise) prevents sigma from collapsing to zero so that
 #   later matches always carry weight.
-# * Iterative mode: replays all matches N times. Each iteration starts
-#   every entity from (previous_mu, fresh SIGMA) so the prior is informed
-#   by all evidence from the last pass but sigma is reset, making the
-#   effective weight of a match depend only on opponent strength — not on
-#   when in the season it was played. Stops early if max mu-change < 1e-3.
+# * Iterative mode: replays all matches N times using each entity's true
+#   accumulated Rating (mu AND sigma) from the previous pass. Sigma is
+#   intentionally NOT reset between passes — doing so would throw away
+#   earned confidence and treat a 50-match veteran the same as a 3-match
+#   newcomer at the start of every iteration.
+# * Convergence: stops early when max mu-change across all entities
+#   drops below 1e-3. Typically converges in 3-5 passes.
 
 import math
 from collections import defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 # ── Hyperparameters ────────────────────────────────────────────────────────────
 
 MU    = 25.0        # initial mean skill
 SIGMA = MU / 3      # initial uncertainty  (~8.33)
 BETA  = SIGMA / 2   # performance noise    (~4.17)
-TAU   = SIGMA / 5   # dynamics factor      (~1.67)
+TAU   = SIGMA / 50  # dynamics factor — small, so sigma converges naturally
+                    # rather than being externally reset each pass
 
-ITERATIONS = 5      # number of passes; 3-5 is usually enough for convergence
+ITERATIONS = 10     # max passes; early-exit on convergence
 
 # ── Normal-distribution helpers ───────────────────────────────────────────────
 
@@ -80,6 +83,8 @@ class Rating:
 
 def _update(r_win: Rating, r_lose: Rating) -> tuple[Rating, Rating]:
     """Apply one TrueSkill win/loss update. Returns new Rating objects."""
+    # Add a small dynamics noise each update so sigma never fully collapses,
+    # but do NOT reset sigma to the global default between passes.
     sw2 = r_win.sigma  ** 2 + TAU ** 2
     sl2 = r_lose.sigma ** 2 + TAU ** 2
     c2  = 2.0 * BETA ** 2 + sw2 + sl2
@@ -100,19 +105,21 @@ def _run_pass(
     prev_ratings: dict | None,
 ) -> dict:
     """
-    Replay all matches once in order.
+    Replay all matches once in chronological order.
 
-    If prev_ratings is supplied, each entity starts from
-    (prev_mu, fresh SIGMA) instead of the global default.
-    Resetting sigma each pass is what makes timing not matter:
-    every match is evaluated against a confident prior built from
-    ALL previous evidence, so an August win counts the same as
-    an October win.
+    Entities start from their full Rating (mu AND sigma) carried over
+    from the previous pass. This preserves earned confidence: an entity
+    with many matches will have a tighter sigma that appropriately
+    dampens updates compared to a newcomer with high uncertainty.
+
+    On the first pass (prev_ratings is None) every entity starts from
+    the global default Rating(MU, SIGMA).
     """
     ratings: dict = defaultdict(Rating)
     if prev_ratings:
         for entity, r in prev_ratings.items():
-            ratings[entity] = Rating(mu=r.mu, sigma=SIGMA)
+            # Carry forward both mu and sigma — do NOT reset sigma.
+            ratings[entity] = Rating(mu=r.mu, sigma=r.sigma)
 
     for winner, loser in match_pairs:
         ratings[winner], ratings[loser] = _update(ratings[winner], ratings[loser])
@@ -132,12 +139,11 @@ def compute_trueskill(
     Parameters
     ----------
     match_pairs : list of (winner_entity, loser_entity)
-        Entities can be any hashable type. Order within each pass
-        still matters for tie-breaking but does NOT affect which
-        matches carry more weight — that is determined by opponent
-        strength, not timing.
+        Entities can be any hashable type. Pairs should be in
+        chronological order so each pass refines estimates in a
+        temporally consistent direction.
     iterations : int
-        Maximum number of passes. Stops early if max mu-change
+        Maximum number of passes. Stops early when max mu-change
         across all entities drops below 0.001 (converged).
 
     Returns
