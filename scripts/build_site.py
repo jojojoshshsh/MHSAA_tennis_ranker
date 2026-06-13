@@ -135,7 +135,8 @@ for entry in all_data:
 
     preview_cols = [c for c in [
         "rank", "name", "pair_name", "school",
-        "division", "flight", "wins", "losses",
+        "division", "flight",
+        "wins", "losses", "raw_wins", "raw_losses",
         "TGRS", "TGRS_scaled", "ts_rating", "ts_mu", "local_ts_mu", "ts_sigma",
         "reachability", "local_reachability",
         "sos", "local_sos", "quality_wins",
@@ -181,7 +182,8 @@ for csv_path in sorted(src_dir.glob("*.csv")):
 
     preview_cols = [c for c in [
         "rank", "name", "pair_name", "school",
-        "division", "flight", "wins", "losses",
+        "division", "flight",
+        "wins", "losses", "raw_wins", "raw_losses",
         "TGRS", "TGRS_scaled", "ts_rating", "ts_mu", "local_ts_mu", "ts_sigma",
         "reachability", "local_reachability",
         "sos", "local_sos", "quality_wins",
@@ -521,7 +523,7 @@ function runCompare() {{
 
   const SHOW_COLS = [
     'rank', 'name', 'pair_name',
-    'wins', 'losses',
+    'wins', 'losses', 'raw_wins', 'raw_losses',
     'TGRS', 'TGRS_scaled', 'ts_rating', 'ts_mu', 'local_ts_mu',
     'reachability', 'local_reachability',
     'sos', 'local_sos', 'quality_wins',
