@@ -17,7 +17,7 @@ TGRS_REACH_WEIGHT         = (10.00+15)/28.25
 TGRS_QUALITY_WINS_WEIGHT  = (3.00+3.5+5)/28.25
 TGRS_LOCAL_SOS_WEIGHT     = 0.2+0.1+0.1
 TGRS_LOCAL_TS_MU_WEIGHT   = (0.30+1+0.5+1+4.25)/28.25
-TGRS_H2H_WEIGHT = 0.03  # small — only matters in near-ties
+TGRS_H2H_WEIGHT = 0.005  # small — only matters in near-ties
 
 # ============================================================
 # UTILITIES
