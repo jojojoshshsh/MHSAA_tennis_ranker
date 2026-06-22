@@ -1,7 +1,14 @@
 # config.py — parameter settings for the tennis ranking system.
 
 # Year (for record-keeping) and filters
-YEAR           = 2025
+import datetime
+
+today = datetime.date.today()
+# Stay on the previous year until April 1 (adjust month as needed)
+if today.month < 8:
+    YEAR = today.year - 1
+else:
+    YEAR = today.year
 IS_NOT_VARSITY = 0           # 0 = varsity only
 
 TARGET_STATE  = "MI"         # or None for no filter
