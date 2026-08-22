@@ -1,4 +1,8 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Ezra Smith,Allegan,51.4362,51.4362,100.0,11,2,4.1051,2.5354,25.6764,20.0008,35.8025,38.3068,5.2673,8,7,1,2026-08-17
-2,Boys,4_other,2,Dominic Taylor,Lansing Catholic,46.2493,46.2493,30.25,7,1,4.2293,1.7861,26.0814,19.8258,37.2141,36.5994,5.7961,5,5,0,2026-08-15
-3,Boys,4_other,2,Eric Fitchpatrick,Paw Paw,44.6996,44.6996,9.41,6,1,8.264,8.6293,23.5663,15.9976,31.262,31.7873,5.0881,6,4,2,2026-08-17
+1,Boys,4_other,2,Edwin Seo,Berrien Springs,84.5376,84.5376,100.0,34,7,6.4626,5.9559,27.6869,21.7337,36.8232,40.4069,5.0298,8,7,1,2026-08-20
+2,Boys,4_other,2,TJ O’Neil,Jackson Lumen Christi,82.2624,82.2624,95.0,30,6,8.1959,7.4761,29.4842,21.8838,38.9021,40.9907,5.6728,6,6,0,2026-08-19
+3,Boys,4_other,2,Ezra Smith,Allegan,70.5432,70.5432,69.27,25,5,6.9406,8.5839,26.3412,17.9663,32.4196,35.3165,4.8178,13,10,3,2026-08-20
+4,Boys,4_other,2,Yurii Polnyi,Grosse Pointe Woods University Liggett,63.2185,63.2185,53.18,23,4,6.5575,7.0279,23.4599,13.9581,29.3566,33.1978,5.1328,7,5,2,2026-08-20
+5,Boys,4_other,2,Eric Fitchpatrick,Paw Paw,59.7753,59.7753,45.62,18,3,9.7631,9.8686,24.7641,15.0683,28.8916,33.711,4.6078,9,6,3,2026-08-20
+6,Boys,4_other,2,Dominic Taylor,Lansing Catholic,52.489,52.489,29.62,13,1,5.4286,1.782,27.3219,19.8258,37.2141,36.5994,5.7961,5,5,0,2026-08-15
+7,Boys,4_other,2,Dillon Ray,Kalamazoo Hackett Catholic Prep,39.9477,39.9477,2.08,6,1,0.3835,1.3173,19.3958,16.3998,35.032,35.8718,6.2107,6,6,0,2026-08-19

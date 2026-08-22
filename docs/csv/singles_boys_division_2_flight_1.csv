@@ -1,2 +1,4 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,1,Mason Crosby,South Lyon East,47.3329,47.3329,100.0,8,1,5.3512,4.0556,25.9571,17.1524,35.4898,35.394,6.1125,5,5,0,2026-08-18
+1,Boys,2,1,Carter Griffith,Birmingham Seaholm,108.6139,108.6139,100.0,73,1,8.512,2.8255,28.5363,22.06,38.7477,37.9846,5.5626,5,5,0,2026-08-20
+2,Boys,2,1,Mason Crosby,South Lyon East,74.7369,74.7369,43.17,35,2,7.0658,5.9338,26.9372,17.1524,35.4898,35.394,6.1125,5,5,0,2026-08-18
+3,Boys,2,1,Yassin Elsaadany,Midland Dow,49.5684,49.5684,0.95,12,1,5.6402,3.6779,25.9318,17.8455,33.704,33.5431,5.2862,8,7,1,2026-08-20

@@ -1,3 +1,7 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Fernando Romine,Grosse Pointe Woods University Liggett,46.5801,46.5801,100.0,8,2,5.2116,3.8697,23.9006,14.9688,31.4398,36.3405,5.4903,6,5,1,2026-08-18
-2,Boys,4_other,4,Jack Koegel,Whitehall,36.3255,36.3255,3.08,4,1,5.5939,6.4936,18.3259,11.3672,27.5792,27.5792,5.404,5,3,2,2026-08-15
+1,Boys,4_other,4,Patrick Best,Jackson Lumen Christi,65.1722,65.1722,100.0,23,4,8.7633,7.6539,27.1999,12.6844,26.4998,35.8022,4.6051,9,6,3,2026-08-20
+2,Boys,4_other,4,Jake Bixby,Traverse City St Francis,64.0266,64.0266,96.32,23,4,9.4043,9.6219,24.9606,12.7012,26.2289,31.2733,4.5092,9,4,5,2026-08-19
+3,Boys,4_other,4,Deacon Morgan,Allegan,62.4591,62.4591,91.3,23,4,5.7084,8.4192,22.7659,14.7685,28.8663,31.1292,4.6993,10,6,4,2026-08-20
+4,Boys,4_other,4,Luke Manion,Grand Rapids NorthPointe Christian,56.5787,56.5787,72.43,16,2,7.1051,2.4037,24.8427,19.8882,35.9007,38.3042,5.3375,9,8,1,2026-08-20
+5,Boys,4_other,4,Fernando Romine,Grosse Pointe Woods University Liggett,53.6154,53.6154,62.93,15,2,5.8568,4.3784,24.7461,15.5474,30.7784,37.7576,5.077,9,7,2,2026-08-20
+6,Boys,4_other,4,Jack Koegel,Whitehall,34.8467,34.8467,2.72,4,1,4.916,6.6683,16.6593,9.8965,26.6654,26.6654,5.5896,5,3,2,2026-08-15

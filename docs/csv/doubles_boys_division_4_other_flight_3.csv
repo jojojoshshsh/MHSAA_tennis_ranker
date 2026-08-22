@@ -1,3 +1,5 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,53.1985,53.1985,100.0,11,2,3.3409,4.0709,27.67,19.92,37.5197,37.7241,5.8665,6,6,0,2026-08-17
-2,Boys,4_other,3,Jude Webster / Connor Esman,Paw Paw,45.7265,45.7265,8.86,7,1,5.9613,6.7708,24.7765,16.5043,33.0459,33.5057,5.5139,6,5,1,2026-08-17
+1,Boys,4_other,3,Harrison Botke / Vincent Tran,Jackson Lumen Christi,84.9574,84.9574,100.0,35,5,6.0467,3.3051,32.2345,24.4942,41.6298,41.537,5.7119,9,9,0,2026-08-20
+2,Boys,4_other,3,Logan Spangler / Noah Koppenhofer,Grand Rapids NorthPointe Christian,81.7458,81.7458,86.01,36,3,7.1131,2.1739,32.3324,24.0307,41.1432,40.1355,5.7042,9,9,0,2026-08-20
+3,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,72.4176,72.4176,45.38,26,4,6.2278,7.0666,28.8708,21.0589,37.0012,37.5567,5.3141,11,10,1,2026-08-20
+4,Boys,4_other,3,Jude Webster / Connor Esman,Paw Paw,62.446,62.446,1.94,20,2,9.9429,9.2132,27.8735,17.2207,32.871,33.0559,5.2168,9,7,2,2026-08-20

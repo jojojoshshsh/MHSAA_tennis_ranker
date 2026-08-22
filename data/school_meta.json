@@ -104,7 +104,7 @@
   "4375": {
     "id": 4375,
     "name": "Niles Brandywine",
-    "division_boys": "4",
+    "division_boys": "",
     "division_girls": ""
   },
   "4433": {
@@ -464,7 +464,7 @@
   "4161": {
     "id": 4161,
     "name": "Hudsonville Unity Christian",
-    "division_boys": "4",
+    "division_boys": "3",
     "division_girls": ""
   },
   "4045": {
@@ -602,13 +602,13 @@
   "3842": {
     "id": 3842,
     "name": "Traverse City St Francis",
-    "division_boys": "3A",
+    "division_boys": "4",
     "division_girls": ""
   },
   "4393": {
     "id": 4393,
     "name": "Grand Rapids Catholic Central ",
-    "division_boys": "4",
+    "division_boys": "",
     "division_girls": ""
   },
   "4205": {
@@ -926,7 +926,7 @@
   "4019": {
     "id": 4019,
     "name": "Battle Creek Lakeview",
-    "division_boys": "2",
+    "division_boys": "",
     "division_girls": ""
   },
   "4032": {
@@ -1075,7 +1075,7 @@
   },
   "3955": {
     "id": 3955,
-    "name": "Harrison Township L'ANSE CREUSE",
+    "name": "Harrison Township L'anse Creuse",
     "division_boys": "White",
     "division_girls": ""
   },
@@ -1088,7 +1088,7 @@
   "47586": {
     "id": 47586,
     "name": "Traverse City West",
-    "division_boys": "1",
+    "division_boys": "3",
     "division_girls": ""
   },
   "4574": {
@@ -1124,7 +1124,7 @@
   "4183": {
     "id": 4183,
     "name": "Grand Rapids Northview",
-    "division_boys": "2",
+    "division_boys": "3",
     "division_girls": ""
   },
   "4498": {
@@ -1160,7 +1160,7 @@
   "4048": {
     "id": 4048,
     "name": "Muskegon Reeths-Puffer",
-    "division_boys": "2",
+    "division_boys": "",
     "division_girls": ""
   },
   "47830": {
@@ -1190,7 +1190,7 @@
   "4271": {
     "id": 4271,
     "name": "Otsego",
-    "division_boys": "4",
+    "division_boys": "",
     "division_girls": ""
   },
   "4381": {
@@ -1310,7 +1310,7 @@
   "4321": {
     "id": 4321,
     "name": "Fenton",
-    "division_boys": "d2",
+    "division_boys": "",
     "division_girls": ""
   },
   "4010": {
