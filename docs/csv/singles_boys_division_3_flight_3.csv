@@ -1,3 +1,5 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,3,3,Amogh Kodur,Haslett,73.8207,73.8207,100.0,30,2,9.5805,9.6975,27.0074,21.8477,36.6635,37.6571,4.9386,7,6,1,2026-08-21
-2,Boys,3,3,Tyler Keillor,Ludington,55.7043,55.7043,3.74,13,2,4.6412,5.7067,25.4015,20.9377,37.9568,39.1291,5.673,7,7,0,2026-08-21
+1,Boys,3,3,Amogh Kodur,Haslett,111.2056,111.2056,100.0,72,2,9.8215,9.8574,27.1545,21.8635,36.6798,37.6571,4.9388,7,6,1,2026-08-21
+2,Boys,3,3,Gus Johnson,Hamilton,79.9681,79.9681,58.46,44,1,7.0116,0.4085,28.8163,18.284,36.231,36.0181,5.9823,5,5,0,2026-08-22
+3,Boys,3,3,Tyler Keillor,Ludington,58.4128,58.4128,29.8,14,3,4.81,5.7393,25.4024,20.9385,37.9571,39.1291,5.6729,7,7,0,2026-08-21
+4,Boys,3,3,Andrew Colasanti,Zeeland East,36.1656,36.1656,0.22,5,1,8.9163,9.3866,19.0811,6.4166,21.1715,24.057,4.9183,7,3,4,2026-08-22

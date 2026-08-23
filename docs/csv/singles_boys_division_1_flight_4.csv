@@ -1,3 +1,5 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,4,Athan Brozovich,Clarkston,66.0567,66.0567,100.0,22,2,12.0709,9.9616,27.0913,19.2975,34.8605,33.9755,5.1877,5,4,1,2026-08-20
-2,Boys,1,4,Achilles Coutinho,Utica Eisenhower,53.369,53.369,2.83,12,1,9.7548,6.8393,29.2722,19.3967,33.0048,33.6208,4.536,9,6,3,2026-08-19
+1,Boys,1,4,Athan Brozovich,Clarkston,78.6867,78.6867,100.0,30,4,13.9769,12.0352,28.3537,19.377,34.9265,33.9755,5.1832,5,4,1,2026-08-20
+2,Boys,1,4,Chris Darrow,Northville,67.0995,67.0995,54.89,28,3,9.168,9.1654,23.8768,15.5159,29.5467,29.8693,4.6769,7,4,3,2026-08-22
+3,Boys,1,4,Noah Clark,Rockford,55.8972,55.8972,11.28,21,1,13.6817,12.803,23.0203,9.2116,23.8128,23.0454,4.8671,6,2,4,2026-08-22
+4,Boys,1,4,Achilles Coutinho,Utica Eisenhower,53.369,53.369,1.44,12,1,9.7548,6.8393,29.2722,19.3967,33.0048,33.6208,4.536,9,6,3,2026-08-19

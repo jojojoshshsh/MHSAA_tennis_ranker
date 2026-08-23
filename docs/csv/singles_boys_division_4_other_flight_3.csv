@@ -1,5 +1,6 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,3,Justin Platt,Grosse Pointe Woods University Liggett,87.1801,87.1801,100.0,43,4,4.7654,3.7751,27.9678,22.8441,39.9736,40.033,5.7099,9,9,0,2026-08-20
-2,Boys,4_other,3,Gabe Cooper,Jackson Lumen Christi,77.6083,77.6083,60.41,35,3,7.7282,4.9748,28.1386,18.7657,34.3915,40.4524,5.2086,9,8,1,2026-08-20
-3,Boys,4_other,3,Braden Schultz,Paw Paw,70.0555,70.0555,29.18,29,3,8.6499,7.4081,26.6973,15.9874,29.9625,36.3911,4.6584,9,7,2,2026-08-20
-4,Boys,4_other,3,Gage Mashburn,Allegan,63.9241,63.9241,3.82,29,2,8.0221,8.7293,22.0203,13.4367,27.3365,29.8597,4.6332,12,6,6,2026-08-20
+1,Boys,4_other,3,Jacob Payne,Lansing Catholic,107.2698,107.2698,100.0,62,6,7.3019,3.0933,30.3416,21.0041,35.7998,40.0797,4.9319,7,6,1,2026-08-22
+2,Boys,4_other,3,Justin Platt,Grosse Pointe Woods University Liggett,106.3119,106.3119,97.43,62,5,7.5391,5.1843,30.7067,22.4703,36.9224,36.994,4.8174,11,10,1,2026-08-22
+3,Boys,4_other,3,Gabe Cooper,Jackson Lumen Christi,82.7007,82.7007,34.08,38,4,8.0616,5.2664,29.2313,18.7776,34.4003,40.4668,5.2076,9,8,1,2026-08-20
+4,Boys,4_other,3,Braden Schultz,Paw Paw,75.0006,75.0006,13.42,32,4,8.5241,7.3849,27.8467,16.1971,30.1404,36.5844,4.6478,9,7,2,2026-08-20
+5,Boys,4_other,3,Gage Mashburn,Allegan,70.1902,70.1902,0.51,32,3,7.2613,6.798,23.9671,16.3477,30.5933,32.5939,4.7486,15,9,6,2026-08-22

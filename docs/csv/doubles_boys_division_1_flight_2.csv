@@ -1,3 +1,5 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,2,Daniel Han / Ronak Sharma,Novi,77.9494,77.9494,100.0,30,3,13.556,13.8166,29.0852,19.2054,33.8984,36.3934,4.8977,6,4,2,2026-08-20
-2,Boys,1,2,Kamy Shushtari / Henry Haviland,Clarkston,58.8805,58.8805,4.41,18,1,11.2015,10.9141,27.9289,14.688,30.8361,31.8414,5.3827,5,4,1,2026-08-20
+1,Boys,1,2,Jay Thakkar / Vikram Menon,Troy Athens,146.7601,146.7601,100.0,96,6,16.8474,10.9152,33.107,24.3218,40.1331,39.4764,5.2704,5,5,0,2026-08-20
+2,Boys,1,2,Daniel Han / Ronak Sharma,Novi,80.5704,80.5704,39.14,31,4,13.988,14.3729,28.322,19.0132,33.7174,36.3934,4.9014,6,4,2,2026-08-20
+3,Boys,1,2,Kamy Shushtari / Henry Haviland,Clarkston,61.0738,61.0738,21.22,19,2,11.0362,10.8583,27.2205,14.4768,30.6717,31.8414,5.3983,5,4,1,2026-08-20
+4,Boys,1,2,Brady Gauthier / Bridger Wildern,Rockford,38.5325,38.5325,0.49,6,1,11.0447,11.6417,18.4212,6.3547,22.1513,22.6999,5.2655,6,2,4,2026-08-22

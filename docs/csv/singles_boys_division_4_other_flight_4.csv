@@ -1,7 +1,8 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Patrick Best,Jackson Lumen Christi,65.1722,65.1722,100.0,23,4,8.7633,7.6539,27.1999,12.6844,26.4998,35.8022,4.6051,9,6,3,2026-08-20
-2,Boys,4_other,4,Jake Bixby,Traverse City St Francis,64.0266,64.0266,96.32,23,4,9.4043,9.6219,24.9606,12.7012,26.2289,31.2733,4.5092,9,4,5,2026-08-19
-3,Boys,4_other,4,Deacon Morgan,Allegan,62.4591,62.4591,91.3,23,4,5.7084,8.4192,22.7659,14.7685,28.8663,31.1292,4.6993,10,6,4,2026-08-20
-4,Boys,4_other,4,Luke Manion,Grand Rapids NorthPointe Christian,56.5787,56.5787,72.43,16,2,7.1051,2.4037,24.8427,19.8882,35.9007,38.3042,5.3375,9,8,1,2026-08-20
-5,Boys,4_other,4,Fernando Romine,Grosse Pointe Woods University Liggett,53.6154,53.6154,62.93,15,2,5.8568,4.3784,24.7461,15.5474,30.7784,37.7576,5.077,9,7,2,2026-08-20
-6,Boys,4_other,4,Jack Koegel,Whitehall,34.8467,34.8467,2.72,4,1,4.916,6.6683,16.6593,9.8965,26.6654,26.6654,5.5896,5,3,2,2026-08-15
+1,Boys,4_other,4,Patrick Best,Jackson Lumen Christi,68.616,68.616,100.0,25,5,8.6738,7.8021,26.9428,12.6866,26.5017,35.8035,4.605,9,6,3,2026-08-20
+2,Boys,4_other,4,Jake Bixby,Traverse City St Francis,67.8508,67.8508,98.07,25,5,10.0605,9.7947,24.9612,12.7036,26.2312,31.2748,4.5092,9,4,5,2026-08-19
+3,Boys,4_other,4,Deacon Morgan,Allegan,65.94,65.94,93.25,25,5,5.5278,6.9818,24.1977,13.9325,28.0767,32.588,4.7147,13,8,5,2026-08-22
+4,Boys,4_other,4,Luke Manion,Grand Rapids NorthPointe Christian,59.1335,59.1335,76.06,17,3,6.9321,2.4218,24.7739,19.899,35.9057,38.3042,5.3356,9,8,1,2026-08-20
+5,Boys,4_other,4,Fernando Romine,Grosse Pointe Woods University Liggett,57.6645,57.6645,72.36,17,3,7.3464,4.8485,25.7656,14.672,28.9769,38.5066,4.7683,11,8,3,2026-08-22
+6,Boys,4_other,4,Jack Koegel,Whitehall,36.1501,36.1501,18.05,4,2,4.4125,6.6273,15.7003,11.0098,26.8678,26.8678,5.286,5,3,2,2026-08-15
+7,Boys,4_other,4,Jacob Ameling,Paw Paw,29.3073,29.3073,0.78,2,1,8.8846,11.2935,13.6843,1.827,16.2438,21.6731,4.8056,9,2,7,2026-08-20

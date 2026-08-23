@@ -1,7 +1,7 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,1,Caleb Kooistra / Logan Will,Grand Rapids NorthPointe Christian,105.2846,105.2846,100.0,56,6,7.7678,3.5523,31.785,24.1735,41.1794,40.185,5.6687,9,9,0,2026-08-20
-2,Boys,4_other,1,Chase Schirmacher / Brogan Kelly,Jackson Lumen Christi,83.6642,83.6642,66.88,32,7,5.0652,3.0159,29.5046,23.4026,40.5068,41.2594,5.7014,9,9,0,2026-08-20
-3,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,74.8009,74.8009,53.31,27,6,6.5519,6.406,27.4945,18.8319,34.4016,36.9503,5.1899,12,10,2,2026-08-20
-4,Boys,4_other,1,Simon Geffre / Isaac Geffre,Paw Paw,68.1401,68.1401,43.1,22,4,10.5652,9.6888,28.3451,17.1051,32.5512,32.8996,5.1487,9,7,2,2026-08-20
-5,Boys,4_other,1,Charlie Laethem / Davis Ford,Grosse Pointe Woods University Liggett,53.1086,53.1086,20.08,11,2,7.4479,7.8481,24.7468,19.5601,34.8947,34.8405,5.1115,6,5,1,2026-08-18
-6,Boys,4_other,1,Michael Dinevski / Tye Chlebek,Grosse Ile,40.9545,40.9545,1.46,7,1,5.5754,4.9486,20.6415,12.8603,29.5993,30.6622,5.5797,5,4,1,2026-08-25
+1,Boys,4_other,1,Caleb Kooistra / Logan Will,Grand Rapids NorthPointe Christian,109.8486,109.8486,100.0,59,7,8.3554,3.5215,31.7472,24.1283,41.1562,40.1371,5.676,9,9,0,2026-08-20
+2,Boys,4_other,1,Chase Schirmacher / Brogan Kelly,Jackson Lumen Christi,93.1979,93.1979,75.82,40,8,5.5252,3.1975,30.6805,23.3875,40.4911,41.2434,5.7012,9,9,0,2026-08-20
+3,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,86.9294,86.9294,66.71,35,7,7.0428,5.8473,30.7558,23.0022,37.933,38.8335,4.977,15,13,2,2026-08-22
+4,Boys,4_other,1,Simon Geffre / Isaac Geffre,Paw Paw,72.4972,72.4972,45.75,25,5,11.1742,9.4883,28.2156,16.8596,32.3619,32.7056,5.1674,9,7,2,2026-08-20
+5,Boys,4_other,1,Charlie Laethem / Davis Ford,Grosse Pointe Woods University Liggett,53.7169,53.7169,18.47,11,3,6.7395,7.2077,23.4016,19.4864,34.7556,34.7406,5.0897,6,5,1,2026-08-18
+6,Boys,4_other,1,Michael Dinevski / Tye Chlebek,Grosse Ile,41.0834,41.0834,0.12,7,1,5.4977,4.8854,20.626,13.0511,29.9423,30.8126,5.6304,5,4,1,2026-08-25

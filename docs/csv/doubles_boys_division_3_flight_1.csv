@@ -1,5 +1,7 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,3,1,Jacob Guerriero / Luke Hathaway,Zeeland East,85.3799,85.3799,100.0,40,3,9.4873,5.8726,30.4911,21.3396,38.76,38.3956,5.8068,5,5,0,2026-08-19
-2,Boys,3,1,Gavin Cohoon / Ethan Blough,Ludington,75.3001,75.3001,65.69,36,2,8.6972,8.367,25.8097,16.8619,33.0957,33.929,5.4113,6,5,1,2026-08-19
-3,Boys,3,1,Aiden Schmidt / Henry Overbeek,Ada Forest Hills Eastern,66.3229,66.3229,35.14,29,1,8.754,0.8728,28.1799,16.9594,33.3955,37.3294,5.4787,8,7,1,2026-08-19
-4,Boys,3,1,Cameron Boullard / Gabe Cyplik,St. Clair,56.7352,56.7352,2.5,20,1,9.435,6.2555,28.1549,13.8608,27.9343,30.8736,4.6912,9,6,3,2026-08-20
+1,Boys,3,1,Will Deblecourt / Eli Setlock,Grand Rapids Christian,94.3232,94.3232,100.0,50,5,7.9556,9.5116,26.0926,18.2421,32.5175,39.252,4.7585,7,5,2,2026-08-22
+2,Boys,3,1,Jacob Guerriero / Luke Hathaway,Zeeland East,88.8357,88.8357,89.1,47,3,9.4216,7.5102,30.4911,17.7962,32.9469,35.1143,5.0502,7,6,1,2026-08-22
+3,Boys,3,1,Gavin Cohoon / Ethan Blough,Ludington,80.2955,80.2955,72.12,42,2,8.1053,8.1076,25.8097,16.8619,33.0957,33.929,5.4113,6,5,1,2026-08-19
+4,Boys,3,1,Aiden Schmidt / Henry Overbeek,Ada Forest Hills Eastern,66.015,66.015,43.75,29,1,8.6094,0.8728,27.4732,17.0409,33.4666,37.3294,5.4752,8,7,1,2026-08-19
+5,Boys,3,1,Cameron Boullard / Gabe Cyplik,St. Clair,56.5575,56.5575,24.95,20,1,8.8064,5.8327,28.1585,14.2417,28.4206,30.8736,4.7263,9,6,3,2026-08-20
+6,Boys,3,1,Carter Boelema / Kyle Bumgardner,Coopersville,44.4682,44.4682,0.93,8,1,6.1139,1.0003,22.4572,17.4498,33.7062,36.571,5.4188,6,5,1,2026-08-22

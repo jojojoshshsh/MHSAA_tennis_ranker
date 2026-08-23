@@ -1,8 +1,9 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Edwin Seo,Berrien Springs,84.5376,84.5376,100.0,34,7,6.4626,5.9559,27.6869,21.7337,36.8232,40.4069,5.0298,8,7,1,2026-08-20
-2,Boys,4_other,2,TJ O’Neil,Jackson Lumen Christi,82.2624,82.2624,95.0,30,6,8.1959,7.4761,29.4842,21.8838,38.9021,40.9907,5.6728,6,6,0,2026-08-19
-3,Boys,4_other,2,Ezra Smith,Allegan,70.5432,70.5432,69.27,25,5,6.9406,8.5839,26.3412,17.9663,32.4196,35.3165,4.8178,13,10,3,2026-08-20
-4,Boys,4_other,2,Yurii Polnyi,Grosse Pointe Woods University Liggett,63.2185,63.2185,53.18,23,4,6.5575,7.0279,23.4599,13.9581,29.3566,33.1978,5.1328,7,5,2,2026-08-20
-5,Boys,4_other,2,Eric Fitchpatrick,Paw Paw,59.7753,59.7753,45.62,18,3,9.7631,9.8686,24.7641,15.0683,28.8916,33.711,4.6078,9,6,3,2026-08-20
-6,Boys,4_other,2,Dominic Taylor,Lansing Catholic,52.489,52.489,29.62,13,1,5.4286,1.782,27.3219,19.8258,37.2141,36.5994,5.7961,5,5,0,2026-08-15
-7,Boys,4_other,2,Dillon Ray,Kalamazoo Hackett Catholic Prep,39.9477,39.9477,2.08,6,1,0.3835,1.3173,19.3958,16.3998,35.032,35.8718,6.2107,6,6,0,2026-08-19
+1,Boys,4_other,2,Edwin Seo,Berrien Springs,100.658,100.658,100.0,47,9,7.2447,6.3577,29.3307,21.7502,36.835,40.4173,5.0283,8,7,1,2026-08-20
+2,Boys,4_other,2,TJ O’Neil,Jackson Lumen Christi,90.769,90.769,85.16,38,7,8.0374,7.1526,29.1199,21.9042,38.9189,41.0054,5.6716,6,6,0,2026-08-19
+3,Boys,4_other,2,Yurii Polnyi,Grosse Pointe Woods University Liggett,84.9474,84.9474,76.43,35,6,8.8057,7.5611,30.76,21.6225,35.4573,36.9916,4.6116,9,7,2,2026-08-22
+4,Boys,4_other,2,Ezra Smith,Allegan,73.8221,73.8221,59.74,28,6,7.0438,8.1927,26.4268,16.9264,31.2503,33.2016,4.7746,16,12,4,2026-08-22
+5,Boys,4_other,2,Eric Fitchpatrick,Paw Paw,63.9348,63.9348,44.91,20,4,10.5478,9.9779,25.2299,15.2553,29.0657,33.9139,4.6035,9,6,3,2026-08-20
+6,Boys,4_other,2,Dominic Taylor,Lansing Catholic,53.8549,53.8549,29.79,14,2,6.6795,4.3381,26.4504,18.028,33.3741,33.8098,5.1153,7,6,1,2026-08-22
+7,Boys,4_other,2,Dillon Ray,Kalamazoo Hackett Catholic Prep,44.4454,44.4454,15.67,10,1,1.6085,1.3221,20.6735,16.3998,35.032,35.8718,6.2107,6,6,0,2026-08-19
+8,Boys,4_other,2,Remington Whelpley,Whitehall,34.3977,34.3977,0.6,3,1,5.945,6.9044,17.3431,10.4608,26.2255,26.2255,5.2549,5,3,2,2026-08-15

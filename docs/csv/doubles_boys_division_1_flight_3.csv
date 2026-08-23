@@ -1,5 +1,6 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,3,Vincent Maisano / Suveer Singh,Novi,82.7016,82.7016,100.0,30,5,11.7919,9.9038,31.1349,21.2391,38.3762,38.9782,5.7124,6,6,0,2026-08-20
-2,Boys,1,3,Harry Jacobson / Aiden Stover,Clarkston,59.5986,59.5986,22.22,16,4,12.7304,12.2755,29.384,8.6316,24.5876,25.0289,5.3186,5,2,3,2026-08-20
-3,Boys,1,3,Eshaan Shenoy / Akshay Krishnan,Okemos,58.6983,58.6983,19.19,16,4,7.2867,2.1441,25.8244,19.676,35.0299,32.8605,5.1179,5,4,1,2026-08-20
-4,Boys,1,3,Jitesh Gorantla / Charles Stoops,Northville,53.0293,53.0293,0.1,16,4,12.36,11.7678,24.5876,2.2885,18.5285,18.5285,5.4133,5,1,4,2026-08-19
+1,Boys,1,3,Vincent Maisano / Suveer Singh,Novi,88.3166,88.3166,100.0,34,6,12.1835,10.2728,31.2287,21.2391,38.3762,38.9782,5.7124,6,6,0,2026-08-20
+2,Boys,1,3,Seth Bearly / Stephen Chien,Rockford,63.2615,63.2615,24.8,20,4,10.0424,10.279,23.4905,15.3758,30.8655,31.1255,5.1632,6,4,2,2026-08-22
+3,Boys,1,3,Harry Jacobson / Aiden Stover,Clarkston,60.8751,60.8751,17.63,17,4,13.2899,12.8078,29.3338,8.6316,24.5876,25.0289,5.3186,5,2,3,2026-08-20
+4,Boys,1,3,Eshaan Shenoy / Akshay Krishnan,Okemos,60.4695,60.4695,16.42,17,4,8.4464,2.2336,26.8999,19.676,35.0299,32.8605,5.1179,5,4,1,2026-08-20
+5,Boys,1,3,Jitesh Gorantla / Charles Stoops,Northville,55.415,55.415,1.25,17,4,13.7332,13.1599,24.5876,2.7359,19.1899,19.1899,5.4846,5,1,4,2026-08-19

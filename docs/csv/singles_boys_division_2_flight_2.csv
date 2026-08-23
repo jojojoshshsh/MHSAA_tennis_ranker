@@ -1,2 +1,3 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,2,Chase Martin,Midland Dow,68.1233,68.1233,100.0,28,1,8.7538,5.1018,28.5377,18.6122,36.1514,35.8805,5.8464,6,6,0,2026-08-20
+1,Boys,2,2,Giorgio Materazzo,Birmingham Seaholm,115.3066,115.3066,100.0,75,2,13.4811,8.2903,31.1026,20.4502,35.4894,36.4001,5.0131,6,5,1,2026-08-20
+2,Boys,2,2,Chase Martin,Midland Dow,64.5746,64.5746,1.12,24,1,8.7462,5.1018,28.5294,18.6012,36.145,35.8805,5.8479,6,6,0,2026-08-20

@@ -1,3 +1,4 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,3,Sam Ogilvie,Grand Rapids Forest Hills Northern,83.0445,83.0445,100.0,46,1,13.6406,7.8172,28.895,13.789,29.2913,32.006,5.1675,6,4,2,2026-08-18
-2,Boys,2,3,Raymond Chai,Midland Dow,61.4388,61.4388,1.99,20,1,6.4511,3.9829,29.3455,20.6816,38.0189,37.9377,5.7791,8,8,0,2026-08-20
+1,Boys,2,3,Charlie Griffith,Birmingham Seaholm,100.4197,100.4197,100.0,61,2,9.5669,5.5484,30.6656,19.0481,35.1346,37.704,5.3622,6,5,1,2026-08-20
+2,Boys,2,3,Sam Ogilvie,Grand Rapids Forest Hills Northern,85.4183,85.4183,61.94,49,1,13.573,8.0593,28.0389,13.7722,29.2792,32.006,5.169,6,4,2,2026-08-18
+3,Boys,2,3,Raymond Chai,Midland Dow,61.4312,61.4312,1.09,20,1,6.4453,3.9829,29.3375,20.672,38.0135,37.9377,5.7805,8,8,0,2026-08-20

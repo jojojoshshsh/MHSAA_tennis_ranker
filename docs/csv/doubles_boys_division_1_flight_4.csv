@@ -1,3 +1,4 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,4,Shiv Brazwell / Ishan Parikh,Novi,80.1828,80.1828,100.0,33,3,10.6198,8.6852,29.5514,21.7678,38.5909,38.101,5.6077,6,6,0,2026-08-20
-2,Boys,1,4,Ian Flint / Alejandro Gonzalvo,Clarkston,55.3282,55.3282,1.3,18,1,11.7443,11.3853,23.8016,12.2643,28.061,27.6913,5.2656,5,2,3,2026-08-20
+1,Boys,1,4,Shiv Brazwell / Ishan Parikh,Novi,99.1255,99.1255,100.0,52,4,11.0828,9.5854,29.4015,21.4304,38.3968,38.101,5.6555,6,6,0,2026-08-20
+2,Boys,1,4,Ian Flint / Alejandro Gonzalvo,Clarkston,74.6921,74.6921,13.13,37,2,12.3511,12.4655,24.6592,11.6709,27.6115,27.6913,5.3135,5,2,3,2026-08-20
+3,Boys,1,4,Chase Dzibowicz / Wenji Lastfogel,Rockford,71.0542,71.0542,0.19,37,1,11.4158,11.2247,23.4925,11.5799,26.7726,26.8273,5.0643,6,3,3,2026-08-22

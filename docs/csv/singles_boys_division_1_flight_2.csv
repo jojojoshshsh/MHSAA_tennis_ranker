@@ -1,3 +1,4 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,2,Eli Layson,Utica Eisenhower,47.5517,47.5517,100.0,9,1,8.6314,7.4873,25.7861,16.5492,30.0796,32.3431,4.5101,9,6,3,2026-08-19
-2,Boys,1,2,Evan Geisz,Clarkston,44.9417,44.9417,26.51,6,1,3.2491,4.1993,25.0601,17.6165,35.9681,36.2926,6.1172,5,5,0,2026-08-20
+1,Boys,1,2,Evan Geisz,Clarkston,60.7807,60.7807,100.0,17,3,6.1903,7.2824,25.9379,17.4769,35.8943,36.2926,6.1391,5,5,0,2026-08-20
+2,Boys,1,2,Pranshu Gandhe,Northville,50.1467,50.1467,22.83,14,2,10.1744,10.5416,22.4633,10.6698,24.9265,25.3871,4.7523,7,2,5,2026-08-22
+3,Boys,1,2,Eli Layson,Utica Eisenhower,47.8484,47.8484,6.16,9,1,9.0206,7.8828,25.7861,16.5492,30.0796,32.3431,4.5101,9,6,3,2026-08-19

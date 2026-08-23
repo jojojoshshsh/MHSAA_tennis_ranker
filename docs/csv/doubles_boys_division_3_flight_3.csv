@@ -1,5 +1,6 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,3,3,Lukas Hafeman / Pierson Kolean,Zeeland East,60.52,60.52,100.0,15,3,7.7089,6.551,26.8919,19.1615,37.0455,37.7665,5.9614,5,5,0,2026-08-19
-2,Boys,3,3,Sreekar Vudathu / Aryan Methri,Ada Forest Hills Eastern,49.405,49.405,52.74,11,1,6.263,1.2257,26.7688,17.7342,33.9291,37.7159,5.3983,8,7,1,2026-08-19
-3,Boys,3,3,Logan Tingley / Jake Paquette,Big Rapids,48.9478,48.9478,50.8,11,2,5.4962,5.9894,22.3019,15.6884,32.0601,32.9031,5.4572,6,5,1,2026-08-17
-4,Boys,3,3,Patrick Hart / Owen Henke,Ludington,37.4383,37.4383,1.86,6,1,8.6937,9.624,18.7456,6.5987,20.6673,26.9821,4.6896,7,3,4,2026-08-21
+1,Boys,3,3,Lukas Hafeman / Pierson Kolean,Zeeland East,61.3494,61.3494,100.0,17,3,4.9741,4.2186,27.4044,20.2666,38.1806,38.8026,5.9713,7,7,0,2026-08-22
+2,Boys,3,3,Logan Tingley / Jake Paquette,Big Rapids,50.714,50.714,56.32,12,2,6.2366,6.6847,23.1364,15.6884,32.0601,32.9031,5.4572,6,5,1,2026-08-17
+3,Boys,3,3,CJ Kutchin / Lucas May,Coopersville,49.6639,49.6639,52.01,11,1,4.0121,0.7907,25.7868,19.9703,37.613,37.7819,5.8809,6,6,0,2026-08-22
+4,Boys,3,3,Sreekar Vudathu / Aryan Methri,Ada Forest Hills Eastern,49.4081,49.4081,50.96,11,1,6.2717,1.2257,26.7688,17.7342,33.9291,37.7159,5.3983,8,7,1,2026-08-19
+5,Boys,3,3,Patrick Hart / Owen Henke,Ludington,37.5536,37.5536,2.27,6,1,8.8516,9.7718,18.7456,6.5987,20.6673,26.9821,4.6896,7,3,4,2026-08-21
