@@ -1,4 +1,8 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,4,Shiv Brazwell / Ishan Parikh,Novi,99.1255,99.1255,100.0,52,4,11.0828,9.5854,29.4015,21.4304,38.3968,38.101,5.6555,6,6,0,2026-08-20
-2,Boys,1,4,Ian Flint / Alejandro Gonzalvo,Clarkston,74.6921,74.6921,13.13,37,2,12.3511,12.4655,24.6592,11.6709,27.6115,27.6913,5.3135,5,2,3,2026-08-20
-3,Boys,1,4,Chase Dzibowicz / Wenji Lastfogel,Rockford,71.0542,71.0542,0.19,37,1,11.4158,11.2247,23.4925,11.5799,26.7726,26.8273,5.0643,6,3,3,2026-08-22
+1,Boys,1,4,Shiv Brazwell / Ishan Parikh,Novi,123.3066,123.3066,100.0,72,7,12.0291,10.4297,30.7007,21.5382,38.4622,38.101,5.6413,6,6,0,2026-08-20
+2,Boys,1,4,Ian Flint / Alejandro Gonzalvo,Clarkston,99.5455,99.5455,63.05,57,5,13.5069,13.4787,27.1852,11.8384,27.7472,27.6913,5.3029,5,2,3,2026-08-20
+3,Boys,1,4,Chase Dzibowicz / Wenji Lastfogel,Rockford,97.3882,97.3882,59.7,56,4,10.743,11.165,26.673,16.7467,31.509,31.4728,4.9208,6,4,2,2026-08-22
+4,Boys,1,4,Landon Schwallier / Thomas Diekevers,Holland West Ottawa,91.7801,91.7801,50.97,52,3,10.5351,6.7994,31.5341,15.898,31.2219,30.0666,5.108,6,5,1,2026-08-22
+5,Boys,1,4,Cooper Juchno / Sean Dewan,Detroit Catholic Central,88.6193,88.6193,46.06,52,3,10.7881,11.492,22.9674,12.3716,28.1349,28.9223,5.2544,5,3,2,2026-08-22
+6,Boys,1,4,Nithin Madhusudhan / Kane Roberts,Rochester,88.6183,88.6183,46.06,52,3,9.5629,10.2563,23.6386,13.8598,29.0227,29.9894,5.0543,5,3,2,2026-08-22
+7,Boys,1,4,Lawson Paeth / Landon Kamendat,Port Huron Northern,59.7778,59.7778,1.21,19,1,7.8378,1.5105,27.9089,22.4195,38.8805,37.6422,5.487,6,6,0,2026-08-24

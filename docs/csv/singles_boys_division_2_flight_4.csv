@@ -1,4 +1,4 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,4,Luke Janz,Birmingham Seaholm,112.2256,112.2256,100.0,76,2,12.2874,2.6187,27.3983,20.4894,36.0188,36.4121,5.1765,6,5,1,2026-08-20
-2,Boys,2,4,Elliot Zahn,Midland Dow,82.7494,82.7494,30.19,43,2,5.1864,3.21,29.4176,20.8828,38.0022,37.7118,5.7065,8,8,0,2026-08-20
-3,Boys,2,4,Mason Howse,Traverse City Central,70.0405,70.0405,0.1,36,1,11.7453,8.4551,21.4847,14.0308,28.9473,29.7311,4.9722,6,3,3,2026-08-20
+1,Boys,2,4,Luke Janz,Birmingham Seaholm,126.8815,126.8815,100.0,89,2,15.4167,5.7425,29.3357,20.4894,36.0188,36.4121,5.1765,6,5,1,2026-08-20
+2,Boys,2,4,Elliot Zahn,Midland Dow,90.6438,90.6438,28.78,51,2,5.1404,3.2764,29.195,22.7269,39.4513,38.7502,5.5748,8,8,0,2026-08-20
+3,Boys,2,4,Mason Howse,Traverse City Central,76.9662,76.9662,1.9,44,1,11.9478,8.9817,21.5414,13.0726,28.0984,29.382,5.0086,6,3,3,2026-08-20

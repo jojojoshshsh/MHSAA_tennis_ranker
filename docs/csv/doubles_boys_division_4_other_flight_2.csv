@@ -1,4 +1,4 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,81.4703,81.4703,100.0,34,4,6.5299,4.6836,28.7759,24.2144,40.5925,42.6902,5.4594,16,15,1,2026-08-22
-2,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,61.0361,61.0361,40.72,19,4,5.643,3.2525,25.2152,17.2969,31.7146,38.9813,4.8059,11,9,2,2026-08-22
-3,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,47.6135,47.6135,1.78,9,2,12.2327,10.7053,22.9219,10.2635,24.4158,29.9207,4.7174,8,4,4,2026-08-20
+1,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,88.1459,88.1459,100.0,41,4,7.0174,5.2475,29.1505,24.1025,40.5145,42.5444,5.4707,16,15,1,2026-08-22
+2,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,67.613,67.613,43.19,25,4,6.9491,4.3203,26.3988,16.7808,31.258,39.3577,4.8257,11,9,2,2026-08-22
+3,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,52.0172,52.0172,0.05,12,2,13.1336,11.7344,25.0689,10.6587,24.7192,29.9588,4.6868,8,4,4,2026-08-20

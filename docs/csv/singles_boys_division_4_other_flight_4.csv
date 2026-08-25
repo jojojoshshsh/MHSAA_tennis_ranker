@@ -1,8 +1,9 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Patrick Best,Jackson Lumen Christi,68.616,68.616,100.0,25,5,8.6738,7.8021,26.9428,12.6866,26.5017,35.8035,4.605,9,6,3,2026-08-20
-2,Boys,4_other,4,Jake Bixby,Traverse City St Francis,67.8508,67.8508,98.07,25,5,10.0605,9.7947,24.9612,12.7036,26.2312,31.2748,4.5092,9,4,5,2026-08-19
-3,Boys,4_other,4,Deacon Morgan,Allegan,65.94,65.94,93.25,25,5,5.5278,6.9818,24.1977,13.9325,28.0767,32.588,4.7147,13,8,5,2026-08-22
-4,Boys,4_other,4,Luke Manion,Grand Rapids NorthPointe Christian,59.1335,59.1335,76.06,17,3,6.9321,2.4218,24.7739,19.899,35.9057,38.3042,5.3356,9,8,1,2026-08-20
-5,Boys,4_other,4,Fernando Romine,Grosse Pointe Woods University Liggett,57.6645,57.6645,72.36,17,3,7.3464,4.8485,25.7656,14.672,28.9769,38.5066,4.7683,11,8,3,2026-08-22
-6,Boys,4_other,4,Jack Koegel,Whitehall,36.1501,36.1501,18.05,4,2,4.4125,6.6273,15.7003,11.0098,26.8678,26.8678,5.286,5,3,2,2026-08-15
-7,Boys,4_other,4,Jacob Ameling,Paw Paw,29.3073,29.3073,0.78,2,1,8.8846,11.2935,13.6843,1.827,16.2438,21.6731,4.8056,9,2,7,2026-08-20
+1,Boys,4_other,4,Jake Bixby,Traverse City St Francis,71.1948,71.1948,100.0,28,5,11.0752,10.3291,25.4723,12.4545,26.0269,31.2589,4.5241,9,4,5,2026-08-19
+2,Boys,4_other,4,Patrick Best,Jackson Lumen Christi,70.0329,70.0329,97.31,28,5,9.0881,7.8726,25.4393,11.1279,24.6828,35.791,4.5183,10,6,4,2026-08-22
+3,Boys,4_other,4,Deacon Morgan,Allegan,68.2368,68.2368,93.15,28,5,4.9814,6.942,23.476,14.1561,28.2575,32.8549,4.7005,13,8,5,2026-08-22
+4,Boys,4_other,4,Fernando Romine,Grosse Pointe Woods University Liggett,66.6743,66.6743,89.53,26,3,7.6343,4.7421,27.1525,15.22,29.4702,39.3252,4.7501,11,8,3,2026-08-22
+5,Boys,4_other,4,Luke Manion,Grand Rapids NorthPointe Christian,62.4282,62.4282,79.7,19,4,6.4314,1.9997,25.148,19.6906,35.8234,38.3264,5.3776,9,8,1,2026-08-20
+6,Boys,4_other,4,Jack Koegel,Whitehall,36.3133,36.3133,19.25,4,2,6.3812,6.7033,15.7221,9.7089,25.3134,27.2918,5.2015,6,3,3,2026-08-24
+7,Boys,4_other,4,Owen Czuk,Kalamazoo Hackett Catholic Prep,33.352,33.352,12.39,3,1,5.2506,6.6451,15.4686,9.2028,25.1465,28.396,5.3146,6,3,3,2026-08-19
+8,Boys,4_other,4,Jacob Ameling,Paw Paw,28.1001,28.1001,0.23,2,1,8.3719,11.2326,14.0253,-0.0692,15.0479,19.2112,5.039,10,2,8,2026-08-24

@@ -1,7 +1,10 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,3,1,Will Deblecourt / Eli Setlock,Grand Rapids Christian,94.3232,94.3232,100.0,50,5,7.9556,9.5116,26.0926,18.2421,32.5175,39.252,4.7585,7,5,2,2026-08-22
-2,Boys,3,1,Jacob Guerriero / Luke Hathaway,Zeeland East,88.8357,88.8357,89.1,47,3,9.4216,7.5102,30.4911,17.7962,32.9469,35.1143,5.0502,7,6,1,2026-08-22
-3,Boys,3,1,Gavin Cohoon / Ethan Blough,Ludington,80.2955,80.2955,72.12,42,2,8.1053,8.1076,25.8097,16.8619,33.0957,33.929,5.4113,6,5,1,2026-08-19
-4,Boys,3,1,Aiden Schmidt / Henry Overbeek,Ada Forest Hills Eastern,66.015,66.015,43.75,29,1,8.6094,0.8728,27.4732,17.0409,33.4666,37.3294,5.4752,8,7,1,2026-08-19
-5,Boys,3,1,Cameron Boullard / Gabe Cyplik,St. Clair,56.5575,56.5575,24.95,20,1,8.8064,5.8327,28.1585,14.2417,28.4206,30.8736,4.7263,9,6,3,2026-08-20
-6,Boys,3,1,Carter Boelema / Kyle Bumgardner,Coopersville,44.4682,44.4682,0.93,8,1,6.1139,1.0003,22.4572,17.4498,33.7062,36.571,5.4188,6,5,1,2026-08-22
+1,Boys,3,1,Will Deblecourt / Eli Setlock,Grand Rapids Christian,100.9614,100.9614,100.0,56,6,6.6816,7.9188,26.1972,19.4679,33.5788,39.8945,4.7036,8,6,2,2026-08-24
+2,Boys,3,1,Jacob Guerriero / Luke Hathaway,Zeeland East,97.2274,97.2274,93.87,52,5,9.9183,7.6297,30.3283,18.2532,33.4032,35.5486,5.05,7,6,1,2026-08-22
+3,Boys,3,1,Gavin Cohoon / Ethan Blough,Ludington,89.4413,89.4413,81.1,47,4,9.1503,8.8007,27.215,16.8619,33.0957,33.929,5.4113,6,5,1,2026-08-19
+4,Boys,3,1,Jordan Rudolph / Stephen McCulloch,Chelsea,78.4015,78.4015,62.99,34,3,8.3258,8.7939,29.9744,19.0002,35.2301,35.7344,5.41,8,7,1,2026-08-24
+5,Boys,3,1,Aiden Schmidt / Henry Overbeek,Ada Forest Hills Eastern,71.8556,71.8556,52.26,34,2,8.2826,0.744,27.5172,16.4645,33.1539,37.1407,5.5631,8,7,1,2026-08-19
+6,Boys,3,1,Cameron Boullard / Gabe Cyplik,St. Clair,63.1079,63.1079,37.91,25,2,6.9726,4.6245,27.6771,16.0954,30.7964,33.5359,4.9004,12,9,3,2026-08-24
+7,Boys,3,1,Patrick Milne / Colton Bible,Traverse City West,50.8693,50.8693,17.83,14,2,8.328,6.5402,21.8867,13.369,28.0553,32.7661,4.8954,9,5,4,2026-08-22
+8,Boys,3,1,Carter Boelema / Kyle Bumgardner,Coopersville,44.1502,44.1502,6.81,8,1,5.7065,0.8004,22.3793,17.2592,33.5665,36.571,5.4358,6,5,1,2026-08-22
+9,Boys,3,1,Cameron Kelly / Jude Beckwith,Haslett,40.0451,40.0451,0.07,5,1,10.0732,10.3871,18.2491,12.1891,27.1795,27.1398,4.9968,7,3,4,2026-08-21

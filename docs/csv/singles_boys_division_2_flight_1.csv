@@ -1,4 +1,6 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,1,Carter Griffith,Birmingham Seaholm,132.6383,132.6383,100.0,95,1,12.9268,4.661,32.7979,23.2257,39.6544,38.4568,5.4762,6,6,0,2026-08-20
-2,Boys,2,1,Mason Crosby,South Lyon East,80.0474,80.0474,37.12,41,2,7.0665,5.9338,26.9383,17.1524,35.4898,35.394,6.1125,5,5,0,2026-08-18
-3,Boys,2,1,Yassin Elsaadany,Midland Dow,49.5702,49.5702,0.68,12,1,5.6412,3.6779,25.934,17.8474,33.7053,33.5431,5.286,8,7,1,2026-08-20
+1,Boys,2,1,Carter Griffith,Birmingham Seaholm,164.5812,164.5812,100.0,124,4,13.7063,5.1447,34.2477,23.1576,39.5819,38.4568,5.4748,6,6,0,2026-08-20
+2,Boys,2,1,Matthew Bartoszewicz,Grosse Pointe South,136.914,136.914,75.85,101,2,10.6213,4.2104,32.2987,22.6766,37.5595,35.8085,4.961,8,7,1,2026-08-24
+3,Boys,2,1,Mason Crosby,South Lyon East,101.6356,101.6356,45.06,64,2,8.1324,6.4839,28.384,17.2333,35.5447,35.4839,6.1038,5,5,0,2026-08-18
+4,Boys,2,1,Dominic Kwong,Portage Central,89.5471,89.5471,34.51,55,1,9.9788,5.7586,24.9413,18.3451,34.4183,32.0986,5.3577,5,4,1,2026-08-24
+5,Boys,2,1,Yassin Elsaadany,Midland Dow,50.3533,50.3533,0.31,12,1,5.5837,3.7526,25.7363,19.3838,34.9111,34.845,5.1758,8,7,1,2026-08-20

@@ -1,5 +1,7 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,3,4,Ben Slotman / Max Lewis,Zeeland East,69.1991,69.1991,100.0,29,3,6.7949,6.4769,26.572,16.0807,32.5274,32.7898,5.4822,7,6,1,2026-08-22
-2,Boys,3,4,Tyler LaCourse / Carter Tingley,Big Rapids,59.492,59.492,72.42,23,2,5.0762,3.9007,24.4129,16.3612,32.6322,32.0983,5.4236,6,5,1,2026-08-17
-3,Boys,3,4,Kalvin Barnett / Silas Kelly,Coopersville,44.0783,44.0783,28.63,9,1,5.7264,0.9591,22.3216,15.4148,31.2792,36.571,5.2881,6,5,1,2026-08-22
-4,Boys,3,4,Jaxon Payne / Cole Jubar,Ludington,34.7888,34.7888,2.24,4,1,7.9771,8.4686,16.2456,8.2615,22.7062,26.8225,4.8149,7,3,4,2026-08-21
+1,Boys,3,4,Ben Slotman / Max Lewis,Zeeland East,69.2149,69.2149,100.0,29,3,7.0264,6.693,25.9223,16.1477,32.6206,33.0723,5.491,7,6,1,2026-08-22
+2,Boys,3,4,Tyler LaCourse / Carter Tingley,Big Rapids,59.3338,59.3338,71.12,23,2,7.2703,3.9451,24.4129,15.0553,30.453,32.0983,5.1325,7,5,2,2026-08-24
+3,Boys,3,4,Rishi Chava / Sid Shah,Haslett,45.302,45.302,30.11,10,1,7.7465,6.7403,21.8723,15.338,29.8482,29.0322,4.8367,7,4,3,2026-08-21
+4,Boys,3,4,Brayden Teitsma / Nathan Marcusse,Grand Rapids South Christian,45.1247,45.1247,29.59,10,1,6.1184,-0.1876,24.5383,15.6546,30.163,36.8445,4.8361,9,6,3,2026-08-22
+5,Boys,3,4,Kalvin Barnett / Silas Kelly,Coopersville,43.9829,43.9829,26.25,9,1,5.6611,0.9591,22.2014,15.3713,31.2262,36.571,5.285,6,5,1,2026-08-22
+6,Boys,3,4,Jaxon Payne / Cole Jubar,Ludington,35.1216,35.1216,0.36,4,1,8.8866,8.513,16.2248,8.2615,22.7062,26.8225,4.8149,7,3,4,2026-08-21

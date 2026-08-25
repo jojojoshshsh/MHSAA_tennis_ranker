@@ -1,6 +1,6 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,3,Harrison Botke / Vincent Tran,Jackson Lumen Christi,90.2747,90.2747,100.0,39,6,6.0568,3.3134,32.2564,24.5108,41.6469,41.5536,5.712,9,9,0,2026-08-20
-2,Boys,4_other,3,Logan Spangler / Noah Koppenhofer,Grand Rapids NorthPointe Christian,86.2481,86.2481,90.7,39,4,7.1732,2.2096,32.4012,24.1001,41.1893,40.1899,5.6964,9,9,0,2026-08-20
-3,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,77.8142,77.8142,71.21,30,5,6.265,7.1062,28.9672,21.1225,37.0589,37.6097,5.3121,11,10,1,2026-08-20
-4,Boys,4_other,3,Jude Webster / Connor Esman,Paw Paw,68.217,68.217,49.03,24,3,10.0155,9.3141,28.5457,17.4958,33.0775,33.259,5.1939,9,7,2,2026-08-20
-5,Boys,4_other,3,Matteo Marciano / Jack Ingle,Grosse Pointe Woods University Liggett,47.2452,47.2452,0.57,10,1,3.632,2.9967,23.7343,19.4479,34.6612,37.1818,5.0711,11,9,2,2026-08-22
+1,Boys,4_other,3,Harrison Botke / Vincent Tran,Jackson Lumen Christi,102.9527,102.9527,100.0,52,6,7.1445,3.5648,32.8642,25.779,42.3549,42.0662,5.5253,10,10,0,2026-08-22
+2,Boys,4_other,3,Logan Spangler / Noah Koppenhofer,Grand Rapids NorthPointe Christian,88.193,88.193,74.08,42,4,6.7296,1.9495,31.4174,23.9262,41.0607,40.2253,5.7115,9,9,0,2026-08-20
+3,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,80.8041,80.8041,61.11,34,5,6.6764,7.5408,27.6461,20.2904,36.5154,37.2339,5.4083,11,10,1,2026-08-20
+4,Boys,4_other,3,Jude Webster / Connor Esman,Paw Paw,68.5815,68.5815,39.65,27,3,10.2531,9.9721,28.9362,14.1892,28.43,30.2254,4.7469,10,7,3,2026-08-24
+5,Boys,4_other,3,Matteo Marciano / Jack Ingle,Grosse Pointe Woods University Liggett,46.6096,46.6096,1.07,10,1,2.8633,2.6909,23.3746,19.2671,34.5419,37.0173,5.0916,11,9,2,2026-08-22
