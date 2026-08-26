@@ -1,8 +1,10 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,3,Vincent Maisano / Suveer Singh,Novi,119.3865,119.3865,100.0,65,8,12.381,10.2728,31.284,21.4306,38.4754,38.9782,5.6816,6,6,0,2026-08-20
-2,Boys,1,3,Andrew Strychar / Sam Coscarelli,Detroit Catholic Central,104.5675,104.5675,74.18,53,7,9.9254,10.24,28.5478,21.0106,37.885,38.2174,5.6248,5,5,0,2026-08-22
-3,Boys,1,3,Seth Bearly / Stephen Chien,Rockford,95.8633,95.8633,59.01,51,6,11.5533,11.7797,24.6147,15.5792,31.0313,31.1255,5.1507,6,4,2,2026-08-22
-4,Boys,1,3,Harry Jacobson / Aiden Stover,Clarkston,70.9433,70.9433,15.58,28,4,13.5052,12.8078,29.5993,9.0675,24.9272,25.0289,5.2866,5,2,3,2026-08-20
-5,Boys,1,3,Eshaan Shenoy / Akshay Krishnan,Okemos,70.9222,70.9222,15.55,28,4,9.4505,2.1709,27.7341,19.8117,35.1358,32.8605,5.1081,5,4,1,2026-08-20
-6,Boys,1,3,Jitesh Gorantla / Charles Stoops,Northville,65.5513,65.5513,6.19,28,4,14.0955,13.4962,24.9272,2.7359,19.1899,19.1899,5.4846,5,1,4,2026-08-19
-7,Boys,1,3,Moosa Shafique / Ben Taylor,Rochester,62.7217,62.7217,1.26,29,1,11.383,11.6605,22.7448,9.6997,24.8539,25.7493,5.0514,5,2,3,2026-08-22
+1,Boys,1,3,Andrew Strychar / Sam Coscarelli,Detroit Catholic Central,131.4402,131.4402,100.0,81,8,9.4999,9.9251,28.6249,22.7095,38.7609,39.0407,5.3505,6,6,0,2026-08-25
+2,Boys,1,3,Brad Bagley / Aaditya Manikandan,Troy,128.2589,128.2589,95.14,91,1,12.3631,0.111,33.4894,25.3488,41.4659,38.8748,5.3724,8,8,0,2026-08-20
+3,Boys,1,3,Vincent Maisano / Suveer Singh,Novi,125.6748,125.6748,91.19,71,9,11.8382,10.1792,29.9553,21.4306,38.4754,38.9782,5.6816,6,6,0,2026-08-20
+4,Boys,1,3,Seth Bearly / Stephen Chien,Rockford,100.8875,100.8875,53.31,57,7,11.5773,11.8317,24.1474,12.3218,27.0454,30.6243,4.9078,7,4,3,2026-08-25
+5,Boys,1,3,Eshaan Shenoy / Akshay Krishnan,Okemos,76.1796,76.1796,15.56,34,4,9.6246,1.9556,27.665,19.8117,35.1358,32.8605,5.1081,5,4,1,2026-08-20
+6,Boys,1,3,Harry Jacobson / Aiden Stover,Clarkston,75.9683,75.9683,15.23,34,4,12.843,12.6848,29.5993,9.0675,24.9272,25.0289,5.2866,5,2,3,2026-08-20
+7,Boys,1,3,Moosa Shafique / Ben Taylor,Rochester,72.7355,72.7355,10.29,40,2,10.6728,11.2998,22.518,8.6471,23.4523,24.282,4.9351,6,2,4,2026-08-22
+8,Boys,1,3,Jitesh Gorantla / Charles Stoops,Northville,70.8168,70.8168,7.36,34,4,13.8866,13.7953,24.9272,2.6824,19.0598,19.0598,5.4591,5,1,4,2026-08-19
+9,Boys,1,3,Tanner Kalman / Jude Beel,Hudsonville,66.0865,66.0865,0.13,38,1,9.3088,4.3757,20.7246,9.9803,24.341,26.1482,4.7869,8,4,4,2026-08-22

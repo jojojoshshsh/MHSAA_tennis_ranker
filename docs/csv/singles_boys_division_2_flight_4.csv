@@ -1,4 +1,5 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,4,Luke Janz,Birmingham Seaholm,126.8815,126.8815,100.0,89,2,15.4167,5.7425,29.3357,20.4894,36.0188,36.4121,5.1765,6,5,1,2026-08-20
-2,Boys,2,4,Elliot Zahn,Midland Dow,90.6438,90.6438,28.78,51,2,5.1404,3.2764,29.195,22.7269,39.4513,38.7502,5.5748,8,8,0,2026-08-20
-3,Boys,2,4,Mason Howse,Traverse City Central,76.9662,76.9662,1.9,44,1,11.9478,8.9817,21.5414,13.0726,28.0984,29.382,5.0086,6,3,3,2026-08-20
+1,Boys,2,4,Luke Janz,Birmingham Seaholm,145.2334,145.2334,100.0,109,2,15.9982,6.0084,30.1698,20.4894,36.0188,36.4121,5.1765,6,5,1,2026-08-20
+2,Boys,2,4,Elliot Zahn,Midland Dow,99.454,99.454,29.82,60,2,5.7711,3.2459,30.751,22.7269,39.4513,38.7502,5.5748,8,8,0,2026-08-20
+3,Boys,2,4,Mason Howse,Traverse City Central,87.7056,87.7056,11.81,53,1,12.6984,7.2529,26.0361,16.5614,30.6005,30.4692,4.6797,7,4,3,2026-08-24
+4,Boys,2,4,Jordan Serlin,Berkley,80.1193,80.1193,0.18,47,1,6.6655,3.3326,20.8187,18.8412,34.7231,37.4901,5.294,6,5,1,2026-08-22

@@ -1,9 +1,9 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,2,Jay Thakkar / Vikram Menon,Troy Athens,173.4079,173.4079,100.0,123,8,15.9647,9.1459,33.1465,24.1559,40.3884,40.0679,5.4108,6,6,0,2026-08-20
-2,Boys,1,2,Siddarth Manikandan / Krish Kashyap,Troy,132.7926,132.7926,69.09,100,2,11.2915,5.5388,28.2392,19.1719,33.5229,33.4772,4.7837,7,5,2,2026-08-20
-3,Boys,1,2,Brody Craig / Dominic Thompson,Detroit Catholic Central,129.9725,129.9725,66.95,88,5,7.5105,7.7707,27.7895,21.7917,38.0371,38.2986,5.4151,5,5,0,2026-08-22
-4,Boys,1,2,Josh Reimink / Jonah Hoff,Holland West Ottawa,117.1604,117.1604,57.2,83,1,9.6028,6.052,28.7806,20.2279,35.9214,34.6165,5.2312,6,5,1,2026-08-22
-5,Boys,1,2,Daniel Han / Ronak Sharma,Novi,91.202,91.202,37.44,41,5,13.8973,14.4689,28.3249,19.0397,33.7737,36.3934,4.9113,6,4,2,2026-08-20
-6,Boys,1,2,Reece Dodson / Drey Krikke,Hudsonville,89.8484,89.8484,36.41,62,1,10.8778,8.3187,19.0879,10.6063,25.0478,29.1279,4.8138,8,3,5,2026-08-22
-7,Boys,1,2,Kamy Shushtari / Henry Haviland,Clarkston,71.5224,71.5224,22.47,29,3,10.8522,10.7788,27.0561,14.4953,30.7018,31.8414,5.4022,5,4,1,2026-08-20
-8,Boys,1,2,Brady Gauthier / Bridger Wildern,Rockford,42.4171,42.4171,0.32,9,2,10.6852,11.7023,17.4209,6.3013,22.1299,22.6999,5.2762,6,2,4,2026-08-22
+1,Boys,1,2,Jay Thakkar / Vikram Menon,Troy Athens,193.7619,193.7619,100.0,146,8,15.9647,9.1459,33.1465,24.1559,40.3884,40.0679,5.4108,6,6,0,2026-08-20
+2,Boys,1,2,Siddarth Manikandan / Krish Kashyap,Troy,158.345,158.345,76.82,129,2,11.1528,5.435,28.1889,19.1719,33.5229,33.4772,4.7837,7,5,2,2026-08-20
+3,Boys,1,2,Brody Craig / Dominic Thompson,Detroit Catholic Central,152.5182,152.5182,73.0,112,5,7.3842,8.0929,29.3062,22.8235,38.7727,39.4309,5.3164,6,6,0,2026-08-25
+4,Boys,1,2,Josh Reimink / Jonah Hoff,Holland West Ottawa,137.494,137.494,63.17,107,1,7.9598,5.0207,28.7806,19.7956,35.9886,34.8658,5.3976,7,6,1,2026-08-25
+5,Boys,1,2,Daniel Han / Ronak Sharma,Novi,136.9731,136.9731,62.83,93,5,13.618,14.398,28.0328,19.0397,33.7737,36.3934,4.9113,6,4,2,2026-08-20
+6,Boys,1,2,Kamy Shushtari / Henry Haviland,Clarkston,115.5165,115.5165,48.78,79,3,10.5319,10.7079,26.7826,14.4953,30.7018,31.8414,5.4022,5,4,1,2026-08-20
+7,Boys,1,2,Reece Dodson / Drey Krikke,Hudsonville,111.6498,111.6498,46.25,87,1,10.552,8.4225,18.7445,10.4232,24.897,28.9593,4.8246,8,3,5,2026-08-22
+8,Boys,1,2,Brady Gauthier / Bridger Wildern,Rockford,41.1813,41.1813,0.12,9,2,10.2567,11.7888,16.9529,4.6253,20.1787,22.4153,5.1845,7,2,5,2026-08-25

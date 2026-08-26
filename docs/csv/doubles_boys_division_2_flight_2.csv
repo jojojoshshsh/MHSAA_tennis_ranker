@@ -1,2 +1,2 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,2,Ethan Han / Drew Decker,Grand Rapids Forest Hills Northern,132.9213,132.9213,100.0,100,2,11.8623,7.8275,29.9118,14.7697,29.8264,33.2838,5.0189,7,5,2,2026-08-22
+1,Boys,2,2,Ethan Han / Drew Decker,Grand Rapids Forest Hills Northern,160.1422,160.1422,100.0,129,2,12.993,8.9073,31.1681,15.4138,30.3085,33.2838,4.9649,7,5,2,2026-08-22

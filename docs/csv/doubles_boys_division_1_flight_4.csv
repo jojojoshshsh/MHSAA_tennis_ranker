@@ -1,8 +1,8 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,4,Shiv Brazwell / Ishan Parikh,Novi,123.3066,123.3066,100.0,72,7,12.0291,10.4297,30.7007,21.5382,38.4622,38.101,5.6413,6,6,0,2026-08-20
-2,Boys,1,4,Ian Flint / Alejandro Gonzalvo,Clarkston,99.5455,99.5455,63.05,57,5,13.5069,13.4787,27.1852,11.8384,27.7472,27.6913,5.3029,5,2,3,2026-08-20
-3,Boys,1,4,Chase Dzibowicz / Wenji Lastfogel,Rockford,97.3882,97.3882,59.7,56,4,10.743,11.165,26.673,16.7467,31.509,31.4728,4.9208,6,4,2,2026-08-22
-4,Boys,1,4,Landon Schwallier / Thomas Diekevers,Holland West Ottawa,91.7801,91.7801,50.97,52,3,10.5351,6.7994,31.5341,15.898,31.2219,30.0666,5.108,6,5,1,2026-08-22
-5,Boys,1,4,Cooper Juchno / Sean Dewan,Detroit Catholic Central,88.6193,88.6193,46.06,52,3,10.7881,11.492,22.9674,12.3716,28.1349,28.9223,5.2544,5,3,2,2026-08-22
-6,Boys,1,4,Nithin Madhusudhan / Kane Roberts,Rochester,88.6183,88.6183,46.06,52,3,9.5629,10.2563,23.6386,13.8598,29.0227,29.9894,5.0543,5,3,2,2026-08-22
-7,Boys,1,4,Lawson Paeth / Landon Kamendat,Port Huron Northern,59.7778,59.7778,1.21,19,1,7.8378,1.5105,27.9089,22.4195,38.8805,37.6422,5.487,6,6,0,2026-08-24
+1,Boys,1,4,Shiv Brazwell / Ishan Parikh,Novi,136.0849,136.0849,100.0,87,7,11.6452,10.5453,29.7108,21.5273,38.4559,38.101,5.6429,6,6,0,2026-08-20
+2,Boys,1,4,Ian Flint / Alejandro Gonzalvo,Clarkston,112.0935,112.0935,61.97,72,5,13.048,13.6173,25.6819,11.8184,27.7323,27.6913,5.3046,5,2,3,2026-08-20
+3,Boys,1,4,Chase Dzibowicz / Wenji Lastfogel,Rockford,110.5113,110.5113,59.46,71,4,11.5283,11.9393,27.7273,14.5156,28.5392,32.0101,4.6745,7,4,3,2026-08-25
+4,Boys,1,4,Landon Schwallier / Thomas Diekevers,Holland West Ottawa,101.0166,101.0166,44.41,62,3,9.1468,6.4512,32.2717,16.3965,32.0466,31.5008,5.2167,7,6,1,2026-08-25
+5,Boys,1,4,Cooper Juchno / Sean Dewan,Detroit Catholic Central,99.2597,99.2597,41.63,62,3,9.8059,11.2928,24.4355,15.2185,30.3476,31.5316,5.043,6,4,2,2026-08-25
+6,Boys,1,4,Nithin Madhusudhan / Kane Roberts,Rochester,97.7369,97.7369,39.21,62,3,8.097,9.4164,24.7903,15.2492,30.0098,30.8884,4.9202,6,4,2,2026-08-22
+7,Boys,1,4,Lawson Paeth / Landon Kamendat,Port Huron Northern,73.2664,73.2664,0.42,32,1,8.8797,1.3341,29.6848,24.8588,40.6084,38.4542,5.2499,7,7,0,2026-08-25
