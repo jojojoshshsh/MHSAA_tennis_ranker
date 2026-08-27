@@ -1,5 +1,6 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,1,Wesley MacDonald / Asa Somers,Berkley,155.0853,155.0853,100.0,123,1,16.1399,2.4248,31.9177,20.9824,35.844,36.255,4.9538,6,5,1,2026-08-22
-2,Boys,2,1,Max Prather / Henry Logan,Grosse Pointe South,124.8087,124.8087,32.85,91,2,8.5421,2.0889,28.4456,21.1647,36.4606,37.3451,5.0986,7,6,1,2026-08-24
-3,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,117.5412,117.5412,16.73,81,2,7.1144,5.5473,25.8169,23.3287,39.6496,38.8555,5.4403,8,8,0,2026-08-20
-4,Boys,2,1,Hayden Rithauddean / Andrew Cho,Portage Central,110.7536,110.7536,1.67,82,1,9.6032,6.7354,26.2373,12.5492,26.883,31.4401,4.7779,9,5,4,2026-08-25
+1,Boys,2,1,Max Prather / Henry Logan,Grosse Pointe South,168.7844,168.7844,100.0,138,3,8.7513,2.6889,29.2275,21.1647,36.4606,37.3451,5.0986,7,6,1,2026-08-24
+2,Boys,2,1,Wesley MacDonald / Asa Somers,Berkley,162.0942,162.0942,89.34,131,1,16.1797,2.5339,31.6017,20.9824,35.844,36.255,4.9538,6,5,1,2026-08-22
+3,Boys,2,1,Hayden Rithauddean / Andrew Cho,Portage Central,161.1522,161.1522,87.84,135,2,8.9893,6.6489,26.7587,15.0148,29.2287,34.4736,4.738,11,7,4,2026-08-26
+4,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,125.3628,125.3628,30.84,86,3,8.1015,5.3284,28.0805,24.4155,40.5017,39.2067,5.362,9,9,0,2026-08-26
+5,Boys,2,1,Chris Girrbach / Anders Lyons,Traverse City Central,106.7818,106.7818,1.25,77,1,10.0847,7.1211,25.1324,16.2224,29.2164,29.6487,4.3314,9,5,4,2026-08-24

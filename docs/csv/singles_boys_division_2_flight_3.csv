@@ -1,5 +1,6 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,3,Charlie Griffith,Birmingham Seaholm,157.6612,157.6612,100.0,120,5,9.0377,5.816,30.3177,19.0529,35.1392,37.704,5.3621,6,5,1,2026-08-20
-2,Boys,2,3,Raymond Chai,Midland Dow,152.064,152.064,94.38,116,3,7.5582,4.8647,30.4856,23.0545,39.4597,39.2453,5.4684,8,8,0,2026-08-20
-3,Boys,2,3,Sam Ogilvie,Grand Rapids Forest Hills Northern,125.7509,125.7509,67.98,90,3,14.9038,9.5675,28.9208,12.3351,27.26,32.006,4.9749,7,4,3,2026-08-22
-4,Boys,2,3,Milo Woodruff,Traverse City Central,58.971,58.971,0.97,21,1,14.7162,11.0403,24.5602,12.467,26.585,29.3253,4.706,7,3,4,2026-08-24
+1,Boys,2,3,Charlie Griffith,Birmingham Seaholm,179.728,179.728,100.0,143,6,8.9324,5.816,30.3184,19.0529,35.1392,37.704,5.3621,6,5,1,2026-08-20
+2,Boys,2,3,Raymond Chai,Midland Dow,175.868,175.868,96.93,142,3,8.0638,5.6826,31.1933,23.0545,39.4597,39.2453,5.4684,8,8,0,2026-08-20
+3,Boys,2,3,Sam Ogilvie,Grand Rapids Forest Hills Northern,140.1438,140.1438,68.52,106,3,15.2649,9.9398,28.811,12.3356,27.262,32.006,4.9755,7,4,3,2026-08-22
+4,Boys,2,3,Milo Woodruff,Traverse City Central,129.6503,129.6503,60.17,101,1,12.6651,8.3216,24.668,14.8596,28.708,32.2278,4.6161,9,5,4,2026-08-24
+5,Boys,2,3,Kingston Alford,Southgate Anderson,54.5935,54.5935,0.47,13,1,9.2206,8.8228,27.0583,17.7086,33.8935,34.6119,5.395,5,4,1,2026-08-21

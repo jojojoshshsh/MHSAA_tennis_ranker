@@ -1,12 +1,13 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,3,2,Klaussen Hemmes / Emerson TenBrink,Zeeland West,127.6139,127.6139,100.0,87,4,8.1897,4.8119,31.626,21.9229,37.659,37.5875,5.2454,10,9,1,2026-08-25
-2,Boys,3,2,Jace Velderman / Payton Ott,Zeeland East,127.402,127.402,99.78,88,6,5.9792,4.6772,26.2554,17.3543,33.3794,38.8223,5.3417,9,8,1,2026-08-25
-3,Boys,3,2,Owen Schmidt / Carson Tkach,Traverse City West,123.8309,123.8309,96.08,87,5,4.206,2.5809,26.7224,20.3253,34.9047,37.5143,4.8598,12,10,2,2026-08-24
-4,Boys,3,2,Sebastain Valdina / Luca Giardello,Chelsea,119.1943,119.1943,91.29,75,4,9.9002,10.0732,32.4212,20.5695,36.3745,36.4931,5.2684,8,7,1,2026-08-24
-5,Boys,3,2,Seth Spronk / Zac Lummen,Grand Rapids South Christian,114.4137,114.4137,86.34,72,4,9.2129,2.1627,31.3694,23.9905,37.8377,40.7766,4.6157,10,9,1,2026-08-25
-6,Boys,3,2,Zach Postma / Austin Fiscelli,St. Clair,100.2982,100.2982,71.73,65,1,8.8356,2.9895,29.9959,19.0918,34.7428,36.9706,5.217,14,12,2,2026-08-24
-7,Boys,3,2,Mason Boeskool / Carter Hickok,Hamilton,95.4989,95.4989,66.76,54,3,12.3148,8.5666,30.193,17.6742,32.05,33.2375,4.7919,8,6,2,2026-08-25
-8,Boys,3,2,Sam Reisterer / Hudson Borema,Ludington,55.4377,55.4377,25.29,18,3,7.3023,7.3089,22.2834,13.1017,27.9666,29.6142,4.955,7,5,2,2026-08-21
-9,Boys,3,2,Grant Ford / Lukas Harnick,Mason,46.8776,46.8776,16.43,10,1,6.333,4.2558,23.7282,16.6906,32.8314,33.0686,5.3803,6,5,1,2026-08-24
-10,Boys,3,2,Max Lepper / Joel Archer,Middleville Thornapple Kellogg,40.1537,40.1537,9.47,4,1,11.8479,13.2637,17.8538,10.2369,25.7276,27.1791,5.1636,5,2,3,2026-08-22
-11,Boys,3,2,Parker Mankiewicz / Everett Crum,Cadillac,31.3412,31.3412,0.35,2,1,7.6626,8.8442,15.9902,5.7148,21.3337,22.7772,5.2063,5,2,3,2026-08-19
+1,Boys,3,2,Sebastain Valdina / Luca Giardello,Chelsea,198.4388,198.4388,100.0,161,5,11.1869,11.2321,33.5339,20.6101,36.4063,36.4937,5.2654,8,7,1,2026-08-24
+2,Boys,3,2,Zach Postma / Austin Fiscelli,St. Clair,184.0099,184.0099,91.38,155,2,9.5961,2.9673,31.9034,22.013,37.2205,37.7319,5.0692,15,13,2,2026-08-24
+3,Boys,3,2,Jace Velderman / Payton Ott,Zeeland East,153.4595,153.4595,73.14,115,7,5.9491,4.987,27.037,17.3111,33.4516,38.6244,5.3801,9,8,1,2026-08-25
+4,Boys,3,2,Owen Schmidt / Carson Tkach,Traverse City West,152.6493,152.6493,72.65,115,6,5.6454,2.7697,30.4926,20.8213,35.2612,37.5575,4.8133,12,10,2,2026-08-24
+5,Boys,3,2,Klaussen Hemmes / Emerson TenBrink,Zeeland West,152.5475,152.5475,72.59,115,4,8.718,4.724,31.626,21.9276,37.6613,37.5913,5.2446,10,9,1,2026-08-25
+6,Boys,3,2,Seth Spronk / Zac Lummen,Grand Rapids South Christian,117.8627,117.8627,51.88,74,5,9.0542,2.1821,31.3653,23.9877,37.8346,40.6994,4.6157,10,9,1,2026-08-25
+7,Boys,3,2,Mason Boeskool / Carter Hickok,Hamilton,97.2637,97.2637,39.57,56,3,12.319,8.557,30.1959,17.6738,32.0493,33.2233,4.7918,8,6,2,2026-08-25
+8,Boys,3,2,Sam Reisterer / Hudson Borema,Ludington,72.5257,72.5257,24.8,34,4,6.2513,4.6854,23.5401,16.7547,31.1434,32.4029,4.7962,10,8,2,2026-08-26
+9,Boys,3,2,Archie Johansen / Henry Smith,St. Joseph,54.0346,54.0346,13.76,17,1,11.8739,9.8949,20.5509,13.7773,30.4617,29.3382,5.5615,5,3,2,2026-08-26
+10,Boys,3,2,Grant Ford / Lukas Harnick,Mason,49.1989,49.1989,10.87,11,1,7.5289,5.2849,25.1046,16.8011,32.9195,33.0699,5.3728,6,5,1,2026-08-24
+11,Boys,3,2,Max Lepper / Joel Archer,Middleville Thornapple Kellogg,40.1265,40.1265,5.45,4,1,11.8254,13.3265,17.7656,10.2298,25.7363,27.1301,5.1688,5,2,3,2026-08-22
+12,Boys,3,2,Parker Mankiewicz / Everett Crum,Cadillac,31.8925,31.8925,0.53,2,1,8.5004,9.3936,16.0111,5.7393,21.3683,22.8161,5.2097,5,2,3,2026-08-19

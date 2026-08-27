@@ -1,16 +1,17 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,3,1,Will Deblecourt / Eli Setlock,Grand Rapids Christian,166.4737,166.4737,100.0,117,11,8.4787,9.6556,28.0771,20.5861,34.5806,40.86,4.6648,9,7,2,2026-08-24
-2,Boys,3,1,Jacob Guerriero / Luke Hathaway,Zeeland East,160.2548,160.2548,95.48,115,10,6.9082,5.7214,30.3283,17.6658,33.8037,36.284,5.3793,9,8,1,2026-08-25
-3,Boys,3,1,Gavin Cohoon / Ethan Blough,Ludington,153.9238,153.9238,90.87,110,9,9.0476,8.9629,27.097,16.8619,33.0957,33.929,5.4113,6,5,1,2026-08-19
-4,Boys,3,1,Jordan Rudolph / Stephen McCulloch,Chelsea,124.832,124.832,69.71,82,5,8.5637,9.2698,30.5284,18.8986,35.1811,35.6283,5.4275,8,7,1,2026-08-24
-5,Boys,3,1,Aiden Schmidt / Henry Overbeek,Ada Forest Hills Eastern,111.6717,111.6717,60.14,79,2,8.4777,0.6719,27.0276,16.9562,33.3935,37.3278,5.4791,8,7,1,2026-08-19
-6,Boys,3,1,Cameron Boullard / Gabe Cyplik,St. Clair,108.3629,108.3629,57.73,75,2,9.1244,4.4892,27.9591,16.3238,30.6682,34.487,4.7815,14,10,4,2026-08-24
-7,Boys,3,1,Patrick Milne / Colton Bible,Traverse City West,85.5051,85.5051,41.1,42,7,9.5094,4.8442,24.5212,14.6031,27.774,34.4333,4.3903,12,7,5,2026-08-24
-8,Boys,3,1,Mason Rozema / Grayson Stulp,Grand Rapids South Christian,82.1836,82.1836,38.69,42,1,12.0078,4.1053,29.6169,20.9549,35.0483,39.7145,4.6978,10,8,2,2026-08-25
-9,Boys,3,1,Liam DeHaan / Roman Lundsford,Zeeland West,60.6878,60.6878,23.05,18,5,10.8652,12.4766,21.0661,10.7192,25.0991,30.294,4.7933,10,4,6,2026-08-25
-10,Boys,3,1,Carter Boelema / Kyle Bumgardner,Coopersville,56.3913,56.3913,19.92,19,2,6.602,0.8004,23.7347,17.1788,33.3073,36.571,5.3762,6,5,1,2026-08-22
-11,Boys,3,1,Samuel Teachout / Gideon Scott,Middleville Thornapple Kellogg,46.1551,46.1551,12.48,10,3,4.4164,5.6518,20.9689,11.6624,27.5188,30.4884,5.2854,5,4,1,2026-08-24
-12,Boys,3,1,Garrett Backus / Spencer Ball,Mason,40.1363,40.1363,8.1,5,2,7.605,3.2501,19.2993,12.5632,28.9735,30.5826,5.4701,6,4,2,2026-08-24
-13,Boys,3,1,Cameron Kelly / Jude Beckwith,Haslett,40.0019,40.0019,8.0,5,1,10.1528,10.4815,18.1629,12.0902,27.0706,27.0343,4.9935,7,3,4,2026-08-21
-14,Boys,3,1,Jack Schaefer / Jack Hampton,Cadillac,32.4026,32.4026,2.48,2,1,8.3951,10.1381,15.4756,6.3897,22.071,23.4546,5.2271,5,2,3,2026-08-19
-15,Boys,3,1,Alex Davis / Bailee Porter,Parma Western,29.9546,29.9546,0.69,1,1,12.4368,12.3185,12.5513,1.5706,17.7399,20.3228,5.3897,7,1,6,2026-08-24
+1,Boys,3,1,Will Deblecourt / Eli Setlock,Grand Rapids Christian,173.4266,173.4266,100.0,125,11,8.1484,9.6278,28.0956,20.6037,34.5943,40.8137,4.6635,9,7,2,2026-08-24
+2,Boys,3,1,Jacob Guerriero / Luke Hathaway,Zeeland East,167.5827,167.5827,95.95,123,10,7.0666,5.8688,30.7011,17.7603,33.8571,36.1148,5.3656,9,8,1,2026-08-25
+3,Boys,3,1,Gavin Cohoon / Ethan Blough,Ludington,160.5884,160.5884,91.11,118,9,7.0445,5.6237,27.3618,19.3198,35.4763,35.8545,5.3855,9,8,1,2026-08-26
+4,Boys,3,1,Jordan Rudolph / Stephen McCulloch,Chelsea,128.2679,128.2679,68.73,84,6,8.4664,9.4225,30.2529,18.9032,35.1845,35.6289,5.4271,8,7,1,2026-08-24
+5,Boys,3,1,Patrick Milne / Colton Bible,Traverse City West,117.6567,117.6567,61.39,77,7,9.9739,4.9914,25.474,15.8302,29.0396,34.4763,4.4031,12,7,5,2026-08-24
+6,Boys,3,1,Wyatt Milletics / Ben Hosbein,St. Joseph,115.0685,115.0685,59.59,78,3,10.2716,9.7965,25.7061,16.3921,32.9569,33.2137,5.5216,5,4,1,2026-08-26
+7,Boys,3,1,Aiden Schmidt / Henry Overbeek,Ada Forest Hills Eastern,113.3017,113.3017,58.37,81,2,7.3633,0.5741,26.6258,17.6952,34.0934,37.9368,5.4661,9,8,1,2026-08-25
+8,Boys,3,1,Cameron Boullard / Gabe Cyplik,St. Clair,109.6054,109.6054,55.81,77,2,9.4491,4.5905,28.2784,14.6644,28.8151,34.487,4.7169,15,10,5,2026-08-24
+9,Boys,3,1,Mason Rozema / Grayson Stulp,Grand Rapids South Christian,84.7331,84.7331,38.59,45,1,11.7884,4.106,29.7204,20.9491,35.0388,39.4519,4.6966,10,8,2,2026-08-25
+10,Boys,3,1,Liam DeHaan / Roman Lundsford,Zeeland West,61.6073,61.6073,22.58,19,5,10.8464,12.4673,21.1742,10.7211,25.1002,30.2958,4.793,10,4,6,2026-08-25
+11,Boys,3,1,Carter Boelema / Kyle Bumgardner,Coopersville,57.2835,57.2835,19.58,20,2,6.6047,0.8044,23.7462,17.1788,33.3073,36.571,5.3762,6,5,1,2026-08-22
+12,Boys,3,1,Samuel Teachout / Gideon Scott,Middleville Thornapple Kellogg,46.3721,46.3721,12.03,10,3,4.5467,5.6512,21.0439,12.0845,27.8387,30.4884,5.2514,5,4,1,2026-08-24
+13,Boys,3,1,Garrett Backus / Spencer Ball,Mason,40.1709,40.1709,7.73,5,2,7.6646,3.2512,19.3154,12.5746,28.9868,30.5845,5.4707,6,4,2,2026-08-24
+14,Boys,3,1,Cameron Kelly / Jude Beckwith,Haslett,39.8065,39.8065,7.48,5,1,10.0541,10.7553,17.5,12.0902,27.0706,27.0343,4.9935,7,3,4,2026-08-21
+15,Boys,3,1,Jack Schaefer / Jack Hampton,Cadillac,32.8165,32.8165,2.64,2,1,9.1335,10.4473,15.482,6.4059,22.1055,23.4938,5.2332,5,2,3,2026-08-19
+16,Boys,3,1,Alex Davis / Bailee Porter,Parma Western,29.661,29.661,0.46,1,1,12.5798,12.3244,11.6869,1.5746,17.7472,20.3304,5.3909,7,1,6,2026-08-24

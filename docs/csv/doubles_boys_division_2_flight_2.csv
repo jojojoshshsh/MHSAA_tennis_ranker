@@ -1,2 +1,3 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,2,Ethan Han / Drew Decker,Grand Rapids Forest Hills Northern,160.1422,160.1422,100.0,129,2,12.993,8.9073,31.1681,15.4138,30.3085,33.2838,4.9649,7,5,2,2026-08-22
+1,Boys,2,2,Ethan Han / Drew Decker,Grand Rapids Forest Hills Northern,180.0648,180.0648,100.0,151,2,13.8165,9.3064,31.1681,15.4148,30.3108,33.2838,4.9653,7,5,2,2026-08-22
+2,Boys,2,2,Felix Wu / Henry Wisloski,Portage Central,136.9064,136.9064,2.06,115,1,10.0781,6.6691,23.7558,9.7354,22.8023,29.87,4.3556,11,4,7,2026-08-26

@@ -1,7 +1,8 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,1,Chase Schirmacher / Brogan Kelly,Jackson Lumen Christi,155.9003,155.9003,100.0,110,8,6.3934,2.8753,31.4356,24.1528,40.7707,41.826,5.5393,10,10,0,2026-08-22
-2,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,149.44,149.44,94.28,105,7,7.4303,6.3263,31.7681,22.1544,37.5593,38.7781,5.135,15,13,2,2026-08-22
-3,Boys,4_other,1,Caleb Kooistra / Logan Will,Grand Rapids NorthPointe Christian,148.7824,148.7824,93.7,103,7,8.5496,3.6237,31.8261,23.6447,40.7668,40.2355,5.7074,9,9,0,2026-08-20
-4,Boys,4_other,1,Simon Geffre / Isaac Geffre,Paw Paw,135.0356,135.0356,81.52,94,5,11.0065,9.7953,29.6255,18.4862,33.5588,33.9637,5.0242,10,8,2,2026-08-24
-5,Boys,4_other,1,Charlie Laethem / Davis Ford,Grosse Pointe Woods University Liggett,124.7764,124.7764,72.43,89,3,6.8205,5.282,26.7016,21.1213,36.7363,36.9916,5.205,9,8,1,2026-08-25
-6,Boys,4_other,1,Michael Dinevski / Tye Chlebek,Grosse Ile,43.5242,43.5242,0.46,9,1,8.5599,5.713,20.2397,12.3982,28.3895,31.1705,5.3304,6,4,2,2026-08-25
+1,Boys,4_other,1,Chase Schirmacher / Brogan Kelly,Jackson Lumen Christi,162.689,162.689,100.0,116,8,6.9621,3.8994,31.8619,25.1443,41.5367,43.2572,5.4641,11,11,0,2026-08-22
+2,Boys,4_other,1,Caleb Kooistra / Logan Will,Grand Rapids NorthPointe Christian,152.6679,152.6679,91.63,107,7,8.6635,3.6646,32.5355,23.6447,40.7668,40.2355,5.7074,9,9,0,2026-08-20
+3,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,152.075,152.075,91.13,108,7,7.166,6.4471,31.8317,22.1544,37.5593,38.7781,5.135,15,13,2,2026-08-22
+4,Boys,4_other,1,Simon Geffre / Isaac Geffre,Paw Paw,137.5413,137.5413,78.99,98,5,9.6535,8.6978,28.9451,18.1844,33.7496,34.2817,5.1884,11,9,2,2026-08-26
+5,Boys,4_other,1,Charlie Laethem / Davis Ford,Grosse Pointe Woods University Liggett,128.6793,128.6793,71.58,93,3,7.0918,5.2769,27.3612,21.1213,36.7363,36.9916,5.205,9,8,1,2026-08-25
+6,Boys,4_other,1,Brandon Shampo / Blake Bowerman,Sandusky,62.5418,62.5418,16.33,23,1,5.6756,1.1743,29.3554,22.0001,38.5849,36.3149,5.5283,6,6,0,2026-08-24
+7,Boys,4_other,1,Michael Dinevski / Tye Chlebek,Grosse Ile,43.5254,43.5254,0.44,9,1,8.5605,5.713,20.2421,12.3982,28.3895,31.1705,5.3304,6,4,2,2026-08-25
