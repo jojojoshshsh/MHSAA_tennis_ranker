@@ -1,3 +1,4 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,2,Giorgio Materazzo,Birmingham Seaholm,159.7282,159.7282,100.0,124,2,14.5334,9.7412,31.1766,20.6428,35.658,36.4001,5.0051,6,5,1,2026-08-20
-2,Boys,2,2,Chase Martin,Midland Dow,78.403,78.403,0.49,38,1,8.8129,5.8565,29.1444,20.2886,37.3563,37.2085,5.6892,6,6,0,2026-08-20
+1,Boys,2,2,Giorgio Materazzo,Birmingham Seaholm,231.81,231.81,100.0,202,3,15.7002,9.8792,32.5119,21.198,35.9892,36.9852,4.9304,6,5,1,2026-08-20
+2,Boys,2,2,Chase Martin,Midland Dow,144.9773,144.9773,9.37,113,1,9.0545,5.7513,29.1616,20.5995,37.5256,37.5191,5.642,6,6,0,2026-08-20
+3,Boys,2,2,Marcus Powell,Muskegon Mona Shores,136.8078,136.8078,0.84,99,1,11.9559,1.5664,32.7487,27.3432,43.3268,40.9451,5.3278,9,9,0,2026-08-28

@@ -1,5 +1,5 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,144.9797,144.9797,100.0,115,1,12.8916,6.8905,31.848,15.1441,30.0275,31.9466,4.9611,6,4,2,2026-08-22
-2,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,96.1836,96.1836,45.77,50,4,6.6905,5.4273,29.5859,23.7351,40.3975,42.511,5.5542,16,15,1,2026-08-22
-3,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,88.0923,88.0923,36.78,46,4,7.8872,3.1645,26.9366,19.9885,34.4704,40.94,4.8273,14,12,2,2026-08-25
-4,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,55.5645,55.5645,0.63,17,2,12.8305,11.9421,22.9741,10.6587,24.7192,29.9588,4.6868,8,4,4,2026-08-20
+1,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,176.4992,176.4992,100.0,134,5,15.3767,8.7059,36.0383,23.3752,36.514,38.1259,4.3796,8,6,2,2026-08-28
+2,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,110.6232,110.6232,45.33,68,4,8.0336,6.9837,30.8979,21.1327,35.9665,37.7861,4.9446,18,16,2,2026-08-28
+3,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,93.1082,93.1082,30.8,52,4,8.8859,3.7346,27.8705,17.8634,31.6059,40.94,4.5808,15,12,3,2026-08-27
+4,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,56.4077,56.4077,0.34,18,2,12.5827,11.9988,23.0323,10.6587,24.7192,29.9588,4.6868,8,4,4,2026-08-20

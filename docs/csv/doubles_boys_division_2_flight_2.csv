@@ -1,3 +1,7 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,2,Ethan Han / Drew Decker,Grand Rapids Forest Hills Northern,180.0648,180.0648,100.0,151,2,13.8165,9.3064,31.1681,15.4148,30.3108,33.2838,4.9653,7,5,2,2026-08-22
-2,Boys,2,2,Felix Wu / Henry Wisloski,Portage Central,136.9064,136.9064,2.06,115,1,10.0781,6.6691,23.7558,9.7354,22.8023,29.87,4.3556,11,4,7,2026-08-26
+1,Boys,2,2,Ahren Gupta / Kyle Carr,Birmingham Seaholm,237.495,237.495,100.0,210,4,14.2109,8.3142,28.8948,19.5149,33.8514,38.676,4.7788,9,6,3,2026-08-28
+2,Boys,2,2,Ethan Han / Drew Decker,Grand Rapids Forest Hills Northern,233.2009,233.2009,94.86,210,2,14.8505,9.6609,32.1195,15.4812,30.3718,33.2838,4.9635,7,5,2,2026-08-22
+3,Boys,2,2,Jashwanth Thamminana / Ethan Clark,Midland Dow,163.1284,163.1284,10.93,138,2,4.1076,3.8741,23.5498,18.8207,36.1841,36.1613,5.7878,5,5,0,2026-08-26
+4,Boys,2,2,Brennen Reister / Dylan Lyonnais,Muskegon Mona Shores,159.9343,159.9343,7.11,134,1,6.6296,1.7053,26.2339,20.7119,36.3062,39.8471,5.1981,9,8,1,2026-08-28
+5,Boys,2,2,Felix Wu / Henry Wisloski,Portage Central,154.7853,154.7853,0.94,134,1,11.8258,7.001,24.7471,9.7301,22.7314,29.6205,4.3338,11,4,7,2026-08-26
+6,Boys,2,2,Alex Fieck-Losh / Gabe Fernandez,Dexter,154.3139,154.3139,0.38,135,1,7.5193,4.2225,20.2938,13.6601,29.0692,30.8948,5.1364,6,4,2,2026-08-27

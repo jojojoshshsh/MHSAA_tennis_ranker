@@ -1,6 +1,8 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,1,Max Prather / Henry Logan,Grosse Pointe South,168.7844,168.7844,100.0,138,3,8.7513,2.6889,29.2275,21.1647,36.4606,37.3451,5.0986,7,6,1,2026-08-24
-2,Boys,2,1,Wesley MacDonald / Asa Somers,Berkley,162.0942,162.0942,89.34,131,1,16.1797,2.5339,31.6017,20.9824,35.844,36.255,4.9538,6,5,1,2026-08-22
-3,Boys,2,1,Hayden Rithauddean / Andrew Cho,Portage Central,161.1522,161.1522,87.84,135,2,8.9893,6.6489,26.7587,15.0148,29.2287,34.4736,4.738,11,7,4,2026-08-26
-4,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,125.3628,125.3628,30.84,86,3,8.1015,5.3284,28.0805,24.4155,40.5017,39.2067,5.362,9,9,0,2026-08-26
-5,Boys,2,1,Chris Girrbach / Anders Lyons,Traverse City Central,106.7818,106.7818,1.25,77,1,10.0847,7.1211,25.1324,16.2224,29.2164,29.6487,4.3314,9,5,4,2026-08-24
+1,Boys,2,1,Kalil Wahab / Hunter Helfman,Birmingham Seaholm,219.638,219.638,100.0,191,3,14.7457,8.6637,28.4209,20.8682,34.842,39.2178,4.658,9,6,3,2026-08-28
+2,Boys,2,1,Max Prather / Henry Logan,Grosse Pointe South,197.1051,197.1051,83.98,170,3,8.7554,2.6714,29.2249,21.1976,36.4807,37.3451,5.0944,7,6,1,2026-08-24
+3,Boys,2,1,Wesley MacDonald / Asa Somers,Berkley,192.2872,192.2872,80.55,165,1,17.9128,2.7718,32.5269,19.4001,33.6028,36.255,4.7342,7,5,2,2026-08-27
+4,Boys,2,1,Hayden Rithauddean / Andrew Cho,Portage Central,190.2419,190.2419,79.1,167,2,10.875,7.2451,26.6816,14.9971,29.0603,34.3415,4.6877,11,7,4,2026-08-26
+5,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,164.4903,164.4903,60.79,130,3,8.1992,4.715,27.7523,25.504,41.3725,39.8136,5.2895,10,10,0,2026-08-26
+6,Boys,2,1,Chris Girrbach / Anders Lyons,Traverse City Central,147.6776,147.6776,48.83,122,1,11.5089,8.2489,26.7809,15.3615,28.0682,29.4399,4.2356,12,6,6,2026-08-28
+7,Boys,2,1,Micah Bement / Jordan Woodring,Muskegon Mona Shores,79.6472,79.6472,0.46,40,1,7.2724,1.9602,28.6825,23.6921,39.5487,40.4406,5.2855,8,8,0,2026-08-28

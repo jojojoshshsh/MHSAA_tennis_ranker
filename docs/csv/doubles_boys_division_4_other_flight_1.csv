@@ -1,8 +1,9 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,1,Chase Schirmacher / Brogan Kelly,Jackson Lumen Christi,162.689,162.689,100.0,116,8,6.9621,3.8994,31.8619,25.1443,41.5367,43.2572,5.4641,11,11,0,2026-08-22
-2,Boys,4_other,1,Caleb Kooistra / Logan Will,Grand Rapids NorthPointe Christian,152.6679,152.6679,91.63,107,7,8.6635,3.6646,32.5355,23.6447,40.7668,40.2355,5.7074,9,9,0,2026-08-20
-3,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,152.075,152.075,91.13,108,7,7.166,6.4471,31.8317,22.1544,37.5593,38.7781,5.135,15,13,2,2026-08-22
-4,Boys,4_other,1,Simon Geffre / Isaac Geffre,Paw Paw,137.5413,137.5413,78.99,98,5,9.6535,8.6978,28.9451,18.1844,33.7496,34.2817,5.1884,11,9,2,2026-08-26
-5,Boys,4_other,1,Charlie Laethem / Davis Ford,Grosse Pointe Woods University Liggett,128.6793,128.6793,71.58,93,3,7.0918,5.2769,27.3612,21.1213,36.7363,36.9916,5.205,9,8,1,2026-08-25
-6,Boys,4_other,1,Brandon Shampo / Blake Bowerman,Sandusky,62.5418,62.5418,16.33,23,1,5.6756,1.1743,29.3554,22.0001,38.5849,36.3149,5.5283,6,6,0,2026-08-24
-7,Boys,4_other,1,Michael Dinevski / Tye Chlebek,Grosse Ile,43.5254,43.5254,0.44,9,1,8.5605,5.713,20.2421,12.3982,28.3895,31.1705,5.3304,6,4,2,2026-08-25
+1,Boys,4_other,1,Chase Schirmacher / Brogan Kelly,Jackson Lumen Christi,196.338,196.338,100.0,150,9,9.0019,4.4166,33.0061,26.1599,42.3018,43.5634,5.3806,12,12,0,2026-08-22
+2,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,189.4594,189.4594,95.45,145,8,8.0298,7.671,32.9896,24.5784,39.7064,41.5045,5.0426,17,15,2,2026-08-28
+3,Boys,4_other,1,Caleb Kooistra / Logan Will,Grand Rapids NorthPointe Christian,186.6335,186.6335,93.59,145,7,8.3254,3.3643,33.0736,23.8427,41.2805,40.7691,5.8126,10,10,0,2026-08-27
+4,Boys,4_other,1,Simon Geffre / Isaac Geffre,Paw Paw,171.2579,171.2579,83.43,136,5,10.2426,9.4768,27.8814,18.1853,33.7566,34.2702,5.1904,11,9,2,2026-08-26
+5,Boys,4_other,1,Charlie Laethem / Davis Ford,Grosse Pointe Woods University Liggett,163.8977,163.8977,78.56,134,3,8.1476,5.8184,27.5018,17.9365,32.8309,36.9916,4.9648,10,8,2,2026-08-27
+6,Boys,4_other,1,Brandon Shampo / Blake Bowerman,Sandusky,64.5031,64.5031,12.89,25,1,4.8713,1.0392,29.3563,22.5874,39.2245,37.3183,5.5457,7,7,0,2026-08-27
+7,Boys,4_other,1,Elliot MacTavish / Keegan Bridges,Maple City Glen Lake,48.061,48.061,2.02,10,1,14.0984,12.5887,21.6321,9.5059,24.8561,30.8313,5.1167,8,3,5,2026-08-28
+8,Boys,4_other,1,Michael Dinevski / Tye Chlebek,Grosse Ile,45.36,45.36,0.24,11,1,8.2448,6.0342,20.3839,12.3597,28.3685,31.1705,5.3362,6,4,2,2026-08-25

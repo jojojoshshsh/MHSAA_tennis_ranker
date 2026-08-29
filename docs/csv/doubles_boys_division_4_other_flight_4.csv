@@ -1,3 +1,4 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,98.651,98.651,100.0,58,2,6.5948,2.4935,32.2142,23.796,38.9492,41.153,5.0511,11,10,1,2026-08-22
-2,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,53.5166,53.5166,1.13,17,1,6.2502,6.0275,25.644,17.3603,31.317,31.6659,4.6522,14,9,5,2026-08-22
+1,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,173.0388,173.0388,100.0,142,2,6.5106,2.5654,32.3342,23.7939,38.9484,41.1699,5.0515,11,10,1,2026-08-22
+2,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,85.6117,85.6117,24.0,44,2,7.2309,5.4128,30.1042,21.1787,37.838,38.3591,5.5531,6,6,0,2026-08-28
+3,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,58.1854,58.1854,0.16,21,1,6.4316,6.6791,25.646,18.049,32.089,33.5255,4.68,15,10,5,2026-08-28
