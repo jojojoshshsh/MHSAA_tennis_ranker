@@ -1,4 +1,7 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,173.0388,173.0388,100.0,142,2,6.5106,2.5654,32.3342,23.7939,38.9484,41.1699,5.0515,11,10,1,2026-08-22
-2,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,85.6117,85.6117,24.0,44,2,7.2309,5.4128,30.1042,21.1787,37.838,38.3591,5.5531,6,6,0,2026-08-28
-3,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,58.1854,58.1854,0.16,21,1,6.4316,6.6791,25.646,18.049,32.089,33.5255,4.68,15,10,5,2026-08-28
+1,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,107.2013,107.2013,100.0,65,4,4.5608,3.9556,28.381,23.075,39.0426,43.2117,5.3225,13,12,1,2026-08-29
+2,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,94.6114,94.6114,82.56,49,5,6.1277,5.5412,28.1156,21.8087,38.5343,39.0397,5.5752,7,7,0,2026-08-28
+3,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,58.7697,58.7697,32.92,21,1,9.3938,8.2132,23.7811,15.2168,32.0239,32.3421,5.6023,5,4,1,2026-08-29
+4,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,56.0959,56.0959,29.22,21,2,7.4538,7.7147,25.7682,10.1157,22.6906,31.3546,4.1916,18,10,8,2026-08-29
+5,Boys,4_other,4,James Brunner / Wyatt Korte,Grand Rapids Catholic Central,52.3235,52.3235,23.99,22,1,5.6375,-0.777,23.8481,9.2617,24.1827,36.4121,4.9737,8,5,3,2026-08-29
+6,Boys,4_other,4,Mason Harris / Emmet Staley,North Muskegon,35.2058,35.2058,0.29,6,1,7.0408,4.9992,17.1691,7.5322,22.5799,27.0126,5.0159,10,4,6,2026-08-29

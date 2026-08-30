@@ -1,3 +1,4 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,4,Vinnie Holder / Joseph Dauphin,Berkley,111.2762,111.2762,100.0,71,3,14.3602,6.0449,29.9516,17.9754,32.0994,37.6082,4.708,7,5,2,2026-08-27
-2,Boys,2,4,Luka Zilo / virinchi Kakaraparthi,Grand Rapids Forest Hills Northern,77.9191,77.9191,2.68,47,1,11.1722,3.3243,24.5665,11.3884,26.3625,30.8542,4.9914,7,4,3,2026-08-22
+1,Boys,2,4,Vinnie Holder / Joseph Dauphin,Berkley,156.1673,156.1673,100.0,115,5,14.5999,8.3585,30.9766,19.4206,33.3425,39.5292,4.6406,8,6,2,2026-08-29
+2,Boys,2,4,Luka Zilo / virinchi Kakaraparthi,Grand Rapids Forest Hills Northern,107.0355,107.0355,45.51,74,2,11.4309,4.9894,26.4794,15.377,29.4374,33.2028,4.6868,8,5,3,2026-08-29
+3,Boys,2,4,Mason Szczepaniak / Kody Medalla,Gibraltar Carlson,66.7583,66.7583,0.84,26,1,8.1992,2.7402,28.5667,21.5734,38.3726,38.1251,5.5997,5,5,0,2026-08-29

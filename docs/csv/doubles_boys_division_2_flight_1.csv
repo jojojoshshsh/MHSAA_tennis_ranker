@@ -1,8 +1,9 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,1,Kalil Wahab / Hunter Helfman,Birmingham Seaholm,219.638,219.638,100.0,191,3,14.7457,8.6637,28.4209,20.8682,34.842,39.2178,4.658,9,6,3,2026-08-28
-2,Boys,2,1,Max Prather / Henry Logan,Grosse Pointe South,197.1051,197.1051,83.98,170,3,8.7554,2.6714,29.2249,21.1976,36.4807,37.3451,5.0944,7,6,1,2026-08-24
-3,Boys,2,1,Wesley MacDonald / Asa Somers,Berkley,192.2872,192.2872,80.55,165,1,17.9128,2.7718,32.5269,19.4001,33.6028,36.255,4.7342,7,5,2,2026-08-27
-4,Boys,2,1,Hayden Rithauddean / Andrew Cho,Portage Central,190.2419,190.2419,79.1,167,2,10.875,7.2451,26.6816,14.9971,29.0603,34.3415,4.6877,11,7,4,2026-08-26
-5,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,164.4903,164.4903,60.79,130,3,8.1992,4.715,27.7523,25.504,41.3725,39.8136,5.2895,10,10,0,2026-08-26
-6,Boys,2,1,Chris Girrbach / Anders Lyons,Traverse City Central,147.6776,147.6776,48.83,122,1,11.5089,8.2489,26.7809,15.3615,28.0682,29.4399,4.2356,12,6,6,2026-08-28
-7,Boys,2,1,Micah Bement / Jordan Woodring,Muskegon Mona Shores,79.6472,79.6472,0.46,40,1,7.2724,1.9602,28.6825,23.6921,39.5487,40.4406,5.2855,8,8,0,2026-08-28
+1,Boys,2,1,Kalil Wahab / Hunter Helfman,Birmingham Seaholm,252.7316,252.7316,100.0,221,6,15.5514,9.9912,29.6406,20.8074,34.798,39.2179,4.6635,9,6,3,2026-08-28
+2,Boys,2,1,Max Prather / Henry Logan,Grosse Pointe South,221.8255,221.8255,79.5,198,3,8.6842,2.6714,29.1436,21.1976,36.4807,37.3451,5.0944,7,6,1,2026-08-24
+3,Boys,2,1,Wesley MacDonald / Asa Somers,Berkley,219.8779,219.8779,78.2,193,2,16.4539,3.9182,32.9104,20.4733,34.5951,38.3816,4.7072,8,6,2,2026-08-29
+4,Boys,2,1,Breck Suvedi / Thano Bird,Grand Rapids Forest Hills Northern,218.4281,218.4281,77.24,187,4,16.6204,11.017,31.3273,18.162,32.0287,35.3043,4.6222,7,4,3,2026-08-29
+5,Boys,2,1,Hayden Rithauddean / Andrew Cho,Portage Central,215.5824,215.5824,75.35,195,2,11.5135,7.2214,27.7898,14.721,28.8166,34.3415,4.6985,11,7,4,2026-08-26
+6,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,212.2527,212.2527,73.15,186,3,9.5201,6.512,28.9438,21.8867,35.7766,35.756,4.63,12,11,1,2026-08-29
+7,Boys,2,1,Chris Girrbach / Anders Lyons,Traverse City Central,171.0873,171.0873,45.83,148,1,11.8336,8.8722,27.0561,15.2009,27.8945,29.4409,4.2312,12,6,6,2026-08-28
+8,Boys,2,1,Micah Bement / Jordan Woodring,Muskegon Mona Shores,102.8461,102.8461,0.56,66,1,8.0122,1.9603,28.5,23.6961,39.5512,40.4406,5.285,8,8,0,2026-08-28

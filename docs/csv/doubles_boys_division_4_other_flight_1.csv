@@ -1,9 +1,14 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,1,Chase Schirmacher / Brogan Kelly,Jackson Lumen Christi,196.338,196.338,100.0,150,9,9.0019,4.4166,33.0061,26.1599,42.3018,43.5634,5.3806,12,12,0,2026-08-22
-2,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,189.4594,189.4594,95.45,145,8,8.0298,7.671,32.9896,24.5784,39.7064,41.5045,5.0426,17,15,2,2026-08-28
-3,Boys,4_other,1,Caleb Kooistra / Logan Will,Grand Rapids NorthPointe Christian,186.6335,186.6335,93.59,145,7,8.3254,3.3643,33.0736,23.8427,41.2805,40.7691,5.8126,10,10,0,2026-08-27
-4,Boys,4_other,1,Simon Geffre / Isaac Geffre,Paw Paw,171.2579,171.2579,83.43,136,5,10.2426,9.4768,27.8814,18.1853,33.7566,34.2702,5.1904,11,9,2,2026-08-26
-5,Boys,4_other,1,Charlie Laethem / Davis Ford,Grosse Pointe Woods University Liggett,163.8977,163.8977,78.56,134,3,8.1476,5.8184,27.5018,17.9365,32.8309,36.9916,4.9648,10,8,2,2026-08-27
-6,Boys,4_other,1,Brandon Shampo / Blake Bowerman,Sandusky,64.5031,64.5031,12.89,25,1,4.8713,1.0392,29.3563,22.5874,39.2245,37.3183,5.5457,7,7,0,2026-08-27
-7,Boys,4_other,1,Elliot MacTavish / Keegan Bridges,Maple City Glen Lake,48.061,48.061,2.02,10,1,14.0984,12.5887,21.6321,9.5059,24.8561,30.8313,5.1167,8,3,5,2026-08-28
-8,Boys,4_other,1,Michael Dinevski / Tye Chlebek,Grosse Ile,45.36,45.36,0.24,11,1,8.2448,6.0342,20.3839,12.3597,28.3685,31.1705,5.3362,6,4,2,2026-08-25
+1,Boys,4_other,1,Chase Schirmacher / Brogan Kelly,Jackson Lumen Christi,230.8895,230.8895,100.0,178,15,6.6987,4.4558,33.4038,24.0293,41.9747,43.7962,5.9818,14,14,0,2026-08-29
+2,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,227.1881,227.1881,98.15,176,13,8.0515,7.4927,34.4724,25.0047,40.9774,43.2962,5.3242,20,18,2,2026-08-29
+3,Boys,4_other,1,Caleb Kooistra / Logan Will,Grand Rapids NorthPointe Christian,219.4149,219.4149,94.26,172,11,10.0649,5.0139,34.5694,23.8427,41.2805,40.7691,5.8126,10,10,0,2026-08-27
+4,Boys,4_other,1,Simon Geffre / Isaac Geffre,Paw Paw,211.7176,211.7176,90.41,167,10,11.1758,10.9147,30.2078,22.0222,36.8325,38.5647,4.9368,14,12,2,2026-08-29
+5,Boys,4_other,1,Charlie Laethem / Davis Ford,Grosse Pointe Woods University Liggett,186.3019,186.3019,77.69,156,4,9.4824,6.9132,28.171,17.9365,32.8309,36.9916,4.9648,10,8,2,2026-08-27
+6,Boys,4_other,1,Sam Nobis / Cooper Thayer,Portland,86.7365,86.7365,27.88,61,1,13.285,14.3371,16.3868,4.0719,18.934,22.2857,4.954,8,2,6,2026-08-26
+7,Boys,4_other,1,Brandon Shampo / Blake Bowerman,Sandusky,77.5183,77.5183,23.27,37,1,5.081,2.079,30.514,24.8161,41.0894,39.784,5.4244,9,9,0,2026-08-29
+8,Boys,4_other,1,Ryan Eicholtz / Levi Vander Moren,Kalamazoo Christian,76.7602,76.7602,22.89,31,4,11.8746,10.89,27.6846,17.4025,30.7911,35.9071,4.4628,10,6,4,2026-08-29
+9,Boys,4_other,1,Jeremy Alter / Trace Dennis,Imlay City,51.6532,51.6532,10.33,16,1,6.5431,0.052,25.6847,16.4407,31.2443,36.9668,4.9345,8,6,2,2026-08-29
+10,Boys,4_other,1,Elliot MacTavish / Keegan Bridges,Maple City Glen Lake,49.4648,49.4648,9.24,11,1,14.1346,13.106,22.2972,9.6085,24.9566,30.7677,5.116,8,3,5,2026-08-28
+11,Boys,4_other,1,Joey Nouna / Eli Coffman,Kalamazoo Hackett Catholic Prep,48.0237,48.0237,8.52,14,1,5.5814,5.1508,20.3262,15.4169,31.3058,31.3462,5.2963,8,6,2,2026-08-27
+12,Boys,4_other,1,Michael Dinevski / Tye Chlebek,Grosse Ile,46.7307,46.7307,7.87,12,1,8.3917,6.4266,21.0632,12.3597,28.3685,31.1705,5.3362,6,4,2,2026-08-25
+13,Boys,4_other,1,Ben Palinski / Alex Frank,Lansing Catholic,31.8533,31.8533,0.43,3,1,8.7138,5.8654,15.109,5.1974,20.675,27.1548,5.1592,8,3,5,2026-08-29

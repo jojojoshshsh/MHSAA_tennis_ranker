@@ -1,8 +1,9 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,3,Harrison Botke / Vincent Tran,Jackson Lumen Christi,163.0479,163.0479,100.0,116,7,9.5299,3.9577,33.471,26.0572,43.0136,42.7316,5.6521,12,12,0,2026-08-22
-2,Boys,4_other,3,Sage Sanchez / Larsen Kibler,Berrien Springs,135.2824,135.2824,74.54,91,7,10.7969,7.5279,28.3027,18.4928,33.0079,38.6258,4.8384,7,5,2,2026-08-28
-3,Boys,4_other,3,Logan Spangler / Noah Koppenhofer,Grand Rapids NorthPointe Christian,131.4127,131.4127,70.99,90,4,6.936,1.8508,32.3419,24.1322,41.4548,40.8605,5.7742,10,10,0,2026-08-27
-4,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,128.776,128.776,68.57,85,6,7.1542,7.9931,27.7923,21.7259,37.5417,38.1484,5.2719,12,11,1,2026-08-28
-5,Boys,4_other,3,Jude Webster / Connor Esman,Paw Paw,107.1533,107.1533,48.74,71,3,10.7422,10.0972,25.6996,15.646,29.6609,30.9744,4.6716,11,8,3,2026-08-26
-6,Boys,4_other,3,Sam Ekkens / Gus Haan,Kalamazoo Christian,91.5004,91.5004,34.39,58,1,10.8391,7.0661,27.3601,13.7437,28.6116,32.2334,4.956,6,4,2,2026-08-27
-7,Boys,4_other,3,Matteo Marciano / Jack Ingle,Grosse Pointe Woods University Liggett,54.6346,54.6346,0.58,19,1,6.5346,2.686,24.7129,16.0712,29.8213,38.1533,4.5834,15,11,4,2026-08-27
+1,Boys,4_other,3,Harrison Botke / Vincent Tran,Jackson Lumen Christi,171.8306,171.8306,100.0,125,8,7.5332,4.0626,32.0939,25.2096,43.1915,43.6093,5.9939,14,14,0,2026-08-29
+2,Boys,4_other,3,Logan Spangler / Noah Koppenhofer,Grand Rapids NorthPointe Christian,159.0184,159.0184,90.35,121,4,7.0678,1.8474,32.6528,24.1322,41.4548,40.8605,5.7742,10,10,0,2026-08-27
+3,Boys,4_other,3,Sage Sanchez / Larsen Kibler,Berrien Springs,143.774,143.774,78.88,98,8,9.9507,7.0954,29.4413,19.1949,33.9014,39.288,4.9022,8,6,2,2026-08-28
+4,Boys,4_other,3,Sam Ekkens / Gus Haan,Kalamazoo Christian,129.2878,129.2878,67.97,88,6,8.2909,5.9276,30.3985,17.8224,32.4601,35.9382,4.8792,9,7,2,2026-08-29
+5,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,126.0358,126.0358,65.52,88,6,8.5479,9.2296,27.6488,12.1314,24.9163,35.0017,4.2616,15,11,4,2026-08-29
+6,Boys,4_other,3,Jude Webster / Connor Esman,Paw Paw,110.2896,110.2896,53.67,76,3,8.7531,9.1181,26.3434,14.845,28.8367,30.6158,4.6639,14,10,4,2026-08-29
+7,Boys,4_other,3,Matteo Marciano / Jack Ingle,Grosse Pointe Woods University Liggett,54.4463,54.4463,11.63,19,1,6.1223,2.5821,24.7129,16.0712,29.8213,38.1533,4.5834,15,11,4,2026-08-27
+8,Boys,4_other,3,Danny Chenier / Chris Kennedy,Kalamazoo Hackett Catholic Prep,39.9488,39.9488,0.71,6,1,3.9123,4.8331,19.7114,14.8574,31.0393,31.7182,5.394,5,4,1,2026-08-27

@@ -1,4 +1,6 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,2,Giorgio Materazzo,Birmingham Seaholm,231.81,231.81,100.0,202,3,15.7002,9.8792,32.5119,21.198,35.9892,36.9852,4.9304,6,5,1,2026-08-20
-2,Boys,2,2,Chase Martin,Midland Dow,144.9773,144.9773,9.37,113,1,9.0545,5.7513,29.1616,20.5995,37.5256,37.5191,5.642,6,6,0,2026-08-20
-3,Boys,2,2,Marcus Powell,Muskegon Mona Shores,136.8078,136.8078,0.84,99,1,11.9559,1.5664,32.7487,27.3432,43.3268,40.9451,5.3278,9,9,0,2026-08-28
+1,Boys,2,2,Giorgio Materazzo,Birmingham Seaholm,247.7144,247.7144,100.0,220,3,15.6777,9.8748,32.4749,21.198,35.9892,36.9852,4.9304,6,5,1,2026-08-20
+2,Boys,2,2,Chase Martin,Midland Dow,214.9608,214.9608,82.46,192,1,7.2158,5.0033,28.981,22.1792,38.945,39.4254,5.5886,8,8,0,2026-08-29
+3,Boys,2,2,Eliot Hopkins,Berkley,157.2468,157.2468,51.55,131,1,10.6276,4.5453,26.1519,19.3796,33.3108,34.8673,4.6437,7,5,2,2026-08-29
+4,Boys,2,2,Marcus Powell,Muskegon Mona Shores,141.5709,141.5709,43.15,104,1,11.7626,1.5662,33.7486,27.3437,43.3271,40.9451,5.3278,9,9,0,2026-08-28
+5,Boys,2,2,Jackson DuBuc,Royal Oak,61.9368,61.9368,0.5,29,1,9.7471,3.1835,22.4279,14.7612,28.4969,32.633,4.5786,7,4,3,2026-08-29
