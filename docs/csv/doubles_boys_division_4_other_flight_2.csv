@@ -1,8 +1,12 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,201.434,201.434,100.0,157,7,15.964,9.487,36.7861,23.6352,37.0951,38.1259,4.4866,8,6,2,2026-08-28
-2,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,197.32,197.32,97.42,157,8,10.9272,6.3978,32.0185,19.1969,34.2117,39.6084,5.0049,8,7,1,2026-08-29
-3,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,194.6094,194.6094,95.72,157,6,7.8671,6.4656,32.179,22.5271,38.0219,40.0618,5.1649,21,19,2,2026-08-29
-4,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,99.4242,99.4242,36.02,55,6,8.8312,3.7963,28.2537,17.8634,31.6059,40.94,4.5808,15,12,3,2026-08-27
-5,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,56.6234,56.6234,9.17,18,2,12.7646,12.3486,23.0595,10.6587,24.7192,29.9588,4.6868,8,4,4,2026-08-20
-6,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,54.5505,54.5505,7.87,14,2,7.0173,8.3306,25.1841,16.9834,31.5367,35.0133,4.8511,13,8,5,2026-08-28
-7,Boys,4_other,2,Braden Schultz / Ethan Groner,Paw Paw,42.2826,42.2826,0.18,8,1,5.0635,7.3457,20.2611,13.0427,28.6775,31.567,5.2116,5,4,1,2026-08-29
+1,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,269.7064,269.7064,100.0,230,9,14.2822,8.0292,36.5417,23.9968,38.907,40.7553,4.9701,12,10,2,2026-08-29
+2,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,267.0479,267.0479,98.85,230,10,11.9884,7.2806,34.1993,19.2225,34.2294,39.6084,5.0023,8,7,1,2026-08-29
+3,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,263.0813,263.0813,97.13,230,8,8.3731,6.7699,32.179,23.008,38.1776,40.0618,5.0566,21,19,2,2026-08-29
+4,Boys,4_other,2,Sawyer Volkers / Arend Clark,Grand Rapids NorthPointe Christian,245.9636,245.9636,89.71,230,2,9.3283,1.5689,27.1386,18.7932,32.107,39.4182,4.4379,13,9,4,2026-08-29
+5,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,140.9736,140.9736,44.2,98,8,8.8207,3.7963,28.2537,17.8634,31.6059,40.94,4.5808,15,12,3,2026-08-27
+6,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,98.179,98.179,25.65,63,3,12.8798,12.6136,22.6558,10.6587,24.7192,29.9588,4.6868,8,4,4,2026-08-20
+7,Boys,4_other,2,Luke Latchana / Gus Bernreuter,Grand Rapids West Catholic,92.4756,92.4756,23.18,61,1,15.2244,11.9227,22.5932,9.5215,23.2446,28.6823,4.5744,11,3,8,2026-08-29
+8,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,57.9046,57.9046,8.19,15,3,7.938,8.6426,25.8396,16.9834,31.5367,35.0133,4.8511,13,8,5,2026-08-28
+9,Boys,4_other,2,Braden Schultz / Ethan Groner,Paw Paw,47.3552,47.3552,3.62,9,2,5.9852,6.4718,23.42,15.7613,30.6441,32.81,4.961,6,5,1,2026-08-31
+10,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,39.7661,39.7661,0.33,6,1,8.8321,6.6535,20.3126,11.7623,25.4206,29.9572,4.5528,10,5,5,2026-08-29
+11,Boys,4_other,2,Danny Chenier / Chris Kennedy,Kalamazoo Hackett Catholic Prep,39.6054,39.6054,0.26,8,1,8.8461,11.8261,16.7706,7.2638,22.2694,25.2307,5.0019,6,2,4,2026-08-29

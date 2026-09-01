@@ -1,4 +1,10 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,4,Vinnie Holder / Joseph Dauphin,Berkley,156.1673,156.1673,100.0,115,5,14.5999,8.3585,30.9766,19.4206,33.3425,39.5292,4.6406,8,6,2,2026-08-29
-2,Boys,2,4,Luka Zilo / virinchi Kakaraparthi,Grand Rapids Forest Hills Northern,107.0355,107.0355,45.51,74,2,11.4309,4.9894,26.4794,15.377,29.4374,33.2028,4.6868,8,5,3,2026-08-29
-3,Boys,2,4,Mason Szczepaniak / Kody Medalla,Gibraltar Carlson,66.7583,66.7583,0.84,26,1,8.1992,2.7402,28.5667,21.5734,38.3726,38.1251,5.5997,5,5,0,2026-08-29
+1,Boys,2,4,Vinnie Holder / Joseph Dauphin,Berkley,233.8874,233.8874,100.0,193,8,14.9578,10.6967,31.5734,23.1408,36.6989,42.1929,4.5193,10,8,2,2026-08-29
+2,Boys,2,4,Luka Zilo / virinchi Kakaraparthi,Grand Rapids Forest Hills Northern,174.4433,174.4433,68.36,146,2,13.8563,7.5564,29.5904,16.0704,30.214,33.9807,4.7145,9,6,3,2026-08-29
+3,Boys,2,4,Dylan Hudson / Kellan Tanner,Grand Rapids Forest Hills Central,172.4842,172.4842,67.32,146,2,14.1062,9.443,26.6572,13.2273,27.7184,31.924,4.8304,7,4,3,2026-08-29
+4,Boys,2,4,Colten King / Jonah Wiechertjes,Byron Center,170.1625,170.1625,66.08,146,1,9.8599,3.1285,30.2923,18.0107,31.916,32.4949,4.6351,9,7,2,2026-08-29
+5,Boys,2,4,Jack Rozema / Graham Ritter,Portage Central,105.6462,105.6462,31.75,77,1,11.087,4.5306,25.1,13.0437,26.2284,33.1299,4.3949,12,6,6,2026-08-31
+6,Boys,2,4,Mason Szczepaniak / Kody Medalla,Gibraltar Carlson,70.7801,70.7801,13.19,28,3,11.1903,8.0367,28.4806,17.6413,31.0815,33.3351,4.4801,7,5,2,2026-08-29
+7,Boys,2,4,Lois Halladay / Declan O'Shea,Royal Oak,70.7732,70.7732,13.19,28,3,15.3354,12.1536,27.1961,13.74,26.6145,30.7519,4.2915,8,3,5,2026-08-29
+8,Boys,2,4,Andy Bowers / Xavier Haman,Wyandotte Roosevelt,66.249,66.249,10.78,28,3,9.2957,9.8698,22.9116,13.2981,26.8315,31.5002,4.5111,8,4,4,2026-08-29
+9,Boys,2,4,Eli Rohr / Maks Terrill,Midland,46.7869,46.7869,0.42,10,1,4.3423,6.0134,22.2315,16.9466,33.4248,34.1234,5.4927,6,5,1,2026-08-27

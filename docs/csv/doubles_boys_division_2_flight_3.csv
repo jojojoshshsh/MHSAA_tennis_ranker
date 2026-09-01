@@ -1,3 +1,6 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,3,Aaryan Senthilvanan / Mark Latinsky,Birmingham Seaholm,172.2864,172.2864,100.0,146,1,11.9717,3.3076,26.0746,19.9068,35.4496,38.3729,5.1809,9,7,2,2026-08-28
-2,Boys,2,3,Jake Ingber / Ari Schindler,Berkley,158.4824,158.4824,3.38,126,1,15.5442,4.0233,32.6223,20.5647,35.1832,37.5289,4.8728,8,6,2,2026-08-29
+1,Boys,2,3,Aaryan Senthilvanan / Mark Latinsky,Birmingham Seaholm,240.5221,240.5221,100.0,221,1,13.5079,3.2296,29.8248,19.2337,35.0443,38.3729,5.2702,9,7,2,2026-08-28
+2,Boys,2,3,Weston Jerabek / Davis Gryzenia,Grosse Pointe South,227.7887,227.7887,76.65,202,3,13.9453,4.9646,30.4702,20.866,34.1278,37.8545,4.4206,13,9,4,2026-08-29
+3,Boys,2,3,Ethan Shank / Lucca Giorgi,Gibraltar Carlson,199.6695,199.6695,25.07,172,3,5.2272,5.865,26.8167,21.4914,38.7995,40.289,5.7694,7,7,0,2026-08-29
+4,Boys,2,3,Jake Ingber / Ari Schindler,Berkley,193.2935,193.2935,13.38,163,2,15.0358,7.347,33.5753,19.0364,33.5558,35.5075,4.8398,10,7,3,2026-08-29
+5,Boys,2,3,Nathan Draft / Ivan Ortega-Rooze,Grand Rapids Forest Hills Central,186.0545,186.0545,0.1,164,1,15.2661,7.7569,26.2355,12.2886,26.5438,33.2871,4.7518,9,5,4,2026-08-29
