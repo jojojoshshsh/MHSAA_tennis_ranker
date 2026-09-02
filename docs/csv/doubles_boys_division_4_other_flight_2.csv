@@ -1,2 +1,15 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,48.7346,48.7346,100.0,14,1,4.1876,4.0609,23.5938,16.7211,30.8013,33.486,4.6934,13,8,5,2026-08-28
+1,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,282.8299,282.8299,100.0,238,12,15.151,8.2848,37.46,24.048,38.9269,40.7553,4.9596,12,10,2,2026-08-29
+2,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,281.1643,281.1643,99.32,238,13,14.2561,9.0539,34.8659,19.2203,34.2278,39.6084,5.0025,8,7,1,2026-08-29
+3,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,275.7321,275.7321,97.1,238,11,8.6771,7.0439,32.441,22.9947,38.1703,40.0618,5.0585,21,19,2,2026-08-29
+4,Boys,4_other,2,Sawyer Volkers / Arend Clark,Grand Rapids NorthPointe Christian,254.604,254.604,88.47,238,3,8.2349,1.4385,26.3816,19.383,33.0045,40.0837,4.5405,14,10,4,2026-09-01
+5,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,149.9506,149.9506,45.73,104,10,9.198,3.7963,28.8946,17.524,31.0869,40.94,4.521,15,12,3,2026-08-27
+6,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,105.4019,105.4019,27.53,69,4,12.6029,13.0029,22.916,10.6587,24.7192,29.9588,4.6868,8,4,4,2026-08-20
+7,Boys,4_other,2,Luke Latchana / Gus Bernreuter,Grand Rapids West Catholic,99.2361,99.2361,25.01,67,2,14.7934,12.312,22.4298,8.9046,22.7092,28.6823,4.6015,11,3,8,2026-08-29
+8,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,59.5941,59.5941,8.82,15,4,7.8091,8.6068,25.8386,16.9834,31.5367,35.0133,4.8511,13,8,5,2026-08-28
+9,Boys,4_other,2,Addison Baumeister / Grace Riehl,Sandusky,48.1232,48.1232,4.13,17,1,10.1661,11.3984,23.8251,4.3364,18.0859,22.1019,4.5832,11,3,8,2026-09-01
+10,Boys,4_other,2,Braden Schultz / Ethan Groner,Paw Paw,47.3507,47.3507,3.82,9,2,5.9818,6.4718,23.4153,15.7569,30.641,32.81,4.9614,6,5,1,2026-08-31
+11,Boys,4_other,2,Xander O'Keefe / Pablo Solis Mata,Battle Creek Lakeview,42.7435,42.7435,1.94,14,1,9.3669,3.517,15.7263,7.9437,21.414,32.312,4.4901,14,4,10,2026-09-01
+12,Boys,4_other,2,Danny Chenier / Chris Kennedy,Kalamazoo Hackett Catholic Prep,41.9868,41.9868,1.63,8,2,9.1962,12.4318,17.4202,7.2638,22.2694,25.2307,5.0019,6,2,4,2026-08-29
+13,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,39.5379,39.5379,0.63,6,1,8.7437,6.6535,19.8292,11.7623,25.4206,29.9572,4.5528,10,5,5,2026-08-29
+14,Boys,4_other,2,Chase Yeager / Max Brown,North Muskegon,38.2853,38.2853,0.12,6,1,8.4586,7.9657,21.4784,8.9664,22.3282,25.9899,4.4539,12,5,7,2026-09-01

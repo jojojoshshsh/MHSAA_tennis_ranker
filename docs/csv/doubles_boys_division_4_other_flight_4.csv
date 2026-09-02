@@ -1,2 +1,8 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,52.6722,52.6722,100.0,12,1,3.0843,1.7247,28.0082,22.6293,39.5798,39.0329,5.6502,7,7,0,2026-08-28
+1,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,120.4958,120.4958,100.0,75,6,5.7765,4.9765,29.0018,22.8462,38.7818,43.0748,5.3119,13,12,1,2026-08-29
+2,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,101.1014,101.1014,77.05,52,7,6.2299,5.7985,28.5848,21.8259,38.5453,39.0397,5.5731,7,7,0,2026-08-28
+3,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,61.6684,61.6684,30.38,24,1,9.5423,8.6798,23.7529,15.2708,32.0598,32.3421,5.5963,5,4,1,2026-08-29
+4,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,60.5615,60.5615,29.07,22,4,7.5163,7.7997,25.643,10.4602,22.8622,31.3546,4.134,18,10,8,2026-08-29
+5,Boys,4_other,4,James Brunner / Wyatt Korte,Grand Rapids Catholic Central,54.1043,54.1043,21.43,23,1,5.3176,-0.6408,23.3109,11.9154,26.2936,37.403,4.7927,9,6,3,2026-08-29
+6,Boys,4_other,4,Nathaniel Stuckey / Eli Scholten,Grandville Calvin Christian,51.3021,51.3021,18.11,12,3,4.9948,6.5823,22.5902,14.8943,31.2449,32.5064,5.4502,6,5,1,2026-09-01
+7,Boys,4_other,4,Mason Harris / Emmet Staley,North Muskegon,36.4549,36.4549,0.54,6,2,6.9146,6.7279,16.5742,7.4435,21.4302,25.4073,4.6622,13,5,8,2026-09-01
