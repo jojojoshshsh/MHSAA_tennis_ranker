@@ -1,11 +1,15 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,2,Jashwanth Thamminana / Ethan Clark,Midland Dow,305.4119,305.4119,100.0,279,8,7.2141,7.1534,31.1505,21.0952,38.0674,38.8347,5.6574,7,7,0,2026-08-31
-2,Boys,2,2,Ahren Gupta / Kyle Carr,Birmingham Seaholm,298.948,298.948,97.52,273,8,13.5954,7.5692,27.5199,18.9175,33.342,38.6802,4.8082,9,6,3,2026-08-28
-3,Boys,2,2,Ethan Han / Drew Decker,Grand Rapids Forest Hills Northern,295.6993,295.6993,96.27,273,6,16.4492,13.3091,34.3776,11.4353,25.9746,28.1911,4.8464,9,5,4,2026-08-29
-4,Boys,2,2,Brennen Reister / Dylan Lyonnais,Muskegon Mona Shores,251.5199,251.5199,79.31,238,1,7.0229,1.7542,24.9549,20.6382,36.1042,39.8471,5.1553,9,8,1,2026-08-28
-5,Boys,2,2,Alex Fieck-Losh / Gabe Fernandez,Dexter,248.8306,248.8306,78.27,238,1,10.7516,4.9107,24.2099,14.1191,29.5307,31.4737,5.1372,6,4,2,2026-08-27
-6,Boys,2,2,Lukas Kazmierczak / Noah Rajasekaran,Grand Rapids Forest Hills Central,248.4059,248.4059,78.11,238,2,15.922,8.9381,21.9679,6.3907,20.8721,27.8201,4.8271,9,3,6,2026-08-29
-7,Boys,2,2,Felix Wu / Henry Wisloski,Portage Central,246.4994,246.4994,77.38,238,1,12.1072,6.4532,25.2244,9.0055,22.4916,28.4533,4.4954,13,5,8,2026-09-02
-8,Boys,2,2,Noah de Forest / Matt Fortier,Greenville,101.5073,101.5073,21.7,73,1,10.1397,2.6937,21.5564,13.663,27.6776,38.2552,4.6715,10,5,5,2026-09-01
-9,Boys,2,2,Alden Ritter / Ira Retish,Berkley,68.6756,68.6756,9.09,28,3,9.5668,4.7122,25.4568,17.1717,31.775,36.2578,4.8678,11,7,4,2026-09-01
-10,Boys,2,2,Charlie Abbott / Kyron Fernando,Gibraltar Carlson,45.6028,45.6028,0.23,10,2,8.6016,9.8458,20.9306,11.1229,24.809,27.4281,4.5621,7,4,3,2026-08-29
+1,Boys,2,2,Jashwanth Thamminana / Ethan Clark,Midland Dow,320.0134,320.0134,100.0,286,11,8.8865,8.712,32.6721,23.5309,39.656,41.3258,5.3751,8,8,0,2026-09-02
+2,Boys,2,2,Ahren Gupta / Kyle Carr,Birmingham Seaholm,304.4717,304.4717,94.35,279,8,13.8986,7.6684,27.52,19.284,33.4922,38.682,4.736,9,6,3,2026-08-28
+3,Boys,2,2,Ethan Han / Drew Decker,Grand Rapids Forest Hills Northern,301.2939,301.2939,93.19,279,6,16.7351,13.7668,34.3776,11.4354,25.9747,28.1911,4.8464,9,5,4,2026-08-29
+4,Boys,2,2,Sam Newell / Terrence Simmons,Byron Center,271.7582,271.7582,82.45,246,4,14.4264,4.397,35.7324,21.2205,35.4861,40.2552,4.7552,10,8,2,2026-09-01
+5,Boys,2,2,Ryder Hake / Jaden Lash,Birmingham Groves,262.8748,262.8748,79.22,246,3,9.709,8.65,24.2618,17.8543,32.9029,34.8331,5.0162,5,4,1,2026-09-01
+6,Boys,2,2,Brennen Reister / Dylan Lyonnais,Muskegon Mona Shores,258.5728,258.5728,77.66,246,1,6.8032,1.5557,24.9796,20.4555,36.3379,39.9202,5.2941,10,9,1,2026-09-03
+7,Boys,2,2,Alex Fieck-Losh / Gabe Fernandez,Dexter,256.3743,256.3743,76.86,246,1,11.2341,5.6413,24.2101,14.1191,29.5307,31.4737,5.1372,6,4,2,2026-08-27
+8,Boys,2,2,Lukas Kazmierczak / Noah Rajasekaran,Grand Rapids Forest Hills Central,256.1831,256.1831,76.79,246,2,16.3714,9.33,22.9031,6.3912,20.8725,27.8201,4.8271,9,3,6,2026-08-29
+9,Boys,2,2,Felix Wu / Henry Wisloski,Portage Central,254.9697,254.9697,76.35,246,1,11.9666,5.39,26.8141,11.7946,24.895,29.1097,4.3668,14,6,8,2026-09-02
+10,Boys,2,2,Noah de Forest / Matt Fortier,Greenville,101.4212,101.4212,20.52,73,1,9.9448,2.626,21.565,13.6758,27.6932,38.2552,4.6724,10,5,5,2026-09-01
+11,Boys,2,2,Brady Douglas / jack holman,Bay City Western,72.3328,72.3328,9.94,29,2,13.2117,12.3056,27.6914,15.4803,30.6419,35.3598,5.0539,6,4,2,2026-09-02
+12,Boys,2,2,Alden Ritter / Ira Retish,Berkley,68.6774,68.6774,8.61,28,3,9.5718,4.7122,25.4568,17.1717,31.775,36.2578,4.8678,11,7,4,2026-09-01
+13,Boys,2,2,Rylan Rodabaugh / Austin Traver,Lapeer,64.077,64.077,6.94,28,1,4.9255,3.5867,24.4933,18.6305,35.1471,35.9163,5.5055,10,9,1,2026-09-02
+14,Boys,2,2,Charlie Abbott / Kyron Fernando,Gibraltar Carlson,45.6028,45.6028,0.22,10,2,8.6016,9.8458,20.9306,11.1229,24.809,27.4281,4.5621,7,4,3,2026-08-29

@@ -1,12 +1,12 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,1,Kalil Wahab / Hunter Helfman,Birmingham Seaholm,278.8782,278.8782,100.0,244,9,16.1278,10.0273,30.5945,20.6526,34.6569,39.2052,4.6681,9,6,3,2026-08-28
-2,Boys,2,1,Breck Suvedi / Thano Bird,Grand Rapids Forest Hills Northern,270.1741,270.1741,96.36,238,8,18.0699,12.3124,31.1601,16.8896,30.4087,32.7345,4.5063,8,4,4,2026-08-29
-3,Boys,2,1,Henry Logan / Oscar DeLuca,Grosse Pointe South,268.3792,268.3792,95.6,238,8,15.823,9.3232,27.6883,18.0816,33.0841,34.4937,5.0008,6,4,2,2026-08-29
-4,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,268.2148,268.2148,95.54,238,8,10.0735,8.038,31.0165,20.4358,34.8387,35.5757,4.801,12,11,1,2026-08-31
-5,Boys,2,1,Max Prather / Henry Logan,Grosse Pointe South,259.294,259.294,91.8,237,4,9.6066,2.9993,30.7429,21.2939,36.7012,37.3377,5.1357,7,6,1,2026-08-24
-6,Boys,2,1,Hayden Rithauddean / Andrew Cho,Portage Central,252.1619,252.1619,88.82,233,3,10.3568,6.1319,29.2541,16.4979,31.2866,35.8166,4.9296,13,9,4,2026-09-02
-7,Boys,2,1,Wesley MacDonald / Asa Somers,Berkley,234.9829,234.9829,81.62,208,2,15.5406,6.463,33.0774,21.3665,35.9682,40.2526,4.8672,10,8,2,2026-08-29
-8,Boys,2,1,Chris Girrbach / Anders Lyons,Traverse City Central,192.9035,192.9035,64.01,171,1,12.3363,7.8304,28.467,17.7478,30.0883,30.0932,4.1135,13,7,6,2026-09-01
-9,Boys,2,1,Micah Bement / Jordan Woodring,Muskegon Mona Shores,134.1399,134.1399,39.41,101,1,7.6741,2.1094,29.2859,23.8565,39.6904,40.4406,5.278,8,8,0,2026-08-28
-10,Boys,2,1,dylan sagady / nolan kochany,Bay City Western,57.3216,57.3216,7.25,21,1,8.1603,6.6977,22.7841,16.0218,29.6612,36.5086,4.5465,9,6,3,2026-08-31
-11,Boys,2,1,Janson Wildeboer / Rhys Sykes-McLaughlin,East Lansing,40.2919,40.2919,0.12,6,1,10.3584,10.9453,19.7599,8.1725,24.8733,24.8733,5.5669,5,2,3,2026-08-17
+1,Boys,2,1,Kalil Wahab / Hunter Helfman,Birmingham Seaholm,284.8863,284.8863,100.0,247,11,16.1002,10.0063,30.682,20.2241,34.411,38.9798,4.729,9,6,3,2026-08-28
+2,Boys,2,1,Breck Suvedi / Thano Bird,Grand Rapids Forest Hills Northern,276.7921,276.7921,96.68,241,10,18.2562,12.7817,31.6738,16.8896,30.4087,32.7345,4.5063,8,4,4,2026-08-29
+3,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,276.4281,276.4281,96.53,241,10,10.9168,9.4087,31.0685,22.1458,36.1811,37.979,4.6784,13,12,1,2026-09-02
+4,Boys,2,1,Henry Logan / Oscar DeLuca,Grosse Pointe South,274.8869,274.8869,95.9,241,10,16.1077,9.9521,27.6883,18.0816,33.0841,34.4937,5.0008,6,4,2,2026-08-29
+5,Boys,2,1,Max Prather / Henry Logan,Grosse Pointe South,260.9717,260.9717,90.19,239,4,9.4282,2.8892,30.7804,21.2939,36.7012,37.3377,5.1357,7,6,1,2026-08-24
+6,Boys,2,1,Hayden Rithauddean / Andrew Cho,Portage Central,253.1984,253.1984,87.01,235,3,8.8877,5.3105,29.3061,15.975,31.3931,36.0169,5.1394,14,10,4,2026-09-02
+7,Boys,2,1,Wesley MacDonald / Asa Somers,Berkley,236.7575,236.7575,80.27,210,2,15.5422,6.4633,33.0873,21.3665,35.9682,40.2526,4.8672,10,8,2,2026-08-29
+8,Boys,2,1,Chris Girrbach / Anders Lyons,Traverse City Central,194.8435,194.8435,63.08,173,1,12.3317,8.0094,28.4815,17.9238,30.2444,30.1965,4.1069,13,7,6,2026-09-01
+9,Boys,2,1,Micah Bement / Jordan Woodring,Muskegon Mona Shores,138.553,138.553,40.0,106,1,6.7621,1.7806,29.9661,23.5869,40.0783,40.4287,5.4971,9,9,0,2026-09-03
+10,Boys,2,1,dylan sagady / nolan kochany,Bay City Western,58.473,58.473,7.16,22,1,9.4287,8.9003,23.042,14.9587,28.4424,33.9609,4.4946,10,6,4,2026-09-02
+11,Boys,2,1,Janson Wildeboer / Rhys Sykes-McLaughlin,East Lansing,41.9777,41.9777,0.4,7,1,9.0687,10.036,19.8735,11.123,27.164,27.164,5.347,6,3,3,2026-09-01

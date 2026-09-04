@@ -1,6 +1,7 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,3,Aaryan Senthilvanan / Mark Latinsky,Birmingham Seaholm,260.5645,260.5645,100.0,244,1,13.2855,3.19,29.293,19.233,35.0439,38.3729,5.2703,9,7,2,2026-08-28
-2,Boys,2,3,Ethan Shank / Lucca Giorgi,Gibraltar Carlson,255.5708,255.5708,83.66,235,3,5.2782,5.9895,27.0161,21.4913,38.7995,40.289,5.7694,7,7,0,2026-08-29
-3,Boys,2,3,Jake Ingber / Ari Schindler,Berkley,248.6678,248.6678,61.08,226,2,13.5931,6.902,33.1689,19.3932,34.154,36.3738,4.9202,11,8,3,2026-09-01
-4,Boys,2,3,Weston Jerabek / Davis Gryzenia,Grosse Pointe South,238.3272,238.3272,27.24,214,3,14.1689,4.8925,30.3105,20.7038,33.7875,38.1862,4.3612,14,9,5,2026-08-29
-5,Boys,2,3,Nathan Draft / Ivan Ortega-Rooze,Grand Rapids Forest Hills Central,230.9869,230.9869,3.23,214,1,15.744,8.3489,26.9202,12.2661,26.4835,33.3892,4.7392,9,5,4,2026-08-29
+1,Boys,2,3,Aaryan Senthilvanan / Mark Latinsky,Birmingham Seaholm,264.8692,264.8692,100.0,249,1,13.3555,3.1986,29.2917,18.8536,34.8683,38.0892,5.3382,9,7,2,2026-08-28
+2,Boys,2,3,Ethan Shank / Lucca Giorgi,Gibraltar Carlson,260.8805,260.8805,86.18,241,3,5.2782,5.9895,27.0161,21.4913,38.7995,40.289,5.7694,7,7,0,2026-08-29
+3,Boys,2,3,Jake Ingber / Ari Schindler,Berkley,253.6043,253.6043,60.98,232,2,13.4945,6.7949,32.4434,19.3932,34.154,36.3738,4.9202,11,8,3,2026-09-01
+4,Boys,2,3,Weston Jerabek / Davis Gryzenia,Grosse Pointe South,246.0849,246.0849,34.93,219,5,14.0929,4.8925,29.9665,20.7038,33.7875,38.1862,4.3612,14,9,5,2026-08-29
+5,Boys,2,3,Nathan Draft / Ivan Ortega-Rooze,Grand Rapids Forest Hills Central,239.0316,239.0316,10.5,219,3,15.7489,8.6102,26.9538,12.2661,26.4835,33.3892,4.7392,9,5,4,2026-08-29
+6,Boys,2,3,Zach Bartoi / Teddy DuRoss,Birmingham Groves,236.975,236.975,3.38,219,1,9.3181,7.3037,28.5243,18.5859,33.761,35.0726,5.0584,5,4,1,2026-09-01
