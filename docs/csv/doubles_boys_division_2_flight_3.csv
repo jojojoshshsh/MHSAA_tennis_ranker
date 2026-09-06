@@ -1,7 +1,9 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,3,Aaryan Senthilvanan / Mark Latinsky,Birmingham Seaholm,264.8692,264.8692,100.0,249,1,13.3555,3.1986,29.2917,18.8536,34.8683,38.0892,5.3382,9,7,2,2026-08-28
-2,Boys,2,3,Ethan Shank / Lucca Giorgi,Gibraltar Carlson,260.8805,260.8805,86.18,241,3,5.2782,5.9895,27.0161,21.4913,38.7995,40.289,5.7694,7,7,0,2026-08-29
-3,Boys,2,3,Jake Ingber / Ari Schindler,Berkley,253.6043,253.6043,60.98,232,2,13.4945,6.7949,32.4434,19.3932,34.154,36.3738,4.9202,11,8,3,2026-09-01
-4,Boys,2,3,Weston Jerabek / Davis Gryzenia,Grosse Pointe South,246.0849,246.0849,34.93,219,5,14.0929,4.8925,29.9665,20.7038,33.7875,38.1862,4.3612,14,9,5,2026-08-29
-5,Boys,2,3,Nathan Draft / Ivan Ortega-Rooze,Grand Rapids Forest Hills Central,239.0316,239.0316,10.5,219,3,15.7489,8.6102,26.9538,12.2661,26.4835,33.3892,4.7392,9,5,4,2026-08-29
-6,Boys,2,3,Zach Bartoi / Teddy DuRoss,Birmingham Groves,236.975,236.975,3.38,219,1,9.3181,7.3037,28.5243,18.5859,33.761,35.0726,5.0584,5,4,1,2026-09-01
+1,Boys,2,3,Aaryan Senthilvanan / Mark Latinsky,Birmingham Seaholm,267.7868,267.7868,100.0,250,2,13.5765,3.7088,29.2917,18.8536,34.8683,38.0892,5.3382,9,7,2,2026-08-28
+2,Boys,2,3,Ethan Shank / Lucca Giorgi,Gibraltar Carlson,261.7655,261.7655,84.07,242,3,5.2782,5.9895,27.0161,21.4913,38.7995,40.289,5.7694,7,7,0,2026-08-29
+3,Boys,2,3,Jake Ingber / Ari Schindler,Berkley,254.4892,254.4892,64.81,233,2,13.4945,6.7949,32.4434,19.3932,34.154,36.3738,4.9202,11,8,3,2026-09-01
+4,Boys,2,3,Weston Jerabek / Davis Gryzenia,Grosse Pointe South,249.2672,249.2672,50.99,220,6,13.5801,4.668,29.9665,21.743,35.2604,38.8798,4.5058,16,11,5,2026-09-04
+5,Boys,2,3,Nathan Draft / Ivan Ortega-Rooze,Grand Rapids Forest Hills Central,241.6975,241.6975,30.96,220,4,15.8644,8.6287,26.9538,12.2595,26.4697,33.3431,4.7367,9,5,4,2026-08-29
+6,Boys,2,3,Zach Bartoi / Teddy DuRoss,Birmingham Groves,237.8572,237.8572,20.79,220,1,9.3168,7.298,28.5243,18.5859,33.761,35.0726,5.0584,5,4,1,2026-09-01
+7,Boys,2,3,Mikey Hernly / sam dejong,Grand Rapids Forest Hills Northern,232.9211,232.9211,7.73,220,1,17.0172,11.5603,23.7686,6.5782,21.6758,26.4981,5.0325,9,3,6,2026-08-29
+8,Boys,2,3,Ryo Rohrstaff / Ben Watts,Portage Central,230.1245,230.1245,0.33,220,1,12.1903,3.2085,23.5723,11.2273,23.982,31.8231,4.2516,13,5,8,2026-09-02
