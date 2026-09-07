@@ -1,6 +1,6 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
 1,Boys,2,4,Luke Janz,Birmingham Seaholm,248.5096,248.5096,100.0,222,2,19.8559,6.5954,34.4168,20.3144,35.8825,36.4121,5.1894,6,5,1,2026-08-20
-2,Boys,2,4,Miles O'Brien,Muskegon Mona Shores,218.0447,218.0447,84.26,195,1,9.1331,1.3196,31.8225,22.3611,39.1603,39.302,5.5997,9,9,0,2026-09-03
+2,Boys,2,4,Miles O'Brien,Muskegon Mona Shores,218.0111,218.0111,84.24,195,1,9.0517,1.3196,31.8225,22.3296,39.1498,39.302,5.6067,9,9,0,2026-09-03
 3,Boys,2,4,Ashton Smith,Byron Center,217.4239,217.4239,83.94,193,2,11.7626,2.9037,31.1777,20.4536,34.8625,39.2179,4.8029,10,8,2,2026-09-01
 4,Boys,2,4,Shane Goldman,Birmingham Groves,211.9254,211.9254,81.09,193,1,10.4936,4.8077,26.1437,19.9762,34.2051,32.3222,4.743,5,4,1,2026-09-01
 5,Boys,2,4,Matthew Dinsmore,Portage Central,208.7335,208.7335,79.44,193,2,9.7348,2.8145,22.6902,14.0027,26.7909,35.4699,4.2627,14,7,7,2026-09-02

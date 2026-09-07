@@ -9,7 +9,7 @@ rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachabilit
 8,Boys,3,3,Cole Balon / Reuben Avery,East Grand Rapids,270.4293,270.4293,87.02,220,18,17.4216,14.9246,28.8848,15.46,29.7852,29.0079,4.7751,8,4,4,2026-09-02
 9,Boys,3,3,Lukas Hafeman / Pierson Kolean,Zeeland East,265.1473,265.1473,84.93,226,11,6.5756,6.0543,29.7149,23.9049,41.6669,43.0793,5.9207,13,13,0,2026-09-02
 10,Boys,3,3,Rowan French / Asher Lantis,Chelsea,263.5721,263.5721,84.31,236,6,13.0951,9.5893,30.9312,18.1634,32.3786,35.7615,4.7384,11,8,3,2026-08-29
-11,Boys,3,3,Alex Cypher / Andrew Cypher,Sturgis,257.6023,257.6023,81.95,220,14,11.6097,8.219,26.8594,16.5978,28.9117,29.5321,4.1046,9,4,5,2026-08-29
+11,Boys,3,3,Alex Cypher / Andrew Cypher,Sturgis,257.5805,257.5805,81.95,220,14,11.5725,8.1975,26.8594,16.5978,28.9117,29.5321,4.1046,9,4,5,2026-08-29
 12,Boys,3,3,Christopher Stott / Patrick Sorenson,Traverse City West,255.4313,255.4313,81.1,220,13,10.2596,6.1282,25.7878,17.9995,30.5946,31.9088,4.1984,20,13,7,2026-09-01
 13,Boys,3,3,Colton Heil / Jett Casarez,Battle Creek Harper Creek,250.2886,250.2886,79.07,229,3,9.1813,3.2779,30.3032,20.3266,37.3721,36.3301,5.6818,5,5,0,2026-09-01
 14,Boys,3,3,Sreekar Vudathu / Aryan Methri,Ada Forest Hills Eastern,250.2597,250.2597,79.06,220,10,10.8883,7.7265,27.1189,15.275,28.6089,30.0859,4.4446,15,10,5,2026-08-29
@@ -30,6 +30,6 @@ rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachabilit
 29,Boys,3,3,Isaac Pelletier / Easton Curtin,St. Johns,55.788,55.788,2.28,24,1,6.2408,4.4484,24.3109,9.209,26.4192,29.2784,5.7367,5,4,1,2026-09-01
 30,Boys,3,3,Lukas Lusher / Ethan Hagley,Milan,50.7313,50.7313,0.29,23,1,5.9729,2.578,19.2614,8.1351,21.3159,33.1544,4.3936,10,5,5,2026-09-01
 31,Boys,3,3,Jasper Kling / Ryan Smith,Vicksburg,42.6198,42.6198,0.0,6,3,11.4677,12.8079,17.4151,8.1129,22.5955,23.4411,4.8275,9,3,6,2026-08-29
-32,Boys,3,3,Calvin Berry / River Wilson,Grand Rapids Northview,39.6059,39.6059,0.0,6,1,6.504,-1.0536,20.1618,15.3454,31.0202,35.3842,5.225,7,5,2,2026-09-03
+32,Boys,3,3,Calvin Berry / River Wilson,Grand Rapids Northview,40.2887,40.2887,0.0,7,1,5.3873,-1.2313,20.1618,15.5788,31.3151,35.9322,5.2454,8,6,2,2026-09-03
 33,Boys,3,3,Reed Johnston / Drake Garner,Cadillac,36.4972,36.4972,0.0,5,1,11.4362,10.916,16.2766,6.9295,21.4452,23.436,4.8386,9,3,6,2026-09-01
 34,Boys,3,3,Gavin Flores / Ole Hemmerle,Parma Western,35.0443,35.0443,0.0,2,1,12.2033,13.4271,17.013,4.8977,21.0938,22.5506,5.3987,5,1,4,2026-08-24
