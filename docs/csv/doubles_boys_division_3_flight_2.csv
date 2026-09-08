@@ -1,12 +1,12 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
 1,Boys,3,2,Andy Yu / Dylan Popat,Bloomfield Hills Cranbrook Kingswood,349.0988,349.0988,100.0,287,24,18.2772,9.5825,34.8576,26.9195,41.08,42.3148,4.7202,10,9,1,2026-08-29
-2,Boys,3,2,Preston Blum / Emmanuel Kole-James,Detroit Country Day,341.2525,341.2525,97.53,287,22,19.5493,6.1882,32.5538,23.4213,37.4627,38.6463,4.6805,6,5,1,2026-08-29
+2,Boys,3,2,Preston Blum / Emmanuel Kole-James,Detroit Country Day,341.2209,341.2209,97.52,287,22,19.4972,6.1882,32.5216,23.4213,37.4627,38.6463,4.6805,6,5,1,2026-08-29
 3,Boys,3,2,Evan Chung / Deven Pimputkar,Ann Arbor Greenhills,312.9928,312.9928,88.65,258,22,13.6368,6.5111,32.2609,23.5126,37.1233,37.2295,4.5369,10,8,2,2026-09-01
 4,Boys,3,2,Kai Doan / Elliott Murray,East Grand Rapids,299.5156,299.5156,84.41,248,20,15.8779,14.3853,29.2465,17.0914,31.4955,31.7107,4.8014,8,5,3,2026-09-02
 5,Boys,3,2,Jace Velderman / Payton Ott,Zeeland East,299.1183,299.1183,84.29,247,20,7.3414,6.6659,31.9323,22.9753,38.0952,42.2178,5.04,13,12,1,2026-09-02
 6,Boys,3,2,Haiden Vruggink / Andrew Scholten,Hudsonville Unity Christian,296.7707,296.7707,83.55,247,18,10.2499,10.6372,30.4785,23.0875,37.9598,38.9335,4.9574,9,8,1,2026-09-02
 7,Boys,3,2,Sebastain Valdina / Luca Giardello,Chelsea,292.4124,292.4124,82.18,247,15,12.4587,11.0871,35.8974,19.4668,32.7349,38.9876,4.4227,13,10,3,2026-08-29
-8,Boys,3,2,Klaussen Hemmes / Emerson TenBrink,Zeeland West,284.6465,284.6465,79.74,247,13,10.8229,8.322,32.1601,19.0488,33.0965,34.1176,4.6826,14,11,3,2026-09-02
+8,Boys,3,2,Klaussen Hemmes / Emerson TenBrink,Zeeland West,284.6314,284.6314,79.73,247,13,10.8149,8.322,32.13,19.0488,33.0965,34.1176,4.6826,14,11,3,2026-09-02
 9,Boys,3,2,Brody Bergsma / Eli Whitmore,Holland Christian,279.3356,279.3356,78.07,247,8,13.5394,7.1582,34.2933,21.6935,36.1121,37.1076,4.8062,6,5,1,2026-09-02
 10,Boys,3,2,Sam Reisterer / Hudson Borema,Ludington,275.4803,275.4803,76.86,247,8,9.6168,6.2012,30.4179,21.6418,35.0071,37.0502,4.4551,14,11,3,2026-09-03
 11,Boys,3,2,Jonathan Haig / Carter Leep,Holland Christian,272.7572,272.7572,76.0,252,3,17.9838,7.84,29.6832,18.2208,32.467,34.5818,4.7487,6,4,2,2026-08-20
@@ -14,7 +14,7 @@ rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachabilit
 13,Boys,3,2,Owen Sermak / Ethan Gardner,Dewitt,271.1383,271.1383,75.49,247,6,13.1468,6.7411,30.6513,17.5952,31.7012,33.2124,4.702,9,6,3,2026-08-28
 14,Boys,3,2,Mason Boeskool / Carter Hickok,Hamilton,270.4889,270.4889,75.29,247,6,10.3139,8.1168,29.0364,17.8712,32.4151,33.822,4.848,9,7,2,2026-08-31
 15,Boys,3,2,Owen Schmidt / Carson Tkach,Traverse City West,268.0704,268.0704,74.53,247,6,8.6736,4.6919,27.6739,17.3398,31.219,36.2853,4.6264,20,14,6,2026-09-01
-16,Boys,3,2,Zach Postma / Austin Fiscelli,St. Clair,267.7393,267.7393,74.42,247,3,9.8312,3.0577,31.4078,23.139,38.2644,38.4821,5.0418,16,14,2,2026-08-27
+16,Boys,3,2,Zach Postma / Austin Fiscelli,St. Clair,267.7246,267.7246,74.42,247,3,9.8243,3.0577,31.3777,23.139,38.2644,38.4821,5.0418,16,14,2,2026-08-27
 17,Boys,3,2,Brenden Kozal / Jackson Smith,Ada Forest Hills Eastern,261.7817,261.7817,72.55,247,2,11.8703,7.2033,29.3853,15.7405,29.6754,30.4761,4.645,14,10,4,2026-08-29
 18,Boys,3,2,Grant Ford / Lukas Harnick,Mason,259.5749,259.5749,71.86,247,2,6.6669,4.4631,25.3152,17.0662,33.3157,33.6798,5.4165,7,6,1,2026-09-01
 19,Boys,3,2,Archie Johansen / Henry Smith,St. Joseph,103.6493,103.6493,22.84,69,2,15.3048,14.4073,24.2129,11.4061,25.2667,27.7799,4.6202,13,5,8,2026-09-03
