@@ -1,15 +1,19 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,290.9499,290.9499,100.0,247,14,14.4889,9.6936,34.2067,19.2211,34.2293,39.6084,5.0027,8,7,1,2026-08-29
-2,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,289.6344,289.6344,99.48,247,12,14.8715,7.2758,37.4351,22.4955,36.951,41.6384,4.8185,15,12,3,2026-09-04
-3,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,284.2112,284.2112,97.34,247,11,8.814,7.162,33.4668,22.9967,38.1723,40.0618,5.0585,21,19,2,2026-08-29
-4,Boys,4_other,2,Sawyer Volkers / Arend Clark,Grand Rapids NorthPointe Christian,263.1137,263.1137,89.0,247,3,8.5391,2.1215,26.7842,19.3824,33.004,40.0837,4.5405,14,10,4,2026-09-01
-5,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,162.7127,162.7127,49.3,118,10,9.4242,3.8582,29.5515,17.524,31.0869,40.94,4.521,15,12,3,2026-08-27
-6,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,107.6628,107.6628,27.54,71,4,12.8702,13.3591,23.5386,10.6587,24.7192,29.9588,4.6868,8,4,4,2026-08-20
-7,Boys,4_other,2,Luke Latchana / Gus Bernreuter,Grand Rapids West Catholic,101.2584,101.2584,25.01,69,2,13.5221,10.5666,22.8184,10.9923,24.5785,30.3815,4.5287,12,4,8,2026-09-02
-8,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,90.7809,90.7809,20.87,48,4,8.1543,8.0745,28.3556,19.4431,33.4504,35.85,4.6691,14,9,5,2026-09-03
-9,Boys,4_other,2,Addison Baumeister / Grace Riehl,Sandusky,48.1658,48.1658,4.02,17,1,10.2858,11.3984,23.8251,4.3364,18.0859,22.1019,4.5832,11,3,8,2026-09-01
-10,Boys,4_other,2,Braden Schultz / Ethan Groner,Paw Paw,47.5806,47.5806,3.79,9,2,6.4779,6.7224,23.3001,15.7569,30.641,32.81,4.9614,6,5,1,2026-08-31
-11,Boys,4_other,2,Xander O'Keefe / Pablo Solis Mata,Battle Creek Lakeview,42.7142,42.7142,1.86,14,1,9.2837,3.517,15.7265,7.944,21.4147,32.312,4.4902,14,4,10,2026-09-01
-12,Boys,4_other,2,Danny Chenier / Chris Kennedy,Kalamazoo Hackett Catholic Prep,41.9908,41.9908,1.58,8,2,9.1991,12.4318,17.4274,7.2642,22.2697,25.2307,5.0019,6,2,4,2026-08-29
-13,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,40.1156,40.1156,0.84,6,1,8.4215,6.7332,19.288,13.1875,26.6976,31.2406,4.5034,11,6,5,2026-09-03
-14,Boys,4_other,2,Chase Yeager / Max Brown,North Muskegon,38.0257,38.0257,0.01,6,1,8.4221,8.1794,20.6501,8.9758,22.3398,25.9899,4.4547,12,5,7,2026-09-01
+1,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,304.3434,304.3434,100.0,259,16,11.6052,7.4683,34.3128,20.6303,36.1382,40.8462,5.1693,10,9,1,2026-09-08
+2,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,301.5014,301.5014,98.94,259,13,14.9771,7.3568,36.0321,22.4129,36.948,41.6384,4.845,15,12,3,2026-09-04
+3,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,296.8979,296.8979,97.22,259,12,9.0375,7.284,33.7455,23.1779,38.3445,40.0618,5.0555,21,19,2,2026-08-29
+4,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,287.7532,287.7532,93.79,259,10,9.7887,3.7608,29.5126,18.0069,31.5128,40.94,4.5019,15,12,3,2026-08-27
+5,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,278.3413,278.3413,90.27,259,4,8.7677,8.1193,29.8263,19.4431,33.4504,35.85,4.6691,14,9,5,2026-09-03
+6,Boys,4_other,2,Sawyer Volkers / Arend Clark,Grand Rapids NorthPointe Christian,274.7823,274.7823,88.94,259,3,9.3631,2.6067,28.2208,19.3414,32.9518,40.0837,4.5368,14,10,4,2026-09-01
+7,Boys,4_other,2,Braden Schultz / Ethan Groner,Paw Paw,124.8614,124.8614,32.86,95,2,6.879,5.8252,24.7376,17.4338,31.9268,33.7771,4.831,7,6,1,2026-09-09
+8,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,123.3031,123.3031,32.28,89,4,13.0511,13.1146,23.0391,10.5743,24.6004,29.9588,4.6753,8,4,4,2026-08-20
+9,Boys,4_other,2,Luke Latchana / Gus Bernreuter,Grand Rapids West Catholic,117.2484,117.2484,30.02,87,2,13.5111,10.3571,23.1708,11.0002,24.5901,30.3815,4.53,12,4,8,2026-09-02
+10,Boys,4_other,2,Emerson Verhelle / Grayden Cowhy,Yale,72.5656,72.5656,13.3,30,6,10.4894,9.3644,22.1763,12.2382,26.0833,30.3061,4.615,6,3,3,2026-09-08
+11,Boys,4_other,2,Carter Young / Brady Old,Croswell-Lexington,72.3794,72.3794,13.23,30,6,6.655,5.0309,23.7721,15.2791,30.3062,31.9413,5.009,6,5,1,2026-09-08
+12,Boys,4_other,2,Addison Baumeister / Grace Riehl,Sandusky,68.9456,68.9456,11.95,30,6,9.0572,9.8187,21.6699,8.2124,21.806,25.4628,4.5312,13,5,8,2026-09-08
+13,Boys,4_other,2,Isaac Lindquist / Clark DeClean,Imlay City,59.7395,59.7395,8.51,30,2,7.6521,8.7029,18.1896,7.2754,21.7761,26.1438,4.8336,7,3,4,2026-09-08
+14,Boys,4_other,2,Joel Redburn / Denver Reneaud,Ortonville Brandon,55.8605,55.8605,7.05,30,1,3.1023,3.2827,18.8012,10.0912,23.4747,28.8013,4.4612,7,4,3,2026-09-08
+15,Boys,4_other,2,Xander O'Keefe / Pablo Solis Mata,Battle Creek Lakeview,45.0585,45.0585,3.01,17,1,10.1446,3.517,15.7395,6.7869,19.9973,32.312,4.4035,15,4,11,2026-09-08
+16,Boys,4_other,2,Danny Chenier / Chris Kennedy,Kalamazoo Hackett Catholic Prep,41.6178,41.6178,1.73,8,2,9.35,12.1385,16.6674,7.2642,22.2697,25.2307,5.0019,6,2,4,2026-08-29
+17,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,40.2167,40.2167,1.2,6,1,8.558,6.8614,19.291,13.1875,26.6976,31.2406,4.5034,11,6,5,2026-09-03
+18,Boys,4_other,2,Chase Yeager / Max Brown,North Muskegon,37.1002,37.1002,0.04,6,1,8.2754,8.6224,20.6501,7.5008,20.8198,24.4539,4.4397,13,5,8,2026-09-09

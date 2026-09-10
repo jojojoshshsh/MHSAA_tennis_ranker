@@ -716,7 +716,7 @@
   "4538": {
     "id": 4538,
     "name": "Belleville",
-    "division_boys": "KLAA",
+    "division_boys": "3",
     "division_girls": ""
   },
   "4142": {
@@ -1034,7 +1034,7 @@
   "4155": {
     "id": 4155,
     "name": "Walled Lake Western",
-    "division_boys": "LVC",
+    "division_boys": "",
     "division_girls": ""
   },
   "4363": {
@@ -1340,7 +1340,7 @@
   "4011": {
     "id": 4011,
     "name": "Lansing Waverly",
-    "division_boys": "3",
+    "division_boys": "",
     "division_girls": ""
   },
   "4387": {
@@ -1562,7 +1562,7 @@
   "4536": {
     "id": 4536,
     "name": "Frankenmuth",
-    "division_boys": "3",
+    "division_boys": "",
     "division_girls": ""
   },
   "3926": {
