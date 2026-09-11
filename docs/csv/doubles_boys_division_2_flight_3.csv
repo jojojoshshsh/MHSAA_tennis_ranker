@@ -1,10 +1,12 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,3,Aaryan Senthilvanan / Mark Latinsky,Birmingham Seaholm,299.8188,299.8188,100.0,284,3,13.7868,3.8547,29.297,19.0592,35.0009,38.0892,5.3139,9,7,2,2026-08-28
-2,Boys,2,3,Ethan Shank / Lucca Giorgi,Gibraltar Carlson,299.4821,299.4821,99.0,277,6,6.246,7.1899,28.2605,21.8212,38.9488,40.6757,5.7092,7,7,0,2026-08-29
-3,Boys,2,3,Jake Ingber / Ari Schindler,Berkley,292.4544,292.4544,78.22,273,3,14.2001,7.6827,32.6147,19.5937,34.2696,36.7359,4.892,11,8,3,2026-09-01
-4,Boys,2,3,Weston Jerabek / Davis Gryzenia,Grosse Pointe South,287.5767,287.5767,63.8,259,8,14.068,4.9385,29.9676,21.7916,35.292,38.8798,4.5001,16,11,5,2026-09-04
-5,Boys,2,3,Nathan Draft / Ivan Ortega-Rooze,Grand Rapids Forest Hills Central,278.5106,278.5106,36.99,259,5,16.2697,8.813,27.7693,12.2595,26.4696,33.3431,4.7367,9,5,4,2026-08-29
-6,Boys,2,3,Braedyn Inthammavong / Luka Mulac,Byron Center,277.4298,277.4298,33.8,259,1,14.4873,4.5511,34.195,23.7713,36.7746,37.8274,4.3344,11,9,2,2026-09-09
-7,Boys,2,3,Zach Bartoi / Teddy DuRoss,Birmingham Groves,274.3507,274.3507,24.69,259,2,8.2083,6.8862,29.3876,18.9079,34.2867,35.9025,5.1263,6,5,1,2026-09-08
-8,Boys,2,3,Mikey Hernly / sam dejong,Grand Rapids Forest Hills Northern,270.3649,270.3649,12.91,259,2,16.5339,11.0147,24.0941,9.1081,23.6314,28.8214,4.8411,11,4,7,2026-09-02
-9,Boys,2,3,Ryo Rohrstaff / Ben Watts,Portage Central,266.1184,266.1184,0.35,259,1,12.4919,2.2791,24.9948,14.0265,26.3754,32.2856,4.1163,14,6,8,2026-09-08
+1,Boys,2,3,Ethan Shank / Lucca Giorgi,Gibraltar Carlson,336.9818,336.9818,100.0,320,6,5.9966,7.0074,27.2985,21.8212,38.9488,40.6757,5.7092,7,7,0,2026-08-29
+2,Boys,2,3,Vettel Xu / Zander Salisbury,Midland Dow,333.212,333.212,98.37,304,10,10.0671,12.7299,29.2146,20.0649,37.1018,39.4058,5.679,5,5,0,2026-09-10
+3,Boys,2,3,Jake Ingber / Ari Schindler,Berkley,331.4647,331.4647,97.61,318,3,13.871,7.5425,31.0473,19.5881,34.266,36.7359,4.8926,11,8,3,2026-09-01
+4,Boys,2,3,Aaryan Senthilvanan / Mark Latinsky,Birmingham Seaholm,325.8937,325.8937,95.2,303,6,14.7526,5.965,32.088,22.4775,37.3942,40.6388,4.9722,10,8,2,2026-09-10
+5,Boys,2,3,Weston Jerabek / Davis Gryzenia,Grosse Pointe South,325.2773,325.2773,94.93,301,8,14.6743,5.4019,30.3394,21.7227,35.2466,38.8798,4.508,16,11,5,2026-09-04
+6,Boys,2,3,Nathan Draft / Ivan Ortega-Rooze,Grand Rapids Forest Hills Central,315.0963,315.0963,90.53,301,5,14.7103,7.4182,26.8029,14.0405,27.9779,34.3912,4.6458,10,6,4,2026-09-09
+7,Boys,2,3,Braedyn Inthammavong / Luka Mulac,Byron Center,314.2888,314.2888,90.18,301,1,14.1665,4.4753,33.6894,23.8275,36.8144,37.922,4.329,11,9,2,2026-09-09
+8,Boys,2,3,Zach Bartoi / Teddy DuRoss,Birmingham Groves,311.8144,311.8144,89.1,301,2,10.4292,9.49,29.4,17.4841,32.0377,33.6829,4.8512,7,5,2,2026-09-10
+9,Boys,2,3,Mikey Hernly / sam dejong,Grand Rapids Forest Hills Northern,308.2507,308.2507,87.56,301,2,16.9979,12.2248,24.2645,9.1096,23.6294,28.8214,4.8399,11,4,7,2026-09-02
+10,Boys,2,3,Ryo Rohrstaff / Ben Watts,Portage Central,303.705,303.705,85.59,301,1,12.8448,2.8636,25.1872,13.9853,26.3318,32.2856,4.1155,14,6,8,2026-09-08
+11,Boys,2,3,Wyatt Shaffner / Evan Wenzell,Midland,106.3453,106.3453,0.15,74,1,9.2085,5.1343,27.4224,18.1044,32.7315,33.0534,4.8757,9,7,2,2026-09-10

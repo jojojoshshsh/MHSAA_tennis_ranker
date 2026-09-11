@@ -1,13 +1,16 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,4,Vinnie Holder / Joseph Dauphin,Berkley,287.3684,287.3684,100.0,253,8,15.2786,10.0327,31.2675,24.522,37.998,42.5511,4.492,11,9,2,2026-09-01
-2,Boys,2,4,Luka Zilo / virinchi Kakaraparthi,Grand Rapids Forest Hills Northern,235.7344,235.7344,77.39,211,3,14.8508,8.7156,29.6242,17.9005,31.5572,36.377,4.5522,11,7,4,2026-09-02
-3,Boys,2,4,Colten King / Jonah Wiechertjes,Byron Center,234.8904,234.8904,77.02,211,2,10.2656,4.5902,33.8192,22.9924,36.3836,37.8244,4.4637,11,9,2,2026-09-09
-4,Boys,2,4,Dylan Hudson / Kellan Tanner,Grand Rapids Forest Hills Central,231.5677,231.5677,75.57,211,2,15.6577,9.9819,28.9972,13.0831,27.4941,31.6824,4.8037,7,4,3,2026-08-29
-5,Boys,2,4,Jack Rozema / Graham Ritter,Portage Central,149.9172,149.9172,39.81,127,1,10.0282,2.6627,23.3293,16.5459,29.756,34.4099,4.4034,15,9,6,2026-09-08
-6,Boys,2,4,Jack Gryzenia / Peter Struck,Grosse Pointe South,109.6153,109.6153,22.16,80,1,12.749,1.9004,26.9559,14.5656,28.0735,33.9697,4.5026,11,6,5,2026-08-26
-7,Boys,2,4,Arya Karthikeyan / Bobby Tribfelner,Midland Dow,89.9279,89.9279,13.54,55,1,10.0091,10.8671,25.0466,16.1278,30.4839,32.1418,4.7854,6,4,2,2026-09-02
-8,Boys,2,4,Lois Halladay / Declan O'Shea,Royal Oak,74.9928,74.9928,7.0,32,3,16.1467,12.3626,27.9449,13.72,26.6206,30.7519,4.3002,8,3,5,2026-08-29
-9,Boys,2,4,Mason Szczepaniak / Kody Medalla,Gibraltar Carlson,74.7136,74.7136,6.88,32,3,11.5744,8.186,28.9545,17.6464,31.0915,33.3351,4.4817,7,5,2,2026-08-29
-10,Boys,2,4,Andy Bowers / Xavier Haman,Wyandotte Roosevelt,69.8835,69.8835,4.77,32,3,8.4939,8.3415,23.1346,14.6146,28.2532,32.6081,4.5462,9,5,4,2026-09-08
-11,Boys,2,4,Eli Rohr / Maks Terrill,Midland,60.5814,60.5814,0.69,25,1,6.7756,4.1459,24.995,16.5352,30.9061,35.6546,4.7903,9,7,2,2026-09-02
-12,Boys,2,4,Brycen Martin / Hunter Holznagle,Holly,59.1129,59.1129,0.05,29,1,5.4566,2.5677,21.1418,12.5205,27.8152,31.7176,5.0983,6,4,2,2026-09-08
+1,Boys,2,4,Vinnie Holder / Joseph Dauphin,Berkley,303.2163,303.2163,100.0,269,9,15.2061,9.9272,31.2705,24.5382,38.0103,42.5511,4.4907,11,9,2,2026-09-01
+2,Boys,2,4,Luka Zilo / virinchi Kakaraparthi,Grand Rapids Forest Hills Northern,257.2153,257.2153,83.22,231,5,15.0594,8.8354,30.0079,17.9058,31.5652,36.377,4.5531,11,7,4,2026-09-02
+3,Boys,2,4,Colten King / Jonah Wiechertjes,Byron Center,254.0445,254.0445,82.07,231,3,10.0443,4.6417,33.1386,23.0396,36.4171,37.9265,4.4592,11,9,2,2026-09-09
+4,Boys,2,4,Dylan Hudson / Kellan Tanner,Grand Rapids Forest Hills Central,249.4573,249.4573,80.4,231,2,14.6932,8.3435,29.1539,15.4126,29.3604,32.9087,4.6492,8,5,3,2026-09-09
+5,Boys,2,4,Jack Rozema / Graham Ritter,Portage Central,168.9007,168.9007,51.02,148,1,10.3521,2.7881,23.9147,16.5119,29.7462,34.4099,4.4114,15,9,6,2026-09-08
+6,Boys,2,4,Jack Gryzenia / Peter Struck,Grosse Pointe South,128.5996,128.5996,36.32,101,1,13.0631,1.9004,27.6202,14.6176,28.1148,33.9697,4.4991,11,6,5,2026-08-26
+7,Boys,2,4,Jaiden Pope / Blake Keessen,Muskegon Mona Shores,122.8146,122.8146,34.21,92,1,11.1551,3.9053,28.8951,17.3329,30.8149,35.3812,4.494,11,8,3,2026-09-10
+8,Boys,2,4,Arya Karthikeyan / Bobby Tribfelner,Midland Dow,109.9505,109.9505,29.52,73,3,9.1276,10.0026,26.2488,17.216,31.6357,33.1751,4.8066,7,5,2,2026-09-10
+9,Boys,2,4,Lois Halladay / Declan O'Shea,Royal Oak,79.5092,79.5092,18.42,36,3,17.3562,12.6529,29.0015,13.72,26.6206,30.7519,4.3002,8,3,5,2026-08-29
+10,Boys,2,4,Mason Szczepaniak / Kody Medalla,Gibraltar Carlson,78.6274,78.6274,18.1,36,3,11.7569,8.3933,29.5098,17.6464,31.0915,33.3351,4.4817,7,5,2,2026-08-29
+11,Boys,2,4,Andy Bowers / Xavier Haman,Wyandotte Roosevelt,73.2054,73.2054,16.12,36,3,6.7507,6.4665,23.1346,15.8871,29.9192,34.2948,4.6774,11,7,4,2026-09-10
+12,Boys,2,4,cody mckeon / bradley mcfarland,Bay City Western,65.307,65.307,13.24,28,2,6.8533,5.751,26.9426,16.5385,29.9036,32.8427,4.455,10,7,3,2026-09-10
+13,Boys,2,4,Brycen Martin / Hunter Holznagle,Holly,50.6097,50.6097,7.88,18,2,5.1248,2.4034,20.3364,12.4978,27.7992,31.7176,5.1005,6,4,2,2026-09-08
+14,Boys,2,4,Eli Rohr / Maks Terrill,Midland,49.4553,49.4553,7.46,15,1,6.8179,5.3009,23.392,14.412,28.3055,31.8095,4.6311,11,8,3,2026-09-10
+15,Boys,2,4,Jackson Weidman / Jake Weidman,Flint Kearsley,29.882,29.882,0.32,4,1,4.9316,5.2817,13.2176,5.8742,20.5592,25.3255,4.895,8,3,5,2026-09-08
