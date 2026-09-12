@@ -1,25 +1,4 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,1,2,Jay Thakkar / Vikram Menon,Troy Athens,393.9121,393.9121,100.0,342,20,19.8811,8.5571,39.4014,28.2404,43.9168,41.8553,5.2255,9,9,0,2026-09-08
-2,Boys,1,2,Siddarth Manikandan / Krish Kashyap,Troy,365.0287,365.0287,91.79,332,12,16.5588,7.3664,35.6805,25.2423,38.9358,39.1524,4.5645,11,9,2,2026-09-08
-3,Boys,1,2,Daniel Han / Ronak Sharma,Novi,364.0886,364.0886,91.53,338,9,17.7058,13.5132,30.7914,21.0015,34.9386,38.6643,4.6457,9,6,3,2026-08-26
-4,Boys,1,2,Seongmin “Leo” Choi / Rohan Chaudhuri,Rochester Adams,356.5075,356.5075,89.37,332,8,17.7105,14.1482,32.3389,20.1916,34.0938,34.5125,4.6341,7,5,2,2026-09-08
-5,Boys,1,2,Dan Kennedy / Christian Mojares,Bloomfield Hills Brother Rice,354.0163,354.0163,88.66,332,9,10.1347,2.9386,31.4437,22.843,38.9698,39.1683,5.3756,6,6,0,2026-09-10
-6,Boys,1,2,Brody Craig / Dominic Thompson,Detroit Catholic Central,325.7636,325.7636,80.63,295,11,11.237,10.6186,31.7706,18.1871,32.287,40.4777,4.7,9,7,2,2026-09-08
-7,Boys,1,2,Josh Reimink / Jonah Hoff,Holland West Ottawa,307.6799,307.6799,75.5,285,6,7.9356,5.6786,33.8401,20.9825,37.6134,38.4176,5.5436,11,10,1,2026-09-10
-8,Boys,1,2,Luca Deangelis / Jordan Endelman,Bloomfield Hills,303.0326,303.0326,74.18,291,2,17.5811,8.7854,31.4744,13.8836,27.7129,29.1117,4.6098,9,4,5,2026-09-10
-9,Boys,1,2,Kamy Shushtari / Henry Haviland,Clarkston,300.8527,300.8527,73.56,286,4,12.791,11.339,26.4946,15.4296,29.2142,32.2999,4.5949,9,6,3,2026-09-01
-10,Boys,1,2,Henry Bereza / Koleman Sagraves,Jenison,300.5923,300.5923,73.48,284,5,7.6002,8.6632,26.9943,18.3101,32.9507,35.6378,4.8802,10,8,2,2026-09-09
-11,Boys,1,2,Soumil Patel / Cameron Adamski,Plymouth,294.0315,294.0315,71.62,288,2,8.2169,5.8734,25.6211,11.9734,28.8697,29.2112,5.6321,5,4,1,2026-09-01
-12,Boys,1,2,Reece Dodson / Drey Krikke,Hudsonville,293.801,293.801,71.55,283,3,14.0972,13.0833,21.9831,12.7314,24.756,32.2368,4.0082,15,6,9,2026-09-10
-13,Boys,1,2,Luca DiVirgilio / Austin Blankertz,Romeo,291.34,291.34,70.85,283,1,13.5467,6.0467,25.2402,16.7916,30.9504,32.255,4.7196,7,4,3,2026-08-25
-14,Boys,1,2,Joey Elawar / Sebastian Fagaras,Brighton,291.2401,291.2401,70.82,283,1,8.8165,7.6809,25.7002,17.931,31.9683,33.4378,4.6791,9,6,3,2026-09-10
-15,Boys,1,2,Brady Gauthier / Bridger Wildern,Rockford,287.81,287.81,69.85,283,2,8.9595,10.266,20.4039,11.656,25.7299,27.9448,4.6913,9,4,5,2026-09-09
-16,Boys,1,2,Parker Hagland / Mark Skuratowicz,Kalamazoo Central,119.7894,119.7894,22.1,95,1,7.151,1.3056,23.22,14.2254,27.4855,37.6085,4.4201,9,6,3,2026-09-08
-17,Boys,1,2,Alex Moore / Jake Lyon,Caledonia,117.7307,117.7307,21.52,95,1,10.9707,7.364,21.9312,7.4257,20.8542,27.9697,4.4762,12,4,8,2026-09-01
-18,Boys,1,2,Noor Al-Bermani / Giovanni Kaktoma,Utica Eisenhower,86.7579,86.7579,12.72,44,3,13.2669,11.7236,28.5882,17.2895,30.9294,31.8443,4.5466,12,8,4,2026-08-26
-19,Boys,1,2,Evan Kler / Ryder Genaw,Clinton Township Chippewa Valley,83.6513,83.6513,11.84,44,4,7.9612,5.703,26.4187,17.1935,31.6304,31.9026,4.8123,8,6,2,2026-08-27
-20,Boys,1,2,Ian Weiss / Xander Clancy,Macomb L'Anse Creuse North,82.6084,82.6084,11.54,43,1,10.6468,5.295,29.98,18.8441,33.0975,40.7428,4.7511,12,9,3,2026-09-10
-21,Boys,1,2,William O’Brien / Kenny Ray,Fraser,70.4114,70.4114,8.07,36,2,7.5402,6.1721,23.1115,14.049,27.6798,33.4343,4.5436,8,5,3,2026-09-10
-22,Boys,1,2,Aarin Agarwal / Ian Wu,Rochester Hills Stoney Creek,67.1698,67.1698,7.15,31,2,8.6692,3.9967,24.4175,13.8771,28.0241,37.3167,4.7157,8,5,3,2026-09-08
-23,Boys,1,2,Ian Beshke / Rhys Smith,Warren De La Salle Collegiate,58.1382,58.1382,4.59,26,1,9.419,7.55,20.0806,11.2092,26.0859,29.5885,4.9589,7,3,4,2026-09-10
-24,Boys,1,2,Connor Verant / josh Callicoat,Livonia Stevenson,42.1383,42.1383,0.04,8,1,9.1859,7.4906,21.9219,10.6646,25.0468,28.557,4.794,8,3,5,2026-09-10
+1,Boys,1,2,Daniel Han / Ronak Sharma,Novi,166.4078,166.4078,100.0,133,2,12.765,7.7632,29.5094,20.8014,36.1056,38.8744,5.1014,6,5,1,2026-08-26
+2,Boys,1,2,Henry Bereza / Koleman Sagraves,Jenison,85.4312,85.4312,13.31,50,1,4.7144,3.7341,24.873,19.9698,37.6042,38.5939,5.8781,7,7,0,2026-09-09
+3,Boys,1,2,Parker Hagland / Mark Skuratowicz,Kalamazoo Central,73.3202,73.3202,0.34,38,1,8.0879,3.2893,25.7271,17.4367,30.5258,39.578,4.363,10,7,3,2026-09-10
