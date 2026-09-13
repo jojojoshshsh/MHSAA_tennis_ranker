@@ -1,2 +1,15 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,3,Braedyn Inthammavong / Luka Mulac,Byron Center,148.8083,148.8083,100.0,115,2,10.6185,3.7325,31.8907,22.2209,36.094,37.8379,4.6244,11,9,2,2026-09-09
+1,Boys,2,3,Vettel Xu / Zander Salisbury,Midland Dow,378.2991,378.2991,100.0,352,11,10.7518,13.4662,30.2828,19.5578,36.7987,39.4831,5.747,5,5,0,2026-09-10
+2,Boys,2,3,Aaryan Senthilvanan / Mark Latinsky,Birmingham Seaholm,374.1396,374.1396,98.41,354,7,16.175,6.6591,33.3991,22.5248,37.4984,40.6388,4.9912,10,8,2,2026-09-10
+3,Boys,2,3,Weston Jerabek / Davis Gryzenia,Grosse Pointe South,372.725,372.725,97.87,352,9,14.4615,5.4183,31.1524,21.5475,35.6281,39.4239,4.6935,17,12,5,2026-09-10
+4,Boys,2,3,Ethan Shank / Lucca Giorgi,Gibraltar Carlson,369.9871,369.9871,96.82,359,6,4.6798,7.0072,24.756,21.8089,38.9387,40.6757,5.7099,7,7,0,2026-08-29
+5,Boys,2,3,Jake Ingber / Ari Schindler,Berkley,364.2861,364.2861,94.64,357,3,13.9748,7.4003,30.3621,16.846,31.0925,36.7359,4.7488,12,8,4,2026-09-10
+6,Boys,2,3,Nathan Draft / Ivan Ortega-Rooze,Grand Rapids Forest Hills Central,363.6645,363.6645,94.4,352,6,16.6893,7.4317,29.1526,14.1408,28.0222,34.3919,4.6271,10,6,4,2026-09-09
+7,Boys,2,3,Braedyn Inthammavong / Luka Mulac,Byron Center,360.9843,360.9843,93.37,352,2,12.1708,3.705,33.6778,24.3282,38.087,39.032,4.5863,13,11,2,2026-09-12
+8,Boys,2,3,Zach Bartoi / Teddy DuRoss,Birmingham Groves,359.5311,359.5311,92.82,352,3,11.5304,9.5625,30.3852,17.5033,32.0653,33.6829,4.854,7,5,2,2026-09-10
+9,Boys,2,3,Mikey Hernly / sam dejong,Grand Rapids Forest Hills Northern,356.502,356.502,91.66,352,3,17.6156,13.038,26.3362,9.0761,23.5857,28.819,4.8365,11,4,7,2026-09-02
+10,Boys,2,3,Ryo Rohrstaff / Ben Watts,Portage Central,352.8741,352.8741,90.27,352,2,14.3759,3.5542,28.7625,14.015,26.3973,32.21,4.1274,14,6,8,2026-09-08
+11,Boys,2,3,Graeme Wood / Blake Davison,Traverse City Central,352.0236,352.0236,89.94,352,1,11.5754,7.8799,26.848,15.716,28.8782,31.6329,4.3874,14,6,8,2026-09-11
+12,Boys,2,3,Leo Olvera / Ethan Haney,Sparta,351.7668,351.7668,89.85,352,1,7.8847,2.6503,26.7635,18.4501,31.105,40.4683,4.2183,13,9,4,2026-09-10
+13,Boys,2,3,Aditya Talakanti / Varun Kongara,South Lyon East,350.3615,350.3615,89.31,352,1,13.0038,5.8401,27.45,10.9145,24.6206,32.7124,4.5687,10,5,5,2026-08-29
+14,Boys,2,3,Wyatt Shaffner / Evan Wenzell,Midland,117.0756,117.0756,0.03,85,1,9.9083,5.4001,27.7793,18.9589,33.4377,33.7958,4.8263,9,7,2,2026-09-10
