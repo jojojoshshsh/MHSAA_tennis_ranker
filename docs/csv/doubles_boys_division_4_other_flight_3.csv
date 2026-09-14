@@ -1,18 +1,19 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,3,Harrison Botke / Vincent Tran,Jackson Lumen Christi,392.9324,392.9324,100.0,352,19,10.3559,6.4264,31.8151,24.3198,39.4012,46.7924,5.0271,19,18,1,2026-09-12
-2,Boys,4_other,3,Logan Spangler / Noah Koppenhofer,Grand Rapids NorthPointe Christian,391.5155,391.5155,99.6,352,18,10.9061,3.3644,35.3189,24.2466,40.8668,43.9573,5.5401,17,16,1,2026-09-12
-3,Boys,4_other,3,Sage Sanchez / Larsen Kibler,Berrien Springs,390.1522,390.1522,99.22,352,18,12.7726,8.7433,33.5075,20.8616,35.2881,39.979,4.8088,9,7,2,2026-09-03
-4,Boys,4_other,3,Sam Ekkens / Gus Haan,Kalamazoo Christian,383.8313,383.8313,97.45,352,16,11.088,7.672,32.2767,20.4997,34.255,36.6187,4.5851,10,8,2,2026-09-12
-5,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,383.4006,383.4006,97.33,352,17,11.1383,11.3241,31.6626,14.5042,27.6128,34.6397,4.3695,19,13,6,2026-09-12
-6,Boys,4_other,3,Jude Webster / Connor Esman,Paw Paw,383.2752,383.2752,97.29,352,15,10.623,9.243,31.1454,22.3356,36.207,37.9597,4.6238,20,16,4,2026-09-12
-7,Boys,4_other,3,Cameron Roelof / Caden Skarp,Battle Creek Lakeview,382.446,382.446,97.06,352,18,11.8338,2.4055,28.2256,15.72,28.6012,40.9733,4.2937,19,9,10,2026-09-12
-8,Boys,4_other,3,Brodie McKeller / Garrett Bridger,Maple City Glen Lake,357.61,357.61,90.1,352,3,15.1322,8.8432,27.2754,15.4234,28.1302,33.9974,4.2356,16,6,10,2026-09-12
-9,Boys,4_other,3,Noah Rosema / Caden Sytek,North Muskegon,356.4661,356.4661,89.78,352,3,8.8564,8.9711,26.3291,17.9004,30.6505,35.2658,4.25,16,9,7,2026-09-12
-10,Boys,4_other,3,Matteo Marciano / Jack Ingle,Grosse Pointe Woods University Liggett,356.3935,356.3935,89.76,352,2,10.4189,5.4871,30.0852,17.4762,31.0908,38.4429,4.5382,18,13,5,2026-09-12
-11,Boys,4_other,3,Anthony Maslanka / Luke VandenGuchte,Grand Rapids West Catholic,355.7026,355.7026,89.57,352,4,15.1077,18.1673,22.7993,4.7807,19.5994,26.7377,4.9395,8,2,6,2026-09-12
-12,Boys,4_other,3,Nickolaus Goodwin / Gus Buell,Traverse City St Francis,347.5343,347.5343,87.28,352,1,13.4034,10.1503,23.5294,6.7047,20.5533,27.4545,4.6162,14,4,10,2026-09-12
-13,Boys,4_other,3,Joel Tanner / Jace Rigterink,Grandville Calvin Christian,345.9843,345.9843,86.85,352,1,4.0294,4.7261,21.8162,14.9201,28.9027,31.4097,4.6609,11,9,2,2026-09-12
-14,Boys,4_other,3,Benjamin Basey / Andrew Keys,Flint Powers Catholic,76.6857,76.6857,11.4,41,2,11.5332,8.9136,22.471,11.9036,26.9684,33.055,5.0216,8,4,4,2026-09-10
-15,Boys,4_other,3,Danny Chenier / Chris Kennedy,Kalamazoo Hackett Catholic Prep,76.5431,76.5431,11.36,43,2,6.5375,7.0375,20.614,16.0113,30.8911,31.6498,4.9599,8,6,2,2026-09-12
-16,Boys,4_other,3,Lincoln Lewis / Cameron Seitz,Lansing Catholic,68.268,68.268,9.04,37,1,11.0684,12.099,18.9862,8.3621,23.7221,27.4725,5.12,7,3,4,2026-09-12
-17,Boys,4_other,3,Liam Nicholas / Tanner Osmun,Whitehall,36.011,36.011,0.0,3,1,15.1113,17.6127,18.0122,-0.3722,15.6797,19.9168,5.3506,8,1,7,2026-09-01
+1,Boys,4_other,3,Harrison Botke / Vincent Tran,Jackson Lumen Christi,403.7601,403.7601,100.0,363,19,10.5298,7.1523,31.9613,25.106,40.4566,47.6664,5.1168,21,20,1,2026-09-12
+2,Boys,4_other,3,Logan Spangler / Noah Koppenhofer,Grand Rapids NorthPointe Christian,402.1087,402.1087,99.55,363,18,11.4433,3.1777,34.8001,27.0682,42.881,44.2349,5.2709,18,17,1,2026-09-12
+3,Boys,4_other,3,Sage Sanchez / Larsen Kibler,Berrien Springs,399.8694,399.8694,98.94,363,18,12.7171,8.7433,33.5114,20.8632,35.2901,39.979,4.809,9,7,2,2026-09-03
+4,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,393.5239,393.5239,97.22,363,17,11.6259,11.7973,31.6971,14.5259,27.64,34.6397,4.3714,19,13,6,2026-09-12
+5,Boys,4_other,3,Jude Webster / Connor Esman,Paw Paw,393.2575,393.2575,97.15,363,15,10.9334,9.4742,31.249,22.3401,36.2132,37.9597,4.6244,20,16,4,2026-09-12
+6,Boys,4_other,3,Sam Ekkens / Gus Haan,Kalamazoo Christian,392.828,392.828,97.04,363,16,10.4058,7.2418,31.4825,20.4998,34.2556,36.6187,4.5852,10,8,2,2026-09-12
+7,Boys,4_other,3,Cameron Roelof / Caden Skarp,Battle Creek Lakeview,392.1422,392.1422,96.85,363,18,11.6778,2.4055,28.245,15.739,28.6224,40.9733,4.2945,19,9,10,2026-09-12
+8,Boys,4_other,3,Nickolaus Goodwin / Gus Buell,Traverse City St Francis,369.5476,369.5476,90.72,363,5,13.3951,10.8691,25.5554,14.4117,26.9751,32.8669,4.1878,16,6,10,2026-09-12
+9,Boys,4_other,3,Noah Rosema / Caden Sytek,North Muskegon,367.7689,367.7689,90.24,363,4,8.4351,8.4008,26.6284,17.7982,30.7846,35.3284,4.3288,17,10,7,2026-09-12
+10,Boys,4_other,3,Brodie McKeller / Garrett Bridger,Maple City Glen Lake,367.4247,367.4247,90.15,363,3,15.3977,8.9209,27.2032,15.3951,28.0937,33.9974,4.2329,16,6,10,2026-09-12
+11,Boys,4_other,3,Anthony Maslanka / Luke VandenGuchte,Grand Rapids West Catholic,367.1847,367.1847,90.08,363,5,15.0665,18.1082,22.8662,4.7926,19.619,26.7377,4.9421,8,2,6,2026-09-12
+12,Boys,4_other,3,Matteo Marciano / Jack Ingle,Grosse Pointe Woods University Liggett,367.1481,367.1481,90.07,363,2,10.5638,5.6546,31.6926,17.9578,31.4884,38.7339,4.5102,18,13,5,2026-09-12
+13,Boys,4_other,3,Joel Tanner / Jace Rigterink,Grandville Calvin Christian,355.6875,355.6875,86.96,363,1,3.9824,4.7037,21.8171,14.9089,28.889,31.4097,4.66,11,9,2,2026-09-12
+14,Boys,4_other,3,Benjamin Basey / Andrew Keys,Flint Powers Catholic,89.4456,89.4456,14.76,51,4,11.6785,9.6372,22.6388,11.908,26.9706,33.055,5.0209,8,4,4,2026-09-10
+15,Boys,4_other,3,Lincoln Lewis / Cameron Seitz,Lansing Catholic,82.2813,82.2813,12.82,47,3,11.4895,13.1688,20.837,10.7544,24.1057,28.1306,4.4504,9,4,5,2026-09-12
+16,Boys,4_other,3,Danny Chenier / Chris Kennedy,Kalamazoo Hackett Catholic Prep,73.2573,73.2573,10.37,43,2,7.7504,8.9511,20.6306,10.6948,23.72,26.2733,4.3417,10,6,4,2026-09-12
+17,Boys,4_other,3,Maxwell D'archangel / Drake Radtke,Essexville Garber,70.2213,70.2213,9.55,37,1,10.2938,9.2831,24.496,10.816,25.2402,29.2596,4.8081,7,4,3,2026-09-12
+18,Boys,4_other,3,Liam Nicholas / Tanner Osmun,Whitehall,35.298,35.298,0.08,3,1,15.9448,17.3455,15.8031,-0.3781,15.6719,19.9168,5.35,8,1,7,2026-09-01
