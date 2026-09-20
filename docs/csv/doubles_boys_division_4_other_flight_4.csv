@@ -1,19 +1,19 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,446.6918,446.6918,100.0,426,12,7.7819,6.0046,32.7028,25.125,42.6841,46.0099,5.8531,21,20,1,2026-09-15
-2,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,439.8016,439.8016,98.33,426,10,9.788,6.6287,30.5754,21.4446,37.9028,40.445,5.486,11,10,1,2026-09-17
-3,Boys,4_other,4,Ollie Pierpont / Stennson Shatto,Grand Rapids NorthPointe Christian,435.9331,435.9331,97.39,426,8,11.8474,3.2674,32.3116,23.6834,37.6963,38.9512,4.671,16,14,2,2026-09-17
-4,Boys,4_other,4,Ali Charafeddine / Jack Schweitzer,Battle Creek Lakeview,425.3308,425.3308,94.81,426,8,10.1259,1.7068,24.7516,10.047,23.5961,38.5542,4.5163,20,7,13,2026-09-15
-5,Boys,4_other,4,James Brunner / Wyatt Korte,Grand Rapids Catholic Central,413.1606,413.1606,91.86,426,1,7.878,1.2373,25.2289,11.6391,26.2397,37.403,4.8668,9,6,3,2026-08-29
-6,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,119.1505,119.1505,20.44,82,3,12.2049,10.0163,26.5306,16.2942,31.2058,34.0128,4.9705,7,5,2,2026-09-12
-7,Boys,4_other,4,Logan Wolfe / Noah Seals,Paw Paw,105.7564,105.7564,17.19,71,2,8.9406,7.2071,25.7431,18.2857,31.7284,35.8827,4.4809,14,9,5,2026-09-14
-8,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,99.7105,99.7105,15.72,57,7,10.0255,9.612,27.5568,10.9868,23.8392,31.7555,4.2842,23,12,11,2026-09-15
-9,Boys,4_other,4,Oz Schut / Aiden Doher,Maple City Glen Lake,96.4976,96.4976,14.94,57,5,13.8313,10.838,22.3344,11.2336,23.8796,33.9634,4.2153,17,5,12,2026-09-18
-10,Boys,4_other,4,Sam Alvarado / Christian Keilen,Lansing Catholic,91.8953,91.8953,13.82,47,6,10.5535,6.9914,25.8119,16.7697,29.7804,38.7572,4.3369,14,9,5,2026-09-18
-11,Boys,4_other,4,Dominic Fabiano / Grayson Graham,Portland,72.0873,72.0873,9.01,34,4,8.4932,7.9328,22.5867,12.7278,27.3843,30.4121,4.8855,7,5,2,2026-09-16
-12,Boys,4_other,4,Nathaniel Stuckey / Eli Scholten,Grandville Calvin Christian,71.5844,71.5844,8.89,34,4,4.1024,5.5398,23.1912,15.3257,29.7441,33.3555,4.8061,12,10,2,2026-09-17
-13,Boys,4_other,4,Connor McClelland / Aiden Ridley,Yale,58.758,58.758,5.77,23,1,11.5363,8.5307,22.1424,14.2067,28.7591,30.0553,4.8508,7,4,3,2026-09-10
-14,Boys,4_other,4,Mason Harris / Emmet Staley,North Muskegon,50.569,50.569,3.78,17,4,7.4219,8.111,18.0242,7.3141,20.7459,24.8302,4.4773,19,7,12,2026-09-16
-15,Boys,4_other,4,Barrett Chapman / Alden Johnsen,Whitehall,49.9137,49.9137,3.62,17,4,10.1859,12.4341,18.192,2.7388,16.1293,19.1812,4.4635,9,2,7,2026-09-14
-16,Boys,4_other,4,Jansen DuBois / Leo VandenHeuvel,Muskegon Western Michigan Christian,46.55,46.55,2.81,17,4,7.6336,6.9655,13.7294,3.7799,17.478,23.0136,4.566,11,3,8,2026-09-16
-17,Boys,4_other,4,Phoenix Surbrook / Lia Sandhoefer,Sandusky,41.3202,41.3202,1.54,11,1,5.5291,7.7693,17.591,9.3028,24.707,27.0687,5.1347,5,3,2,2026-09-17
-18,Boys,4_other,4,Khizar Sarwar / Emmett Atkin,Kalamazoo Hackett Catholic Prep,35.1433,35.1433,0.03,6,1,6.542,8.5463,16.6152,7.4238,21.4379,24.7,4.6714,12,5,7,2026-09-17
+1,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,458.3611,458.3611,100.0,434,13,8.7549,6.8428,34.2055,28.7095,45.1739,47.8276,5.4881,24,23,1,2026-09-18
+2,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,446.3748,446.3748,97.18,434,10,9.4241,6.3549,29.9223,21.4418,37.899,40.445,5.4857,11,10,1,2026-09-17
+3,Boys,4_other,4,Ollie Pierpont / Stennson Shatto,Grand Rapids NorthPointe Christian,444.8459,444.8459,96.82,434,9,11.6827,3.1819,32.7487,23.6778,37.6917,38.9512,4.6713,16,14,2,2026-09-17
+4,Boys,4_other,4,Nathaniel Stuckey / Eli Scholten,Grandville Calvin Christian,435.1371,435.1371,94.53,434,6,7.3067,7.6761,28.2637,19.2951,32.9853,35.713,4.5634,15,12,3,2026-09-18
+5,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,434.9553,434.9553,94.48,434,8,11.4846,10.8272,27.55,8.081,21.4562,31.3955,4.4584,26,12,14,2026-09-18
+6,Boys,4_other,4,Oz Schut / Aiden Doher,Maple City Glen Lake,434.3651,434.3651,94.35,434,7,14.0389,11.4244,23.4148,11.2158,23.8591,33.9634,4.2144,17,5,12,2026-09-18
+7,Boys,4_other,4,Ali Charafeddine / Jack Schweitzer,Battle Creek Lakeview,433.7465,433.7465,94.2,434,9,10.069,1.5904,23.9022,10.0446,23.5929,38.5542,4.5161,20,7,13,2026-09-15
+8,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,430.2077,430.2077,93.37,434,3,12.0523,9.6959,25.8804,16.2942,31.2058,34.0128,4.9705,7,5,2,2026-09-12
+9,Boys,4_other,4,Logan Wolfe / Noah Seals,Paw Paw,426.9132,426.9132,92.59,434,2,10.6614,7.5863,27.1118,17.2213,29.7769,33.6923,4.1852,17,10,7,2026-09-18
+10,Boys,4_other,4,James Brunner / Wyatt Korte,Grand Rapids Catholic Central,420.2364,420.2364,91.02,434,1,7.8677,1.2373,25.2286,11.6391,26.2397,37.403,4.8668,9,6,3,2026-08-29
+11,Boys,4_other,4,Sam Alvarado / Christian Keilen,Lansing Catholic,92.0886,92.0886,13.69,47,6,10.8618,7.2238,25.8068,16.7556,29.7637,38.7572,4.336,14,9,5,2026-09-18
+12,Boys,4_other,4,Dominic Fabiano / Grayson Graham,Portland,72.071,72.071,8.97,34,4,8.4822,7.9328,22.573,12.716,27.369,30.4121,4.8843,7,5,2,2026-09-16
+13,Boys,4_other,4,Connor McClelland / Aiden Ridley,Yale,58.7577,58.7577,5.83,23,1,11.5354,8.5307,22.1424,14.2067,28.7591,30.0553,4.8508,7,4,3,2026-09-10
+14,Boys,4_other,4,Mason Harris / Emmet Staley,North Muskegon,50.6117,50.6117,3.91,17,4,7.4216,8.2297,18.0204,7.309,20.7386,24.8302,4.4765,19,7,12,2026-09-16
+15,Boys,4_other,4,Barrett Chapman / Alden Johnsen,Whitehall,50.1812,50.1812,3.81,17,4,10.6232,12.7226,18.1883,2.7351,16.1248,19.1812,4.4632,9,2,7,2026-09-14
+16,Boys,4_other,4,Jansen DuBois / Leo VandenHeuvel,Muskegon Western Michigan Christian,46.8176,46.8176,3.02,17,4,7.9046,7.3981,13.7268,3.7783,17.476,23.0136,4.5659,11,3,8,2026-09-16
+17,Boys,4_other,4,Phoenix Surbrook / Lia Sandhoefer,Sandusky,41.3198,41.3198,1.72,11,1,5.5288,7.7693,17.5901,9.3028,24.707,27.0687,5.1347,5,3,2,2026-09-17
+18,Boys,4_other,4,Khizar Sarwar / Emmett Atkin,Kalamazoo Hackett Catholic Prep,34.9253,34.9253,0.22,6,1,6.2109,8.2974,16.6151,7.423,21.4367,24.7,4.6712,12,5,7,2026-09-17
