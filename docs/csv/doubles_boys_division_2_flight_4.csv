@@ -1,25 +1,8 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,4,Vinnie Holder / Joseph Dauphin,Berkley,474.0699,474.0699,100.0,441,19,15.2117,9.9118,33.3177,24.542,38.517,42.9102,4.6583,12,10,2,2026-09-10
-2,Boys,2,4,Luka Zilo / virinchi Kakaraparthi,Grand Rapids Forest Hills Northern,464.1473,464.1473,97.75,441,15,16.7831,7.489,32.4502,22.3314,35.515,39.5375,4.3945,18,12,6,2026-09-17
-3,Boys,2,4,Deven Badhwar / Ryan McArdle,Birmingham Seaholm,463.886,463.886,97.69,444,11,15.9984,9.4265,34.8612,25.6314,39.4134,43.1253,4.594,10,9,1,2026-09-18
-4,Boys,2,4,Dylan Hudson / Kellan Tanner,Grand Rapids Forest Hills Central,460.0642,460.0642,96.82,441,13,13.7009,9.3957,32.4252,23.0332,36.1372,37.4851,4.368,15,11,4,2026-09-21
-5,Boys,2,4,Jonah Eaton / Owen Kamp,Birmingham Groves,444.9538,444.9538,93.38,441,5,17.4549,13.9873,30.0666,16.9965,31.5861,32.1766,4.8632,5,3,2,2026-08-29
-6,Boys,2,4,Colten King / Jonah Wiechertjes,Byron Center,442.2923,442.2923,92.78,441,4,9.7841,3.3292,32.7591,23.8374,38.7006,39.6367,4.9544,16,14,2,2026-09-21
-7,Boys,2,4,Arya Karthikeyan / Bobby Tribfelner,Midland Dow,440.8475,440.8475,92.45,441,4,11.8539,11.2489,29.8596,18.5624,32.5159,33.8107,4.6512,14,10,4,2026-09-21
-8,Boys,2,4,Jack Rozema / Graham Ritter,Portage Central,437.1515,437.1515,91.61,441,4,11.936,6.6321,26.856,18.6856,31.1896,33.5156,4.168,20,12,8,2026-09-16
-9,Boys,2,4,Matthew Guthat / Peter Struck,Grosse Pointe South,435.2966,435.2966,91.19,441,1,11.6764,4.9858,28.7887,21.4469,36.8024,37.104,5.1185,9,8,1,2026-09-17
-10,Boys,2,4,Jack Gryzenia / Peter Struck,Grosse Pointe South,432.6499,432.6499,90.59,441,2,14.5879,1.912,29.3159,15.132,28.5203,33.9697,4.4628,11,6,5,2026-08-26
-11,Boys,2,4,Jaiden Pope / Blake Keessen,Muskegon Mona Shores,431.5479,431.5479,90.34,441,1,13.3165,3.9951,29.039,15.6766,28.7012,35.1732,4.3415,12,8,4,2026-09-21
-12,Boys,2,4,Liam Reinert / Christopher Semple,Dexter,429.4704,429.4704,89.87,441,2,9.3535,-1.0151,24.2215,17.3367,32.6841,34.369,5.1158,6,5,1,2026-09-12
-13,Boys,2,4,Bobby Dunning / Devon Lipps,Mattawan,429.238,429.238,89.81,441,1,13.2625,7.3078,26.2167,10.9902,23.9211,33.6958,4.3103,15,6,9,2026-09-19
-14,Boys,2,4,Charlie Tursman / Austin VanStratt,Traverse City Central,425.237,425.237,88.9,441,1,17.8525,12.5823,23.5771,2.5232,17.7483,17.829,5.075,6,1,5,2026-08-20
-15,Boys,2,4,Hunter Stacey / Caleb Swartz,Temperance Bedford,199.861,199.861,37.69,167,6,9.9288,2.4983,29.9147,19.987,34.053,39.7384,4.6886,11,8,3,2026-09-15
-16,Boys,2,4,Killian Lucidi / Chris Sulewski,Gibraltar Carlson,198.3314,198.3314,37.34,167,5,9.0802,7.8619,28.4766,19.2441,33.0177,37.4012,4.5912,8,6,2,2026-09-17
-17,Boys,2,4,Lois Halladay / Declan O'Shea,Royal Oak,186.3772,186.3772,34.63,152,5,14.2883,7.5428,29.7072,19.6269,32.667,34.388,4.3467,12,7,5,2026-09-18
-18,Boys,2,4,Mason Szczepaniak / Kody Medalla,Gibraltar Carlson,184.8538,184.8538,34.28,152,5,12.6306,9.0823,29.4208,16.7783,30.4873,32.4799,4.5697,7,5,2,2026-08-29
-19,Boys,2,4,Andy Bowers / Xavier Haman,Wyandotte Roosevelt,182.5036,182.5036,33.75,152,5,8.6967,7.8942,28.1945,16.0954,29.6522,34.0437,4.5189,14,9,5,2026-09-17
-20,Boys,2,4,cody mckeon / bradley mcfarland,Bay City Western,78.3414,78.3414,10.08,39,3,6.7501,5.2127,27.8129,18.1612,31.4474,35.9281,4.4287,15,11,4,2026-09-17
-21,Boys,2,4,Brycen Martin / Hunter Holznagle,Holly,68.901,68.901,7.93,33,3,4.6751,2.3075,23.255,16.5262,31.45,34.4208,4.9746,9,7,2,2026-09-18
-22,Boys,2,4,Eli Rohr / Maks Terrill,Midland,60.8198,60.8198,6.09,23,1,8.1017,6.033,26.66,18.4165,31.7712,34.5495,4.4516,13,10,3,2026-09-17
-23,Boys,2,4,Collin Godbout / Brenden Caywood,Southgate Anderson,45.8078,45.8078,2.68,13,1,8.2836,8.9881,18.7623,10.368,24.4897,30.5499,4.7072,8,4,4,2026-09-18
-24,Boys,2,4,Jackson Weidman / Jake Weidman,Flint Kearsley,34.2861,34.2861,0.07,7,2,4.9081,4.4563,12.9946,6.5557,20.6847,26.8222,4.7097,10,4,6,2026-09-16
+1,Boys,2,4,Colten King / Jonah Wiechertjes,Byron Center,302.9646,302.9646,100.0,274,8,9.3493,4.1033,32.5162,26.0392,40.4985,42.0998,4.8197,17,15,2,2026-09-22
+2,Boys,2,4,Luka Zilo / virinchi Kakaraparthi,Grand Rapids Forest Hills Northern,297.2408,297.2408,96.16,274,6,14.3452,5.3523,32.2044,20.4791,33.6438,36.6305,4.3882,19,12,7,2026-09-22
+3,Boys,2,4,Arya Karthikeyan / Bobby Tribfelner,Midland Dow,264.7241,264.7241,74.33,239,5,13.691,12.8913,29.3569,17.608,32.3105,33.2976,4.9008,6,4,2,2026-09-21
+4,Boys,2,4,Dylan Hudson / Kellan Tanner,Grand Rapids Forest Hills Central,258.1799,258.1799,69.94,234,4,13.531,7.1268,29.9333,21.5979,34.832,35.9096,4.4114,9,7,2,2026-09-21
+5,Boys,2,4,Jack Rozema / Graham Ritter,Portage Central,192.5535,192.5535,25.88,169,3,10.3004,5.6761,25.4915,17.8478,30.5526,32.1503,4.2349,20,12,8,2026-09-16
+6,Boys,2,4,Liam Reinert / Christopher Semple,Dexter,157.815,157.815,2.56,137,1,11.8053,-0.6568,23.8655,14.1238,28.5257,34.6727,4.8006,8,5,3,2026-09-22
+7,Boys,2,4,Bobby Dunning / Devon Lipps,Mattawan,154.085,154.085,0.06,130,1,14.4464,9.3057,24.5028,10.975,24.0574,31.6354,4.3608,12,4,8,2026-09-21

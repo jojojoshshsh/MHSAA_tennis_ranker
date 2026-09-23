@@ -1,30 +1,21 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,443.6687,443.6687,100.0,379,32,11.5207,9.2825,36.806,26.3214,40.3651,47.116,4.6812,31,27,4,2026-09-21
-2,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,441.7239,441.7239,99.53,379,32,13.7469,9.3192,34.4019,25.546,38.8296,42.713,4.4278,20,17,3,2026-09-21
-3,Boys,4_other,2,Braden Schultz / Ethan Groner,Paw Paw,441.4177,441.4177,99.45,379,32,11.425,9.6558,36.567,24.8848,38.2739,41.7023,4.463,16,14,2,2026-09-21
-4,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,439.9468,439.9468,99.09,379,32,17.0103,9.1515,36.797,19.5205,31.8694,39.5442,4.1163,23,17,6,2026-09-18
-5,Boys,4_other,2,Henry Larvick / Harrison Hoover,Lansing Catholic,437.7741,437.7741,98.56,379,32,10.6667,9.7678,30.3165,24.3042,37.3964,39.7427,4.3641,12,10,2,2026-09-18
-6,Boys,4_other,2,Sawyer Volkers / Arend Clark,Grand Rapids NorthPointe Christian,437.3927,437.3927,98.47,379,32,12.7996,6.4917,32.0438,22.3447,35.4163,41.0902,4.3572,20,14,6,2026-09-21
-7,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,434.8378,434.8378,97.85,379,32,11.0966,10.6591,33.06,16.9671,30.3223,33.9029,4.4517,19,11,8,2026-09-21
-8,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,433.03,433.03,97.41,379,32,12.642,6.063,30.109,14.795,28.4283,39.9673,4.5444,21,14,7,2026-09-21
-9,Boys,4_other,2,Finley Wise / Adiv Patel,Pontiac Notre Dame Prep,396.5396,396.5396,88.52,379,9,15.0659,8.52,30.2499,19.2809,35.3731,35.1941,5.3641,6,5,1,2026-09-16
-10,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,394.7466,394.7466,88.09,379,11,12.9728,16.1088,25.1191,11.5885,25.8302,29.9588,4.7472,8,4,4,2026-08-20
-11,Boys,4_other,2,Nolan Walcott / Connor Borgman,Grandville Calvin Christian,391.693,391.693,87.34,379,10,11.6471,12.6184,22.6226,12.9799,26.4304,35.2362,4.4835,13,7,6,2026-09-18
-12,Boys,4_other,2,Luke Latchana / Gus Bernreuter,Grand Rapids West Catholic,388.3639,388.3639,86.53,379,9,12.119,11.6362,22.3163,12.9787,26.0455,30.9865,4.3556,18,7,11,2026-09-16
-13,Boys,4_other,2,Gage Larson / Jacob Heinicke,Portland,386.2579,386.2579,86.02,379,8,11.6125,11.1751,22.9338,13.4825,26.7457,28.7826,4.4211,14,7,7,2026-09-21
-14,Boys,4_other,2,Nirmal Loganathan / Kai Estep,Saginaw Heritage,381.1331,381.1331,84.77,379,1,10.7979,0.4789,31.6036,24.0244,39.716,38.6838,5.2305,9,8,1,2026-09-17
-15,Boys,4_other,2,Carter Young / Brady Old,Croswell-Lexington,96.3412,96.3412,15.42,53,5,9.233,7.4221,24.8464,19.6968,34.0909,37.4935,4.7981,12,10,2,2026-09-16
-16,Boys,4_other,2,Jonathan Roberge / Jack Koegel,Whitehall,86.177,86.177,12.95,44,8,11.6364,15.2357,16.7218,7.5749,21.7373,26.6735,4.7208,8,3,5,2026-09-21
-17,Boys,4_other,2,Jack Novak / Liam Hendrick,Saginaw Nouvel Catholic Central,84.4855,84.4855,12.54,37,6,7.0288,6.3469,26.8452,18.4561,36.4161,37.2271,5.9867,6,6,0,2026-09-15
-18,Boys,4_other,2,Danny Chenier / Chris Kennedy,Kalamazoo Hackett Catholic Prep,83.8158,83.8158,12.37,44,8,8.683,11.9623,17.5565,6.9132,21.8175,25.166,4.9681,6,2,4,2026-08-29
-19,Boys,4_other,2,Chase Yeager / Max Brown,North Muskegon,81.375,81.375,11.78,42,7,9.1995,9.7718,20.5874,9.1965,22.5662,26.0041,4.4566,18,7,11,2026-09-16
-20,Boys,4_other,2,Henry Campbell / Brailyn Martin,Essexville Garber,72.4709,72.4709,9.61,34,5,11.3785,12.5178,23.5238,7.0792,20.9823,23.2066,4.6344,8,3,5,2026-09-15
-21,Boys,4_other,2,Eli Bishop / Blake Boyer,Almont,66.8483,66.8483,8.24,27,4,2.8124,2.6216,22.4662,17.437,35.5718,36.649,6.0449,6,6,0,2026-09-17
-22,Boys,4_other,2,Emerson Verhelle / Grayden Cowhy,Yale,64.3618,64.3618,7.64,24,4,10.8478,12.2159,20.2154,13.2273,26.451,30.2046,4.4079,8,4,4,2026-09-17
-23,Boys,4_other,2,Xander O'Keefe / Pablo Solis Mata,Battle Creek Lakeview,61.1581,61.1581,6.86,31,1,11.636,2.9411,19.4819,9.5767,22.4645,35.5321,4.2959,22,7,15,2026-09-16
-24,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,58.3105,58.3105,6.16,19,3,10.6736,8.9155,23.6407,12.7833,26.0372,31.3776,4.418,13,7,6,2026-09-12
-25,Boys,4_other,2,Addison Baumeister / Grace Riehl,Sandusky,57.5302,57.5302,5.97,24,3,9.6896,11.756,17.886,8.2494,21.2967,25.0958,4.3491,16,6,10,2026-09-17
-26,Boys,4_other,2,Isaac Lindquist / Clark DeClean,Imlay City,53.1778,53.1778,4.91,24,2,8.7734,11.4496,17.3388,3.966,18.2543,22.7086,4.7628,9,3,6,2026-09-16
-27,Boys,4_other,2,Joel Redburn / Denver Reneaud,Ortonville Brandon,51.0015,51.0015,4.38,24,1,5.9245,4.7768,18.2087,7.5743,21.3172,28.9507,4.581,11,5,6,2026-09-12
-28,Boys,4_other,2,jordan Bryant / August Forray,Niles Brandywine,44.5404,44.5404,2.81,7,2,9.212,12.1931,19.2578,12.3513,26.1092,29.6182,4.586,10,5,5,2026-09-21
-29,Boys,4_other,2,Colin Gallagher / Owen Czuk,Kalamazoo Hackett Catholic Prep,33.4585,33.4585,0.11,3,1,6.1193,8.4165,16.3002,7.9527,23.6879,25.954,5.2451,5,3,2,2026-09-15
+1,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,300.8712,300.8712,100.0,228,27,13.4101,9.7457,35.0087,26.4759,40.344,44.9697,4.6227,22,19,3,2026-09-22
+2,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,300.6852,300.6852,99.93,228,27,10.5845,9.073,36.3379,26.279,40.3493,47.1531,4.6901,31,27,4,2026-09-21
+3,Boys,4_other,2,Braden Schultz / Ethan Groner,Paw Paw,299.2309,299.2309,99.39,228,27,10.3435,9.5885,37.0982,24.5797,38.7423,42.4287,4.7209,17,15,2,2026-09-22
+4,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,297.2686,297.2686,98.66,228,27,16.5431,9.0146,36.6574,19.4566,31.8891,39.4207,4.1442,23,17,6,2026-09-18
+5,Boys,4_other,2,Henry Larvick / Harrison Hoover,Lansing Catholic,294.7645,294.7645,97.72,228,27,10.0253,9.669,29.2832,24.2618,37.5894,39.632,4.4426,12,10,2,2026-09-18
+6,Boys,4_other,2,Sawyer Volkers / Arend Clark,Grand Rapids NorthPointe Christian,294.659,294.659,97.68,228,27,12.8704,7.8674,32.5627,21.1107,34.0754,38.8725,4.3216,21,14,7,2026-09-21
+7,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,293.717,293.717,97.33,228,27,10.9432,11.0237,33.7418,18.3296,31.5517,35.3014,4.4074,20,12,8,2026-09-22
+8,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,288.4964,288.4964,95.38,228,27,10.1659,5.9816,28.0197,13.7399,27.6458,39.7753,4.6353,21,14,7,2026-09-21
+9,Boys,4_other,2,Finley Wise / Adiv Patel,Pontiac Notre Dame Prep,139.9643,139.9643,39.93,105,3,8.9159,6.6726,26.8703,19.9434,36.1959,36.5725,5.4175,7,6,1,2026-09-22
+10,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,128.3221,128.3221,35.59,84,9,10.5896,9.6545,24.0251,15.061,27.9827,34.2362,4.3072,14,8,6,2026-09-21
+11,Boys,4_other,2,Anderson Farnquist / Ethan Groner,Paw Paw,124.2692,124.2692,34.07,87,5,11.6058,14.8275,23.7153,11.5885,25.8302,29.9588,4.7472,8,4,4,2026-08-20
+12,Boys,4_other,2,Nolan Walcott / Connor Borgman,Grandville Calvin Christian,117.2873,117.2873,31.47,84,4,10.0797,11.0121,21.7714,12.0392,25.0861,32.403,4.3489,15,8,7,2026-09-22
+13,Boys,4_other,2,Luke Latchana / Gus Bernreuter,Grand Rapids West Catholic,115.723,115.723,30.88,84,3,11.2748,11.1242,21.7821,12.0484,25.291,30.886,4.4142,18,7,11,2026-09-16
+14,Boys,4_other,2,Xander O'Keefe / Pablo Solis Mata,Battle Creek Lakeview,52.481,52.481,7.27,22,1,10.5703,2.9568,19.6014,8.6381,21.5773,35.5365,4.3131,22,7,15,2026-09-16
+15,Boys,4_other,2,jordan Bryant / August Forray,Niles Brandywine,47.7235,47.7235,5.5,8,3,11.1897,14.5547,20.0732,10.5447,24.0692,27.4684,4.5082,11,5,6,2026-09-22
+16,Boys,4_other,2,Gage Larson / Jacob Heinicke,Portland,46.2565,46.2565,4.95,10,2,12.3408,15.0559,18.5407,8.1219,22.8202,23.7625,4.8994,9,3,6,2026-09-21
+17,Boys,4_other,2,Jonathan Roberge / Jack Koegel,Whitehall,43.2729,43.2729,3.84,9,2,11.0148,13.6884,16.7123,6.6587,20.9954,25.6272,4.7789,8,3,5,2026-09-21
+18,Boys,4_other,2,Danny Chenier / Chris Kennedy,Kalamazoo Hackett Catholic Prep,41.6263,41.6263,3.22,9,2,7.8838,11.3633,17.4745,6.6104,21.5814,24.9452,4.9903,6,2,4,2026-08-29
+19,Boys,4_other,2,Chase Yeager / Max Brown,North Muskegon,37.346,37.346,1.62,7,1,6.7583,6.9273,19.2764,9.6182,23.0347,25.1176,4.4722,19,8,11,2026-09-21
+20,Boys,4_other,2,Colin Gallagher / Owen Czuk,Kalamazoo Hackett Catholic Prep,33.1086,33.1086,0.04,3,1,5.5713,7.925,15.6919,8.5859,24.1576,26.2871,5.1906,5,3,2,2026-09-15
