@@ -1,10 +1,2 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,1,Matthew Brenzing / John Oliver,Grandville Calvin Christian,124.3493,124.3493,100.0,60,10,14.6562,15.7285,34.3378,24.2436,39.9468,43.0128,5.2344,5,5,0,2026-09-21
-2,Boys,4_other,1,Chase Schirmacher / Brogan Kelly,Jackson Lumen Christi,118.2808,118.2808,93.43,58,9,15.5067,15.0838,33.5234,22.7177,37.3726,38.4774,4.885,7,6,1,2026-10-03
-3,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,111.1232,111.1232,85.68,57,8,7.7765,7.1942,32.3636,24.4076,38.3526,44.1882,4.6483,32,27,5,2026-09-28
-4,Boys,4_other,1,Simon Geffre / Isaac Geffre,Paw Paw,108.5925,108.5925,82.94,57,7,12.1519,9.4704,29.0558,22.4798,37.0142,38.9244,4.8448,13,11,2,2026-09-29
-5,Boys,4_other,1,Joshua Andersen / Peyton Pangemanan,Berrien Springs,85.4062,85.4062,57.83,39,6,8.6482,9.3168,26.7417,19.5423,32.2597,34.2349,4.2392,25,13,12,2026-10-05
-6,Boys,4_other,1,Ryan Eicholtz / Levi Vander Moren,Kalamazoo Christian,75.7105,75.7105,47.33,33,4,12.7297,13.0374,25.6819,14.3659,27.091,29.7229,4.2417,21,12,9,2026-10-03
-7,Boys,4_other,1,Bryce Hood / Hudson Aalfs,Niles Brandywine,66.5559,66.5559,37.42,28,3,11.8565,13.2447,22.8003,12.0491,24.7637,27.4885,4.2382,15,7,8,2026-09-28
-8,Boys,4_other,1,Joey Nouna / Eli Coffman,Kalamazoo Hackett Catholic Prep,58.5223,58.5223,28.72,24,2,6.1312,7.0981,22.3203,14.6562,27.8167,29.9208,4.3868,21,14,7,2026-10-05
-9,Boys,4_other,1,Garrett Senger / Reese Tumbleson,Buchanan,32.2526,32.2526,0.27,3,1,7.6914,10.6731,15.5192,6.1154,20.1193,22.8149,4.668,10,3,7,2026-09-28
+1,Boys,4_other,1,Joshua Andersen / Peyton Pangemanan,Berrien Springs,53.6685,53.6685,100.0,16,2,5.5866,5.8084,25.7892,16.9321,30.4861,31.3298,4.518,25,13,12,2026-10-05
