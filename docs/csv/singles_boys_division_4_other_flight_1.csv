@@ -1,10 +1,8 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,1,Euji Son,Berrien Springs,102.7681,102.7681,100.0,44,9,7.5526,7.9844,31.2925,25.265,41.1808,45.6209,5.3053,25,23,2,2026-10-05
-2,Boys,4_other,1,Zack Tropea,Jackson Lumen Christi,93.0614,93.0614,87.36,36,8,14.3437,16.7422,28.8317,18.3256,32.5454,37.5911,4.7399,7,5,2,2026-10-03
-3,Boys,4_other,1,Wesley Goodspeed,Allegan,85.4058,85.4058,77.38,35,7,8.6804,9.5457,29.8272,18.3585,32.137,36.1753,4.5928,37,21,16,2026-09-28
-4,Boys,4_other,1,Terrance Fisher,Paw Paw,79.2789,79.2789,69.4,35,5,11.5104,10.9677,24.8116,16.3015,29.1953,32.6911,4.298,13,9,4,2026-09-29
-5,Boys,4_other,1,Justus Rowland,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),75.1977,75.1977,64.09,35,5,7.7332,10.0263,20.5684,15.2473,28.5972,31.2042,4.45,14,10,4,2026-10-05
-6,Boys,4_other,1,Noah Ray,Kalamazoo Hackett Catholic Prep,71.1901,71.1901,58.87,35,4,8.9161,10.5434,22.608,9.877,23.1651,25.8699,4.4294,25,12,13,2026-10-05
-7,Boys,4_other,1,George Haan,Kalamazoo Christian,39.5915,39.5915,17.7,7,3,9.0132,10.0247,18.0671,5.0096,18.4826,21.8906,4.491,23,8,15,2026-10-03
-8,Boys,4_other,1,Jackson Hodge,South Haven,31.8883,31.8883,7.67,4,2,10.4004,13.0404,14.1911,-0.0315,13.637,16.7083,4.5562,19,3,16,2026-09-28
-9,Boys,4_other,1,Malachi Gamble,Niles Brandywine,26.6287,26.6287,0.82,2,1,8.2094,11.0427,12.8698,0.5642,14.33,16.9987,4.5886,15,3,12,2026-09-28
+1,Boys,4_other,1,Euji Son,Berrien Springs,79.6215,79.6215,100.0,24,7,5.2077,4.4638,29.3929,27.2615,43.4549,45.9016,5.3978,28,26,2,2026-10-07
+2,Boys,4_other,1,Wesley Goodspeed,Allegan,55.8563,55.8563,54.84,6,6,14.9179,15.4655,22.3958,13.2315,28.1165,28.4302,4.9617,6,3,3,2026-10-07
+3,Boys,4_other,1,Noah Ray,Kalamazoo Hackett Catholic Prep,45.8681,45.8681,35.86,4,4,14.9179,15.4655,21.4262,6.4858,21.819,22.1818,5.1111,6,2,4,2026-10-07
+4,Boys,4_other,1,Justus Rowland,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),44.9502,44.9502,34.11,5,5,10.4744,10.7798,17.0229,8.4497,24.335,24.5474,5.2951,5,2,3,2026-10-07
+5,Boys,4_other,1,George Haan,Kalamazoo Christian,39.6521,39.6521,24.04,3,3,8.8798,9.1591,18.136,10.2884,25.3528,25.6993,5.0215,6,3,3,2026-10-07
+6,Boys,4_other,1,Malachi Gamble,Niles Brandywine,31.5532,31.5532,8.65,1,1,14.1609,14.7355,12.2268,2.2613,18.7722,19.1107,5.5036,5,1,4,2026-10-07
+7,Boys,4_other,1,Jackson Hodge,South Haven,27.8532,27.8532,1.62,1,1,10.5944,10.9266,12.2268,1.7775,17.4997,17.7114,5.2407,5,1,4,2026-10-07

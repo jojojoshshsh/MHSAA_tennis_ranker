@@ -1,2 +1,6 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,3,Sage Sanchez / Larsen Kibler,Berrien Springs,57.5595,57.5595,100.0,18,1,4.7981,4.5241,27.8222,21.3853,35.4308,38.0111,4.6818,20,15,5,2026-10-05
+1,Boys,4_other,3,Sage Sanchez / Larsen Kibler,Berrien Springs,68.3253,68.3253,100.0,19,5,6.3547,6.4098,27.5765,23.7249,37.8734,40.4182,4.7162,23,18,5,2026-10-07
+2,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,55.8885,55.8885,58.99,11,4,11.3442,12.4063,25.9266,13.4862,27.9067,29.4613,4.8068,6,4,2,2026-10-07
+3,Boys,4_other,3,Sam Ekkens / Gus Haan,Kalamazoo Christian,48.3262,48.3262,34.05,9,3,10.6381,11.7543,18.7581,11.6431,27.0376,28.5367,5.1315,6,3,3,2026-10-07
+4,Boys,4_other,3,Colin Gallagher / Chris Kennedy,Kalamazoo Hackett Catholic Prep,45.6747,45.6747,25.31,7,2,13.69,14.9005,21.6446,7.3486,23.2567,24.5642,5.3027,5,2,3,2026-10-07
+5,Boys,4_other,3,Chris Kern / Zander Wheat,Buchanan,38.7987,38.7987,2.63,5,1,8.42,9.3667,19.6715,10.4576,25.5244,26.7282,5.0223,6,3,3,2026-10-07

@@ -1,10 +1,6 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Kyle Herder,Kalamazoo Christian,105.8519,105.8519,100.0,51,10,6.9148,7.3802,26.9202,22.6922,36.8655,42.7427,4.7244,21,17,4,2026-10-03
-2,Boys,4_other,4,Joseph Bosse,Buchanan,93.5649,93.5649,85.17,51,7,6.5443,8.0499,21.1506,15.45,29.8961,35.6691,4.8154,11,8,3,2026-09-28
-3,Boys,4_other,4,Patrick Best,Jackson Lumen Christi,93.0034,93.0034,84.49,51,7,9.5221,12.2859,20.4203,11.5156,26.0565,30.3292,4.847,7,4,3,2026-10-03
-4,Boys,4_other,4,Jacob Ameling,Paw Paw,90.4837,90.4837,81.45,51,7,12.3696,13.3998,17.9623,7.1426,21.2903,26.7807,4.7159,12,3,9,2026-09-29
-5,Boys,4_other,4,Christopher Sappanos,Kalamazoo Hackett Catholic Prep,90.3523,90.3523,81.29,51,7,6.9668,8.66,21.3944,10.9547,24.6623,30.0239,4.5692,19,13,6,2026-10-05
-6,Boys,4_other,4,Deacon Morgan,Allegan,88.3622,88.3622,78.89,51,7,7.3233,7.5927,25.0336,6.8346,20.2481,25.0795,4.4712,34,16,18,2026-09-28
-7,Boys,4_other,4,Yejun Cho,Berrien Springs,40.9749,40.9749,21.7,5,3,9.6314,12.29,16.3817,7.5355,21.9134,26.729,4.7926,11,3,8,2026-10-05
-8,Boys,4_other,4,Cam Marazita,Niles Brandywine,28.0354,28.0354,6.08,3,2,4.3635,7.8692,13.1557,2.182,16.0553,19.1453,4.6244,8,3,5,2026-09-28
-9,Boys,4_other,4,Gunnar Hedahl,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),23.4043,23.4043,0.49,1,1,9.6958,12.9714,6.1656,-2.1164,12.6065,16.3814,4.9076,9,1,8,2026-09-21
+1,Boys,4_other,4,Kyle Herder,Kalamazoo Christian,69.6684,69.6684,100.0,14,5,10.271,11.2974,29.088,25.77,41.1389,41.9043,5.123,7,7,0,2026-10-07
+2,Boys,4_other,4,Christopher Sappanos,Kalamazoo Hackett Catholic Prep,54.2988,54.2988,61.25,8,3,11.6768,12.4797,24.083,18.3544,33.2231,33.8063,4.9562,7,5,2,2026-10-07
+3,Boys,4_other,4,Joseph Bosse,Buchanan,49.5392,49.5392,49.26,7,3,11.9383,13.0512,20.3895,12.8655,29.1971,30.0975,5.4439,6,4,2,2026-10-07
+4,Boys,4_other,4,Deacon Morgan,Allegan,37.1782,37.1782,18.1,4,1,8.573,9.0667,18.611,10.2465,25.4899,25.8343,5.0811,6,3,3,2026-10-07
+5,Boys,4_other,4,Yejun Cho,Berrien Springs,30.2204,30.2204,0.56,3,1,6.6867,6.4729,14.9852,6.4148,20.5199,23.0024,4.7017,13,4,9,2026-10-07

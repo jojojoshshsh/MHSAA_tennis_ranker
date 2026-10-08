@@ -1,8 +1,4 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,120.2695,120.2695,100.0,66,8,6.5377,5.6898,33.5238,26.0908,40.8469,46.8212,4.9187,35,31,4,2026-09-28
-2,Boys,4_other,2,Braden Schultz / Ethan Groner,Paw Paw,118.974,118.974,98.37,66,8,12.442,9.4343,31.7572,22.8814,36.7704,37.2631,4.6296,12,10,2,2026-09-29
-3,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,118.442,118.442,97.69,66,8,13.0836,10.2174,30.0806,21.1956,35.9368,37.1625,4.9137,6,5,1,2026-10-03
-4,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,115.3747,115.3747,93.83,66,8,8.7605,8.9459,31.0776,20.4535,33.4372,35.8423,4.3279,25,16,9,2026-10-05
-5,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,64.0033,64.0033,29.02,21,4,10.3813,10.8887,23.9372,15.4938,28.727,32.1242,4.4111,21,12,9,2026-10-03
-6,Boys,4_other,2,jordan Bryant / August Forray,Niles Brandywine,54.2333,54.2333,16.69,13,3,12.8116,15.3088,22.8454,11.2103,24.2238,27.5086,4.3378,14,6,8,2026-09-28
-7,Boys,4_other,2,Owen Czuk / Danny Chenier,Kalamazoo Hackett Catholic Prep,41.5538,41.5538,0.7,7,1,8.384,9.8866,21.3794,10.1327,24.5728,28.7821,4.8134,6,3,3,2026-10-05
+1,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,75.1884,75.1884,100.0,23,4,11.9064,12.6381,27.1518,24.3371,39.5712,40.5566,5.078,7,7,0,2026-10-07
+2,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,62.1903,62.1903,55.47,22,3,6.7596,6.7961,24.846,18.0887,31.8239,33.1188,4.5784,28,18,10,2026-10-07
+3,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,46.9686,46.9686,3.32,7,2,12.4553,13.174,21.9441,11.3995,26.7599,27.6264,5.1201,6,3,3,2026-10-07
