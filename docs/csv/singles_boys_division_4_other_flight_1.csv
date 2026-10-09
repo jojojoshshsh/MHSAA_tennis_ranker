@@ -1,8 +1,8 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,1,Euji Son,Berrien Springs,79.6215,79.6215,100.0,24,7,5.2077,4.4638,29.3929,27.2615,43.4549,45.9016,5.3978,28,26,2,2026-10-07
-2,Boys,4_other,1,Wesley Goodspeed,Allegan,55.8563,55.8563,54.84,6,6,14.9179,15.4655,22.3958,13.2315,28.1165,28.4302,4.9617,6,3,3,2026-10-07
-3,Boys,4_other,1,Noah Ray,Kalamazoo Hackett Catholic Prep,45.8681,45.8681,35.86,4,4,14.9179,15.4655,21.4262,6.4858,21.819,22.1818,5.1111,6,2,4,2026-10-07
-4,Boys,4_other,1,Justus Rowland,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),44.9502,44.9502,34.11,5,5,10.4744,10.7798,17.0229,8.4497,24.335,24.5474,5.2951,5,2,3,2026-10-07
-5,Boys,4_other,1,George Haan,Kalamazoo Christian,39.6521,39.6521,24.04,3,3,8.8798,9.1591,18.136,10.2884,25.3528,25.6993,5.0215,6,3,3,2026-10-07
-6,Boys,4_other,1,Malachi Gamble,Niles Brandywine,31.5532,31.5532,8.65,1,1,14.1609,14.7355,12.2268,2.2613,18.7722,19.1107,5.5036,5,1,4,2026-10-07
-7,Boys,4_other,1,Jackson Hodge,South Haven,27.8532,27.8532,1.62,1,1,10.5944,10.9266,12.2268,1.7775,17.4997,17.7114,5.2407,5,1,4,2026-10-07
+1,Boys,4_other,1,Euji Son,Berrien Springs,98.6877,98.6877,100.0,43,7,7.3903,5.9276,31.5793,27.2615,43.4549,45.9016,5.3978,28,26,2,2026-10-07
+2,Boys,4_other,1,Wesley Goodspeed,Allegan,55.8563,55.8563,40.25,6,6,14.9179,15.4655,22.3958,13.2315,28.1165,28.4302,4.9617,6,3,3,2026-10-07
+3,Boys,4_other,1,Noah Ray,Kalamazoo Hackett Catholic Prep,45.8681,45.8681,26.32,4,4,14.9179,15.4655,21.4262,6.4858,21.819,22.1818,5.1111,6,2,4,2026-10-07
+4,Boys,4_other,1,Justus Rowland,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),44.9502,44.9502,25.04,5,5,10.4744,10.7798,17.0229,8.4497,24.335,24.5474,5.2951,5,2,3,2026-10-07
+5,Boys,4_other,1,George Haan,Kalamazoo Christian,39.6521,39.6521,17.65,3,3,8.8798,9.1591,18.136,10.2884,25.3528,25.6993,5.0215,6,3,3,2026-10-07
+6,Boys,4_other,1,Malachi Gamble,Niles Brandywine,31.5532,31.5532,6.35,1,1,14.1609,14.7355,12.2268,2.2613,18.7722,19.1107,5.5036,5,1,4,2026-10-07
+7,Boys,4_other,1,Jackson Hodge,South Haven,27.8532,27.8532,1.19,1,1,10.5944,10.9266,12.2268,1.7775,17.4997,17.7114,5.2407,5,1,4,2026-10-07

@@ -1,9 +1,9 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
 1,Boys,4_other,3,Brayden Bowman,Kalamazoo Christian,72.0856,72.0856,100.0,11,8,10.2104,10.9854,30.0137,25.4687,40.6882,41.0606,5.0732,7,7,0,2026-10-07
-2,Boys,4_other,3,Robbie Majoras,Kalamazoo Hackett Catholic Prep,56.0348,56.0348,67.95,7,6,11.6481,12.5931,22.0897,15.0268,30.5471,31.0891,5.1734,6,4,2,2026-10-07
-3,Boys,4_other,3,Maddox carpenter,Niles Brandywine,52.7537,52.7537,61.4,7,6,10.1613,10.862,22.4091,13.0603,27.4226,27.81,4.7874,7,4,3,2026-10-07
-4,Boys,4_other,3,Gage Mashburn,Allegan,40.1191,40.1191,36.18,4,3,8.4015,9.3776,15.4824,11.2326,26.4362,26.7793,5.0678,5,3,2,2026-10-07
-5,Boys,4_other,3,Cody Strauss,Buchanan,36.058,36.058,28.07,3,3,5.497,6.5357,15.5322,8.2473,24.7798,25.5796,5.5108,5,3,2,2026-10-07
-6,Boys,4_other,3,Max Sanchez,Berrien Springs,33.6274,33.6274,23.22,3,2,7.1419,7.5094,13.8373,7.4881,22.4704,25.7738,4.9941,8,3,5,2026-09-03
-7,Boys,4_other,3,Gunnar Hedahl,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),24.8875,24.8875,5.77,1,1,9.5273,10.5555,8.4944,-0.0729,16.0112,16.6498,5.3614,5,1,4,2026-10-07
-8,Boys,4_other,3,"Taewon ""Evan"" Kim",Berrien Springs,22.7075,22.7075,1.41,1,1,7.5595,7.7459,8.4944,-0.2645,15.0532,16.9079,5.1059,13,2,11,2026-10-07
+2,Boys,4_other,3,Robbie Majoras,Kalamazoo Hackett Catholic Prep,56.0348,56.0348,66.62,7,6,11.6481,12.5931,22.0897,15.0268,30.5471,31.0891,5.1734,6,4,2,2026-10-07
+3,Boys,4_other,3,Maddox carpenter,Niles Brandywine,52.7537,52.7537,59.8,7,6,10.1613,10.862,22.4091,13.0603,27.4226,27.81,4.7874,7,4,3,2026-10-07
+4,Boys,4_other,3,Gage Mashburn,Allegan,40.1191,40.1191,33.52,4,3,8.4015,9.3776,15.4824,11.2326,26.4362,26.7793,5.0678,5,3,2,2026-10-07
+5,Boys,4_other,3,Cody Strauss,Buchanan,36.058,36.058,25.08,3,3,5.497,6.5357,15.5322,8.2473,24.7798,25.5796,5.5108,5,3,2,2026-10-07
+6,Boys,4_other,3,Max Sanchez,Berrien Springs,34.1858,34.1858,21.18,3,2,8.7114,7.5094,13.8373,7.4881,22.4704,25.7738,4.9941,8,3,5,2026-09-03
+7,Boys,4_other,3,Gunnar Hedahl,New Buffalo / Bridgman / Lake Michigan Catholic (LMC),24.8875,24.8875,1.85,1,1,9.5273,10.5555,8.4944,-0.0729,16.0112,16.6498,5.3614,5,1,4,2026-10-07
+8,Boys,4_other,3,"Taewon ""Evan"" Kim",Berrien Springs,24.0921,24.0921,0.19,1,1,9.792,9.2219,8.4944,-0.2645,15.0532,16.9079,5.1059,13,2,11,2026-10-07

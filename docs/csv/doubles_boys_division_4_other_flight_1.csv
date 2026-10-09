@@ -1,6 +1,6 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,75.0115,75.0115,100.0,24,4,9.5555,10.0664,29.4545,24.5296,39.5467,40.062,5.0057,7,7,0,2026-10-07
-2,Boys,4_other,1,Ryan Eicholtz / Levi Vander Moren,Kalamazoo Christian,62.0825,62.0825,24.0,21,4,10.3019,10.7739,20.7729,13.6709,28.9517,29.4913,5.0936,6,4,2,2026-10-07
-3,Boys,4_other,1,Joshua Andersen / Peyton Pangemanan,Berrien Springs,60.9308,60.9308,17.23,21,4,7.614,7.2402,25.9113,14.6559,27.5951,28.3762,4.3131,26,13,13,2026-10-07
-4,Boys,4_other,1,Bryce Hood / Hudson Aalfs,Niles Brandywine,60.2097,60.2097,12.99,21,4,14.032,14.5944,22.3963,6.0314,21.1212,21.6705,5.0299,6,2,4,2026-10-07
-5,Boys,4_other,1,Joey Nouna / Eli Coffman,Kalamazoo Hackett Catholic Prep,58.6957,58.6957,4.09,21,4,6.7313,7.2149,21.4697,13.8025,27.4922,28.1448,4.5632,7,4,3,2026-10-07
+1,Boys,4_other,1,Noah Kuebler / Ian Gaulke,Allegan,75.8965,75.8965,100.0,25,4,9.5555,10.0664,29.4545,24.5296,39.5467,40.062,5.0057,7,7,0,2026-10-07
+2,Boys,4_other,1,Joshua Andersen / Peyton Pangemanan,Berrien Springs,63.3424,63.3424,25.7,22,4,10.0721,8.5913,26.1856,14.6559,27.5951,28.3762,4.3131,26,13,13,2026-10-07
+3,Boys,4_other,1,Ryan Eicholtz / Levi Vander Moren,Kalamazoo Christian,62.9675,62.9675,23.48,22,4,10.3019,10.7739,20.7729,13.6709,28.9517,29.4913,5.0936,6,4,2,2026-10-07
+4,Boys,4_other,1,Bryce Hood / Hudson Aalfs,Niles Brandywine,61.0947,61.0947,12.4,22,4,14.032,14.5944,22.3963,6.0314,21.1212,21.6705,5.0299,6,2,4,2026-10-07
+5,Boys,4_other,1,Joey Nouna / Eli Coffman,Kalamazoo Hackett Catholic Prep,59.5806,59.5806,3.44,22,4,6.7313,7.2149,21.4697,13.8025,27.4922,28.1448,4.5632,7,4,3,2026-10-07
