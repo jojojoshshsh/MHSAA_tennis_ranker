@@ -1,7 +1,7 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,76.5072,76.5072,100.0,23,6,10.045,11.4886,27.7446,22.8237,37.4804,39.0226,4.8856,7,6,1,2026-10-07
-2,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,63.5677,63.5677,68.83,19,4,9.4622,7.7675,25.9687,17.9193,31.5975,35.4216,4.5594,18,14,4,2026-10-07
-3,Boys,4_other,4,Daniel Choi / Max Sanchez,Berrien Springs,45.9409,45.9409,26.36,10,3,8.0404,7.3898,20.8772,10.3207,24.412,27.292,4.6971,10,4,6,2026-09-28
-4,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,44.8957,44.8957,23.84,7,2,10.9501,12.3486,19.7397,11.2113,26.223,27.3291,5.0039,6,3,3,2026-10-07
-5,Boys,4_other,4,Khizar Sarwar / Emmett Atkin,Kalamazoo Hackett Catholic Prep,38.4048,38.4048,8.2,5,1,8.6296,9.929,18.0789,10.3299,25.4132,26.7435,5.0278,6,3,3,2026-10-07
-6,Boys,4_other,4,Nathan Schwandt / Corbin Blair,Buchanan,35.4629,35.4629,1.12,5,1,8.4422,9.5755,19.917,5.6663,20.5447,21.3537,4.9595,6,2,4,2026-10-07
+1,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,84.4718,84.4718,100.0,32,6,10.045,11.4886,27.7446,22.8237,37.4804,39.0226,4.8856,7,6,1,2026-10-07
+2,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,73.5553,73.5553,77.93,28,4,10.4725,8.8702,28.9717,17.9193,31.5975,35.4216,4.5594,18,14,4,2026-10-07
+3,Boys,4_other,4,Daniel Choi / Max Sanchez,Berrien Springs,45.9409,45.9409,22.12,10,3,8.0404,7.3898,20.8772,10.3207,24.412,27.292,4.6971,10,4,6,2026-09-28
+4,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,44.8957,44.8957,20.0,7,2,10.9501,12.3486,19.7397,11.2113,26.223,27.3291,5.0039,6,3,3,2026-10-07
+5,Boys,4_other,4,Khizar Sarwar / Emmett Atkin,Kalamazoo Hackett Catholic Prep,38.4048,38.4048,6.88,5,1,8.6296,9.929,18.0789,10.3299,25.4132,26.7435,5.0278,6,3,3,2026-10-07
+6,Boys,4_other,4,Nathan Schwandt / Corbin Blair,Buchanan,35.4629,35.4629,0.94,5,1,8.4422,9.5755,19.917,5.6663,20.5447,21.3537,4.9595,6,2,4,2026-10-07

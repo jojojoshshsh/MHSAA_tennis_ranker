@@ -1,7 +1,7 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Edwin Seo,Berrien Springs,106.7209,106.7209,100.0,53,6,8.2366,6.4679,33.9061,27.4687,43.189,44.2428,5.2401,28,26,2,2026-10-07
-2,Boys,4_other,2,Ezra Smith,Allegan,60.5927,60.5927,37.43,8,5,16.0291,16.4941,25.5632,16.4693,31.7235,32.5861,5.0847,7,4,3,2026-10-07
-3,Boys,4_other,2,Dillon Ray,Kalamazoo Hackett Catholic Prep,51.3025,51.3025,24.83,6,4,14.0362,14.4636,21.0467,12.2167,28.3101,28.9307,5.3645,6,3,3,2026-10-07
-4,Boys,4_other,2,Grant Coon,Kalamazoo Christian,47.4725,47.4725,19.63,4,3,16.409,16.8888,22.8971,9.2111,24.1569,24.7048,4.9819,6,2,4,2026-10-07
-5,Boys,4_other,2,Keegan McBeth,Buchanan,35.0303,35.0303,2.75,3,2,8.759,9.0628,15.4116,7.4154,22.8971,23.282,5.1606,5,2,3,2026-10-07
-6,Boys,4_other,2,Brady Bosch,Niles Brandywine,33.4696,33.4696,0.64,2,1,12.3275,12.6833,19.2098,1.9775,18.3094,18.5699,5.444,5,1,4,2026-10-07
+1,Boys,4_other,2,Edwin Seo,Berrien Springs,116.4365,116.4365,100.0,63,6,9.055,7.3213,34.4798,27.4687,43.189,44.2428,5.2401,28,26,2,2026-10-07
+2,Boys,4_other,2,Ezra Smith,Allegan,60.5927,60.5927,33.07,8,5,16.0291,16.4941,25.5632,16.4693,31.7235,32.5861,5.0847,7,4,3,2026-10-07
+3,Boys,4_other,2,Dillon Ray,Kalamazoo Hackett Catholic Prep,51.3025,51.3025,21.94,6,4,14.0362,14.4636,21.0467,12.2167,28.3101,28.9307,5.3645,6,3,3,2026-10-07
+4,Boys,4_other,2,Grant Coon,Kalamazoo Christian,47.4725,47.4725,17.35,4,3,16.409,16.8888,22.8971,9.2111,24.1569,24.7048,4.9819,6,2,4,2026-10-07
+5,Boys,4_other,2,Keegan McBeth,Buchanan,35.0303,35.0303,2.43,3,2,8.759,9.0628,15.4116,7.4154,22.8971,23.282,5.1606,5,2,3,2026-10-07
+6,Boys,4_other,2,Brady Bosch,Niles Brandywine,33.4696,33.4696,0.56,2,1,12.3275,12.6833,19.2098,1.9775,18.3094,18.5699,5.444,5,1,4,2026-10-07
