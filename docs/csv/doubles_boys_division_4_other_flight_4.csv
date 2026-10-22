@@ -1,7 +1,9 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,84.4718,84.4718,100.0,32,6,10.045,11.4886,27.7446,22.8237,37.4804,39.0226,4.8856,7,6,1,2026-10-07
-2,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,73.5553,73.5553,77.93,28,4,10.4725,8.8702,28.9717,17.9193,31.5975,35.4216,4.5594,18,14,4,2026-10-07
-3,Boys,4_other,4,Daniel Choi / Max Sanchez,Berrien Springs,45.9409,45.9409,22.12,10,3,8.0404,7.3898,20.8772,10.3207,24.412,27.292,4.6971,10,4,6,2026-09-28
-4,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,44.8957,44.8957,20.0,7,2,10.9501,12.3486,19.7397,11.2113,26.223,27.3291,5.0039,6,3,3,2026-10-07
-5,Boys,4_other,4,Khizar Sarwar / Emmett Atkin,Kalamazoo Hackett Catholic Prep,38.4048,38.4048,6.88,5,1,8.6296,9.929,18.0789,10.3299,25.4132,26.7435,5.0278,6,3,3,2026-10-07
-6,Boys,4_other,4,Nathan Schwandt / Corbin Blair,Buchanan,35.4629,35.4629,0.94,5,1,8.4422,9.5755,19.917,5.6663,20.5447,21.3537,4.9595,6,2,4,2026-10-07
+1,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,122.4127,122.4127,100.0,61,10,11.3568,12.0751,33.471,26.6871,40.9754,41.8704,4.7628,10,9,1,2026-10-14
+2,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,120.5626,120.5626,97.86,57,10,13.7235,14.1302,33.2262,25.2311,41.2209,41.941,5.3299,5,5,0,2026-10-14
+3,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,104.4378,104.4378,79.2,50,8,11.5344,10.4584,31.9811,21.7287,34.9883,38.1742,4.4199,20,16,4,2026-10-14
+4,Boys,4_other,4,Ollie Pierpont / Stennson Shatto,Grand Rapids NorthPointe Christian,81.7477,81.7477,52.94,34,2,13.2202,11.5071,30.3232,23.8013,38.442,38.6108,4.8802,6,5,1,2026-10-14
+5,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,49.8415,49.8415,16.02,9,2,13.4399,14.2916,20.92,13.0872,27.772,28.7417,4.8949,8,4,4,2026-10-14
+6,Boys,4_other,4,Daniel Choi / Max Sanchez,Berrien Springs,46.2388,46.2388,11.85,10,3,8.4267,7.791,20.8772,10.3207,24.412,27.292,4.6971,10,4,6,2026-09-28
+7,Boys,4_other,4,Khizar Sarwar / Emmett Atkin,Kalamazoo Hackett Catholic Prep,39.263,39.263,3.78,5,1,9.9084,10.9371,18.0789,10.3299,25.4132,26.7435,5.0278,6,3,3,2026-10-07
+8,Boys,4_other,4,Nathan Schwandt / Corbin Blair,Buchanan,36.0854,36.0854,0.1,5,1,9.3126,10.3574,19.917,5.6663,20.5447,21.3537,4.9595,6,2,4,2026-10-07

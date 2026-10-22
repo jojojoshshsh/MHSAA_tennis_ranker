@@ -1,6 +1,11 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,3,Sage Sanchez / Larsen Kibler,Berrien Springs,84.4053,84.4053,100.0,34,5,9.0372,8.1554,30.4091,23.7249,37.8734,40.4182,4.7162,23,18,5,2026-10-07
-2,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,55.8885,55.8885,38.55,11,4,11.3442,12.4063,25.9266,13.4862,27.9067,29.4613,4.8068,6,4,2,2026-10-07
-3,Boys,4_other,3,Sam Ekkens / Gus Haan,Kalamazoo Christian,48.3262,48.3262,22.25,9,3,10.6381,11.7543,18.7581,11.6431,27.0376,28.5367,5.1315,6,3,3,2026-10-07
-4,Boys,4_other,3,Colin Gallagher / Chris Kennedy,Kalamazoo Hackett Catholic Prep,45.6747,45.6747,16.54,7,2,13.69,14.9005,21.6446,7.3486,23.2567,24.5642,5.3027,5,2,3,2026-10-07
-5,Boys,4_other,3,Chris Kern / Zander Wheat,Buchanan,38.7987,38.7987,1.72,5,1,8.42,9.3667,19.6715,10.4576,25.5244,26.7282,5.0223,6,3,3,2026-10-07
+1,Boys,4_other,3,Harrison Botke / Vincent Tran,Jackson Lumen Christi,132.7204,132.7204,100.0,66,12,12.2937,12.4622,36.094,27.0525,42.1484,43.1213,5.032,6,6,0,2026-10-14
+2,Boys,4_other,3,Logan Spangler / Noah Koppenhofer,Grand Rapids NorthPointe Christian,124.8724,124.8724,91.63,61,11,12.929,13.1921,33.4849,24.7124,40.4974,41.5011,5.2617,6,6,0,2026-10-14
+3,Boys,4_other,3,Sage Sanchez / Larsen Kibler,Berrien Springs,108.5373,108.5373,74.2,50,9,10.3434,9.0496,31.9466,26.6563,40.4141,42.0579,4.5859,25,20,5,2026-10-14
+4,Boys,4_other,3,John DeLaet / Charlie Morris,Allegan,77.436,77.436,41.01,24,7,12.5452,13.3424,27.5386,19.5568,32.7702,34.2711,4.4045,8,6,2,2026-10-14
+5,Boys,4_other,3,Matteo Marciano / Jack Ingle,Grosse Pointe Woods University Liggett,69.4353,69.4353,32.47,22,4,10.0376,8.2684,27.5063,20.9174,36.3381,35.8258,5.1402,6,5,1,2026-10-14
+6,Boys,4_other,3,Garrett Bridger / Brodie McKeller,Maple City Glen Lake,58.188,58.188,20.47,14,1,13.932,14.2255,25.405,18.6015,33.3828,33.6884,4.9271,6,4,2,2026-10-14
+7,Boys,4_other,3,Jude Webster / Connor Esman,Paw Paw,56.3918,56.3918,18.56,10,2,18.354,19.224,23.6499,15.1806,28.6954,30.455,4.5049,6,3,3,2026-10-14
+8,Boys,4_other,3,Sam Ekkens / Gus Haan,Kalamazoo Christian,49.8406,49.8406,11.57,9,3,13.8113,14.243,18.7581,10.9474,26.2915,27.4047,5.1147,7,3,4,2026-10-14
+9,Boys,4_other,3,Colin Gallagher / Chris Kennedy,Kalamazoo Hackett Catholic Prep,46.2327,46.2327,7.72,7,2,14.7234,15.3765,21.6446,7.3486,23.2567,24.5642,5.3027,5,2,3,2026-10-07
+10,Boys,4_other,3,Chris Kern / Zander Wheat,Buchanan,39.8447,39.8447,0.9,5,1,9.9204,10.6475,19.6715,10.4576,25.5244,26.7282,5.0223,6,3,3,2026-10-07
