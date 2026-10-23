@@ -1,8 +1,8 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,3,4,Sasha Kebl / Sebastian Shah,Detroit Country Day,170.1167,170.1167,100.0,111,8,16.5127,14.5322,37.3977,31.2553,45.2753,44.4883,4.6733,7,7,0,2026-10-14
-2,Boys,3,4,Elliot Drake / Aarav Vummidi,Ann Arbor Greenhills,136.1803,136.1803,70.0,91,4,17.0747,15.448,29.2399,21.5477,35.9133,34.978,4.7886,6,4,2,2026-10-14
-3,Boys,3,4,Jaiden Swami / Stanley Shen,Bloomfield Hills Cranbrook Kingswood,134.7157,134.7157,68.7,90,3,15.1648,10.3834,32.0236,25.9922,40.2067,38.4161,4.7382,7,6,1,2026-10-14
-4,Boys,3,4,Sam Brummel / Westin Knott,Hudsonville Unity Christian,129.7627,129.7627,64.33,86,3,15.2791,10.5083,33.7619,22.2707,36.952,35.2791,4.8938,6,5,1,2026-10-14
-5,Boys,3,4,Baxter Dorrow / Wyatt Petzke,St. Joseph,102.1064,102.1064,39.88,62,1,12.95,12.5708,27.0677,20.6668,36.0732,36.069,5.1354,5,4,1,2026-10-14
-6,Boys,3,4,Charlie DeVries / Drew Tanis,Holland Christian,73.2979,73.2979,14.41,26,2,15.2613,12.2772,29.7144,21.6336,36.0153,34.2377,4.7939,6,4,2,2026-10-14
-7,Boys,3,4,Patrick Houlihan / Joe Schulte,East Grand Rapids,57.7162,57.7162,0.63,15,1,11.3197,9.3785,27.7353,19.306,34.6599,33.6974,5.1179,5,4,1,2026-10-14
+1,Boys,3,4,Sasha Kebl / Sebastian Shah,Detroit Country Day,155.9574,155.9574,100.0,95,8,16.5127,14.5322,37.3977,31.2553,45.2753,44.4883,4.6733,7,7,0,2026-10-14
+2,Boys,3,4,Elliot Drake / Aarav Vummidi,Ann Arbor Greenhills,122.021,122.021,65.71,75,4,17.0747,15.448,29.2399,21.5477,35.9133,34.978,4.7886,6,4,2,2026-10-14
+3,Boys,3,4,Jaiden Swami / Stanley Shen,Bloomfield Hills Cranbrook Kingswood,120.5564,120.5564,64.23,74,3,15.1648,10.3834,32.0236,25.9922,40.2067,38.4161,4.7382,7,6,1,2026-10-14
+4,Boys,3,4,Sam Brummel / Westin Knott,Hudsonville Unity Christian,115.3399,115.3399,58.95,70,3,15.0727,10.5083,33.295,22.2707,36.952,35.2791,4.8938,6,5,1,2026-10-14
+5,Boys,3,4,Baxter Dorrow / Wyatt Petzke,St. Joseph,87.9471,87.9471,31.27,46,1,12.95,12.5708,27.0677,20.6668,36.0732,36.069,5.1354,5,4,1,2026-10-14
+6,Boys,3,4,Charlie DeVries / Drew Tanis,Holland Christian,73.2979,73.2979,16.47,26,2,15.2613,12.2772,29.7144,21.6336,36.0153,34.2377,4.7939,6,4,2,2026-10-14
+7,Boys,3,4,Patrick Houlihan / Joe Schulte,East Grand Rapids,57.7162,57.7162,0.72,15,1,11.3197,9.3785,27.7353,19.306,34.6599,33.6974,5.1179,5,4,1,2026-10-14

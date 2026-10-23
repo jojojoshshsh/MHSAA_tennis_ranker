@@ -1,9 +1,9 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Kyle Herder,Kalamazoo Christian,99.2965,99.2965,100.0,36,9,11.4463,12.2904,31.9169,27.6935,42.8401,43.6893,5.0488,9,9,0,2026-10-14
-2,Boys,4_other,4,Levi Lamb,Maple City Glen Lake,98.2382,98.2382,98.47,42,6,11.8602,11.9109,32.6049,25.676,41.2327,40.9326,5.1856,6,6,0,2026-10-14
-3,Boys,4_other,4,Jake Bixby,Traverse City St Francis,65.5832,65.5832,51.35,19,2,15.6707,15.5416,25.8086,18.1638,33.3305,33.4244,5.0556,5,3,2,2026-10-14
-4,Boys,4_other,4,Patrick Best,Jackson Lumen Christi,60.4213,60.4213,43.9,15,4,9.3266,9.8106,24.465,17.7258,32.9901,33.9196,5.0881,6,5,1,2026-10-14
-5,Boys,4_other,4,Christopher Sappanos,Kalamazoo Hackett Catholic Prep,54.1696,54.1696,34.88,8,3,11.8556,12.6673,23.4251,18.3544,33.2231,33.8063,4.9562,7,5,2,2026-10-07
-6,Boys,4_other,4,Joseph Bosse,Buchanan,49.3698,49.3698,27.95,7,3,12.0786,13.1727,19.7315,12.8655,29.1971,30.0975,5.4439,6,4,2,2026-10-07
-7,Boys,4_other,4,Deacon Morgan,Allegan,37.634,37.634,11.02,4,1,9.8806,10.3911,18.611,9.5184,24.7194,25.0295,5.067,7,3,4,2026-10-14
-8,Boys,4_other,4,Yejun Cho,Berrien Springs,30.9824,30.9824,1.42,3,1,9.1137,8.5228,14.9852,5.2761,19.3165,21.4268,4.6801,14,4,10,2026-10-14
+1,Boys,4_other,4,Levi Lamb,Maple City Glen Lake,123.9657,123.9657,100.0,54,12,15.9474,14.0126,36.2192,27.6888,41.3896,44.0308,4.5669,8,7,1,2026-10-14
+2,Boys,4_other,4,Kyle Herder,Kalamazoo Christian,98.6715,98.6715,73.08,36,9,13.0706,14.0113,31.9169,25.9527,40.176,40.797,4.7411,10,9,1,2026-10-14
+3,Boys,4_other,4,Jake Bixby,Traverse City St Francis,65.7932,65.7932,38.09,19,2,15.7252,16.0182,25.8086,18.1638,33.3305,33.4244,5.0556,5,3,2,2026-10-14
+4,Boys,4_other,4,Patrick Best,Jackson Lumen Christi,60.3468,60.3468,32.3,15,4,9.1173,9.8106,24.465,17.7258,32.9901,33.9196,5.0881,6,5,1,2026-10-14
+5,Boys,4_other,4,Christopher Sappanos,Kalamazoo Hackett Catholic Prep,53.7733,53.7733,25.3,8,3,11.3583,12.119,23.4251,18.3544,33.2231,33.8063,4.9562,7,5,2,2026-10-07
+6,Boys,4_other,4,Joseph Bosse,Buchanan,48.9075,48.9075,20.12,7,3,11.4983,12.5331,19.7315,12.8655,29.1971,30.0975,5.4439,6,4,2,2026-10-07
+7,Boys,4_other,4,Deacon Morgan,Allegan,37.634,37.634,8.12,4,1,9.8806,10.3911,18.611,9.5184,24.7194,25.0295,5.067,7,3,4,2026-10-14
+8,Boys,4_other,4,Yejun Cho,Berrien Springs,30.9824,30.9824,1.05,3,1,9.1137,8.5228,14.9852,5.2761,19.3165,21.4268,4.6801,14,4,10,2026-10-14

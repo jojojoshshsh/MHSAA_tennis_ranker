@@ -1,8 +1,8 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,2,Sawyer Volkers / Arend Clark,Grand Rapids NorthPointe Christian,123.058,123.058,100.0,63,8,13.3121,13.1663,34.3538,27.9153,42.4436,42.8305,4.8428,6,6,0,2026-10-14
-2,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,110.6859,110.6859,83.07,55,7,12.2713,12.3185,31.8635,24.0395,39.8634,40.0783,5.2746,6,6,0,2026-10-14
-3,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,102.053,102.053,71.25,50,5,11.7823,11.8567,29.9184,24.8077,40.5348,40.6701,5.2424,6,6,0,2026-10-14
-4,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,99.7116,99.7116,68.04,46,6,10.6933,10.7198,30.4469,24.6243,40.451,41.1199,5.2755,6,6,0,2026-10-14
-5,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,92.9479,92.9479,58.79,40,5,13.8413,14.1037,29.3741,23.5559,37.8919,38.6457,4.7787,9,8,1,2026-10-14
-6,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,80.1194,80.1194,41.23,36,4,10.8116,9.8158,27.8934,18.329,31.9653,32.4686,4.5455,30,19,11,2026-10-14
-7,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,50.3577,50.3577,0.49,9,2,13.0644,13.4005,22.8032,13.3974,28.1975,28.9532,4.9334,8,4,4,2026-10-14
+1,Boys,4_other,2,Lucas Ferguson / Ian Moya,Grosse Pointe Woods University Liggett,145.3952,145.3952,100.0,75,12,15.5058,15.6209,37.3816,31.0513,44.9803,45.2724,4.643,8,8,0,2026-10-14
+2,Boys,4_other,2,Maden Brady / Theo McEldowney,Jackson Lumen Christi,128.0015,128.0015,81.77,66,9,15.163,15.2585,34.3412,27.1935,41.0126,41.5343,4.6064,8,7,1,2026-10-14
+3,Boys,4_other,2,Sawyer Volkers / Arend Clark,Grand Rapids NorthPointe Christian,122.8339,122.8339,76.35,63,8,15.2951,15.2333,34.3538,26.0923,39.8805,40.3005,4.5961,7,6,1,2026-10-14
+4,Boys,4_other,2,Bryce Cundiff / Luke Selby,Maple City Glen Lake,102.3591,102.3591,54.89,50,5,14.535,14.6411,29.9184,23.2251,37.9283,38.0942,4.9011,7,6,1,2026-10-14
+5,Boys,4_other,2,Oliver Burnett / Carson Wooodhams,Allegan,92.7967,92.7967,44.86,40,5,13.6387,13.9059,29.3741,23.5559,37.8919,38.6457,4.7787,9,8,1,2026-10-14
+6,Boys,4_other,2,David Ng’ang’a / Zachary Nyamweya,Berrien Springs,80.2436,80.2436,31.7,36,4,10.9647,9.9901,27.8934,18.329,31.9653,32.4686,4.5455,30,19,11,2026-10-14
+7,Boys,4_other,2,Kyle Motson / Owen Vliestra,Kalamazoo Christian,50.5979,50.5979,0.63,9,2,13.3856,13.7155,22.8032,13.3974,28.1975,28.9532,4.9334,8,4,4,2026-10-14
