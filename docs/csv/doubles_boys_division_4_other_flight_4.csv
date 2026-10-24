@@ -1,9 +1,9 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,139.8969,139.8969,100.0,67,12,16.7736,17.2339,37.4874,31.1627,45.4261,46.2596,4.7545,7,7,0,2026-10-14
-2,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,111.3657,111.3657,72.8,53,8,12.9322,13.6006,33.0042,25.1507,38.8935,39.7306,4.5809,11,9,2,2026-10-14
-3,Boys,4_other,4,Ollie Pierpont / Stennson Shatto,Grand Rapids NorthPointe Christian,110.3315,110.3315,71.81,50,8,16.2169,15.2503,33.0178,24.8859,38.6078,39.3781,4.574,8,6,2,2026-10-14
-4,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,83.1135,83.1135,45.87,34,5,12.358,11.5192,28.276,20.4901,33.5878,36.1335,4.3659,21,16,5,2026-10-14
-5,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,50.0067,50.0067,14.31,9,2,13.6796,14.4913,20.92,13.0872,27.772,28.7417,4.8949,8,4,4,2026-10-14
-6,Boys,4_other,4,Daniel Choi / Max Sanchez,Berrien Springs,46.0953,46.0953,10.58,10,3,8.2731,7.569,20.8772,10.3207,24.412,27.292,4.6971,10,4,6,2026-09-28
-7,Boys,4_other,4,Khizar Sarwar / Emmett Atkin,Kalamazoo Hackett Catholic Prep,38.8945,38.8945,3.71,5,1,9.4459,10.4272,18.0789,10.3299,25.4132,26.7435,5.0278,6,3,3,2026-10-07
-8,Boys,4_other,4,Nathan Schwandt / Corbin Blair,Buchanan,35.9115,35.9115,0.87,5,1,9.1062,10.1064,19.917,5.6663,20.5447,21.3537,4.9595,6,2,4,2026-10-07
+1,Boys,4_other,4,Shayan Challapalli / Gurmilan Singh,Jackson Lumen Christi,144.3217,144.3217,100.0,72,12,16.7736,17.2339,37.4874,31.1627,45.4261,46.2596,4.7545,7,7,0,2026-10-14
+2,Boys,4_other,4,Devin Vliestra / Micah Koerner,Kalamazoo Christian,115.7905,115.7905,73.9,58,8,12.9322,13.6006,33.0042,25.1507,38.8935,39.7306,4.5809,11,9,2,2026-10-14
+3,Boys,4_other,4,Ollie Pierpont / Stennson Shatto,Grand Rapids NorthPointe Christian,114.7563,114.7563,72.96,55,8,16.2169,15.2503,33.0178,24.8859,38.6078,39.3781,4.574,8,6,2,2026-10-14
+4,Boys,4_other,4,Daniel Choi / Luke Kwon,Berrien Springs,87.908,87.908,48.4,39,5,12.6161,11.5192,28.9587,20.4901,33.5878,36.1335,4.3659,21,16,5,2026-10-14
+5,Boys,4_other,4,Sully Morgan / Noah Willett,Allegan,50.0067,50.0067,13.73,9,2,13.6796,14.4913,20.92,13.0872,27.772,28.7417,4.8949,8,4,4,2026-10-14
+6,Boys,4_other,4,Daniel Choi / Max Sanchez,Berrien Springs,46.2891,46.2891,10.33,10,3,8.8178,7.569,20.8772,10.3207,24.412,27.292,4.6971,10,4,6,2026-09-28
+7,Boys,4_other,4,Khizar Sarwar / Emmett Atkin,Kalamazoo Hackett Catholic Prep,38.8945,38.8945,3.56,5,1,9.4459,10.4272,18.0789,10.3299,25.4132,26.7435,5.0278,6,3,3,2026-10-07
+8,Boys,4_other,4,Nathan Schwandt / Corbin Blair,Buchanan,35.9115,35.9115,0.83,5,1,9.1062,10.1064,19.917,5.6663,20.5447,21.3537,4.9595,6,2,4,2026-10-07

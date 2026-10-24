@@ -1,5 +1,5 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,3,1,Jacob Yang,Bloomfield Hills Cranbrook Kingswood,181.4437,181.4437,100.0,123,8,16.3885,14.0019,38.5441,32.1836,46.0393,45.1366,4.6186,7,7,0,2026-10-14
-2,Boys,3,1,Ricky Jeong,Detroit Country Day,161.8298,161.8298,83.58,113,4,17.1822,15.2382,34.9672,27.8389,41.5879,40.6038,4.583,7,6,1,2026-10-14
-3,Boys,3,1,Edmundo Berain Saucedo,Hudsonville Unity Christian,130.5672,130.5672,57.41,87,1,18.5456,12.5035,36.4287,23.683,37.614,35.6128,4.6436,7,5,2,2026-10-14
-4,Boys,3,1,Liam Washington,Petoskey,62.3336,62.3336,0.28,18,1,13.1067,11.2386,27.2622,20.0281,35.7141,34.9501,5.2286,5,4,1,2026-10-14
+1,Boys,3,1,Jacob Yang,Bloomfield Hills Cranbrook Kingswood,186.7534,186.7534,100.0,129,8,16.3885,14.0019,38.5441,32.1836,46.0393,45.1366,4.6186,7,7,0,2026-10-14
+2,Boys,3,1,Ricky Jeong,Detroit Country Day,167.1396,167.1396,84.28,119,4,17.1822,15.2382,34.9672,27.8389,41.5879,40.6038,4.583,7,6,1,2026-10-14
+3,Boys,3,1,Edmundo Berain Saucedo,Hudsonville Unity Christian,135.8769,135.8769,59.22,93,1,18.5456,12.5035,36.4287,23.683,37.614,35.6128,4.6436,7,5,2,2026-10-14
+4,Boys,3,1,Liam Washington,Petoskey,62.3336,62.3336,0.27,18,1,13.1067,11.2386,27.2622,20.0281,35.7141,34.9501,5.2286,5,4,1,2026-10-14
