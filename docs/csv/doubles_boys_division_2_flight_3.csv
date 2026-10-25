@@ -1,4 +1,4 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,3,DAniel Jin / Mikey Hernly,Grand Rapids Forest Hills Northern,130.1024,130.1024,100.0,87,2,12.6655,11.0698,31.5253,24.901,40.5788,40.2019,5.226,5,5,0,2026-10-14
-2,Boys,2,3,Davis Gryzenia / Weston Jerabek,Grosse Pointe South,106.9199,106.9199,63.84,66,1,11.1767,7.5488,29.7407,24.8293,40.516,39.5752,5.2289,5,5,0,2026-10-14
-3,Boys,2,3,Vettel Xu / Zander Salisbury,Midland Dow,66.4154,66.4154,0.65,18,2,9.758,9.4224,29.8183,24.1616,40.1743,39.9642,5.3376,5,5,0,2026-10-14
+1,Boys,2,3,Vettel Xu / Zander Salisbury,Midland Dow,164.2718,164.2718,100.0,110,6,14.15,13.6385,36.6476,31.1236,45.1954,44.8031,4.6906,7,7,0,2026-10-14
+2,Boys,2,3,Davis Gryzenia / Weston Jerabek,Grosse Pointe South,141.4782,141.4782,33.49,97,2,15.8741,12.7878,33.2316,26.9104,40.8162,39.7963,4.6353,7,6,1,2026-10-14
+3,Boys,2,3,DAniel Jin / Mikey Hernly,Grand Rapids Forest Hills Northern,130.7612,130.7612,2.22,87,2,15.7419,14.3228,31.5253,23.3497,38.0484,37.6927,4.8996,6,5,1,2026-10-14

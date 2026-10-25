@@ -1,5 +1,5 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,4,Luke Janz,Birmingham Seaholm,109.4734,109.4734,100.0,58,3,14.5952,10.5377,35.9219,27.5585,42.545,40.836,4.9955,5,5,0,2026-10-14
-2,Boys,2,4,Caden Crosby,South Lyon East,89.0959,89.0959,53.13,40,2,12.8624,9.3269,33.1806,26.3011,41.5544,40.6485,5.0844,5,5,0,2026-10-14
-3,Boys,2,4,Jayden Qi,Grand Rapids Forest Hills Northern,81.1948,81.1948,34.95,33,2,11.236,10.6568,30.5426,24.7736,40.48,40.1906,5.2355,5,5,0,2026-10-14
-4,Boys,2,4,Shane Goldman,Birmingham Groves,66.8599,66.8599,1.98,22,1,13.0705,12.589,28.0956,20.1398,35.4437,35.9064,5.1013,5,4,1,2026-10-14
+1,Boys,2,4,Luke Janz,Birmingham Seaholm,136.0839,136.0839,100.0,74,7,16.9454,13.9626,37.7845,31.9001,45.8657,44.9604,4.6552,7,7,0,2026-10-14
+2,Boys,2,4,Jayden Qi,Grand Rapids Forest Hills Northern,108.5298,108.5298,59.53,54,4,16.1029,15.2899,33.8826,27.1102,41.0315,40.4488,4.6404,7,6,1,2026-10-14
+3,Boys,2,4,Caden Crosby,South Lyon East,89.296,89.296,31.28,40,2,15.237,12.1685,33.1806,24.6404,38.9793,38.0397,4.7796,6,5,1,2026-10-14
+4,Boys,2,4,Shane Goldman,Birmingham Groves,68.9305,68.9305,1.37,22,1,16.9324,16.5558,28.0956,19.3357,34.2608,34.4205,4.975,6,4,2,2026-10-14

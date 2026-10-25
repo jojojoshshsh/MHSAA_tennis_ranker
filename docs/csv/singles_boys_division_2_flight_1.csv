@@ -1,6 +1,6 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,1,Evan Weber,Berkley,96.5056,96.5056,100.0,48,3,12.5313,9.2957,32.1802,24.4786,40.3402,39.2484,5.2872,5,5,0,2026-10-14
-2,Boys,2,1,Carter Griffith,Birmingham Seaholm,84.3809,84.3809,57.47,39,2,14.2374,9.1337,30.2732,22.6793,37.3581,35.7742,4.8929,5,4,1,2026-10-14
-3,Boys,2,1,Matthew Bartoszewicz,Grosse Pointe South,75.6691,75.6691,26.9,32,1,10.0072,5.7839,29.6573,24.7965,40.6794,39.2624,5.2943,5,5,0,2026-10-14
-4,Boys,2,1,Mason Crosby,South Lyon East,74.9143,74.9143,24.26,29,1,10.9168,8.12,30.582,24.9117,40.7745,40.1598,5.2876,5,5,0,2026-10-14
-5,Boys,2,1,Vikram Krishnan,Grand Rapids Forest Hills Northern,68.3687,68.3687,1.29,25,1,12.4052,11.3711,29.5294,19.1929,34.3324,33.83,5.0465,5,4,1,2026-10-14
+1,Boys,2,1,Mason Crosby,South Lyon East,124.9148,124.9148,100.0,64,7,14.7129,12.2097,37.159,30.7946,45.0139,44.1766,4.7398,7,7,0,2026-10-14
+2,Boys,2,1,Carter Griffith,Birmingham Seaholm,99.1319,99.1319,56.24,48,3,17.5165,13.4441,33.271,25.0781,38.604,37.2908,4.5086,7,5,2,2026-10-14
+3,Boys,2,1,Matthew Bartoszewicz,Grosse Pointe South,76.8043,76.8043,18.34,32,1,13.4718,9.7803,29.6573,23.3285,38.1934,36.8393,4.955,6,5,1,2026-10-14
+4,Boys,2,1,Vikram Krishnan,Grand Rapids Forest Hills Northern,68.7799,68.7799,4.72,25,1,12.8849,11.9726,29.5294,19.1929,34.3324,33.83,5.0465,5,4,1,2026-10-14
+5,Boys,2,1,Evan Weber,Berkley,66.5885,66.5885,1.0,20,1,15.0222,12.1268,28.8073,22.5562,37.1213,35.7579,4.855,6,5,1,2026-10-14

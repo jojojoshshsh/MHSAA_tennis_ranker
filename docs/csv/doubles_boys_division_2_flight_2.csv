@@ -1,4 +1,4 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,2,Sam Newell / Terrence Simmons,Byron Center,98.0104,98.0104,100.0,54,1,12.6184,8.816,30.847,25.0362,40.5584,40.4618,5.1741,6,6,0,2026-10-14
-2,Boys,2,2,Ahren Gupta / Kyle Carr,Birmingham Seaholm,84.7562,84.7562,5.4,32,3,12.7873,12.094,32.6097,26.1315,41.5582,41.2118,5.1422,5,5,0,2026-10-14
-3,Boys,2,2,Ethan Clark / Jashwanth Thamminana,Midland Dow,84.3994,84.3994,2.85,35,2,13.8477,8.8016,32.8773,26.2801,41.5436,39.5107,5.0878,5,5,0,2026-10-14
+1,Boys,2,2,Ahren Gupta / Kyle Carr,Birmingham Seaholm,155.4924,155.4924,100.0,95,7,16.4347,15.5811,38.225,32.1028,45.9738,45.4895,4.6237,7,7,0,2026-10-14
+2,Boys,2,2,Sam Newell / Terrence Simmons,Byron Center,98.7217,98.7217,2.94,54,1,15.4019,12.0395,30.847,23.676,38.3176,38.1188,4.8805,7,6,1,2026-10-14
+3,Boys,2,2,Ethan Clark / Jashwanth Thamminana,Midland Dow,97.3811,97.3811,0.65,43,3,17.6092,13.751,34.9731,27.4307,41.3041,39.8558,4.6245,7,6,1,2026-10-14

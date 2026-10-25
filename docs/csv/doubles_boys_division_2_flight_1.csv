@@ -1,5 +1,5 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,1,Brayden Slot / Brody Slot,Byron Center,117.7628,117.7628,100.0,73,2,13.7317,6.0551,33.7948,27.5797,42.2978,40.1936,4.906,6,6,0,2026-10-14
-2,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,78.89,78.89,27.7,30,2,11.7211,11.6322,30.6074,24.0934,40.0523,39.9851,5.3196,5,5,0,2026-10-14
-3,Boys,2,1,Oscar DeLuca / Henry Logan,Grosse Pointe South,71.3258,71.3258,13.63,26,1,10.9903,6.736,30.371,24.8024,40.5487,39.2732,5.2488,5,5,0,2026-10-14
-4,Boys,2,1,Kalil Wahab / Hunter Helfman,Birmingham Seaholm,64.9271,64.9271,1.72,20,1,9.7904,7.6908,28.8171,23.2496,39.6191,39.2593,5.4565,5,5,0,2026-10-14
+1,Boys,2,1,Kalil Wahab / Hunter Helfman,Birmingham Seaholm,147.0455,147.0455,100.0,91,6,14.3281,12.2668,36.9755,31.0921,45.1993,44.5545,4.7024,7,7,0,2026-10-14
+2,Boys,2,1,Brayden Slot / Brody Slot,Byron Center,132.2248,132.2248,80.25,81,4,17.0522,11.1197,36.0942,28.1714,41.6787,40.2374,4.5024,8,7,1,2026-10-14
+3,Boys,2,1,Nathan Song / Sullivan Ladd,Midland Dow,79.2791,79.2791,9.7,30,2,14.4628,14.032,30.6074,22.9351,37.9358,37.5119,5.0002,6,5,1,2026-10-14
+4,Boys,2,1,Oscar DeLuca / Henry Logan,Grosse Pointe South,72.2685,72.2685,0.36,26,1,14.3406,10.6255,30.371,23.1729,37.9126,36.6771,4.9132,6,5,1,2026-10-14

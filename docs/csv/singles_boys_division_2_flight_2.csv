@@ -1,5 +1,5 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,2,Andrew Yang,Grand Rapids Forest Hills Northern,156.0885,156.0885,100.0,115,2,13.7906,9.2189,34.27,26.4263,41.668,40.0097,5.0806,5,5,0,2026-10-14
-2,Boys,2,2,Marcus Powell,Muskegon Mona Shores,133.5006,133.5006,72.48,98,1,12.7939,11.5258,27.8494,20.6721,35.8379,35.2446,5.0553,5,4,1,2026-10-14
-3,Boys,2,2,Chase Martin,Midland Dow,87.3475,87.3475,16.26,40,1,11.7851,11.431,31.6433,26.1333,41.4548,41.5009,5.1072,5,5,0,2026-10-14
-4,Boys,2,2,Giorgio Materazzo,Birmingham Seaholm,74.7263,74.7263,0.88,28,1,11.6436,10.6451,29.4774,24.7761,40.5194,40.1196,5.2478,5,5,0,2026-10-14
+1,Boys,2,2,Andrew Yang,Grand Rapids Forest Hills Northern,190.0856,190.0856,100.0,137,6,16.8754,13.4555,38.2986,31.9982,45.8466,45.066,4.6162,7,7,0,2026-10-14
+2,Boys,2,2,Chase Martin,Midland Dow,164.87,164.87,78.09,120,3,15.8102,15.2746,33.6874,26.6456,40.7276,40.4742,4.694,7,6,1,2026-10-14
+3,Boys,2,2,Marcus Powell,Muskegon Mona Shores,135.1819,135.1819,52.29,98,1,16.0312,15.1803,27.8494,19.7478,34.4606,33.932,4.9043,6,4,2,2026-10-14
+4,Boys,2,2,Giorgio Materazzo,Birmingham Seaholm,75.647,75.647,0.56,28,1,15.036,13.9977,29.4774,23.4539,38.2514,37.5886,4.9325,6,5,1,2026-10-14

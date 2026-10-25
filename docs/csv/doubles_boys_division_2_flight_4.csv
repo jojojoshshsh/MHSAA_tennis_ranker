@@ -1,4 +1,4 @@
 rank,gender,division,flight,pair_name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,4,Colten King / Jonah Wiechertjes,Byron Center,101.0263,101.0263,100.0,54,2,13.4567,8.2649,33.6582,25.6692,41.0608,39.7534,5.1306,6,6,0,2026-10-14
-2,Boys,2,4,Deven Badhwar / Ryan McArdle,Birmingham Seaholm,77.7154,77.7154,41.76,30,1,11.2823,11.304,30.8402,25.6079,41.1339,41.1601,5.1753,5,5,0,2026-10-14
-3,Boys,2,4,virinchi Kakaraparthi / Luka Zilo,Grand Rapids Forest Hills Northern,61.7341,61.7341,1.83,18,1,10.8507,10.281,27.6418,20.8357,36.0574,36.0757,5.0739,5,4,1,2026-10-14
+1,Boys,2,4,Deven Badhwar / Ryan McArdle,Birmingham Seaholm,131.3962,131.3962,100.0,74,5,14.7844,14.5204,37.0477,31.0779,45.1377,44.8703,4.6866,7,7,0,2026-10-14
+2,Boys,2,4,Colten King / Jonah Wiechertjes,Byron Center,116.4074,116.4074,78.09,65,3,16.7788,12.4655,36.2225,27.211,41.0151,39.7963,4.6014,8,7,1,2026-10-14
+3,Boys,2,4,virinchi Kakaraparthi / Luka Zilo,Grand Rapids Forest Hills Northern,63.5014,63.5014,0.73,18,1,14.4788,14.0065,27.6418,19.8685,34.5907,34.5937,4.9074,6,4,2,2026-10-14

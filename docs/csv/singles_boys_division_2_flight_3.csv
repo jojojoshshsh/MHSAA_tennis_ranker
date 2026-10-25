@@ -1,6 +1,6 @@
 rank,gender,division,flight,name,school,rating,TGRS,TGRS_scaled,reachability,local_reachability,sos,local_sos,quality_wins,ts_rating,ts_mu,local_ts_mu,ts_sigma,matches_played,wins,losses,last_match_date
-1,Boys,2,3,Raymond Chai,Midland Dow,116.5572,116.5572,100.0,66,4,13.2932,10.1111,33.7959,26.9158,41.9761,40.8488,5.0201,5,5,0,2026-10-14
-2,Boys,2,3,Sam Ogilvie,Grand Rapids Forest Hills Northern,100.2843,100.2843,69.62,53,3,11.5167,10.6235,29.4136,24.8844,40.5756,40.076,5.2304,5,5,0,2026-10-14
-3,Boys,2,3,Charlie Griffith,Birmingham Seaholm,91.7344,91.7344,53.65,38,3,13.9482,13.2369,34.287,26.409,41.7512,41.3352,5.114,5,5,0,2026-10-14
-4,Boys,2,3,Jackson Hurley,Muskegon Mona Shores,80.849,80.849,33.33,42,1,14.2004,12.7287,25.4348,15.451,31.297,30.839,5.282,5,3,2,2026-10-14
-5,Boys,2,3,Nate Yeamans,Grosse Pointe South,63.4984,63.4984,0.93,18,1,13.8242,10.8612,28.7533,21.3166,36.5893,35.2279,5.0909,5,4,1,2026-10-14
+1,Boys,2,3,Charlie Griffith,Birmingham Seaholm,155.1625,155.1625,100.0,90,9,17.0702,16.2843,38.3777,32.1178,46.0011,45.5429,4.6278,7,7,0,2026-10-14
+2,Boys,2,3,Raymond Chai,Midland Dow,127.9581,127.9581,70.48,74,5,16.7537,14.3751,34.3837,26.9843,41.0004,40.1416,4.672,7,6,1,2026-10-14
+3,Boys,2,3,Sam Ogilvie,Grand Rapids Forest Hills Northern,101.3419,101.3419,41.6,53,3,14.9502,14.1006,29.4136,23.5594,38.3282,37.7991,4.9229,6,5,1,2026-10-14
+4,Boys,2,3,Jackson Hurley,Muskegon Mona Shores,80.4517,80.4517,18.94,42,1,13.6704,12.2069,25.4348,15.451,31.297,30.839,5.282,5,3,2,2026-10-14
+5,Boys,2,3,Nate Yeamans,Grosse Pointe South,63.5514,63.5514,0.6,18,1,13.8379,10.9815,28.7533,21.3166,36.5893,35.2279,5.0909,5,4,1,2026-10-14
